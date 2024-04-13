@@ -128,13 +128,35 @@
                 "file": "obsidian connection to git.md"
               }
             }
+          },
+          {
+            "id": "e40305f8dce99f69",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "95de7eb8e967c0ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30461cdd1b4cbf67",
+            "type": "leaf",
+            "state": {
+              "type": "ob_comments",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,9 +171,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b2ececbd6de3a9d6",
+  "active": "e40305f8dce99f69",
   "lastOpenFiles": [
-    "Welcome.md",
-    "obsidian connection to git.md"
+    "2024-04-13.md",
+    "obsidian connection to git.md",
+    "Welcome.md"
   ]
 }
