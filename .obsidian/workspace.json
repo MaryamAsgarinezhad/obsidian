@@ -8,42 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2f43938639f36132",
+            "id": "b2ececbd6de3a9d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "obsidian connection to git.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
-            }
-          },
-          {
-            "id": "8ddd784172caf24a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Welcome.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "772c7f4d64143579",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c6a669a4213a82d2",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
             }
           }
         ]
@@ -112,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "obsidian connection to git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "obsidian connection to git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md"
+                "file": "obsidian connection to git.md"
               }
             }
           }
@@ -176,9 +149,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8ddd784172caf24a",
+  "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Welcome.md"
+    "Welcome.md",
+    "obsidian connection to git.md"
   ]
 }
