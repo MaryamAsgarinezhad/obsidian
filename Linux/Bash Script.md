@@ -53,3 +53,5 @@ wlp0s20f3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ```
 
 - The `apt` command in Linux is a package management tool used primarily in Debian-based distributions such as Ubuntu. It is used to manage software packages—installing, updating, and removing them.
+
+- 
