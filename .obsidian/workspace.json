@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Linux/Version Control.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -172,7 +172,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dd69356c00beccd5",
+  "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
     "Linux/Bash Script.md",
     "Linux/Docker.md",
