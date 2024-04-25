@@ -2,6 +2,17 @@
 
 - The commands you write in the docker file will be executed in the image container, which is like a dependent OS, not the local environment.
 
-- Docker file is like a linux shell and bash scripts can be written there, like mkdir, chmod,...
+- Docker file is like a linux shell and bash scripts can be written there, like mkdir, chmod,... . Write "RUN" before writing bash scripts.
 
 - COPY every file you need for the execution of your app in the docker file and RUN them if needed (like requirements.txt)
+  
+- Sample file COPY in docker file:
+  
+  ```python
+WORKDIR /  
+  
+COPY main.py /  
+COPY cdnizer.py /  
+COPY checker.py /  
+COPY configs.py /
+```
