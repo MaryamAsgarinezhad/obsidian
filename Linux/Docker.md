@@ -1,6 +1,7 @@
 - Docker needs the requirement.txt to have the libraries and packages installed in its environment.
 
 - The commands you write in the docker file will be executed in the image container, which is like a dependent OS, not the local environment.
+  So every command you write in the termial when you don't use docker, should be included in the docker file when using doker (like the sever run command)
 
 - Docker file is like a linux shell and bash scripts can be written there, like mkdir, chmod,... . Write "RUN" before writing bash scripts.
 
@@ -15,3 +16,6 @@ COPY main.py /
 
 - The above COPY command copies the main.py file from the current directory of your docker file and puts it in the working directory that you specified (here is root)
 - You can create the folder of the WORKDIR with mkdir shell command.
+
+
+- I
