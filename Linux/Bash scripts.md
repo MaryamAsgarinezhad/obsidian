@@ -1,0 +1,2 @@
+- Docker needs the requirement.txt to have the libraries and packages installed in its environment.
+- 
