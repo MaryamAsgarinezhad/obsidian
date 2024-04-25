@@ -18,4 +18,4 @@ COPY main.py /
 - You can create the folder of the WORKDIR with mkdir shell command.
 
 
-- I
+- Use the EXPOSE command when running the docker image's API server on your local environment to access the server on your localhost and the specified exposed p(not when running on on a server like kuber)
