@@ -1,0 +1,1 @@
+-  ifconfig command is used to check the parameters of 
