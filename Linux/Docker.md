@@ -8,10 +8,10 @@
   
 - Sample file COPY in docker file:
   
-  ```bash
+```python
 WORKDIR /  
 COPY main.py / 
 ```
 
 - The above COPY command copies the main.py file from the current directory of your docker file and puts it in the working directory that you specified (here is root)
-- You can create the folder of the WORKDIR with mkdir s
+- You can create the folder of the WORKDIR with mkdir shell command.
