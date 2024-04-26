@@ -79,3 +79,11 @@ find . -name "*.txt" -exec grep "pattern" {} \
 - `-c`: Prints the number of bytes in the file.
 - `-m`: Prints the number of characters in the file.
 - `-L`: Prints the length of the longest line in the file.
+
+The command reads the contents of `words.txt`, then filters the output to show only the lines that start with an uppercase letter. A pipe (`|`) is a command in Linux and Unix-like operating systems that allows you to use the output (stdout) of one command as the input (stdin) to another command.
+
+```shell
+cat words.txt | grep '^[A-Z]'
+
+```
+
