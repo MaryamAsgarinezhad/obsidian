@@ -114,3 +114,10 @@ where to see my system's username and groupname?
 whoami
 groups
 ```
+
+
+**<mark style="background: #BBFABBA6;">Linux Services:</mark>**
+
+To run an application on your linux using services, you have to have all services installed on your local machine (you can not use any image here, but have to install services like SQL):
+
+- 

@@ -92,4 +92,4 @@ Portforwarding and exposing ports:
     - If you want to make a port of a service accessible from outside the Docker network (e.g., from the host machine), you specify port mappings in the `ports` section of the service definition in the `docker-compose.yml` file. This is similar to using the `-p` or `--publish` flag with `docker run`.
 
 
-We use either "docker run -p" or "docker-compose up" for running an application in docker. Also use "docker build" to build an image from a docker file.
+We use either "docker run -p" or "docker-compose -f "file name" up" for running an application in docker. Also use "docker build" to build an image from a docker file.
