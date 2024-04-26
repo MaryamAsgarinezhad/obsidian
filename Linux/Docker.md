@@ -50,6 +50,8 @@ docker exec -it container_name /bin/bash```
 	  docker ps -a
 	  ```
 
+- ![[Pasted image 20240426160923.png]]
+- 
 - A Docker Compose file, usually named `docker-compose.yml`, is a YAML file used to define and run multi-container Docker applications. It allows you to define the services, networks, and volumes required for your application in a declarative way.
   
   **Service Definition**: Docker Compose allows you to define multiple services within your application, each with its own configuration, such as the Docker image to use, environment variables, ports to expose, volumes to mount, and dependencies on other services.

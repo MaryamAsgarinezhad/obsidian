@@ -22,3 +22,21 @@ On the other hand, using `--host 0.0.0.0` would bind the server to all available
 
 
 **Writing a server application:**
+
+For connecting to a database in the server application, use a **database adaptor for your programming language** like psycopg.
+The `psychopg` package, often referred to as psycopg2, is a PostgreSQL adapter for the Python programming language. It allows Python code to interact with PostgreSQL databases, enabling tasks such as querying data, executing SQL commands, and managing database connections.
+  
+  ```pyhton
+  connection = psycopg2.connect(user=os.getenv('DATABASE_USER'),  
+                              password=os.getenv('DATABASE_PASSWORD'),  
+                              host=os.getenv('DATABASE_HOST'),  
+                              port=os.getenv('DATABASE_PORT'),  
+                              database=os.getenv('DATABASE_NAME'))  
+cursor = connection.cursor()  
+cursor.execute(  
+    """  
+    CREATE TABLE IF NOT EXISTS messages (        id SERIAL PRIMARY KEY,        message TEXT NOT NULL    )    """)  
+connection.commit()  
+cursor.close()  
+connection.close()
+```
