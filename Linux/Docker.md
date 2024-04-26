@@ -20,6 +20,14 @@ COPY main.py /
 
 - Use the EXPOSE command when running the docker image's API server on your local environment to access the server on your localhost and the specified exposed port(not when running on on a server like kuber)
 
+- This Dockerfile command defines the default command to run when a container is started from the image built with this Dockerfile.
+
+```shell
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
+```
+
+- 
+
 - Pull the docker image from docker hub:
   
   ```shell
