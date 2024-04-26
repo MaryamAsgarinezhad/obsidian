@@ -55,19 +55,21 @@ wlp0s20f3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 - The `apt` command in Linux is a package management tool used primarily in Debian-based distributions such as Ubuntu. It is used to manage software packages—installing, updating, and removing them.
 
 - vim/nano are text editors to change the contents of a given file:
-
-```bash
-vim /etc/app.con
-```
-
-
+  ```bash
+    vim /etc/app.con
+    ```
 - cat command shows the contents in that file.
 - The `grep` command in a bash script is used to search for a specific pattern in files or input streams.
+- the second command recursively searches for the string "pattern" in all `.txt` files in the current directory and its subdirectories.
+- the first command Search recursively in a directory.
   
   ```shell
-# Search recursively in a directory
 grep -r "pattern" directory/
+find . -name "*.txt" -exec grep "pattern" {} \
+```
 
-#this command recursively searches for the string "pattern" in all `.txt` files in the current directory and its subdirectories.
-find . -name "*.txt" -exec grep "pattern" {} \;
+- The `wc` command in the shell is used to display the number of lines, words, and bytes contained in a file or standard input.
+  
+  ```shell
+    wc [options] [file]
 ```

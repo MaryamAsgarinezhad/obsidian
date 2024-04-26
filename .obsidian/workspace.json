@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Linux/Bash Script.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
