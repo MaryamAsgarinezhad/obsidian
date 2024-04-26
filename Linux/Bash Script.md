@@ -197,6 +197,8 @@ cd .ssh
 ls
 cat id_rsa.pub
 ```
+- we give this public key to the person who wants to download and run our image on the server.
+
 3- Load the image to the server:
 ```shell
 sudo docker load -i /home/maryam/Desktop/image_name.img
