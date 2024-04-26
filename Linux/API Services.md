@@ -18,4 +18,4 @@ Tip: Using `--host localhost` instead of `--host 0.0.0.0` in a command like `uvi
 On the other hand, using `--host 0.0.0.0` would bind the server to all available network interfaces on the machine, making it accessible from other devices on the same network. This is often used when you want to expose a service running in a Docker container to the outside world or to other containers running on the same host.
 
 
-- To connect to a server on which there is an application running, we must first connect to the host using "SSH". After connecting to the host and then if the corresponding application port is exposed
+- To connect to a server on which there is an application running, the corresponding application port should be exposed. Then ping the ip:port address on which the application is running, or open the address in your browser.
