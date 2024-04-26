@@ -19,3 +19,9 @@ COPY main.py /
 
 
 - Use the EXPOSE command when running the docker image's API server on your local environment to access the server on your localhost and the specified exposed port(not when running on on a server like kuber)
+- 
+- Pull the docker image from docker hub:
+  
+  ```shell
+  sudo docker pull "name of the container"
+```
