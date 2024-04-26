@@ -29,3 +29,24 @@ Tip: Server application connects to the postgres server by the docker-compos ser
 
 ![[Pasted image 20240426174307.png]]
 
+```shell
+psql -U postgres
+```
+This command connects to the PostgreSQL **database**(not server) using the postgres user. Replace postgres with your **database username** if it's different.
+
+```shell
+\dt
+```
+
+This command will display a list of tables in the current database along with their schema and other details.
+
+If you want to see the details of a specific table, you can use the \d command followed by the table name. For example, to see the details of a table named my_table, you would use:
+
+```shell
+\d my_table
+```
+
+To exit the psql shell and return to the regular command line, you can type:
+```shell
+
+```
