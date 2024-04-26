@@ -52,3 +52,17 @@ docker exec -it container_name /bin/bash```
 - `ports: - "8080:80"`: This maps port 8080 on the host to port 80 inside the container. So, you can access the Nginx web server running inside the container on port 8080 of your host machine.
 - `volumes: - ./html:/usr/share/nginx/html`: This mounts the `./html` directory from your host machine to `/usr/share/nginx/html` inside the container. This allows you to serve your own HTML files through Nginx.
 - `depends_on: - db`: This specifies that the `web` service depends on the `db` service. It ensures that the `db` service is started before the `web` service.
+
+
+let's say you have a Docker Compose file with multiple services, and you want to define a custom network to isolate some of these services. Here's an example:
+
+- ![[Pasted image 20240426134852.png]]
+
+
+- - There are two services defined: `frontend` and `backend`.
+- The `frontend` service exposes port 8080 on the host and uses the `frontend:latest` image.
+- The `backend` service uses the `backend:latest` image.
+- Both services are connected to a custom network called `mynetwork` using the `networks` section.
+- The `mynetwork` network is defined at the bottom of the file with the `driver` set to `bridge`. This means it will be a bridge network, which is the default network driver in Docker Compose.
+
+By defining a custom network, you can isolate the `frontend` and `backend` services from other services in your application. Additionally, containers within the same network can communicate with each other using service names as hostnames, making it easy to establish communication between services.
