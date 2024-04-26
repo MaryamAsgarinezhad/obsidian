@@ -158,9 +158,9 @@ WantedBy=multi-user.target
 
 
 - Here the host should be localhost (cause we have no container)
-- Take care for the Require field (your application pendings)
+- Take care for the Require field (your application pending)
 
-- You can change the database in which you are storing the tables in (create one and connect to it, and incluse it in )
+- You can change the database in which you are storing the tables in (create one and connect to it, and include it in your service file)
   ```shell
   sudo -su postgres
   psql
@@ -174,3 +174,8 @@ After creating the service:
 sudo systemctl enable fastapi.service
 sudo systemctl start fastapi.service
 ```
+
+
+**Running an application on a remote server:**
+
+1- download the image 
