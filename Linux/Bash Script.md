@@ -182,5 +182,12 @@ sudo systemctl start fastapi.service
 ```shell
 docker save > image_name.tar image_name
 ```
-2- connect to the server using ssh command.
+2- connect to the server using ssh command (ping then connect)
+
 - SSH Command in Linux provides a secure encrypted connection between two hosts over an insecure network.
+
+- Telnet is used to establish a connection and access a remote computer's command line interface. Also is used when ICMP command is closed on the server so we can't ping (ping uses ICMP protocol). But telnet uses TCP.
+  
+  ```shell
+  ssh -p 5566 dev@10.19.5.224
+```
