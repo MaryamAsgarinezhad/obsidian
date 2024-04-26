@@ -91,3 +91,13 @@ This file is used by Linux systems to configure DNS (Domain Name System) name re
 ```shell
 vim /etc/resolve.conf
 ```
+The /etc directory is almost used to store configuration file. For changing any config file:
+
+```shell
+nano /etc/proxychains.conf
+```
+
+Nano editor commands:
+- CTRL + O : save
+- Enter : Read only
+- CTRL + X : e
