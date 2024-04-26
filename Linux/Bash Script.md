@@ -204,5 +204,10 @@ cat id_rsa.pub
 sudo docker load -i /home/maryam/Desktop/image_name.img
 ```
 4- Run the docker-compose file
+
 5- Connect to the server's postgres client
-- Since 
+- Since the docker compose is running on the remote server, the postgres container is running there so we should connect to the remote server using postgres:
+  
+  ```shell
+  
+```
