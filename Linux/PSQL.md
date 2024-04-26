@@ -7,7 +7,10 @@ In a NoSQL database like MongoDB or Cassandra, data is also stored on disk, but 
 **Connecting to a postgres server using docker:**
 ![[Pasted image 20240426172021.png]]
 
-- User, Password, and Database Name must be the same in the two services.
+- User, Password, and Database Name must be the same in the two services. This user
+  
+  You can have multiple databases in a single PostgreSQL server. Each database is independent and isolated from the others, allowing you to manage them separately. This can be useful for organizing different sets of data, separating development and production environments, or providing multi-tenant applications.
+  
   The "DATABASE_PORT" must be the exposed port from the postgres image.
 - Must do portforwarding for the postgres service in order to **connect to it from localhost. The expose process is already done in the postgres image on port 5432.**
 - DATABASE_HOST=db : This indicates that the pg server is the db container.
@@ -48,5 +51,5 @@ If you want to see the details of a specific table, you can use the \d command f
 
 To exit the psql shell and return to the regular command line, you can type:
 ```shell
-
+\q
 ```
