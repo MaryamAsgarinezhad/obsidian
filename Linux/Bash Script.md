@@ -191,3 +191,4 @@ docker save > image_name.tar image_name
   ```shell
   ssh -p 5566 dev@10.19.5.224
 ```
+To be able to run the above command you need to have ssh access (public key)
