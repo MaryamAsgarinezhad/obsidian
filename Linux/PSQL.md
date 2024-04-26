@@ -25,7 +25,7 @@ sudo apt install postgres-client
 ```
 Then open the psql shell to run sql commands. With `psql`, you can connect to a PostgreSQL database server and perform operations such as querying data, modifying table structures, importing and exporting data, and managing users and permissions.
 
-Tip: Server application connects to the postgres server by the docker-compos service and postgres ip:port. If you want to connect to postgres locally after running the docker-compose file locally on your environment, first Exec it to enter the container and then "psql -U username" to use postgres client
+Tip: Server application connects to the postgres server by the docker-compos service and postgres ip:port. **If you want to connect to postgres locally after running the docker-compose file locally on your environment, first Exec it to enter the container and then "psql -U username" to use postgres client to run commands.**
 
 ![[Pasted image 20240426174307.png]]
 

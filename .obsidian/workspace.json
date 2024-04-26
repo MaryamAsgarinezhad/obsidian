@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/PSQL.md",
+                "file": "Linux/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/PSQL.md",
+                "file": "Linux/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/PSQL.md",
+                "file": "Linux/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/PSQL.md"
+                "file": "Linux/Untitled.md"
               }
             }
           },
@@ -174,11 +174,12 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/PSQL.md",
+    "Linux/Untitled.md",
     "Pasted image 20240426174307.png",
     "Pasted image 20240426172021.png",
     "Linux/API Services.md",
     "Linux/Docker.md",
-    "Linux/PSQL.md",
     "Pasted image 20240426161754.png",
     "Pasted image 20240426160923.png",
     "Linux/Virtual Environment.md",
