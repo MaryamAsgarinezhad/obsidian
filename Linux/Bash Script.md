@@ -68,8 +68,6 @@ grep -r "pattern" directory/
 find . -name "*.txt" -exec grep "pattern" {} \
 ```
 
-- The `wc` command in the shell is used to display the number of lines, words, and bytes contained in a file or standard input.
-  
-  ```shell
-    wc [options] [file]
-```
+
+
+The `wc` command in the shell is used to display the number of lines, words, and bytes contained in a file or standard input.
