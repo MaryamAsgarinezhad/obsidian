@@ -59,3 +59,11 @@ You can see all databases  and users created by these teo command:
 \l
 \du
 ```
+
+Tip:
+```shell
+CREATE USER myuser WITH PASSWORD 'mysecretpassword';
+  ALTER ROLE myuser CREATEDB;
+  CREATE DATABASE myDatabase;
+  \c myDatabase   (connects to your database)
+```

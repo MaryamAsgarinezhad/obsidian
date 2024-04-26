@@ -164,10 +164,8 @@ WantedBy=multi-user.target
   ```shell
   sudo -su postgres
   psql
-  CREATE USER myuser WITH PASSWORD 'mysecretpassword';
-  ALTER ROLE myuser CREATEDB;
   CREATE DATABASE myDatabase;
-  \c myDatabase
+  \c myDatabase   (connects to your database)
 ```
 
 
