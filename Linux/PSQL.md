@@ -12,7 +12,7 @@ In a NoSQL database like MongoDB or Cassandra, data is also stored on disk, but 
 - Must do portforwarding for the postgres service in order to **connect to it from localhost. The expose process is already done in the postgres image on port 5432.**
 - DATABASE_HOST=db : This indicates that the pg server is the db container.
 
-- If you don't specify the `DATABASE_URL` environment variable in the `docker-compose.yml` file, your application may not be able to connect to the PostgreSQL database. The `DATABASE_URL` variable is a convenient way to provide all the necessary connection information (username, password, host, port, and database name) in a single variable.
+- `DATABASE_URL`: Specifies the URL used to connect to the PostgreSQL database. It includes the database type (`postgresql`), username (`postgres`), password (`mysecretpassword`), host (`postgres`), port (`5432`), and database name (`postgres`).
 
 - Without the `DATABASE_URL` variable, you would need to specify each connection parameter separately (e.g., `DATABASE_USER`, `DATABASE_PASSWORD`, `DATABASE_HOST`, `DATABASE_PORT`, `DATABASE_NAME`). While this is possible, it can be more cumbersome and error-prone, especially when managing multiple environment variables for different services or configurations.
 
@@ -25,6 +25,5 @@ sudo apt install postgres-client
 ```
 Then open the psql shell to run sql commands. With `psql`, you can connect to a PostgreSQL database server and perform operations such as querying data, modifying table structures, importing and exporting data, and managing users and permissions.
 
-```shell
+![[Pasted image 20240426174307.png]]
 
-```
