@@ -19,12 +19,24 @@ COPY main.py /
 
 
 - Use the EXPOSE command when running the docker image's API server on your local environment to access the server on your localhost and the specified exposed port(not when running on on a server like kuber)
-- 
+
 - Pull the docker image from docker hub:
   
   ```shell
   sudo docker pull "name of the container"
 ```
-- 
+```shell
+docker exec -it container_name /bin/bash
+```
+
+
+
+
+
+
+
+
+
+
 
 This command is used to execute a command inside a running Docker container, used when you want to connect to the container as a user and run the command inside the container.
