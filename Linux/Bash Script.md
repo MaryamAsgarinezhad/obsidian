@@ -205,9 +205,10 @@ sudo docker load -i /home/maryam/Desktop/image_name.img
 ```
 4- Run the docker-compose file
 
-5- Connect to the server's postgres client
+5- Open postgres container to visit the database. **If the server does not have "psql" installed, connect to the server's postgres client from your local machine to check the changes applied by the application**.
+
 - Since the docker compose is running on the remote server, the postgres container is running there so we should connect to the remote server using postgres:
   
   ```shell
-  
+  psql -h "hostname" -U postgres
 ```
