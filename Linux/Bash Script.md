@@ -145,7 +145,7 @@ WorkingDirectory= "absolute path to your project"
 Environment=DATABASE_URL=postgresql://postgres:mysecretpassword@127.0.0.1:5432/postgres
 Environment=DATABASE_USER=postgres
 Environment=DATABASE_PASSWORD=mysecretpassword
-Environment=DATABASE_NAME=postgres
+Environment=DATABASE_NAME=myuser
 Environment=DATABASE_HOST=localhost
 Environment=DATABASE_PORT=5432
 ExecStart=/home/maryam/PycharmProjects/HelloDB/.venv/bin/uvicorn main:app --host 127.0.0.1 --port 8000
@@ -157,4 +157,10 @@ WantedBy=multi-user.target
 
 - Here the host should be localhost (cause we have no container)
 - Take care for the Require field (your application pendings)
-- You have to make the postgres user 
+
+- You have to make the postgres user with password (because now you don't have the "db" service to define these parameters in)
+  ```shell
+  sudo -su postgres
+  psql
+  CREATE USER myuser WITH PASSWORD 'mysecretpassword';
+```
