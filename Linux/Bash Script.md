@@ -154,6 +154,8 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 ```
+**network.target** is a systemd target unit in Linux that represents the completion of network initialization. When a service is set to start after network.target, it means that the service will wait until the network has been initialized before starting
+
 
 - Here the host should be localhost (cause we have no container)
 - Take care for the Require field (your application pendings)
@@ -165,4 +167,11 @@ WantedBy=multi-user.target
   CREATE USER myuser WITH PASSWORD 'mysecretpassword';
   ALTER ROLE myuser CREATEDB;
   createdb myDatabase
+```
+
+
+After creating the service:
+```shell
+sudo systemctl enable fastapi.service
+sudo systemctl start fastapi.service
 ```
