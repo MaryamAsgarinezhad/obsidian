@@ -66,3 +66,13 @@ let's say you have a Docker Compose file with multiple services, and you want to
 - The `mynetwork` network is defined at the bottom of the file with the `driver` set to `bridge`. This means it will be a bridge network, which is the default network driver in Docker Compose.
 
 By defining a custom network, you can isolate the `frontend` and `backend` services from other services in your application. Additionally, containers within the same network can communicate with each other using service names as hostnames, making it easy to establish communication between services.
+
+
+Portforwarding and exposing ports:
+
+1. **Implicit Exposing**:
+    
+    - When you define a service in Docker Compose without explicitly specifying ports, the ports exposed by the service in its Dockerfile (via the `EXPOSE` instruction) are automatically exposed within the Docker network created by Docker Compose.
+2. **Port Mapping**:
+    
+    - If you want to make a port of a service accessible from outside the Docker network (e.g., from the host machine), you specify port mappings in the `ports` section of the service definition in the `docker-compose.yml` file. This is similar to using the `-p` or `--publish` flag with `docker run`.
