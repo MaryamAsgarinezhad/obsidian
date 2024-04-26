@@ -142,7 +142,7 @@ Requires=postgresql.service
 User=maryam
 Group=maryam
 WorkingDirectory= "absolute path to your project"
-Environment=DATABASE_URL=postgresql://postgres:mysecretpassword@postgres:5432/postgres
+Environment=DATABASE_URL=postgresql://postgres:mysecretpassword@127.0.0.1:5432/postgres
 Environment=DATABASE_USER=postgres
 Environment=DATABASE_PASSWORD=mysecretpassword
 Environment=DATABASE_NAME=postgres
@@ -156,3 +156,4 @@ WantedBy=multi-user.target
 ```
 
 Tip: Here the host should be localhost (cause we have no container)
+- Take care for the Require field (your application pendings)
