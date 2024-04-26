@@ -128,7 +128,7 @@ sudo systemctl start postgresql  # Start PostgreSQL service
 sudo systemctl enable postgresql  # Enable PostgreSQL service to start on boot
 ```
 
-Tip: Before staring any service, you have to write a "app.service" file for it.
+Tip: Before staring any service, you have to write a "app.service" file for it. It almost acts like the dockerfile (or docker-compose)
 
 ```shell
 vim  /etc/systemd/system/myapp.service
@@ -155,5 +155,6 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-Tip: Here the host should be localhost (cause we have no container)
+- Here the host should be localhost (cause we have no container)
 - Take care for the Require field (your application pendings)
+- You have to make the postgres user 
