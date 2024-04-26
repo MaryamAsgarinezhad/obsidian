@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Linux/Docker.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -174,10 +174,11 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/API Services.md",
+    "Linux/Docker.md",
     "Pasted image 20240426134852.png",
     "Pasted image 20240426134413.png",
     "Linux/PSQL.md",
-    "Linux/Docker.md",
     "Linux/Bash Script.md",
     "Linux/Version Control.md",
     "obsidian connection to git.md",
