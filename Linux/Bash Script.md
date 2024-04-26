@@ -101,3 +101,16 @@ Nano editor commands:
 - CTRL + O : save
 - Enter : Read only
 - CTRL + X : exit
+
+Directories /etc and /bin store config and exec files of the system.
+
+where to see the location ofmy python interpreter?
+```shell
+which python3
+```
+
+where to see my system's username and groupname?
+```shell
+whoami
+groups
+```

@@ -14,3 +14,9 @@ Here's a basic overview of how Prometheus works:
     
 
 Overall, Prometheus provides a powerful and flexible monitoring solution for collecting, storing, querying, and alerting on metrics from your applications and infrastructure.
+
+- you can use the **prometheus-fastapi-instrumentator** library, which provides middleware for instrumenting your FastAPI application with Prometheus metrics.
+  
+  ```python
+  Instrumentator().instrument(app).expose(app)
+```
