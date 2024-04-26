@@ -65,5 +65,9 @@ vim /etc/app.con
 - The `grep` command in a bash script is used to search for a specific pattern in files or input streams.
   
   ```shell
-  
+# Search recursively in a directory
+grep -r "pattern" directory/
+
+#this command recursively searches for the string "pattern" in all `.txt` files in the current directory and its subdirectories.
+find . -name "*.txt" -exec grep "pattern" {} \;
 ```
