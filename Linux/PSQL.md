@@ -7,7 +7,7 @@ In a NoSQL database like MongoDB or Cassandra, data is also stored on disk, but 
 **Connecting to a postgres server using docker:**
 ![[Pasted image 20240426172021.png]]
 
-- User, Password, and Database Name must be the same in the two services. This user
+- User, Password, and Database Name must be the same in the two services. This user-pass is for the "Database Name" database.
   
   You can have multiple databases in a single PostgreSQL server. Each database is independent and isolated from the others, allowing you to manage them separately. This can be useful for organizing different sets of data, separating development and production environments, or providing multi-tenant applications.
   
