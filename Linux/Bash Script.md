@@ -160,7 +160,7 @@ WantedBy=multi-user.target
 - Here the host should be localhost (cause we have no container)
 - Take care for the Require field (your application pendings)
 
-- You have to make the postgres user with password (because now you don't have the "db" service to define these parameters in)
+- You can change the database in which you are storing the tables in (create one and connect to it, and incluse it in )
   ```shell
   sudo -su postgres
   psql
