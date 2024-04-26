@@ -8,10 +8,10 @@ In a NoSQL database like MongoDB or Cassandra, data is also stored on disk, but 
 ![[Pasted image 20240426172021.png]]
 
 - User, Password, and Database Name must be the same in the two services.
-- Must do the portforwarding for the 
+- Must do portforwarding for the postgres service in order to **connect to it from localhost. The expose process is already done in the postgres image on port 5432.**
 
 
-After pulling postgres docker imagem install the psql to connect to the postgres server as a client:
+After pulling postgres docker image, install the psql to connect to the postgres server as a client:
 
 ```shell
 sudo apt update
