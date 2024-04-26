@@ -178,4 +178,9 @@ sudo systemctl start fastapi.service
 
 **Running an application on a remote server:**
 
-1- download the image 
+1- download the image and save it on your local machine:
+```shell
+docker save > image_name.tar image_name
+```
+2- connect to the server using ssh command.
+- SSH Command in Linux provides a secure encrypted connection between two hosts over an insecure network.
