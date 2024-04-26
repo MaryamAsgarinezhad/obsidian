@@ -192,3 +192,12 @@ docker save > image_name.tar image_name
   ssh -p 5566 dev@10.19.5.224
 ```
 To be able to run the above command you need to have ssh access (public key)
+```shell
+cd .ssh
+ls
+cat id_rsa.pub
+```
+3- Load the image to the server:
+```shell
+sudo docker load -i /home/maryam/Desktop/image_name.img
+```
