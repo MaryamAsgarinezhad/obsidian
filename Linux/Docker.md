@@ -28,6 +28,8 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
 ```
 
 - `CMD`: It specifies the default command and/or parameters for the container.
+```
+```
 
 - Pull the docker image from docker hub:
   
