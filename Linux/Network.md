@@ -40,3 +40,5 @@ In summary, the IP address is used for routing packets between different network
 
 
 A LAN (Local Area Network) is a network that is confined to a relatively small geographic area, such as a single building, a group of buildings, or a campus. LANs are typically used for connecting devices in close proximity to each other, such as computers, printers, servers, and other devices, to facilitate communication and resource sharing. LANs can be wired, using Ethernet cables and switches, or wireless, using Wi-Fi technology. They are commonly used in homes, offices, schools, and other similar environments.
+
+The reason we can't use IP addresses instead of MAC addresses for local communication is that IP addresses are not directly tied to physical hardware and can change, especially in dynamic addressing environments like DHCP. Additionally, routing based on IP addresses would require additional overhead and complexity, as routers would need to maintain tables mapping IP addresses to MAC addresses for all devices on the network. Using MAC addresses for local communication allows for simpler and more efficient data transmission within the same network segment.
