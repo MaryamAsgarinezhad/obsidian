@@ -120,4 +120,16 @@ groups
 
 To run an application on your linux using services, you have to have all services installed on your local machine (you can not use any image here, but have to install services like SQL):
 
-- 
+```shell
+sudo apt update  # For Debian-based distributions (e.g., Ubuntu)
+sudo apt install postgresql postgresql-contrib 
+
+sudo systemctl start postgresql  # Start PostgreSQL service
+sudo systemctl enable postgresql  # Enable PostgreSQL service to start on boot
+```
+
+Tip: Before staring any service, you have to write a "app.service" file for it.
+
+```shell
+
+```
