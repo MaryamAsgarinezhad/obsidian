@@ -53,3 +53,9 @@ To exit the psql shell and return to the regular command line, you can type:
 ```shell
 \q
 ```
+
+You can see all databases  and users created by these teo command: 
+```shell
+\l
+\du
+```

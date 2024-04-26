@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Linux/Bash Script.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -174,11 +174,11 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "Linux/Docker.md",
+    "Linux/PSQL.md",
     "Linux/Bash Script.md",
+    "Linux/Docker.md",
     "Linux/Prometheus & Graphana.md",
     "Linux/Logging.md",
-    "Linux/PSQL.md",
     "Linux/Network.md",
     "Pasted image 20240426174307.png",
     "Pasted image 20240426172021.png",

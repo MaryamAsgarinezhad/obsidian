@@ -143,9 +143,9 @@ User=maryam
 Group=maryam
 WorkingDirectory= "absolute path to your project"
 Environment=DATABASE_URL=postgresql://postgres:mysecretpassword@127.0.0.1:5432/postgres
-Environment=DATABASE_USER=postgres
+Environment=DATABASE_USER=myuser
 Environment=DATABASE_PASSWORD=mysecretpassword
-Environment=DATABASE_NAME=myuser
+Environment=DATABASE_NAME=myDatabase
 Environment=DATABASE_HOST=localhost
 Environment=DATABASE_PORT=5432
 ExecStart=/home/maryam/PycharmProjects/HelloDB/.venv/bin/uvicorn main:app --host 127.0.0.1 --port 8000
