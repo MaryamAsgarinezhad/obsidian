@@ -143,7 +143,7 @@ User=maryam
 Group=maryam
 WorkingDirectory= "absolute path to your project"
 Environment=DATABASE_URL=postgresql://postgres:mysecretpassword@127.0.0.1:5432/postgres
-Environment=DATABASE_USER=myuser
+Environment=DATABASE_USER=postgres
 Environment=DATABASE_PASSWORD=mysecretpassword
 Environment=DATABASE_NAME=myDatabase
 Environment=DATABASE_HOST=localhost
@@ -166,7 +166,8 @@ WantedBy=multi-user.target
   psql
   CREATE USER myuser WITH PASSWORD 'mysecretpassword';
   ALTER ROLE myuser CREATEDB;
-  createdb myDatabase
+  CREATE DATABASE myDatabase;
+  \c myDatabase
 ```
 
 
