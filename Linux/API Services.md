@@ -6,3 +6,6 @@ Start a fastapi service from scratch:
     - `"--host", "0.0.0.0"`: Specifies the host on which the server will listen. In this case, it listens on all available network interfaces.
     - `"--port", "80"`: Specifies the port on which the server will listen. In this case, it listens on port 80.
     - `"--reload"`: Enables auto-reloading of the server when source files change, making it convenient for development.
+
+
+Tip: The uvicorn server will be up and ready on
