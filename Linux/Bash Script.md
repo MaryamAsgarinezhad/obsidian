@@ -86,4 +86,8 @@ The command reads the contents of `words.txt`, then filters the output to show o
 cat words.txt | grep '^[A-Z]'
 
 ```
+This file is used by Linux systems to configure DNS (Domain Name System) name resolution settings. By opening this file with Vim, you can view and modify the DNS configuration, such as specifying DNS servers and search domains.
 
+```shell
+vim /etc/resolve.conf
+```
