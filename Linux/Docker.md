@@ -30,5 +30,11 @@ COPY main.py /
 - This command is used to execute a command inside a running Docker container, used when you want to connect to the container as a user and run the command inside the container.
   
   ```shell
-docker exec -it container_name /bin/bash
-```
+docker exec -it container_name /bin/bash```
+
+- To see the running and all containers:
+  
+	  ```shell
+	  docker ps
+	  docker ps -a
+	  ```

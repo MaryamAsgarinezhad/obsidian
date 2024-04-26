@@ -100,4 +100,4 @@ nano /etc/proxychains.conf
 Nano editor commands:
 - CTRL + O : save
 - Enter : Read only
-- CTRL + X : e
+- CTRL + X : exit
