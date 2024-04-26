@@ -1,6 +1,6 @@
 Here's a basic overview of how Prometheus works:
 
-1. **Instrumentation**: You instrument your applications and services with Prometheus client libraries. These libraries expose metrics in a format that Prometheus can scrape.
+1. **Instrumentation**: Instrumenting typically involves adding Prometheus client libraries to your codebase to expose metrics that Prometheus can scrape. These libraries provide functions and methods to create and expose metrics such as counters, gauges, and histograms.
     
 2. **Scraping**: Prometheus scrapes metrics endpoints on these targets (e.g., applications, services, or servers) at regular intervals. The targets expose metrics in a format that Prometheus understands, typically over HTTP.
     
