@@ -104,7 +104,7 @@ Nano editor commands:
 
 Directories /etc and /bin store config and exec files of the system.
 
-where to see the location ofmy python interpreter?
+where to see the location of my python interpreter?
 ```shell
 which python3
 ```
@@ -131,5 +131,26 @@ sudo systemctl enable postgresql  # Enable PostgreSQL service to start on boot
 Tip: Before staring any service, you have to write a "app.service" file for it.
 
 ```shell
+vim  /etc/systemd/system/myapp.service
 
+[Unit]
+Description=FastAPI Service
+After=network.target
+Requires=postgresql.service
+
+[Service]
+User=maryam
+Group=maryam
+WorkingDirectory= "absolute path "
+Environment=DATABASE_URL=postgresql://postgres:mysecretpassword@postgres:5432/postgres
+Environment=DATABASE_USER=postgres
+Environment=DATABASE_PASSWORD=mysecretpassword
+Environment=DATABASE_NAME=postgres
+Environment=DATABASE_HOST=db
+Environment=DATABASE_PORT=5432
+ExecStart=/home/maryam/PycharmProjects/HelloDB/.venv/bin/uvicorn main:app --host 127.0.0.1 --port 8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
 ```
