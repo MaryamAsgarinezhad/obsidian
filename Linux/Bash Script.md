@@ -67,7 +67,15 @@ wlp0s20f3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 grep -r "pattern" directory/
 find . -name "*.txt" -exec grep "pattern" {} \
 ```
+```
+- The `wc` command in the shell is used to display the number of lines, words, and bytes contained in a file or standard input.
 
-
-
-The `wc` command in the shell is used to display the number of lines, words, and bytes contained in a file or standard input.
+```shell
+  
+  wc [options] [file]
+```
+- `-l`: Prints the number of lines in the file.
+- `-w`: Prints the number of words in the file.
+- `-c`: Prints the number of bytes in the file.
+- `-m`: Prints the number of characters in the file.
+- `-L`: Prints the length of the longest line in the file.
