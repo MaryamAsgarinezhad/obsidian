@@ -91,8 +91,3 @@ This file is used by Linux systems to configure DNS (Domain Name System) name re
 ```shell
 vim /etc/resolve.conf
 ```
-
-This command is used to execute a command inside a running Docker container, used when you want to connect to the container as a user and run the command inside the container.
-```shell
-`docker exec -it container_name /bin/bash`
-```

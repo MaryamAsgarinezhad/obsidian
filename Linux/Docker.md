@@ -25,3 +25,6 @@ COPY main.py /
   ```shell
   sudo docker pull "name of the container"
 ```
+- 
+
+This command is used to execute a command inside a running Docker container, used when you want to connect to the container as a user and run the command inside the container.
