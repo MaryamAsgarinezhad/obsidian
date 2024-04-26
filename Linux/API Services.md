@@ -8,4 +8,7 @@ Start a fastapi service from scratch:
     - `"--reload"`: Enables auto-reloading of the server when source files change, making it convenient for development.
 
 
-Tip: The uvicorn server will be up and ready on
+Tip: The uvicorn server will be up and ready where ever you run the above `["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]` command.
+
+If you run it on your local machine using "docker run" or directly "uvicorn main:app --host 0.0.0.0 --port 80 --reload" in the terminal or on a remote server by using "ssh" command, your server will be up there.
+
