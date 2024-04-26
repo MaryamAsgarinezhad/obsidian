@@ -43,4 +43,12 @@ docker exec -it container_name /bin/bash```
   
   **Service Definition**: Docker Compose allows you to define multiple services within your application, each with its own configuration, such as the Docker image to use, environment variables, ports to expose, volumes to mount, and dependencies on other services.
   
-  
+  Here's what each part does:
+
+  ![[Pasted image 20240426134413.png]]
+
+- `web`: This is the name of the service.
+- `image: nginx:latest`: This specifies the Docker image to use for the `web` service. In this case, it uses the latest version of the Nginx image available on Docker Hub.
+- `ports: - "8080:80"`: This maps port 8080 on the host to port 80 inside the container. So, you can access the Nginx web server running inside the container on port 8080 of your host machine.
+- `volumes: - ./html:/usr/share/nginx/html`: This mounts the `./html` directory from your host machine to `/usr/share/nginx/html` inside the container. This allows you to serve your own HTML files through Nginx.
+- `depends_on: - db`: This specifies that the `web` service depends on the `db` service. It ensures that the `db` service is started before the `web` service.
