@@ -33,7 +33,7 @@ Tip: Server application connects to the postgres server by the docker-compos ser
 ![[Pasted image 20240426174307.png]]
 
 ```shell
-psql -U postgres
+sudo -su postgres psql
 ```
 This command connects to the PostgreSQL **database**(not server) using the postgres user. Replace postgres with your **database username** if it's different.
 
