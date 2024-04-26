@@ -5,9 +5,12 @@ For example, in a relational database management system (RDBMS) like PostgreSQL 
 In a NoSQL database like MongoDB or Cassandra, data is also stored on disk, but the storage format and organization are different from traditional RDBMSs, as NoSQL databases often use document-oriented or key-value storage models.
 
 **Connecting to a postgres server using docker:**
+![[Pasted image 20240426172021.png]]
 
-```
-```
+- User, Password, and Database Name must be the same in the two services.
+- Must do the portforwarding for the 
+
+
 After pulling postgres docker imagem install the psql to connect to the postgres server as a client:
 
 ```shell
