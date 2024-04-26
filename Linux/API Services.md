@@ -40,3 +40,7 @@ connection.commit()
 cursor.close()  
 connection.close()
 ```
+
+- We define all of our variables (which may be secret) in the docker-compose file 
+- Below we show how to handle different types of client requests and take actions upon them:
+  ![[Pasted image 20240426161754.png]]
