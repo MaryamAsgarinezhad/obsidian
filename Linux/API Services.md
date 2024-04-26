@@ -10,7 +10,7 @@ Start a fastapi service from scratch:
 
 Tip: The uvicorn server will be up and ready where ever you run the above `["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]` command.
 
-If you run it on your local machine using "docker run" or directly "uvicorn main:app --host 0.0.0.0 --port 80 --reload" in the terminal or on a remote server by using "ssh" command, your server will be up there.
+If you run it on your local machine using "docker run" or directly "uvicorn main:app --host 0.0.0.0 --port 80 --reload" in the terminal **or on a remote server by using "ssh" command,** your server will be up there.
 
 
 Tip: Using `--host localhost` instead of `--host 0.0.0.0` in a command like `uvicorn main:app --host localhost --port 80 --reload` would bind the server only to the localhost interface. This means that the server would only be accessible from the same machine where it is running.
@@ -19,3 +19,6 @@ On the other hand, using `--host 0.0.0.0` would bind the server to all available
 
 
 - To connect to a server on which there is an application running, the corresponding application port should be exposed. Then ping the ip:port address on which the application is running, or open the address in your browser.
+
+
+**Writing a server application:**
