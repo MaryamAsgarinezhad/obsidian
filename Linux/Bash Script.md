@@ -62,3 +62,8 @@ vim /etc/app.con
 
 
 - cat command shows the contents in that file.
+- The `grep` command in a bash script is used to search for a specific pattern in files or input streams.
+  
+  ```shell
+  
+```
