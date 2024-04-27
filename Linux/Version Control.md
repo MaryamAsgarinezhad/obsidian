@@ -108,3 +108,6 @@ There are different **tags** for each **branch** shown below:
 **The last commit on each branch has these tags.**
 
 ![[Pasted image 20240427124902.png]]
+
+Purple: The branch is on remote server
+Yellow: 
