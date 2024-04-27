@@ -72,4 +72,5 @@ You can specify which branch do you want to create the tag from:
 
 ![[Pasted image 20240427163403.png]]
 
-Having multiple images in a version ()
+Having multiple images in a version (multiple applications):
+![[Pasted image 20240427164318.png]]
