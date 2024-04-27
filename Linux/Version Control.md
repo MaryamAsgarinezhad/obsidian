@@ -56,3 +56,5 @@ Tip: If you merge the child branch into another branch, all changes on its paren
 1- Fetch the changes to be up to date
 2- Create your branch from right parent branch
 3- push the changes
+4- Create a merge request to the parent branch, merge.
+5- Delete the previous branch
