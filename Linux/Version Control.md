@@ -42,3 +42,8 @@
   ![[Pasted image 20240427093046.png]]
 
 - You can do the merge request from the git's UI.
+
+To delete a branch in Git, you can use the following command (must be on the parent branch to delete the )
+```
+git branch -d branch_name
+```
