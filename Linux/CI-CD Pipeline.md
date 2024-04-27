@@ -34,6 +34,7 @@ Approach 2- Push the changes to a specific branch or directory, set the build pi
 
 
 - **Deploy**: to deploy the images on the kuber cluster.
+- The equivalant action instead of writing the deploy pipeline is to push "values.yaml" with the specific version to the desired branch on gitlab.
 
 There are two approaches, same as the build stage (the "only"  and "image_tag" should change, **depending on the corresponding build stage**)
 ```python
@@ -74,3 +75,5 @@ You can specify which branch do you want to create the tag from:
 
 Having multiple images in a version (multiple applications):
 ![[Pasted image 20240427164318.png]]
+
+- If there is no deployment pipeline to deploy the code on "production" (or any other) namespace, you have to push the **version** you have built directly  to that branch. If you don't have access to do so, create a merge request on that branch.
