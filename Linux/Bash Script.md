@@ -1,4 +1,4 @@
--  ifconfig command is used to check the parameters of your linux system's network interface
+-  'ifconfig' command is used to check the parameters of your linux system's network interface
 
 ```
 br-7492aa201ef9: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
@@ -63,11 +63,11 @@ wlp0s20f3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 - the second command recursively searches for the string "pattern" in all `.txt` files in the current directory and its subdirectories.
 - the first command Search recursively in a directory.
   
-  ```shell
+```shell
 grep -r "pattern" directory/
 find . -name "*.txt" -exec grep "pattern" {} \
 ```
-```
+
 - The `wc` command in the shell is used to display the number of lines, words, and bytes contained in a file or standard input.
 
 ```shell
