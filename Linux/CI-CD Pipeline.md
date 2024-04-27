@@ -65,4 +65,4 @@ Here "APP_NAME" specifies the name of the folder in "project" project that conta
    In other words, this configuration ensures that the deployment to the specified environment (`dev` in this case) will only occur when changes are merged into the `master` branch, helping to maintain a controlled deployment process tied to changes in the main development branch.
 
 
-- `only` controls when a job should run based on changes within the repository, while `trigger` defines conditions for automatic job triggering based on external events, such as branch updates. They complement each other to provide fine-grained control over pipeline execution.
+ - `only` controls when a job should run based on changes within the repository, while `trigger` defines conditions for automatic job triggering based on external events, such as branch updates. They complement each other to provide fine-grained control over pipeline execution.
