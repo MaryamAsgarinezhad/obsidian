@@ -11,9 +11,11 @@
             "id": "b2ececbd6de3a9d6",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20240426134413.png"
+                "file": "Linux/Version Control.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240426134413.png",
+                "file": "Linux/Version Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240426134413.png",
+                "file": "Linux/Version Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240426134413.png"
+                "file": "Linux/Version Control.md"
               }
             }
           },
@@ -172,6 +174,7 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240426134413.png",
     "Pasted image 20240426134852.png",
     "Pasted image 20240426160923.png",
     "Pasted image 20240426161754.png",
@@ -187,7 +190,6 @@
     "Linux/Docker.md",
     "Linux/Bash Script.md",
     "Linux/Virtual Environment.md",
-    "Pasted image 20240426134413.png",
     "obsidian connection to git.md",
     "Linux",
     "2024-04-13.md",

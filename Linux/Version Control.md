@@ -50,3 +50,9 @@ git branch -d branch_name
 ```
 
 Tip: If you merge the child branch into another branch, all changes on its parent branch will be merged too.
+
+**Applying changes on a branch, merge, deleting the branch:**
+
+1- Fetch the changes to be up to date
+2- Create your branch from right parent branch
+3- push the changes
