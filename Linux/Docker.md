@@ -28,17 +28,13 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
 ```
 
 - `CMD`: It specifies the default command and/or parameters for the container.
-```
-```
 
 - Pull/Push the docker image from docker hub:
   
-  ```shell
+```shell
   sudo docker pull "name of the container"
   sudo docker push "name of the container"
   ```
-```
-```
 
 - If you have an existing Docker image named `myapp` and you want to create a new tag named `v1.0`, you would use the following command:
 
@@ -47,8 +43,9 @@ sudo docker tag myapp myapp:v1.0
 ```
 - This command is used to execute a command inside a running Docker container, used when you want to connect to the container as a user and run the command inside the container.
   
-  ```shell
-docker exec -it container_name /bin/bash```
+```shell
+docker exec -it container_name /bin/bash
+```
 
 - To see the running and all containers:
   
