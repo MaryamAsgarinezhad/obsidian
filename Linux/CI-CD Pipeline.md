@@ -34,7 +34,7 @@ Approach 2- Push the changes to a specific branch or directory, set the build pi
 
 
 - **Deploy**: to deploy the images on the kuber cluster.
-- The equivalant action instead of writing the deploy pipeline is to push "values.yaml" with the specific version to the desired branch on gitlab.
+- The **equivalant action** instead of writing the deploy pipeline is to **push "values.yaml" with the specific version** to the desired branch on gitlab.
 
 There are two approaches, same as the build stage (the "only"  and "image_tag" should change, **depending on the corresponding build stage**)
 ```python
