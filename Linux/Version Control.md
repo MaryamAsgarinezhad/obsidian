@@ -90,6 +90,8 @@ Cherry-picking can be useful in scenarios such as:
 - Extracting specific changes from a feature branch to apply them to another branch.
 
 --------------------
+Here's a comparison of `git fetch` and `git pull`:
+
 1. `git fetch`:
     
     - `git fetch` only retrieves changes from the remote repository and updates the remote tracking branches in your local repository. It does not merge or rebase the retrieved changes into your current branch.
@@ -100,3 +102,8 @@ Cherry-picking can be useful in scenarios such as:
     - `git pull` is a combination of two operations: `git fetch` followed by `git merge` or `git rebase`. By default, it fetches changes from the remote repository and merges them into the current branch.
     - If you have local changes in your working directory, `git pull` will attempt to merge the remote changes with your local changes. If there are conflicts, you will need to resolve them.
     - `git pull` updates both the remote tracking branches and the current branch in your local repository.
+
+--------------------------------
+![[Pasted image 20240427124902.png]]
+Yellow tag: the current branch you are on
+Green tag: 
