@@ -117,4 +117,8 @@ Yellow: The branch is our current branch
 Green: The branch is available locally (we can checkout on it)
 ---------------------------------
 
-In case that merge request form branch A to B faces conflicts,
+In case that merge request form branch A to B faces conflicts, merge the B to Branch A in your IDE to resolve conflicts:
+
+![[Pasted image 20240427145954.png]]
+
+Then the merge request will be flawless.

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Version Control.md"
+                "file": "Linux/Kubernetes.md"
               }
             }
           },
@@ -174,9 +174,13 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/CI-CD Pipeline.md",
+    "Linux/Kubernetes.md",
+    "Linux/Untitled",
+    "Linux/Version Control.md",
+    "Pasted image 20240427145954.png",
     "Pasted image 20240427145244.png",
     "Linux/Virtual Environment.md",
-    "Linux/Version Control.md",
     "Pasted image 20240427124902.png",
     "Pasted image 20240426134413.png",
     "Pasted image 20240426134852.png",
