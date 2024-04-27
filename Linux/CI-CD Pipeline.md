@@ -1,8 +1,8 @@
 There are two main stages we want to automate:
 
-- Build: to build an image of our app and put in the artifactory.
+- **Build**: to build an image of our app and put in the artifactory.
   
-  1- Release a new version of your application, set the build pipeline to "tags" mode:
+Approach 1- Release a new version of your application, set the build pipeline to "tags" mode:
   ```python
   build_prod:  
   image: hamravesh.hamdocker.ir/public/darkube-cli:v1.1  
@@ -15,7 +15,7 @@ There are two main stages we want to automate:
   stage: build
 ```
 
-    2- Push the changes to a specific branch or directory, set the build pipeline to "refs" and generate automatic tags:
+Approach 2- Push the changes to a specific branch or directory, set the build pipeline to "refs" and generate automatic tags:
 
 ```python
   build_dev:  
@@ -33,6 +33,6 @@ There are two main stages we want to automate:
 ```
 
 
+- **Deploy**: to deploy the images on the kuber cluster.
 
-- Deploy: to deploy the images on the kuber cluster.
-
+There are two approaches, same 
