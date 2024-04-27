@@ -59,4 +59,44 @@ Tip: If you merge the child branch into another branch, all changes on its paren
 4- Create a merge request to the parent branch, merge.
 5- Delete the previous branch
 
+--------
+`git cherry-pick` is a Git command used to apply the changes introduced by a specific commit onto the current branch. It allows you to take a commit from one branch and apply it onto another branch, effectively copying the changes introduced by that commit.
 
+Here's how `git cherry-pick` works:
+
+1. Identify the commit you want to cherry-pick: First, you need to identify the commit you want to apply to the current branch. You can find the commit hash by using `git log` or any other Git history visualization tool.
+    
+2. Switch to the target branch: Make sure you are on the branch where you want to apply the changes.
+    
+3. Cherry-pick the commit: Use the `git cherry-pick` command followed by the commit hash of the commit you want to apply. Git will attempt to apply the changes introduced by that commit onto the current branch.
+    
+4. Resolve conflicts (if any): If there are any conflicts between the changes introduced by the cherry-picked commit and the current state of the branch, Git will pause the cherry-pick process and prompt you to resolve the conflicts manually. Once conflicts are resolved, you can continue the cherry-pick process by using `git cherry-pick --continue`.
+    
+5. Complete the cherry-pick: Once there are no more conflicts, Git will successfully apply the changes from the cherry-picked commit onto the current branch.
+    
+
+Here's the basic syntax for cherry-picking a commit:
+
+bash
+
+`git cherry-pick <commit-hash>`
+
+Alternatively, you can cherry-pick a range of commits using commit hashes or commit ranges.
+
+Cherry-picking can be useful in scenarios such as:
+
+- Applying bug fixes from one branch to another.
+- Reapplying changes that were accidentally reverted.
+- Extracting specific changes from a feature branch to apply them to another branch.
+
+--------------------
+1. `git fetch`:
+    
+    - `git fetch` only retrieves changes from the remote repository and updates the remote tracking branches in your local repository. It does not merge or rebase the retrieved changes into your current branch.
+    - It is a safe operation that does not affect your working directory or local changes.
+    - After running `git fetch`, you can inspect the changes using commands like `git log origin/<branch>` to view the commits on the remote branch.
+2. `git pull`:
+    
+    - `git pull` is a combination of two operations: `git fetch` followed by `git merge` or `git rebase`. By default, it fetches changes from the remote repository and merges them into the current branch.
+    - If you have local changes in your working directory, `git pull` will attempt to merge the remote changes with your local changes. If there are conflicts, you will need to resolve them.
+    - `git pull` updates both the remote tracking branches and the current branch in your local repository.
