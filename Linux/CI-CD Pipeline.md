@@ -71,3 +71,5 @@ In other words, this configuration ensures that the **deployment to the specifie
 You can specify which branch do you want to create the tag from:
 
 ![[Pasted image 20240427163403.png]]
+
+Having multiple images in a version ()
