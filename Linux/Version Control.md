@@ -126,4 +126,4 @@ Then the merge request will be flawless.
 
 ---------------------------------------------------
 
-Merge request merges branches not commits. So if you 
+Tip: Merge request merges branches not commits. So if you previously have a merge request, you can apply commits to that branch before it merges to the target branch.
