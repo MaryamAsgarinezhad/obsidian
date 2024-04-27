@@ -54,3 +54,4 @@ deploy_cdn_regression_dev:
     project: mse/sre/sre-ops  
     strategy: depend
 ```
+Here "APP_NAME" specifies the name of the folder in "project" project that contains your Helm files.
