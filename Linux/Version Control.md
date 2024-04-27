@@ -44,6 +44,9 @@
 - You can do the merge request from the git's UI.
 
 To delete a branch in Git, you can use the following command (**must be on its parent branch to delete it** )
+In Git, a parent branch typically refers to the branch **from which a new branch was created**.
 ```
 git branch -d branch_name
 ```
+
+Tip: If you merge the child branch into another branch, all changes on its parent branch will be merged too.
