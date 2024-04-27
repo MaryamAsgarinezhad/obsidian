@@ -30,7 +30,7 @@
 **git branch**: Lists all branches in the repository. This command shows the current branch and highlights the branch you are currently on.
 
 
-**git checkout <branch>**: Switches to the specified branch. This command allows you to move between branches in the repository.
+**git checkout -b<branch>**: Switches to the specified branch. This command allows you to move between branches in the repository.
 
 
 **git merge <branch>**: Merges the specified branch into the current branch. This command combines the changes from the specified branch into the current branch.
@@ -40,4 +40,5 @@
 
 -  When you initialize GitLab on your local machine, you may be asked to add an SSH key for authentication purposes. This is because GitLab uses SSH keys to securely authenticate and authorize your access to Git repositories hosted on GitLab.
   ![[Pasted image 20240427093046.png]]
-  
+
+- You can do the merge request from the git's UI.
