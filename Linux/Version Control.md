@@ -51,10 +51,13 @@ git branch -d branch_name
 
 Tip: If you merge the child branch into another branch, all changes on its parent branch will be merged too.
 
-**Applying changes on a branch, merge, deleting the branch:**
+**Applying changes on a branch, merge, deleting the branch (in case you don't have the access to push directly on a branch, which will be our parent branch here):**
 
 1- Fetch the changes to be up to date
 2- Create your branch from right parent branch
+
+![[Pasted image 20240427145244.png]]
+
 3- push the changes
 4- Create a merge request to the parent branch, merge.
 5- Delete the previous branch
@@ -112,3 +115,6 @@ There are different **tags** for each **branch** shown below:
 Purple: The branch is on remote server
 Yellow: The branch is our current branch
 Green: The branch is available locally (we can checkout on it)
+---------------------------------
+
+In case that merge request form branch A to B faces conflicts,
