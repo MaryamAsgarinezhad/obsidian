@@ -66,3 +66,7 @@ In other words, this configuration ensures that the **deployment to the specifie
 
 
  - `only` controls when a job should run based on changes within the repository, while `trigger` defines conditions for automatic job triggering based on external events, such as branch updates. They complement each other to provide fine-grained control over pipeline execution.
+-----------------------------
+
+You can specify which branch do you want to create the tag from:
+![[Pasted image 20240427162954.png]]
