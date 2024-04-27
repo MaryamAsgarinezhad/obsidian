@@ -110,4 +110,5 @@ There are different **tags** for each **branch** shown below:
 ![[Pasted image 20240427124902.png]]
 
 Purple: The branch is on remote server
-Yellow: 
+Yellow: The branch is our current branch
+Green: The branch is available locally (we can checkout on it)
