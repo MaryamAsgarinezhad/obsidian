@@ -31,12 +31,19 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
 ```
 ```
 
-- Pull the docker image from docker hub:
+- Pull/Push the docker image from docker hub:
   
   ```shell
   sudo docker pull "name of the container"
+  sudo docker push "name of the container"
   ```
 ```
+```
+
+- If you have an existing Docker image named `myapp` and you want to create a new tag named `v1.0`, you would use the following command:
+
+```
+sudo docker tag myapp myapp:v1.0
 ```
 - This command is used to execute a command inside a running Docker container, used when you want to connect to the container as a user and run the command inside the container.
   
