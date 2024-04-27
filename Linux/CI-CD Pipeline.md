@@ -78,4 +78,6 @@ Having multiple images in a version (multiple applications):
 
 - If there is no deployment pipeline to deploy the code on "production" (or any other) namespace, you have to push the **version** you have built directly  to that branch. If you don't have access to do so, create a merge request on that branch.
   
-  Put the right version that contains the changes **from all branches** (corresponding to each application) **to all values.yaml files** (corresponding to each application)
+  Put the right version that contains the changes **from all branches** (corresponding to each application) **to all values.yaml files** (corresponding to each application) and **push to the branch created from the prod**.
+  
+  ![[Pasted image 20240427175212.png]]
