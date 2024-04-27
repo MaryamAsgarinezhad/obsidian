@@ -218,3 +218,30 @@ Here's how SSH key authentication works:
 - When you attempt to log in to a remote system using SSH, your SSH client presents your public key to the server.
 - The server checks whether the public key presented by the client matches any of the authorized public keys stored in its configuration.
 - If there's a match, the server allows the client to authenticate without needing a password.
+
+
+The `curl` command is a versatile and widely-used command-line tool for transferring data to or from a server, using various protocols such as HTTP, HTTPS, FTP, FTPS, and more. It supports a wide range of options and features, making it suitable for various tasks like downloading files, testing APIs, performing network requests, and debugging.
+
+Here are some common use cases of the `curl` command:
+
+1. **Downloading Files**: You can use `curl` to download files from a remote server to your local system. For example:
+
+- `curl -O https://example.com/file.txt`
+    
+- **Sending HTTP Requests**: `curl` can be used to send HTTP requests and receive responses. You can specify custom HTTP methods, headers, request bodies, and more. For example:
+    
+- `curl -X POST -H "Content-Type: application/json" -d '{"key": "value"}' https://api.example.com/endpoint`
+    
+- **Testing APIs**: Developers often use `curl` to test RESTful APIs by sending requests and inspecting responses. This can help verify the behavior and functionality of an API endpoint. For example:
+    
+- `curl https://api.example.com/users`
+    
+- **Debugging Network Issues**: `curl` can be useful for diagnosing network-related problems by retrieving information from remote servers and inspecting HTTP response headers and statuses. For example:
+    
+- `curl -v https://example.com`
+    
+- **Uploading Files**: In addition to downloading files, `curl` can also upload files to a server using HTTP POST requests. For example:
+
+```perl
+curl -F "file=@localfile.txt" https://example.com/upload
+```
