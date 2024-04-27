@@ -122,3 +122,8 @@ In case that merge request form branch A to B faces conflicts, merge the B to Br
 ![[Pasted image 20240427145954.png]]
 
 Then the merge request will be flawless.
+
+
+---------------------------------------------------
+
+Merge request merges branches not commits. So if you 
