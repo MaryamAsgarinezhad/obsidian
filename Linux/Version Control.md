@@ -37,3 +37,7 @@
 
 
 **git remote**: Manages connections to remote repositories. This command shows the remote repositories configured for the current repository.
+
+-  When you initialize GitLab on your local machine, you may be asked to add an SSH key for authentication purposes. This is because GitLab uses SSH keys to securely authenticate and authorize your access to Git repositories hosted on GitLab.
+  ![[Pasted image 20240427093046.png]]
+  

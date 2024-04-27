@@ -212,3 +212,9 @@ sudo docker load -i /home/maryam/Desktop/image_name.img
   ```shell
   psql -h "hostname" -U postgres
 ```
+
+Here's how SSH key authentication works:
+
+- When you attempt to log in to a remote system using SSH, your SSH client presents your public key to the server.
+- The server checks whether the public key presented by the client matches any of the authorized public keys stored in its configuration.
+- If there's a match, the server allows the client to authenticate without needing a password.
