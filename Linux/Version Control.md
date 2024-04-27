@@ -104,6 +104,7 @@ Here's a comparison of `git fetch` and `git pull`:
     - `git pull` updates both the remote tracking branches and the current branch in your local repository.
 
 --------------------------------
+There are different **tags** for each **branch** shown below:
+**The last commit on each branch has these tags.**
+
 ![[Pasted image 20240427124902.png]]
-Yellow tag: the current branch you are on
-Green tag: 
