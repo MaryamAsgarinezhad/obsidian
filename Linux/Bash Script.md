@@ -161,7 +161,7 @@ WantedBy=multi-user.target
 - Take care for the Require field (your application pending)
 
 - You can change the database in which you are storing the tables in (create one and connect to it, and include it in your service file)
-  ```shell
+```shell
   sudo -su postgres
   psql
   CREATE DATABASE myDatabase;
@@ -209,7 +209,7 @@ sudo docker load -i /home/maryam/Desktop/image_name.img
 
 - Since the docker compose is running on the remote server, the postgres container is running there so we should connect to the remote server using postgres:
   
-  ```shell
+```shell
   psql -h "hostname" -U postgres
 ```
 

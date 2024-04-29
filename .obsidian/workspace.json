@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/Bash Script.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Version Control.md"
+                "file": "Linux/Bash Script.md"
               }
             }
           },
@@ -175,14 +175,17 @@
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
     "Linux/API Services.md",
+    "Linux/Network.md",
     "Linux/Bash Script.md",
+    "Linux/Ansible.md",
+    "Linux/Version Control.md",
+    "Linux/Untitled",
     "Linux/PSQL.md",
     "Linux/CI-CD Pipeline.md",
     "Linux/Docker.md",
     "Linux/Kubernetes.md",
     "Linux/Logging.md",
     "Pasted image 20240427175212.png",
-    "Linux/Version Control.md",
     "Pasted image 20240427164318.png",
     "Pasted image 20240427163403.png",
     "Pasted image 20240427162954.png",
@@ -192,10 +195,8 @@
     "Pasted image 20240427145244.png",
     "Pasted image 20240427145954.png",
     "Pasted image 20240426160923.png",
-    "Linux/Untitled",
     "Linux/Virtual Environment.md",
     "Linux/Prometheus & Graphana.md",
-    "Linux/Network.md",
     "obsidian connection to git.md",
     "Linux",
     "2024-04-13.md",
