@@ -130,3 +130,5 @@ Tip: Merge request merges branches not commits. So if you previously have a merg
 
 --------------------------------------
 
+View the changes in each commit:
+![[Pasted image 20240429141021.png]]
