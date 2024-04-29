@@ -131,4 +131,9 @@ Tip: Merge request merges branches not commits. So if you previously have a merg
 --------------------------------------
 
 View the changes in each commit:
+
 ![[Pasted image 20240429141021.png]]
+
+----------------------------------------
+
+Fetching and then checking out on a specific branch, equals pulling the changes in that branch.
