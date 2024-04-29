@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Bash Script.md"
+                "file": "Linux/CI-CD Pipeline.md"
               }
             }
           },
@@ -174,9 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240429140156.png",
+    "Linux/Bash Script.md",
     "Linux/API Services.md",
     "Linux/Network.md",
-    "Linux/Bash Script.md",
     "Linux/Ansible.md",
     "Linux/Version Control.md",
     "Linux/Untitled",

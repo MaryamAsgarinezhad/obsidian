@@ -81,3 +81,6 @@ Having multiple images in a version (multiple applications):
   Put the right version that contains the changes **from all branches** (corresponding to each application) **to all values.yaml files** (corresponding to each application) and **push to the branch created from the prod**.
   
   ![[Pasted image 20240427175212.png]]
+
+We define the environment variables of the kubernetes in the values.yaml file.
+- ![[Pasted image 20240429140156.png]]
