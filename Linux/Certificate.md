@@ -12,3 +12,5 @@ How to create?
 ```shell
 sudo apt install certbot
 ```
+
+This must be installed on the server you are going to create certificate for. 
