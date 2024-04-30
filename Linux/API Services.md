@@ -59,3 +59,22 @@ connection.close()
 
 
 - To add the Liveness/Readiness, create a separate endpoint.
+
+-------------------------------------------------------
+
+Here are some common use cases for Nginx:
+
+1. Web Server: Nginx can serve static content like HTML, CSS, and images, as well as dynamic content using FastCGI handlers for various languages like PHP, Python, and others.
+    
+2. Reverse Proxy: Nginx can act as a reverse proxy server, forwarding client requests to backend servers (e.g., application servers) and returning the responses to clients. This helps distribute the load among multiple servers and improves performance and security.
+    
+3. Load Balancer: Nginx can also function as a load balancer, distributing incoming traffic across multiple backend servers to improve reliability, scalability, and performance.
+    
+4. SSL/TLS Termination: Nginx can handle SSL/TLS encryption and decryption, offloading this task from backend servers to improve performance.
+    
+5. Caching: Nginx can cache static content and even dynamic content to reduce the load on backend servers and improve response times for clients.
+    
+6. Security: Nginx provides features like access control, rate limiting, and security headers to help protect web applications from attacks.
+    
+
+Overall, Nginx is a versatile and high-performance web server that is widely used to improve the performance, reliability, and security of web applications and services.
