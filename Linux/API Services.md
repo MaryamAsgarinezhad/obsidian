@@ -58,4 +58,4 @@ connection.close()
   ![[Pasted image 20240426161754.png]]
 
 
-- To add the Liveness/Readiness, create a separate endpoint 
+- To add the Liveness/Readiness, create a separate endpoint.
