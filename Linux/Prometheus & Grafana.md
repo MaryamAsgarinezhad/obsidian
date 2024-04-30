@@ -17,6 +17,15 @@ Overall, Prometheus provides a powerful and flexible monitoring solution for col
 
 - you can use the **prometheus-fastapi-instrumentator** library, which provides middleware for instrumenting your FastAPI application with Prometheus metrics.
   
-  ```python
+```python
   Instrumentator().instrument(app).expose(app)
 ```
+
+-----------------------------------------------
+
+Setting Alert: 
+
+![[Pasted image 20240430162811.png]]
+
+Call or messege in case of Alert:
+![[Pasted image 20240430162905.png]]

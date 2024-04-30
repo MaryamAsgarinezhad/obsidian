@@ -250,3 +250,19 @@ curl -F "file=@localfile.txt" https://example.com/upload
 View the services of your system:
 
 ![[Pasted image 20240430143848.png]]
+
+----------------------------------------
+
+`dig` (domain information groper) and `nslookup` (name server lookup) are both command-line tools used for querying DNS (Domain Name System) servers to obtain DNS-related information. They can be used to look up various types of DNS records for a given domain name, such as A records (IPv4 address), AAAA records (IPv6 address), MX records (mail exchange), and others.
+
+The main differences between the two are:
+
+- `dig` is more flexible and powerful, providing detailed information and supporting more query options. It is the preferred tool for DNS troubleshooting and advanced DNS queries.
+- `nslookup` is an older tool that is simpler to use but lacks some of the advanced features and flexibility of `dig`. It is still widely used and available on many systems for basic DNS lookups.
+
+Here are some common examples of how to use these commands:
+
+- `dig example.com`: Perform a basic DNS lookup for the A record of `example.com`.
+- `dig -t mx example.com`: Query the MX (mail exchange) records for `example.com`.
+- `nslookup example.com`: Perform a basic DNS lookup for the A record of `example.com` using `nslookup`.
+- `nslookup -query=mx example.com`: Query the MX records for `example.com` using `nslookup`.

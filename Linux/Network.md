@@ -51,4 +51,6 @@ The host machine, in the context of networking or virtualization, refers to the 
 
 -----------------------------------
 
-This site is used to check the IP addresses 
+This site is used to check the IP addresses allocated for a domain :
+
+![[Pasted image 20240430162452.png]]

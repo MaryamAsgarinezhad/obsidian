@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Network.md",
+                "file": "Linux/Prometheus & Grafana.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Network.md",
+                "file": "Linux/Prometheus & Grafana.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Network.md",
+                "file": "Linux/Prometheus & Grafana.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Network.md"
+                "file": "Linux/Prometheus & Grafana.md"
               }
             }
           },
@@ -174,8 +174,12 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "Linux/Certificate.md",
+    "Pasted image 20240430162905.png",
+    "Pasted image 20240430162811.png",
     "Linux/Bash Script.md",
+    "Linux/Network.md",
+    "Pasted image 20240430162452.png",
+    "Linux/Certificate.md",
     "Pasted image 20240430143848.png",
     "Pasted image 20240430143811.png",
     "Linux/API Services.md",
@@ -184,7 +188,6 @@
     "Pasted image 20240429141021.png",
     "Linux/CI-CD Pipeline.md",
     "Pasted image 20240429140156.png",
-    "Linux/Network.md",
     "Linux/Untitled",
     "Linux/PSQL.md",
     "Linux/Docker.md",
@@ -194,10 +197,8 @@
     "Pasted image 20240427164318.png",
     "Pasted image 20240427163403.png",
     "Pasted image 20240427162954.png",
-    "Pasted image 20240427162949 1.png",
-    "Pasted image 20240427162949.png",
     "Linux/Virtual Environment.md",
-    "Linux/Prometheus & Graphana.md",
+    "Linux/Prometheus & Grafana.md",
     "obsidian connection to git.md",
     "Linux",
     "2024-04-13.md",
