@@ -48,3 +48,7 @@ The reason we can't use IP addresses instead of MAC addresses for local communic
 The host machine, in the context of networking or virtualization, refers to the physical computer or server that runs one or more virtual machines (VMs) or containers. It is the actual hardware that provides computing resources such as CPU, memory, disk space, and network connectivity to the virtualized environments.
 
 - Ping is commonly used to test the availability and response time of a remote device or server. Telnet is used to establish a connection and access a remote computer's command line interface, while Ping is used to test the connectivity and response time between two devices on a network.
+
+-----------------------------------
+
+This site is used to check the IP addresses 

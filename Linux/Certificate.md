@@ -48,5 +48,9 @@ Overall, this command is attempting to automatically obtain and install an SSL/T
 ------------------------------------------
 
 ```shell
-sudo certbot --nginx -d boom.st.mci.dev
+sudo certbot certonly --manual --preferred-challenges dns -d boom.st.mci.dev
 ```
+- `certonly`: This option tells Certbot to only obtain the certificate and not install it. You'll need to manually configure your server to use the obtained certificate.
+- `--manual`: Specifies that the manual method should be used to complete the challenges. This means you'll have to manually perform the DNS challenge to prove ownership of the domain.
+- `--preferred-challenges dns`: Specifies that the DNS challenge should be used as the preferred challenge type. This requires adding a specific DNS record to your domain's DNS configuration.
+- `-d boom.st.mci.dev`: Specifies the domain for which the certificate should be issued.
