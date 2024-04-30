@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Certificate.md",
-                "mode": "source",
+                "file": "Linux/Bash Script.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Certificate.md",
+                "file": "Linux/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Certificate.md",
+                "file": "Linux/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Certificate.md"
+                "file": "Linux/Bash Script.md"
               }
             }
           },
@@ -174,8 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "Linux/Bash Script.md",
+    "Pasted image 20240430143848.png",
+    "Pasted image 20240430143811.png",
     "Linux/Certificate.md",
+    "Linux/Bash Script.md",
     "Linux/API Services.md",
     "Linux/Ansible.md",
     "Linux/Version Control.md",
@@ -195,7 +197,6 @@
     "Pasted image 20240427162949 1.png",
     "Pasted image 20240427162949.png",
     "Pasted image 20240427162948.png",
-    "Pasted image 20240427145244.png",
     "Linux/Virtual Environment.md",
     "Linux/Prometheus & Graphana.md",
     "obsidian connection to git.md",

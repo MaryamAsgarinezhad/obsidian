@@ -245,3 +245,8 @@ Here are some common use cases of the `curl` command:
 ```perl
 curl -F "file=@localfile.txt" https://example.com/upload
 ```
+
+---------------------------------------
+View the services of your system:
+
+![[Pasted image 20240430143848.png]]
