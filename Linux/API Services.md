@@ -56,3 +56,6 @@ connection.close()
 
 - Below we show how to handle different types of client requests and take actions upon them:
   ![[Pasted image 20240426161754.png]]
+
+
+- To add the Liveness/Readiness, create a separate endpoint 
