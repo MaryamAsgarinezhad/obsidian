@@ -8,3 +8,7 @@ How to create?
 
 - Buy the certificate and install it
 - Build the certificate using Certbot
+
+```shell
+sudo apt install certbot
+```
