@@ -39,6 +39,14 @@ certbot --nginx -d boom.st.mci.dev
 ```
 This command invokes Certbot, a tool used for managing SSL/TLS certificates, with the `--nginx` option, which tells Certbot to use the Nginx plugin to automate the certificate issuance and installation process for the specified domain (`boom.st.mci.dev`).
 
-The `-d` flag is used to specify the domain(s) for which the certificate should be issued. In this case, `boom.st.mci.dev` is the domain name for which the certificate is being requested.
+The `-d` flag is used to specify the domain(s) for which the certificate should be issued. In this case, `boom.st.mci.dev` is the **domain name for which the certificate is being requested.**
 
 Overall, this command is attempting to automatically obtain and install an SSL/TLS certificate for the `boom.st.mci.dev` domain using the Nginx web server.
+
+- An SSL/TLS certificate is a digital certificate that authenticates the identity of a website and encrypts information sent to the server using SSL/TLS technology. It ensures that data exchanged between the user's web browser and the website's server is encrypted and secure, protecting it from eavesdropping and tampering. SSL/TLS certificates are used to establish a secure connection and are essential for websites that handle sensitive information, such as passwords, credit card details, and personal information.
+
+------------------------------------------
+
+```shell
+sudo certbot --nginx -d boom.st.mci.dev
+```
