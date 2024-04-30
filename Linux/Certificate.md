@@ -31,3 +31,14 @@ Some common challenges include:
     
 
 By addressing these challenges and ensuring that your DNS, server, and network configurations are correctly set up, you can increase the likelihood of successfully creating and obtaining a certificate for your domain.
+
+---------------------------------------
+
+```shell
+certbot --nginx -d boom.st.mci.dev
+```
+This command invokes Certbot, a tool used for managing SSL/TLS certificates, with the `--nginx` option, which tells Certbot to use the Nginx plugin to automate the certificate issuance and installation process for the specified domain (`boom.st.mci.dev`).
+
+The `-d` flag is used to specify the domain(s) for which the certificate should be issued. In this case, `boom.st.mci.dev` is the domain name for which the certificate is being requested.
+
+Overall, this command is attempting to automatically obtain and install an SSL/TLS certificate for the `boom.st.mci.dev` domain using the Nginx web server.
