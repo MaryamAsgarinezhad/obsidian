@@ -97,3 +97,9 @@ Portforwarding and exposing ports:
 
 
 We use either "docker run -p" or "docker-compose -f "file name" up" for running an application in docker. Also use "docker build" to build an image from a docker file.
+
+
+--------------------------------
+
+
+Order of the rules in the docker file matters. More changable commands must be lower.
