@@ -1,0 +1,1 @@
+we send http requests to the kuber API when we write a kubectl command.
