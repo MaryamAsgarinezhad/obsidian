@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Kubernetes.md",
+                "file": "Linux/Prometheus & Grafana.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Kubernetes.md",
+                "file": "Linux/Prometheus & Grafana.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Kubernetes.md",
+                "file": "Linux/Prometheus & Grafana.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Kubernetes.md"
+                "file": "Linux/Prometheus & Grafana.md"
               }
             }
           },
@@ -172,8 +172,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b2ececbd6de3a9d6",
+  "active": "dd69356c00beccd5",
   "lastOpenFiles": [
+    "Linux/Kubernetes.md",
     "Linux/Docker.md",
     "Linux/Certificate.md",
     "Linux/Bash Script.md",
@@ -192,7 +193,6 @@
     "Pasted image 20240429140156.png",
     "Linux/Untitled",
     "Linux/PSQL.md",
-    "Linux/Kubernetes.md",
     "Linux/Logging.md",
     "Pasted image 20240427175212.png",
     "Pasted image 20240427164318.png",
