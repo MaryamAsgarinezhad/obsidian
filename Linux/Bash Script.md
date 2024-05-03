@@ -388,3 +388,15 @@ netstat -nltp
 this shows all active ports with their bounded IPs. you can connect to each running application by connecting to its IP and port specified here.
 
 If the ip is not localhost, you can  connect to the app from external systems too.
+
+---------------------
+
+```shell
+curl --location --request POST 'sre-api-auth.pr.mci.dev/api/v1/auth/signin' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username":"admin@mci.dev",
+    "password":"!@#123qwe"
+}'
+```
+Curl is used to convert postman command to shell commands. The above code can be executed in postman too. This specific command is used to connect to the network as ADMIN user.
