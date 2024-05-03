@@ -143,8 +143,25 @@ Obsidian configuration:
 
 - git init
 
-creates a new local git repository
+creates a new local git repository (the local .git folder which the tracking files will be stored in. We can recon)
 
 - git remote add origin https://github.com/MaryamAsgarinezhad/obsidian.git
 
 adds a new remote repository named "origin" to your local Git repository. This allows you to push your local changes to the remote repository and pull changes from it.
+
+--------------------------------------------------------------------
+
+Add new files to .git file to be tracked:
+
+![[Pasted image 20240503192415.png]]
+
+- error explanatiom :You haven't made any commits yet, so there are no changes recorded in Git.
+- Git has detected some files in your working directory that it hasn't started tracking yet. These files are listed under "Untracked files".
+
+```shell
+git add .
+git commit -m 'plugins added'
+
+now push
+```
+-------------------------------------------------------------------
