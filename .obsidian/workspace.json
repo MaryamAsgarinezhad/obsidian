@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/PSQL.md",
+                "file": "Linux/Bash Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/PSQL.md",
+                "file": "Linux/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/PSQL.md",
+                "file": "Linux/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/PSQL.md"
+                "file": "Linux/Bash Script.md"
               }
             }
           },
@@ -174,9 +174,9 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/PSQL.md",
     "Pasted image 20240503181023.png",
     "Linux/Bash Script.md",
-    "Linux/PSQL.md",
     "Linux/Docker.md",
     "Linux/Ansible.md",
     "Linux/Prometheus & Grafana.md",
@@ -197,7 +197,6 @@
     "Linux/Logging.md",
     "Pasted image 20240427175212.png",
     "Pasted image 20240427164318.png",
-    "Pasted image 20240427163403.png",
     "Linux/Virtual Environment.md",
     "obsidian connection to git.md",
     "Linux",

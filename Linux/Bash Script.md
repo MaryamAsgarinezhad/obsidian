@@ -281,3 +281,6 @@ Find the processes running on a specific (here 8000) port and killing it
 ps -aux | grep 8000
 kill -9 "process id"
 ```
+
+-----------------------------------
+man 'name of the command like su'  ---> : describes the command
