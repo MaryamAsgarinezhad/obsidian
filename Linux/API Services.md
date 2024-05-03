@@ -78,3 +78,13 @@ Here are some common use cases for Nginx:
     
 
 Overall, Nginx is a versatile and high-performance web server that is widely used to improve the performance, reliability, and security of web applications and services.
+
+----------------------------------------
+
+example for understanding the API:
+
+Fastapi/springboot/flask,.... are web servers that can provide an API for the user. 
+
+Postman/Curl,... are tools that help to communicate with that API. 
+
+Http,... are protocols used to communicate to the API.
