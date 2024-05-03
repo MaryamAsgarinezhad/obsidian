@@ -82,9 +82,9 @@ If you want to create a new user in the posdtgres shell that has access to datab
 ```postgres
 GRANT CONNECT ON DATABASE cdn_dev_cdn TO cdn_dev;
 GRANT USAGE ON SCHEMA public TO cdn_dev;
+```
 
 CONNECT privilege to allow the user to connect to the database and the USAGE privilege to allow the user to use objects in the database.
-```
 
 
 
