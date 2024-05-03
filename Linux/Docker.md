@@ -29,11 +29,11 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
 
 - `CMD`: It specifies the default command and/or parameters for the container.
 
-- Pull/Push the docker image from docker hub:
+- Pull/Push the docker image from/to the repository hub:
   
 ```shell
   sudo docker pull "name of the container"
-  sudo docker push "name of the container"
+  sudo docker push "Address of destination repository/name of the container"
   ```
 
 - If you have an existing Docker image named `myapp` and you want to create a new tag named `v1.0`, you would use the following command:

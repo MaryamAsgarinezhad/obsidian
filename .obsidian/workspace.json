@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Prometheus & Grafana.md",
-                "mode": "source",
+                "file": "Linux/Docker.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Prometheus & Grafana.md",
+                "file": "Linux/Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Prometheus & Grafana.md",
+                "file": "Linux/Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Prometheus & Grafana.md"
+                "file": "Linux/Docker.md"
               }
             }
           },
@@ -172,21 +172,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dd69356c00beccd5",
+  "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Ansible.md",
+    "Linux/Prometheus & Grafana.md",
     "Linux/Kubernetes.md",
     "Linux/Docker.md",
     "Linux/Certificate.md",
     "Linux/Bash Script.md",
     "Linux/API Services.md",
-    "Linux/Prometheus & Grafana.md",
     "Pasted image 20240430162905.png",
     "Pasted image 20240430162811.png",
     "Linux/Network.md",
     "Pasted image 20240430162452.png",
     "Pasted image 20240430143848.png",
     "Pasted image 20240430143811.png",
-    "Linux/Ansible.md",
     "Linux/Version Control.md",
     "Pasted image 20240429141021.png",
     "Linux/CI-CD Pipeline.md",
