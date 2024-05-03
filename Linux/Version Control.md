@@ -143,7 +143,7 @@ Obsidian configuration:
 
 - git init
 
-creates a new local git repository (the local .git folder which the tracking files will be stored in. We can recon)
+creates a new local git repository (the local .git folder which the tracking files will be stored in. We can reconize the files in this folder using **git status** and add files to it using **git add**)
 
 - git remote add origin https://github.com/MaryamAsgarinezhad/obsidian.git
 
@@ -165,3 +165,7 @@ git commit -m 'plugins added'
 now push
 ```
 -------------------------------------------------------------------
+
+Git authentication using ssh key:
+
+![[Pasted image 20240503193021.png]]
