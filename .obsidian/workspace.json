@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Version Control.md",
-                "mode": "preview",
+                "file": "Linux/PSQL.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/PSQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/PSQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Version Control.md"
+                "file": "Linux/PSQL.md"
               }
             }
           },
@@ -174,9 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Version Control.md",
+    "Linux/Bash Script.md",
     "Pasted image 20240503193021.png",
     "Pasted image 20240503192415.png",
-    "Linux/Bash Script.md",
     "Pasted image 20240503185226.png",
     "Pasted image 20240503182016.png",
     "Pasted image 20240503181903.png",
@@ -193,8 +194,6 @@
     "Pasted image 20240430162811.png",
     "Linux/Network.md",
     "Pasted image 20240430162452.png",
-    "Pasted image 20240430143848.png",
-    "Linux/Version Control.md",
     "Linux/CI-CD Pipeline.md",
     "Linux/Untitled",
     "Linux/Logging.md",
