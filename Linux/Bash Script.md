@@ -272,3 +272,12 @@ Here are some common examples of how to use these commands:
 The `route -n` command in Linux is used to display the kernel routing table in a format that uses numeric addresses instead of trying to resolve symbolic host names. This is particularly useful for troubleshooting or when you want to avoid the overhead of name resolution.
 
 This command is very helpful for network administration, allowing admins to quickly view and understand the routing configurations and how traffic will be directed through the network interfaces on a Linux system.
+
+--------------------------------
+
+Find the processes running on a specific (here 8000) port and killing it
+
+```shell
+ps -aux | grep 8000
+kill -9 "process id"
+```
