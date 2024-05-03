@@ -400,3 +400,5 @@ curl --location --request POST 'sre-api-auth.pr.mci.dev/api/v1/auth/signin' \
 }'
 ```
 Curl is used to convert postman command to shell commands. The above code can be executed in postman too. This specific command is used to connect to the network as ADMIN user.
+
+**The output token is used to be authorized as an admin.**

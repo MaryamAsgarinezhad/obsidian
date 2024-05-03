@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/Network.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/Network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/Network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Bash Script.md"
+                "file": "Linux/Network.md"
               }
             }
           },
@@ -174,13 +174,13 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Bash Script.md",
     "Pasted image 20240503195519.png",
     "Linux/Spring(Java).md",
     "Pasted image 20240503195213.png",
     "Pasted image 20240503195151.png",
     "Linux/PSQL.md",
     "Linux/Version Control.md",
-    "Linux/Bash Script.md",
     "Pasted image 20240503193021.png",
     "Pasted image 20240503192415.png",
     "Pasted image 20240503185226.png",
@@ -194,7 +194,6 @@
     "Linux/Kubernetes.md",
     "Linux/Certificate.md",
     "Linux/API Services.md",
-    "Pasted image 20240430162905.png",
     "Linux/Network.md",
     "Linux/CI-CD Pipeline.md",
     "Linux/Untitled",
