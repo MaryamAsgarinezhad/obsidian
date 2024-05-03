@@ -172,8 +172,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b2ececbd6de3a9d6",
+  "active": "dd69356c00beccd5",
   "lastOpenFiles": [
+    "Linux/Kubernetes.md",
+    "Linux/API Services.md",
     "Linux/Bash Script.md",
     "Pasted image 20240503202804.png",
     "Linux/Network.md",
@@ -192,9 +194,7 @@
     "Linux/Docker.md",
     "Linux/Ansible.md",
     "Linux/Prometheus & Grafana.md",
-    "Linux/Kubernetes.md",
     "Linux/Certificate.md",
-    "Linux/API Services.md",
     "Linux/CI-CD Pipeline.md",
     "Linux/Untitled",
     "Linux/Logging.md",
