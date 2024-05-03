@@ -289,4 +289,14 @@ Chmod command:
 
 ![[Pasted image 20240503181832.png]]
 ![[Pasted image 20240503181903.png]]
-![[Pasted image 20240503182016.png]]
+![[Pasted image 20240503182016.png]]------------------------------------------------
+
+**SED**
+The `sed` command in Linux stands for **Stream Editor**. It is used to perform basic text transformations on an input stream (a file or input from a pipeline).
+
+### Common Features of `sed`
+
+- **Pattern matching**: `sed` can perform actions like search and replace based on regular expressions.
+- **Filtering**: `sed` can process only the lines that match a particular pattern.
+- **Substitution**: It is most commonly used for substituting text using patterns.
+- **Editing**: Despite being non-interactive, it can perform complex edits on text files, such as inserting, deleting, or replacing lines of text.
