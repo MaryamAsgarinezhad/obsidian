@@ -312,34 +312,54 @@ The `sed` command in Linux stands for **Stream Editor**. It is used to perform b
 
 1. **Substitute and Replace**:
     
-    bash
-    
 
 - `sed 's/foo/bar/' file.txt  # Replaces the first occurrence of 'foo' with 'bar' in each line of file.txt`
     
 - **Global Replacement**:
     
-    bash
-    
 - `sed 's/foo/bar/g' file.txt  # Replaces all occurrences of 'foo' with 'bar' in each line`
     
 - **In-place Editing**:
-    
-    bash
     
 - `sed -i 's/foo/bar/g' file.txt  # Makes changes directly in file.txt, replacing 'foo' with 'bar'`
     
 - **Delete Lines**:
     
-    bash
-    
 - `sed '/pattern to match/d' file.txt  # Deletes lines that match the pattern`
     
 - **Print specific lines**:
-    
-    bash
     
 
 `sed -n '5p' file.txt  # Only prints the 5th line of the file`
 
 ---------------------------
+
+**Touch**
+
+**Creating Multiple Files**:
+
+
+- `touch file1.txt file2.txt file3.txt`
+    
+    This command creates three new files.
+    
+- **Updating the Access Time Only**:
+    
+- `touch -a filename.txt`
+    
+    This updates only the access time of `filename.txt`.
+    
+- **Setting a Specific Time**:
+    
+- `touch -t 202101011230.00 filename.txt`
+    
+    This sets the modification and access times of `filename.txt` to 12:30 PM on January 1, 2021.
+    
+- **Prevent File Creation**:
+    
+
+`touch -c non_existent_file.txt`
+
+This command will not create `non_existent_file.txt` if it does not exist; it simply does nothing and does not throw an error.
+
+-------------------------------------
