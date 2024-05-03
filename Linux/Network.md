@@ -74,3 +74,14 @@ GET:
         Should not have a request body.
     Safe and idempotent: Repeated GET requests with the same                    parameters should have the same effect and not modify the              server state.
     Example: Fetching a webpage, retrieving user profile information.
+
+
+POST:
+
+    Purpose: Submit data to be processed to a specified resource.
+    Characteristics:
+        Submits data to be processed to the server.
+        Parameters are sent in the request body.
+        Can include large amounts of data.
+    Not idempotent: Multiple identical POST requests may result in              different outcomes or modify server state differently.
+         Example: Submitting a form, uploading a file.
