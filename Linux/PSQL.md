@@ -72,4 +72,19 @@ Tip:
 
 Tip:
 
-![[Pasted image 20240503181023.png]]
+![[Pasted image 20240503181023.png]]--------------------------------------------------
+
+Tip: Every linux application has a default user, by which you can connect to the app's shell. 
+
+Postgres's default user is called "postgres", and has access to every database.
+If you want to create a new user in the posdtgres shell that has access to databases, you need to grant that access.
+
+```postgres
+GRANT CONNECT ON DATABASE cdn_dev_cdn TO cdn_dev;
+GRANT USAGE ON SCHEMA public TO cdn_dev;
+
+CONNECT privilege to allow the user to connect to the database and the USAGE privilege to allow the user to use objects in the database.
+```
+
+
+
