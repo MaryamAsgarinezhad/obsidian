@@ -363,3 +363,11 @@ The `sed` command in Linux stands for **Stream Editor**. It is used to perform b
 This command will not create `non_existent_file.txt` if it does not exist; it simply does nothing and does not throw an error.
 
 -------------------------------------
+
+The `echo` command in Linux is used primarily to display lines of text or string variables to the terminal (stdout). It's a fundamental command in shell scripting and programming in Unix-like systems, frequently employed for outputting messages, managing output for logs, or for concatenating strings.
+
+----------------------------------------
+
+- move a file to a new directory and then view its conditions with datails:
+  
+  ![[Pasted image 20240503185226.png]]
