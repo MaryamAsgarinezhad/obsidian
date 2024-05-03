@@ -137,3 +137,14 @@ View the changes in each commit:
 ----------------------------------------
 
 Fetching and then checking out on a specific branch, equals pulling the changes in that branch.
+
+-----------------------------------------
+Obsidian configuration:
+
+- git init
+
+creates a new local git repository
+
+- git remote add origin https://github.com/MaryamAsgarinezhad/obsidian.git
+
+adds a new remote repository named "origin" to your local Git repository. This allows you to push your local changes to the remote repository and pull changes from it.
