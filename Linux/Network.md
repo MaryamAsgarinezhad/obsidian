@@ -85,3 +85,29 @@ POST:
         Can include large amounts of data.
     Not idempotent: Multiple identical POST requests may result in              different outcomes or modify server state differently.
          Example: Submitting a form, uploading a file.
+
+PUT:
+
+Purpose: Update an existing resource or create a new resource if it does not exist.
+    Characteristics:
+        Updates an existing resource with the provided data or creates a new resource if it does not exist.
+        The entire resource is replaced with the provided data.
+        Should be idempotent: Repeated PUT requests should have the same effect.
+    Example: Updating a user's profile, uploading a new version of a file.
+
+PATCH:
+
+Purpose: Partially update an existing resource.
+    Characteristics:
+        Applies partial modifications to an existing resource.
+        Only the specified fields in the request body are updated.
+        Should be idempotent: Repeated PATCH requests with the same parameters should have the same effect.
+    Example: Updating specific fields of a user's profile, modifying parts of a document.
+
+DELETE:
+
+    Purpose: Delete the specified resource.
+    Characteristics:
+        Removes the specified resource from the server.
+        Should be idempotent: Repeated DELETE requests should have the same effect.
+    Example: Deleting a user account, removing a file.
