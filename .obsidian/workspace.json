@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Spring(Java).md",
-                "mode": "source",
+                "file": "Linux/Bash Script.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Spring(Java).md",
+                "file": "Linux/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Spring(Java).md",
+                "file": "Linux/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Spring(Java).md"
+                "file": "Linux/Bash Script.md"
               }
             }
           },
@@ -174,10 +174,11 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240503195519.png",
+    "Linux/Spring(Java).md",
     "Pasted image 20240503195213.png",
     "Pasted image 20240503195151.png",
     "Linux/PSQL.md",
-    "Linux/Spring(Java).md",
     "Linux/Version Control.md",
     "Linux/Bash Script.md",
     "Pasted image 20240503193021.png",
@@ -194,7 +195,6 @@
     "Linux/Certificate.md",
     "Linux/API Services.md",
     "Pasted image 20240430162905.png",
-    "Pasted image 20240430162811.png",
     "Linux/Network.md",
     "Linux/CI-CD Pipeline.md",
     "Linux/Untitled",

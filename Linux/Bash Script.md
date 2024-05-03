@@ -377,3 +377,14 @@ Install a new .deb app:
 ```shell
 Dpkg -i "file.deb"
 ```
+--------------------------------------------
+
+![[Pasted image 20240503195519.png]]
+
+```shell
+netstat -nltp
+```
+
+this shows all active ports with their bounded IPs. you can connect to each running application by connecting to its IP and port specified here.
+
+If the ip is not localhost, you can  connect to the app from external systems too.
