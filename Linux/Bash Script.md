@@ -284,3 +284,9 @@ kill -9 "process id"
 
 -----------------------------------
 man 'name of the command like su'  ---> : describes the command
+
+Chmod command:
+
+![[Pasted image 20240503181832.png]]
+![[Pasted image 20240503181903.png]]
+![[Pasted image 20240503182016.png]]
