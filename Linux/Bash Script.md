@@ -266,3 +266,9 @@ Here are some common examples of how to use these commands:
 - `dig -t mx example.com`: Query the MX (mail exchange) records for `example.com`.
 - `nslookup example.com`: Perform a basic DNS lookup for the A record of `example.com` using `nslookup`.
 - `nslookup -query=mx example.com`: Query the MX records for `example.com` using `nslookup`.
+
+---------------------------------------
+
+The `route -n` command in Linux is used to display the kernel routing table in a format that uses numeric addresses instead of trying to resolve symbolic host names. This is particularly useful for troubleshooting or when you want to avoid the overhead of name resolution.
+
+This command is very helpful for network administration, allowing admins to quickly view and understand the routing configurations and how traffic will be directed through the network interfaces on a Linux system.
