@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/Version Control.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/Version Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/Version Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Bash Script.md"
+                "file": "Linux/Version Control.md"
               }
             }
           },
@@ -174,13 +174,13 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Bash Script.md",
     "Pasted image 20240503185226.png",
     "Pasted image 20240503182016.png",
     "Pasted image 20240503181903.png",
     "Pasted image 20240503181832.png",
     "Linux/PSQL.md",
     "Pasted image 20240503181023.png",
-    "Linux/Bash Script.md",
     "Linux/Docker.md",
     "Linux/Ansible.md",
     "Linux/Prometheus & Grafana.md",
@@ -194,7 +194,6 @@
     "Pasted image 20240430143848.png",
     "Pasted image 20240430143811.png",
     "Linux/Version Control.md",
-    "Pasted image 20240429141021.png",
     "Linux/CI-CD Pipeline.md",
     "Linux/Untitled",
     "Linux/Logging.md",

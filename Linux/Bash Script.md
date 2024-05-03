@@ -371,3 +371,9 @@ The `echo` command in Linux is used primarily to display lines of text or string
 - move a file to a new directory and then view its conditions with datails:
   
   ![[Pasted image 20240503185226.png]]
+----------------------------------
+
+Install a new .deb app:
+```shell
+Dpkg -i "file.deb"
+```
