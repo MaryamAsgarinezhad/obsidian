@@ -62,3 +62,6 @@ This site is used to check the IP addresses allocated for a domain :
 Postman is a popular tool used for API development and testing. It provides a user-friendly interface for sending HTTP requests to web servers and inspecting the responses.
 
 API Testing: Postman allows developers to easily test APIs by sending various types of HTTP requests (such as GET, POST, PUT, DELETE) to endpoints and observing the responses. This helps ensure that APIs function correctly and handle different scenarios as expected.
+
+---------------------------------------------------
+
