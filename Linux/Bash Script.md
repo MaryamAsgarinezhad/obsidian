@@ -300,3 +300,46 @@ The `sed` command in Linux stands for **Stream Editor**. It is used to perform b
 - **Filtering**: `sed` can process only the lines that match a particular pattern.
 - **Substitution**: It is most commonly used for substituting text using patterns.
 - **Editing**: Despite being non-interactive, it can perform complex edits on text files, such as inserting, deleting, or replacing lines of text.
+
+
+### Flags and Options
+
+- `-i`: Edits files in-place (actually changes the original files).
+- `-e`: Allows the use of multiple editing commands in a single run.
+- `-n`: Suppresses automatic printing of pattern space (sed normally outputs all input data if not explicitly suppressed).
+
+### Example Commands
+
+1. **Substitute and Replace**:
+    
+    bash
+    
+
+- `sed 's/foo/bar/' file.txt  # Replaces the first occurrence of 'foo' with 'bar' in each line of file.txt`
+    
+- **Global Replacement**:
+    
+    bash
+    
+- `sed 's/foo/bar/g' file.txt  # Replaces all occurrences of 'foo' with 'bar' in each line`
+    
+- **In-place Editing**:
+    
+    bash
+    
+- `sed -i 's/foo/bar/g' file.txt  # Makes changes directly in file.txt, replacing 'foo' with 'bar'`
+    
+- **Delete Lines**:
+    
+    bash
+    
+- `sed '/pattern to match/d' file.txt  # Deletes lines that match the pattern`
+    
+- **Print specific lines**:
+    
+    bash
+    
+
+`sed -n '5p' file.txt  # Only prints the 5th line of the file`
+
+---------------------------
