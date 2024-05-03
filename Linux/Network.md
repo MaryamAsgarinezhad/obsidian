@@ -65,3 +65,12 @@ API Testing: Postman allows developers to easily test APIs by sending various ty
 
 ---------------------------------------------------
 
+GET:
+
+    Purpose: Retrieve data from the server.
+    Characteristics:
+        Requests data from a specified resource.
+        Parameters are sent in the URL (query string).
+        Should not have a request body.
+    Safe and idempotent: Repeated GET requests with the same                    parameters should have the same effect and not modify the              server state.
+    Example: Fetching a webpage, retrieving user profile information.
