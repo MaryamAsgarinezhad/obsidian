@@ -405,3 +405,11 @@ Curl is used to convert postman command to shell commands. The above code can be
 
 
 ![[Pasted image 20240503202804.png]]this is the site that we can desemble the auth code. the Iat and exp are epoch times
+
+--------------------------------
+```python
+pip freeze > requirements.txt
+```
+rewrites all requiremnts defined in .venv to the txt file.
+
+----------------------

@@ -103,3 +103,7 @@ We use either "docker run -p" or "docker-compose -f "file name" up" for running 
 
 
 Order of the rules in the docker file matters. More changable commands must be lower.
+
+The **working directory** is where the job's commands and scripts are executed.
+
+--------------------------------
