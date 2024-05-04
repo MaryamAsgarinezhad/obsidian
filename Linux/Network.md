@@ -114,3 +114,6 @@ DELETE:
 
 ------------------------
 ![[Pasted image 20240504135714.png]]equivalent code for postman in different languages
+
+-------------------------
+![[Pasted image 20240504154013.png]]route conflict solve (docker network and repo network)
