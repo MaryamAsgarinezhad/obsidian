@@ -50,8 +50,8 @@ This exposes port 80 of the container (port) to be visibleas port 8080 (target p
 
 "Port" should be similar to the port you have run your API service on (if you wanna expose it), and target port is what you should bind your localhost to.
 
-
+![[Pasted image 20240504191401.png]]
 Portforwarding is through this command:
 ```shell
-kubectl port-forward svc/'name of the service' 8080:80
+kubectl port-forward svc/'name of the service' 8000:8080
 ```

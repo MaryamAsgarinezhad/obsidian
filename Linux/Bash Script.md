@@ -443,3 +443,25 @@ ls -l outputs/: shows files in the directory with the owner of the fie
 If we execute the command by which file "x" creates using "sudo", access of that file is granted to the super user.
 
 ----------------------
+important shell commands: 
+
+netstat -ntupl |grep 8000
+kill -9 .process N.O.
+
+- The command "netstat -ntupl | grep 8000" is used to list all **active network connections and listening ports**, then filter the output to show only those associated with port 8000.
+
+- |: This is a pipe symbol used to pass the output of the netstat command to the next command.
+——————————————
+ps aux
+
+- The command ps aux is a Linux command used to display information about all **running processes** on the system. 
+
+- ps: Stands for "process status." It is used to view information about currently running processes.
+——————————————
+systemctl status h
+cd /etc/systemd/system/ ls
+cat fastapi.service
+
+اینو که باز کردیم service بالا بود و Restart=always بود واسه همین هر چقدر process  رو kill میکردیم میومد بالا باز
+
+sudo systemctl stop fastapi.service

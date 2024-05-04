@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Kubernetes.md",
+                "file": "Linux/Bash Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Kubernetes.md",
+                "file": "Linux/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Kubernetes.md",
+                "file": "Linux/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Kubernetes.md"
+                "file": "Linux/Bash Script.md"
               }
             }
           },
@@ -174,6 +174,8 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Kubernetes.md",
+    "Pasted image 20240504191401.png",
     "Linux/Docker.md",
     "Linux/Prometheus & Grafana.md",
     "Pasted image 20240504171914.png",
@@ -190,8 +192,6 @@
     "Pasted image 20240504164105.png",
     "Pasted image 20240504163545.png",
     "Linux/Network.md",
-    "Pasted image 20240504154013.png",
-    "Linux/Kubernetes.md",
     "Linux/API Services.md",
     "Linux/Spring(Java).md",
     "Linux/PSQL.md",
