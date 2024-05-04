@@ -100,3 +100,10 @@ To create those replicas you create the deployment.yaml file where in you specif
 
 Tip: Deployment is used for stateless sets 
 For **Stateful apps** we use a resource called **StatefulSet** (Like DB's)
+
+![[Pasted image 20240504202903.png]]
+
+----------------
+**A node is a physical or virtual machine (VM)** that serves as a worker in a Kubernetes cluster. Each node runs the Kubernetes runtime components, such as the kubelet and container runtime (e.g., Docker, containerd).
+
+Nodes are the cluster **servers** that actually do the work, that'swhy called worker nodes.
