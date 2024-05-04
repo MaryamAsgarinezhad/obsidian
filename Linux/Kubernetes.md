@@ -123,6 +123,13 @@ at the end of the day, Kubelet is responsible for taking the configuration and r
 ![[Pasted image 20240504203659.png]]
 All managing processes are done by master nodes using four processes that run on every master node
 
-1- API Server: is a cluster gateway, you interact it as a client using UI interface, command line tool or a certain API when you want to deploy a new application. It also acts as a gateway authenticator which ensures only authenticated users can access the cluster. It verifies your request and then forwards it to the Scheduler to perform it.
+1- API Server: is a cluster gateway, **you interact it as a client** using UI interface, command line tool or a certain API when you want to deploy a new application. It also acts as a gateway authenticator which ensures **only authenticated users** can access the cluster. It verifies your request and then forwards it to the Scheduler to perform it.
 
-2- Scheduler: Decides what node the user's commands is going to be performed on in an intelligent way considering the available resources. But actually the Kubelet will execute the command said by user and decided by the Scheduler.
+2- Scheduler: **Decides what node** the user's commands is going to be performed on in an intelligent way **considering the available resources**. But actually the **Kubelet will execute** the command said by user and decided by the Scheduler.
+
+3- Controller Manager: Detects the **cluster state changes** (like pod crashes) and recovers the cluster state as soon as possible. it makes a **request to the scheduler** to reschedule the dead pods ( decide based on the resource calculation which worker nodes should start those pods again, and request the corresponding kubelets on those nodes to restart the pods.)
+
+4- etcd: key value store, cluster brain! Every chainge on the cluster state **will be saved on** it. Scheduler and Controller Manager will use its data to know :
+
+![[Pasted image 20240504204231.png]]
+- data base information will not be saved on etcd
