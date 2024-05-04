@@ -82,6 +82,8 @@ Kuber components:
   
 - Secret: Putting credentials like passwords or secret important in plain text format in configmap is not secure. Secret is just like Config map, used to store secret data (base64 encoded format)
   You could use 'env variables' in the manifest file too.
+
+- replica set is managing the replicas of a pod, but we only work with deployment.
   
 - Ingress: provides secure protocol and domain name for accessing internal lusters from external network
 
@@ -142,3 +144,23 @@ Minicube: its a one node cluster that the master processes and the worker proces
 It runs on your laptop through a virtual box (to abstract the resources of your laptop for example)
 
 You can use minicube to test the kbnts on your local setup. After setting up this mini cluster, you need some way to interact with that cluster. Now you need kubectl.
+
+Kubectl is one of the command line tools to communicate with the API server.
+
+The worker processes on the minicube node will make kubectl commands happen.
+
+-------------------------
+►  Get status of different components
+```shell
+kubectl get nodes/pods/services/
+```
+
+---------------------------
+►  create a pod/deployment
+```shell
+kubectl create "every component"
+```
+we cannot create pods but we have an abstraction layer over that called the deplyment
+```shell
+kubectl create deployment NAME —image=image
+```
