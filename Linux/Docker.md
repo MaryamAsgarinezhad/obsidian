@@ -114,4 +114,4 @@ The content that is running in the dockerfile, including the CMD, is running in 
 -------------------------------
 - Exposing the container port, on which the application is running, is necessary to make portforwarding possible.
 
-- run the "dockerfile" to build the image, use "docker-compose up" or "docker run" ro run that image
+- run the "dockerfile" to build the image, use "docker-compose up" or "docker run" to run that image

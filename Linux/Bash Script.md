@@ -433,3 +433,13 @@ groups $USER (here should show the 'docker" group)
 The `pwd` command in Unix-like operating systems, including Linux, stands for "print working directory." It outputs the full pathname of the current working directory, which indicates where you are currently located within the filesystem.
 
 -----------------------------
+rm -r outputs: deletes the file
+
+sudo rm -r outputs: deletes the file when the owner is root
+
+ls -l outputs/: shows files in the directory with the owner of the fie
+
+------------------------
+If we execute the command by which file "x" creates using "sudo", access of that file is granted to the super user.
+
+----------------------
