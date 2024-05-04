@@ -44,3 +44,6 @@ Manage Releases: After installing a chart, Helm creates a release instance on yo
 Create Your Own Charts (Optional): If you're developing an application, you can create your own Helm charts to package and deploy it. Helm provides a templating engine for generating Kubernetes manifests, making it easier to manage complex applications.
 
 ![[Pasted image 20240504141846.png]]
+
+-----------------------
+This exposes port 80 of the container (port) to be visibleas port 8080 (target port). This is 
