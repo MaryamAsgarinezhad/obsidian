@@ -101,6 +101,9 @@ View the log and container terminal of a pod in argocd:
 ----------------------
 ![[Pasted image 20240504200033.png]]This specifies the tag we give to the application's new version. 
 
-![[Pasted image 20240504200119.png]]this is the automatic tag and will be added automatically to the 'version' part of the values.yaml file.
+![[Pasted image 20240504200119.png]]this is the automatic tag and will be added automatically to the 'version' part of the values.yaml file, if this tag is specified in the deployment stage of the pipeline code.
 
 ----------------
+This stage is equivalent to pushing the application's new version to the git-ops project. It is automated.
+
+![[Pasted image 20240504200422.png]]

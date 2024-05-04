@@ -55,3 +55,6 @@ Portforwarding is through this command:
 ```shell
 kubectl port-forward svc/'name of the service' 8000:8080
 ```
+
+----------------------------
+Kuber is a 

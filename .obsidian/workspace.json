@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/CI-CD Pipeline.md",
+                "file": "Linux/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/CI-CD Pipeline.md",
+                "file": "Linux/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/CI-CD Pipeline.md",
+                "file": "Linux/Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/CI-CD Pipeline.md"
+                "file": "Linux/Kubernetes.md"
               }
             }
           },
@@ -174,6 +174,8 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/CI-CD Pipeline.md",
+    "Pasted image 20240504200422.png",
     "Pasted image 20240504200119.png",
     "Pasted image 20240504200033.png",
     "Pasted image 20240504195855.png",
@@ -187,11 +189,8 @@
     "Pasted image 20240504171738.png",
     "Pasted image 20240504171344.png",
     "Pasted image 20240504170040.png",
-    "Linux/CI-CD Pipeline.md",
     "Pasted image 20240504165125.png",
     "Linux/Version Control.md",
-    "Pasted image 20240504164840.png",
-    "Pasted image 20240504164709.png",
     "Linux/Network.md",
     "Linux/API Services.md",
     "Linux/Spring(Java).md",
