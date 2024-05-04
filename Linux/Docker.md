@@ -107,3 +107,9 @@ Order of the rules in the docker file matters. More changable commands must be l
 The **working directory** is where the job's commands and scripts are executed.
 
 --------------------------------
+The content that is running in the dockerfile, including the CMD, is running in the docker container (which is the same as an independent OS) and is not on local.
+
+-------------------------------
+- Exposing the container port, on which the application is running, is necessary to make portforwarding possible.
+
+- run the "dockerfile" to build the image, use "docker-compose up" or "docker run" ro run that image
