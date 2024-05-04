@@ -102,8 +102,27 @@ Tip: Deployment is used for stateless sets
 For **Stateful apps** we use a resource called **StatefulSet** (Like DB's)
 
 ![[Pasted image 20240504202903.png]]
+Communication between nodes are done by services. It catches the requests directed to the pod and forwards it to the respective pod.  
+
+**Kube Proxy** is responsible for forwarding the request from services to pods in a way that the network overload is controlled. (for example send to the nearest pod)
 
 ----------------
 **A node is a physical or virtual machine (VM)** that serves as a worker in a Kubernetes cluster. Each node runs the Kubernetes runtime components, such as the kubelet and container runtime (e.g., Docker, containerd).
 
 Nodes are the cluster **servers** that actually do the work, that'swhy called worker nodes.
+
+There are 3 processes  that must be installed on any worker node (or node):
+
+1- Container runtime: It is responsible for managing the execution and lifecycle of containers within the Kubernetes environment.
+
+2- Kubelet: The Kubelet is responsible for managing the deployment of pods to Kubernetes nodes.It receives commands from the API server and instructs the container runtime to start or stop containers as needed. (it is a process of kubernetes itself, Unlike the container runtime)
+
+at the end of the day, Kubelet is responsible for taking the configuration and running pods with a container inside and **allocating resources to of the node to the pods** (by interacting with container and nodes)
+
+------------------------------
+![[Pasted image 20240504203659.png]]
+All managing processes are done by master nodes using four processes that run on every master node
+
+1- API Server: is a cluster gateway, you interact it as a client using UI interface, command line tool or a certain API when you want to deploy a new application. It also acts as a gateway authenticator which ensures only authenticated users can access the cluster. It verifies your request and then forwards it to the Scheduler to perform it.
+
+2- Scheduler: Decides what node the user's commands is going to be performed on in an intelligent way considering the available resources. But actually the Kubelet will execute the command said by user and decided by the Scheduler.
