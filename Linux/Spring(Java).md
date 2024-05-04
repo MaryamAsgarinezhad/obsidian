@@ -14,3 +14,7 @@
 ![[Pasted image 20240503195151.png]]TokenSingleUrlModel is the object that stores the input arguments we define in our request's body. (Ctrl + Enter)
 
 ![[Pasted image 20240503195213.png]]Here is all the arguments you need to define in your http request's body as the function input  arguments
+
+--------------------------
+spring boot services
+![[Pasted image 20240504125149.png]]
