@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Bash Script.md"
+                "file": "Linux/Docker.md"
               }
             }
           },
@@ -174,13 +174,14 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240504170040.png",
+    "Linux/Bash Script.md",
     "Linux/CI-CD Pipeline.md",
     "Pasted image 20240504165125.png",
     "Linux/Version Control.md",
     "Pasted image 20240504164840.png",
     "Pasted image 20240504164709.png",
     "Pasted image 20240504164105.png",
-    "Linux/Bash Script.md",
     "Pasted image 20240504163545.png",
     "Linux/Network.md",
     "Pasted image 20240504154013.png",

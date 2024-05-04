@@ -104,7 +104,9 @@ We use either "docker run -p" or "docker-compose -f "file name" up" for running 
 
 Order of the rules in the docker file matters. More changable commands must be lower.
 
-The **working directory** is where the job's commands and scripts are executed.
+The **working directory** is where the job's commands and scripts are executed. For example, here is the container of a pod where we printed the workdir. Since in the dockerfile we defined it as root (/), / is printed:
+
+![[Pasted image 20240504170040.png]]
 
 --------------------------------
 The content that is running in the dockerfile, including the CMD, is running in the docker container (which is the same as an independent OS) and is not on local.
