@@ -34,3 +34,13 @@ Call or messege in case of Alert:
 to create graphana, this should be true  
 then push to sre-ops
 -----------------------
+PromQL (Prometheus Query Language) expression is used to query and aggregate time series data from Prometheus metrics.
+
+sum: sums the metric on different VMs that are running the application and receive the metrics
+
+rate: units by the time
+
+-------------------------------------------
+
+![[Pasted image 20240504134505.png]]
+when executed with no promql command, the metric variables will be shown.
