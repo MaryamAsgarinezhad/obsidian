@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Version Control.md"
+                "file": "Linux/CI-CD Pipeline.md"
               }
             }
           },
@@ -174,9 +174,9 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Version Control.md",
     "Linux/Kubernetes.md",
     "Pasted image 20240504141846.png",
-    "Linux/Version Control.md",
     "Pasted image 20240504140540.png",
     "Linux/Prometheus & Grafana.md",
     "Pasted image 20240504140315.png",
