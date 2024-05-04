@@ -185,3 +185,10 @@ Add a new file to the .git folder:
 Online gitlab IDE for edition and commiting:
 
 ![[Pasted image 20240504164105.png]]
+
+---------------------
+This command shows the history of your commits, along with the tag of the image pushed:
+
+![[Pasted image 20240504164709.png]]
+------------------------------
+
