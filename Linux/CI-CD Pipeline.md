@@ -96,3 +96,11 @@ View the log and container terminal of a pod in argocd:
 ![[Pasted image 20240504165125.png]]
 
 ------------------
+![[Pasted image 20240504195855.png]]this section is used for debbuging or testing the pipeline
+
+----------------------
+![[Pasted image 20240504200033.png]]This specifies the tag we give to the application's new version. 
+
+![[Pasted image 20240504200119.png]]this is the automatic tag and will be added automatically to the 'version' part of the values.yaml file.
+
+----------------

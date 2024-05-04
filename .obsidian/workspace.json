@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Bash Script.md"
+                "file": "Linux/CI-CD Pipeline.md"
               }
             }
           },
@@ -174,6 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240504200119.png",
+    "Pasted image 20240504200033.png",
+    "Pasted image 20240504195855.png",
+    "Linux/Bash Script.md",
     "Linux/Kubernetes.md",
     "Pasted image 20240504191401.png",
     "Linux/Docker.md",
@@ -182,15 +186,12 @@
     "Linux/Liveness - Readiness.md",
     "Pasted image 20240504171738.png",
     "Pasted image 20240504171344.png",
-    "Linux/Bash Script.md",
     "Pasted image 20240504170040.png",
     "Linux/CI-CD Pipeline.md",
     "Pasted image 20240504165125.png",
     "Linux/Version Control.md",
     "Pasted image 20240504164840.png",
     "Pasted image 20240504164709.png",
-    "Pasted image 20240504164105.png",
-    "Pasted image 20240504163545.png",
     "Linux/Network.md",
     "Linux/API Services.md",
     "Linux/Spring(Java).md",
