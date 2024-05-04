@@ -111,3 +111,6 @@ DELETE:
         Removes the specified resource from the server.
         Should be idempotent: Repeated DELETE requests should have the same effect.
     Example: Deleting a user account, removing a file.
+
+------------------------
+![[Pasted image 20240504135714.png]]equivalent code for postman in different languages
