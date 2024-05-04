@@ -190,5 +190,9 @@ Online gitlab IDE for edition and commiting:
 This command shows the history of your commits, along with the tag of the image pushed:
 
 ![[Pasted image 20240504164709.png]]
-------------------------------
 
+------------------------------
+pull: fetch + update
+![[Pasted image 20240504164840.png]]
+
+------------------

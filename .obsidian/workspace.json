@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/Bash Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Version Control.md",
+                "file": "Linux/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Version Control.md"
+                "file": "Linux/Bash Script.md"
               }
             }
           },
@@ -174,9 +174,11 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "Pasted image 20240504164709.png",
     "Linux/CI-CD Pipeline.md",
+    "Pasted image 20240504165125.png",
     "Linux/Version Control.md",
+    "Pasted image 20240504164840.png",
+    "Pasted image 20240504164709.png",
     "Pasted image 20240504164105.png",
     "Linux/Bash Script.md",
     "Pasted image 20240504163545.png",
@@ -190,9 +192,6 @@
     "Pasted image 20240504140315.png",
     "Linux/API Services.md",
     "Pasted image 20240504140212.png",
-    "Pasted image 20240504135714.png",
-    "Pasted image 20240504134505.png",
-    "Pasted image 20240504134319.png",
     "Linux/Spring(Java).md",
     "Linux/PSQL.md",
     "Linux/Ansible.md",

@@ -428,3 +428,8 @@ groups $USER (here should show the 'docker" group)
 
  sudo usermod -aG docker $USER
 ```
+
+-----------------------
+The `pwd` command in Unix-like operating systems, including Linux, stands for "print working directory." It outputs the full pathname of the current working directory, which indicates where you are currently located within the filesystem.
+
+-----------------------------

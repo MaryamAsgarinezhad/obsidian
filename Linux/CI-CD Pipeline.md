@@ -1,3 +1,5 @@
+CI/CD tools can help a team automate their development, deployment, and testing. Some tools specifically handle the integration (CI) side, some manage development and deployment (CD), while others specialize in continuous testing or related functions.
+
 There are two main stages we want to automate:
 
 - **Build**: to build an image of our app and put in the artifactory.
@@ -87,3 +89,10 @@ We define the environment variables of the kubernetes in the values.yaml file.
 -------------------------------
 
 In the "script" section of the gitlab-ci file, you can write python commands like 'cd' for changing the work directory. Workdir is always addressed form the general gitlab-ci file for the whole project. (where the pipeline is running from)
+
+-------------------
+View the log and container terminal of a pod in argocd:
+
+![[Pasted image 20240504165125.png]]
+
+------------------
