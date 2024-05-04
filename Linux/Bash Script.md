@@ -413,3 +413,8 @@ pip freeze > requirements.txt
 rewrites all requiremnts defined in .venv to the txt file.
 
 ----------------------
+Make .venv your execution directory (only sees the .venv requirements instead of global ones):
+
+```python
+
+```

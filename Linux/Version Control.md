@@ -176,3 +176,7 @@ Release definition: a release, which is an instance of the application running o
 -------------------------------
 
 **GitOps** is a set of practices that use Git as a "single source of truth" for declaratively managing infrastructure and application configurations. It leverages the version control capabilities of Git to automate and streamline the operational aspects of software development, deployment, and infrastructure management.
+
+------------------------
+Add a new file to the .git folder:
+![[Pasted image 20240504163545.png]]

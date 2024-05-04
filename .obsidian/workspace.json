@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Network.md",
+                "file": "Linux/Bash Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Network.md",
+                "file": "Linux/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Network.md",
+                "file": "Linux/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Network.md"
+                "file": "Linux/Bash Script.md"
               }
             }
           },
@@ -174,11 +174,13 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Version Control.md",
+    "Pasted image 20240504163545.png",
+    "Linux/Network.md",
     "Pasted image 20240504154013.png",
     "Linux/Docker.md",
     "Linux/Bash Script.md",
     "Linux/CI-CD Pipeline.md",
-    "Linux/Version Control.md",
     "Linux/Kubernetes.md",
     "Pasted image 20240504141846.png",
     "Pasted image 20240504140540.png",
@@ -186,14 +188,11 @@
     "Pasted image 20240504140315.png",
     "Linux/API Services.md",
     "Pasted image 20240504140212.png",
-    "Linux/Network.md",
     "Pasted image 20240504135714.png",
     "Pasted image 20240504134505.png",
     "Pasted image 20240504134319.png",
     "Linux/Spring(Java).md",
     "Pasted image 20240504125149.png",
-    "Pasted image 20240503202804.png",
-    "Pasted image 20240503195519.png",
     "Linux/PSQL.md",
     "Linux/Ansible.md",
     "Linux/Certificate.md",
