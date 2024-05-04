@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Spring(Java).md",
-                "mode": "source",
+                "file": "Linux/CI-CD Pipeline.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Spring(Java).md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Spring(Java).md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Spring(Java).md"
+                "file": "Linux/CI-CD Pipeline.md"
               }
             }
           },
@@ -174,6 +174,7 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Spring(Java).md",
     "Pasted image 20240504125149.png",
     "Linux/Network.md",
     "Linux/API Services.md",
@@ -181,7 +182,6 @@
     "Linux/Bash Script.md",
     "Pasted image 20240503202804.png",
     "Pasted image 20240503195519.png",
-    "Linux/Spring(Java).md",
     "Pasted image 20240503195213.png",
     "Pasted image 20240503195151.png",
     "Linux/PSQL.md",
@@ -191,7 +191,6 @@
     "Pasted image 20240503185226.png",
     "Pasted image 20240503182016.png",
     "Pasted image 20240503181903.png",
-    "Pasted image 20240503181832.png",
     "Linux/Docker.md",
     "Linux/Ansible.md",
     "Linux/Prometheus & Grafana.md",

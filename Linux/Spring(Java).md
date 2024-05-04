@@ -18,3 +18,6 @@
 --------------------------
 spring boot services
 ![[Pasted image 20240504125149.png]]
+----------------------------
+
+Spring RestController annotation is used to create RESTful web services using Spring MVC.
