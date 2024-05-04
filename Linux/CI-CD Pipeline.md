@@ -84,3 +84,6 @@ Having multiple images in a version (multiple applications):
 
 We define the environment variables of the kubernetes in the values.yaml file.
 - ![[Pasted image 20240429140156.png]]
+-------------------------------
+
+In the "script" section of the gitlab-ci file, you can write 

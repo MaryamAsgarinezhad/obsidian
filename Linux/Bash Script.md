@@ -416,5 +416,15 @@ rewrites all requiremnts defined in .venv to the txt file.
 Make .venv your execution directory (only sees the .venv requirements instead of global ones):
 
 ```python
+source ../.venv/bin/activate
+```
 
+----------------------------
+Use docker commands without "sudo" permission:
+
+```python
+newgrp docker
+groups $USER (here should show the 'docker" group)
+
+ sudo usermod -aG docker $USER
 ```

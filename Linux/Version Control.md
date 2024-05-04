@@ -180,3 +180,8 @@ Release definition: a release, which is an instance of the application running o
 ------------------------
 Add a new file to the .git folder:
 ![[Pasted image 20240504163545.png]]
+
+-----------------------------
+Online gitlab IDE for edition and commiting:
+
+![[Pasted image 20240504164105.png]]

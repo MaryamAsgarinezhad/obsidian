@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CI-CD Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Bash Script.md"
+                "file": "Linux/CI-CD Pipeline.md"
               }
             }
           },
@@ -175,11 +175,12 @@
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
     "Linux/Version Control.md",
+    "Pasted image 20240504164105.png",
+    "Linux/Bash Script.md",
     "Pasted image 20240504163545.png",
     "Linux/Network.md",
     "Pasted image 20240504154013.png",
     "Linux/Docker.md",
-    "Linux/Bash Script.md",
     "Linux/CI-CD Pipeline.md",
     "Linux/Kubernetes.md",
     "Pasted image 20240504141846.png",
@@ -192,7 +193,6 @@
     "Pasted image 20240504134505.png",
     "Pasted image 20240504134319.png",
     "Linux/Spring(Java).md",
-    "Pasted image 20240504125149.png",
     "Linux/PSQL.md",
     "Linux/Ansible.md",
     "Linux/Certificate.md",
