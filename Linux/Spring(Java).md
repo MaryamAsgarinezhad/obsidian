@@ -21,3 +21,9 @@ spring boot services
 ----------------------------
 
 Spring RestController annotation is used to create RESTful web services using Spring MVC.
+
+The command `mvn package -DskipTests` is used in a Maven-based Java project to package the project without running any tests.
+- This command is useful when you want to quickly build the project without waiting for tests to run, which can save time during development or troubleshooting.
+- However, skipping tests should be done with caution, as it bypasses a key part of the build process intended to verify the integrity and functionality of the code.
+- - **`mvn package`**:
+    - This phase compiles the source code, runs tests, and packages the code and resources into a JAR, WAR, or other package type.

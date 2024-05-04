@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/CI-CD Pipeline.md",
-                "mode": "preview",
+                "file": "Linux/Version Control.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/CI-CD Pipeline.md",
+                "file": "Linux/Version Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/CI-CD Pipeline.md",
+                "file": "Linux/Version Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/CI-CD Pipeline.md"
+                "file": "Linux/Version Control.md"
               }
             }
           },
@@ -175,6 +175,7 @@
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
     "Linux/Spring(Java).md",
+    "Linux/CI-CD Pipeline.md",
     "Pasted image 20240504125149.png",
     "Linux/Network.md",
     "Linux/API Services.md",
@@ -195,7 +196,6 @@
     "Linux/Ansible.md",
     "Linux/Prometheus & Grafana.md",
     "Linux/Certificate.md",
-    "Linux/CI-CD Pipeline.md",
     "Linux/Untitled",
     "Linux/Logging.md",
     "Linux/Virtual Environment.md",
