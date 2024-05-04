@@ -29,3 +29,8 @@ Setting Alert:
 
 Call or messege in case of Alert:
 ![[Pasted image 20240430162905.png]]
+-----------------------------
+![[Pasted image 20240504134319.png]]
+to create graphana, this should be true  
+then push to sre-ops
+-----------------------
