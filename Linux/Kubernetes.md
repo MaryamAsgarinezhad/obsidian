@@ -133,3 +133,12 @@ All managing processes are done by master nodes using four processes that run on
 
 ![[Pasted image 20240504204231.png]]
 - data base information will not be saved on etcd
+- we **replicate the master nodes** to store a reliable data on etcd and also load balance the requests to the API server.
+- masters need less resources than workers.
+
+-------------------------
+Minicube: its a one node cluster that the master processes and the worker processes both run on the same machine (same node). This one node has the docker container runtime preinstalled (no nedd to have it installed on your system)
+
+It runs on your laptop through a virtual box (to abstract the resources of your laptop for example)
+
+You can use minicube to test the kbnts on your local setup. After setting up this mini cluster, you need some way to interact with that cluster. Now you need kubectl.
