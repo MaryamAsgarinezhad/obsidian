@@ -83,7 +83,8 @@ Kuber components:
 - Secret: Putting credentials like passwords or secret important in plain text format in configmap is not secure. Secret is just like Config map, used to store secret data (base64 encoded format)
   You could use 'env variables' in the manifest file too.
 
-- replica set is managing the replicas of a pod, but we only work with deployment.
+- **replica set** is managing the replicas of a pod, but we only work with deployment.
+  ![[Pasted image 20240504205316.png]]
   
 - Ingress: provides secure protocol and domain name for accessing internal lusters from external network
 
@@ -164,3 +165,22 @@ we cannot create pods but we have an abstraction layer over that called the depl
 ```shell
 kubectl create deployment NAME —image=image
 ```
+
+--------------------------
+►  change the pod/deployment
+```shell
+kubectl edit deployment "name of the pod"
+```
+opens the config of pod and we can edit that and save it
+
+----------------------------
+►  debugging pods
+```shell
+kubectl logs 'pod name that we get from kbctl get command'
+```
+this information helps us debug the application.
+
+```shell 
+kubectl exec -it "pod name" bash
+```
+we enter the containers terminal, used to debug or test the pod
