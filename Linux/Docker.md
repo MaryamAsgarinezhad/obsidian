@@ -108,7 +108,9 @@ The **working directory** is where the job's commands and scripts are executed. 
 
 ![[Pasted image 20240504170040.png]]
 
-- when giving the address of these file (and all files in general), the current directory is important. Here the current directory is where the "docker build" command is being run. which is in the same level as the 
+- when giving the address of these file (and all files in general), the current directory is important. Here the current directory is where the "docker build" command is being run. which "regression-cdn" and is the directory of .py files.
+- ![[Pasted image 20240504171344.png]]
+- we can use scipt commands in the docker file using "RUN" prefix. **making a new directory to be set as 'workdir' and copy all files of the docker file in that.**
 
 --------------------------------
 The content that is running in the dockerfile, including the CMD, is running in the docker container (which is the same as an independent OS) and is not on local.
