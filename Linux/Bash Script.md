@@ -458,10 +458,17 @@ ps aux
 
 - ps: Stands for "process status." It is used to view information about currently running processes.
 ——————————————
-systemctl status h
-cd /etc/systemd/system/ ls
-cat fastapi.service
+systemctl status 'service name'
+- checks the status of a service
 
-اینو که باز کردیم service بالا بود و Restart=always بود واسه همین هر چقدر process  رو kill میکردیم میومد بالا باز
+
+cd /etc/systemd/system/ ls
+- lists all system services
+
+cat fastapi.service
+- shows the config file a the specific service
+- check the 'restart' field (if marked as always, the service will not stop unless you kill it)
 
 sudo systemctl stop fastapi.service
+
+---------------------
