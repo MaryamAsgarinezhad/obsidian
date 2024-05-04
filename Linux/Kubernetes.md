@@ -46,4 +46,12 @@ Create Your Own Charts (Optional): If you're developing an application, you can 
 ![[Pasted image 20240504141846.png]]
 
 -----------------------
-This exposes port 80 of the container (port) to be visibleas port 8080 (target port). This is 
+This exposes port 80 of the container (port) to be visibleas port 8080 (target port). This is exposing a port in kubernetes. 
+
+"Port" should be similar to the port you have run your API service on (if you wanna expose it), and target port is what you should bind your localhost to.
+
+
+Portforwarding is through this command:
+```shell
+kubectl port-forward svc/'name of the service' 8080:80
+```
