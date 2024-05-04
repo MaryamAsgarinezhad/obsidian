@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Liveness - Readiness.md",
+                "file": "Linux/Prometheus & Grafana.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Liveness - Readiness.md",
+                "file": "Linux/Prometheus & Grafana.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Liveness - Readiness.md",
+                "file": "Linux/Prometheus & Grafana.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Liveness - Readiness.md"
+                "file": "Linux/Prometheus & Grafana.md"
               }
             }
           },
@@ -174,9 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240504171914.png",
+    "Linux/Liveness - Readiness.md",
     "Pasted image 20240504171738.png",
     "Linux/Docker.md",
-    "Linux/Liveness - Readiness.md",
     "Pasted image 20240504171344.png",
     "Linux/Bash Script.md",
     "Pasted image 20240504170040.png",
@@ -191,7 +192,6 @@
     "Pasted image 20240504154013.png",
     "Linux/Kubernetes.md",
     "Pasted image 20240504141846.png",
-    "Pasted image 20240504140540.png",
     "Linux/Prometheus & Grafana.md",
     "Linux/API Services.md",
     "Linux/Spring(Java).md",

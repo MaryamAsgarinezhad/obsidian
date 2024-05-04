@@ -47,3 +47,11 @@ when executed with no promql command, the metric variables will be shown.
 
 -------------------------
 ![[Pasted image 20240504140315.png]]
+
+---------------------
+The data source should be the database where the prometheus metrics are collected in:
+![[Pasted image 20240504171914.png]]
+
+Note that all metrics from all projects and applications are stored in this single DB, so the metric name should be globally unique.
+
+---------------------------
