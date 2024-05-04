@@ -91,3 +91,12 @@ Kuber components:
 - Volume: Attaches a physical (local or remote) storage on a hard drive to the pod to retain the data that may be lost due to pod crash
 
 ![[Pasted image 20240504201558.png]]
+
+To avoid missing a crashed pod we replicate everything on multiple servers. We have another node where a "**replica**" of our application will run on that is connected to the **same service**.
+
+**Services are also load balancers**, they catch the request and forward it to the least busy replica.
+
+To create those replicas you create the deployment.yaml file where in you specify the number of pods that you need. **Deployment is an abstraction layer on pods,** meaning it makes it easier to work with pods.
+
+Tip: Deployment is used for stateless sets 
+For **Stateful apps** we use a resource called **StatefulSet** (Like DB's)
