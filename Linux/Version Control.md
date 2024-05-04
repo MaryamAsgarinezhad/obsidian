@@ -169,3 +169,6 @@ now push
 Git authentication using ssh key:
 
 ![[Pasted image 20240503193021.png]]
+----------------------------
+
+Release definition: a release, which is an instance of the application running on the cluster. Each release has a unique name and can be managed independently.
