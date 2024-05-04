@@ -44,3 +44,6 @@ rate: units by the time
 
 ![[Pasted image 20240504134505.png]]
 when executed with no promql command, the metric variables will be shown.
+
+-------------------------
+![[Pasted image 20240504140315.png]]

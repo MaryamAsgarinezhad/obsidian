@@ -88,3 +88,10 @@ Fastapi/springboot/flask,.... are web servers that can provide an API for the us
 Postman/Curl,... are tools that help to communicate with that API. 
 
 Http,... are protocols used to communicate to the API.
+
+--------------------------------------
+
+![[Pasted image 20240504140212.png]]
+This way, use multithreading.
+
+------------------------------
