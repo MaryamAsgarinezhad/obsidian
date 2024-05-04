@@ -172,3 +172,7 @@ Git authentication using ssh key:
 ----------------------------
 
 Release definition: a release, which is an instance of the application running on the cluster. Each release has a unique name and can be managed independently.
+
+-------------------------------
+
+**GitOps** is a set of practices that use Git as a "single source of truth" for declaratively managing infrastructure and application configurations. It leverages the version control capabilities of Git to automate and streamline the operational aspects of software development, deployment, and infrastructure management.
