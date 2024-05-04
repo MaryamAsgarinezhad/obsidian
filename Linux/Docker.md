@@ -108,6 +108,8 @@ The **working directory** is where the job's commands and scripts are executed. 
 
 ![[Pasted image 20240504170040.png]]
 
+- when giving the address of these file (and all files in general), the current directory is important. Here the current directory is where the "docker build" command is being run. which is in the same level as the 
+
 --------------------------------
 The content that is running in the dockerfile, including the CMD, is running in the docker container (which is the same as an independent OS) and is not on local.
 
