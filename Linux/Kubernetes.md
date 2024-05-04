@@ -73,4 +73,14 @@ Kuber components:
 - Virtual network: each pods gets its own ip address
 - Services: pods are aphemeral and their ip become new —> services is a permanent ip addess for pods
 - External Service: App should be accessible through browser using external service
+- Configmap: the external configuration to the application. No need to rebuild the image and recommit and push the code in case where some external configurations (like database urls etc) changes.
+  Pods connect to the configmap.
+  
+- Secret: Putting credentials like passwords or secret important in plain text format in configmap is not secure. Secret is just like Config map, used to store secret data (base64 encoded format)
+  
 - Ingress: provides secure protocol and domain name for accessing internal lusters from external network
+
+-  An internal service (also known as a cluster-internal service) exposes applications only within the Kubernetes cluster.
+-  An external service (also known as a cluster-external service) exposes applications outside the Kubernetes cluster, making them accessible from external networks.
+
+![[Pasted image 20240504201558.png]]
