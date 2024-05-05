@@ -2,6 +2,11 @@
 - A **readiness probe** is used to determine if a container is ready to start accepting traffic or connections. This is crucial for scenarios where an application might need time to initialize or where it might go through temporary states of unavailability.
 - A **liveness probe** is used to determine if a container is still alive or if it needs to be restarted. It helps detect and rectify situations where the container might be running but is in a broken or deadlocked state.
 
+### Combined Usage
+
+- **Startup Probe**: Sometimes, a third type of probe called a **startup probe** is used alongside liveness and readiness probes, particularly for applications that take a long time to start up. The startup probe allows the application to fully initialize before the liveness and readiness probes take over.
+- ![[Pasted image 20240505090736.png]]
+
 These fields in the manifest file should be set to 'true':
 
 ![[Pasted image 20240504171738.png]]
