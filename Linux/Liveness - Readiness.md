@@ -32,3 +32,9 @@ code to be added:
     
     - The number of consecutive successes required to consider the container healthy after being unhealthy.
     - Set to `1` for both probes.
+
+---------------------
+You need to create the endpoints with the specified 'path' and 'port' in your application.
+
+![[Pasted image 20240505085737.png]]
+![[Pasted image 20240505085758.png]]
