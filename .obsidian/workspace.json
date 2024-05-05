@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Certificate.md",
+                "file": "Linux/Certificate management.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Certificate.md",
+                "file": "Linux/Certificate management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Certificate.md",
+                "file": "Linux/Certificate management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Certificate.md"
+                "file": "Linux/Certificate management.md"
               }
             }
           },
@@ -196,7 +196,7 @@
     "Linux/Spring(Java).md",
     "Linux/PSQL.md",
     "Linux/Ansible.md",
-    "Linux/Certificate.md",
+    "Linux/Certificate management.md",
     "Linux/Untitled",
     "Linux/Logging.md",
     "Linux/Virtual Environment.md",
