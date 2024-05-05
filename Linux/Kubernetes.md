@@ -184,3 +184,22 @@ this information helps us debug the application.
 kubectl exec -it "pod name" bash
 ```
 we enter the containers terminal, used to debug or test the pod
+
+--------------------
+►  delete pod/deployment
+```shell
+kubectl delete deployment "name of the deploymant/ replicaset/ pod"
+```
+
+-------------------------------
+Tip: in order to make it easy to write the options needed in every command, we should be able to apply configuration files (yaml file)
+
+```shell
+kubectl apply -f  [yaml file name]
+```
+
+we use this command after editing and saving the deployment.yaml file to apply the changes on the cluster
+
+(touch file to make it and vim to open it)
+
+---------------------
