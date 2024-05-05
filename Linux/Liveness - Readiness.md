@@ -1,3 +1,7 @@
+
+- A **readiness probe** is used to determine if a container is ready to start accepting traffic or connections. This is crucial for scenarios where an application might need time to initialize or where it might go through temporary states of unavailability.
+- A **liveness probe** is used to determine if a container is still alive or if it needs to be restarted. It helps detect and rectify situations where the container might be running but is in a broken or deadlocked state.
+
 These fields in the manifest file should be set to 'true':
 
 ![[Pasted image 20240504171738.png]]
@@ -38,3 +42,9 @@ You need to create the endpoints with the specified 'path' and 'port' in your ap
 
 ![[Pasted image 20240505085737.png]]
 ![[Pasted image 20240505085758.png]]
+
+------------------------------------
+
+what if the target port is 8080 and port is 8090 in the ports: section of the file?
+
+If the application is configured to listen on port 8080 within the container and the service exposes it externally on port 8090, then your liveness and readiness probes should use port 8080, which corresponds to the **`targetPort`** defined in the service.
