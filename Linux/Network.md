@@ -117,3 +117,5 @@ DELETE:
 
 -------------------------
 ![[Pasted image 20240504154013.png]]route conflict solve (docker network and repo network)
+
+Session authentication - token authentication
