@@ -150,6 +150,8 @@ Kubectl is one of the command line tools to communicate with the API server.
 
 The worker processes on the minicube node will make kubectl commands happen.
 
+**When installing 'kubectl', the default kkuber cluster to which the kubectl is connected, will be defined.**
+
 -------------------------
 ►  Get status of different components
 ```shell
