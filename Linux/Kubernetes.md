@@ -211,4 +211,6 @@ specify your namespace and cluster
 ----------------------------------------------
 
 ![[Pasted image 20240507153119.png]]
-This is the domain of the
+This is the domain of the service which we use to send request to.
+
+--------------------------------------------
