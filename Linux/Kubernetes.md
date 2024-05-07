@@ -206,3 +206,4 @@ we use this command after editing and saving the deployment.yaml file to apply t
 
 ---------------------
 ![[Pasted image 20240507102340.png]]
+specify your 
