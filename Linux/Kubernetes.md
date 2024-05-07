@@ -206,4 +206,9 @@ we use this command after editing and saving the deployment.yaml file to apply t
 
 ---------------------
 ![[Pasted image 20240507102340.png]]
-specify your 
+specify your namespace and cluster 
+
+----------------------------------------------
+
+![[Pasted image 20240507153119.png]]
+This is the domain of the
