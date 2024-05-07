@@ -205,3 +205,4 @@ we use this command after editing and saving the deployment.yaml file to apply t
 (touch file to make it and vim to open it)
 
 ---------------------
+![[Pasted image 20240507102340.png]]
