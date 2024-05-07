@@ -211,6 +211,7 @@ specify your namespace and cluster
 ----------------------------------------------
 
 ![[Pasted image 20240507153119.png]]
-This is the domain of the service which we use to send request to.
+**This is the domain of the service which we use to send request to.**
+**You can also send requests to the localhost:port of your argo panel terminal., or check the metrics for example**
 
 --------------------------------------------
