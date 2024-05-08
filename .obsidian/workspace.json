@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/?.md",
+                "file": "Linux/Network.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/?.md",
+                "file": "Linux/Network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/?.md",
+                "file": "Linux/Network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/?.md"
+                "file": "Linux/Network.md"
               }
             }
           },
@@ -174,8 +174,9 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "Linux/Network.md",
+    "Linux/Ansible.md",
     "Linux/?.md",
+    "Linux/Network.md",
     "Linux/Kubernetes.md",
     "Linux/Logging.md",
     "Pasted image 20240508162850.png",
@@ -198,7 +199,6 @@
     "Linux/API Services.md",
     "Linux/Spring(Java).md",
     "Linux/PSQL.md",
-    "Linux/Ansible.md",
     "Linux/Untitled",
     "Linux/Virtual Environment.md",
     "obsidian connection to git.md",
