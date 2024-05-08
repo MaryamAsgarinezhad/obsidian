@@ -215,3 +215,11 @@ specify your namespace and cluster
 **You can also send requests to the localhost:port of your argo panel terminal., or check the metrics for example**
 
 --------------------------------------------
+
+```shell
+vim ~/.kube/config
+```
+
+```shell
+
+```
