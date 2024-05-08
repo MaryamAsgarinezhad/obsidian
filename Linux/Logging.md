@@ -56,4 +56,11 @@ Adds log handler to the kuber cluster. (elastic is predefined in the cluster.)
 - "- file:" ***should be the docker file workdir + name of the logging file defined in the application.***
 - "-tag:" is the index of your loggings.
 
+In the context of log management, "**indexing**" refers to the process of organizing data (logs in this case) in a way that makes it easier to retrieve, analyze, and visualize efficiently.
+
+Used by the ELK Stack (Elasticsearch, Logstash, Kibana), Elasticsearch indexes log data making it searchable in real-time. It allows for full-text search and complex queries facilitated by its Lucene backend.
+
 ----------------------------------------------------
+
+**Indexing**:
+
