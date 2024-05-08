@@ -131,3 +131,5 @@ TYPES OF ERRORS:
 
 
 All_of_statusCodes_total
+
+sum(increase((All_of_statusCodes_total{status_code!="200", namespace="sre-prod"}) and (All_of_statusCodes_created{status_code!="502", namespace="sre-prod"}))) by (domain, type_name)
