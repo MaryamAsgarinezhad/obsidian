@@ -63,7 +63,8 @@ Used by the ELK Stack (Elasticsearch, Logstash, Kibana), Elasticsearch indexes l
 - Define the index in the ELK in this section, with the name you specified in the "-tag" section of values.yaml file.
 - ![[Pasted image 20240508161846.png]]
 
-- you can view you
+- you can view your logs in the ELK here: 
+- ![[Pasted image 20240508162030.png]]
 
 ---------------------------------------------------
 
