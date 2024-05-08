@@ -128,4 +128,6 @@ TYPES OF ERRORS:
 
 - The 502 Bad Gateway error is an HTTP status code that occurs when a server acting as a gateway or proxy receives an invalid or faulty response from another server in the communication chain.
 
-- 
+
+
+All_of_statusCodes_total
