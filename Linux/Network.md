@@ -123,3 +123,7 @@ DELETE:
 TYPES OF ERRORS:
 
 - **403 error may be due to authentication issues.**
+
+- A 503 Service Unavailable Error is an HTTP response status code that **indicates your web server operates properly, but it can't handle a request at the moment**. Since it's just a generic error message, it's difficult to pinpoint the issue's exact cause.
+
+- 
