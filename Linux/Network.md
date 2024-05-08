@@ -127,9 +127,3 @@ TYPES OF ERRORS:
 - A 503 Service Unavailable Error is an HTTP response status code that **indicates your web server operates properly, but it can't handle a request at the moment**. Since it's just a generic error message, it's difficult to pinpoint the issue's exact cause.
 
 - The 502 Bad Gateway error is an HTTP status code that occurs when a server acting as a gateway or proxy receives an invalid or faulty response from another server in the communication chain.
-
-
-
-All_of_statusCodes_total
-
-sum(increase((All_of_statusCodes_total{status_code!="200", namespace="sre-prod"}) and (All_of_statusCodes_created{status_code!="502", namespace="sre-prod"}))) by (domain, type_name)
