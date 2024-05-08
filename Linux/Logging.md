@@ -60,7 +60,12 @@ In the context of log management, "**indexing**" refers to the process of organi
 
 Used by the ELK Stack (Elasticsearch, Logstash, Kibana), Elasticsearch indexes log data making it searchable in real-time. It allows for full-text search and complex queries facilitated by its Lucene backend.
 
-----------------------------------------------------
+- Define the index in the ELK in this section, with the name you specified in the "-tag" section of values.yaml file.
+- ![[Pasted image 20240508161846.png]]
+
+- you can view you
+
+---------------------------------------------------
 
 **Indexing**:
 
