@@ -220,4 +220,4 @@ specify your namespace and cluster
 vim ~/.kube/config
 ```
 
-- Here you set the 
+- Here you set the clusters and namespaces you can access.
