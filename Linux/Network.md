@@ -118,6 +118,8 @@ DELETE:
 -------------------------
 ![[Pasted image 20240504154013.png]]route conflict solve (docker network and repo network)
 
-Session authentication - token authentication
+------------------------------------------------------
 
-**403 error may be due to authentication issues.**
+TYPES OF ERRORS:
+
+- **403 error may be due to authentication issues.**

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Logging.md",
+                "file": "Linux/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Logging.md",
+                "file": "Linux/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Logging.md",
+                "file": "Linux/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Logging.md"
+                "file": "Linux/Untitled.md"
               }
             }
           },
@@ -174,10 +174,14 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Network.md",
+    "Linux/Untitled.md",
+    "Linux/Kubernetes.md",
+    "Linux/Logging.md",
+    "Pasted image 20240508162850.png",
+    "Pasted image 20240508162641.png",
     "Pasted image 20240508162030.png",
     "Pasted image 20240508161846.png",
-    "Linux/Kubernetes.md",
-    "Linux/Network.md",
     "Linux/Bash Script.md",
     "Linux/Version Control.md",
     "Linux/Prometheus & Grafana.md",
@@ -189,9 +193,6 @@
     "Pasted image 20240505090736.png",
     "Pasted image 20240505085800.png",
     "Pasted image 20240505085758.png",
-    "Pasted image 20240505085737.png",
-    "Pasted image 20240505084526.png",
-    "Pasted image 20240504205316.png",
     "Linux/CI-CD Pipeline.md",
     "Linux/Docker.md",
     "Linux/API Services.md",
@@ -199,7 +200,6 @@
     "Linux/PSQL.md",
     "Linux/Ansible.md",
     "Linux/Untitled",
-    "Linux/Logging.md",
     "Linux/Virtual Environment.md",
     "obsidian connection to git.md",
     "Linux",
