@@ -239,3 +239,5 @@ loghandler:
             size: 10M
 
 Adds log handler to the kuber cluster. (elastic is predefined in the cluster.)
+
+- "- file:" ***should be the docker file workdir + name of the logging file defined in the application.***
