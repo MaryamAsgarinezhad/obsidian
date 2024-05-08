@@ -221,23 +221,3 @@ vim ~/.kube/config
 ```
 
 - Here you set the clusters and namespaces you can access.
-
------------------------------------------------
-
-loghandler:  
-  enabled: true  
-  instances:  
-    - sink: default  
-      sources:  
-        - file: "/opt/sre/logs/app.log"  
-          config:  
-            parser:  
-              '@type': none  
-            tag: "sre-cdn-boom-api-auth.log"  
-          rotate:  
-            enabled: true  
-            size: 10M
-
-Adds log handler to the kuber cluster. (elastic is predefined in the cluster.)
-
-- "- file:" ***should be the docker file workdir + name of the logging file defined in the application.***
