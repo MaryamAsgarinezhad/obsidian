@@ -196,3 +196,5 @@ pull: fetch + update
 ![[Pasted image 20240504164840.png]]
 
 ------------------
+
+After merging the child branch with parent, the child branch will be deleted on the repositort and you have it locally, so delete it locally and create a new branch for later merge requests.
