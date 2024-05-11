@@ -472,3 +472,7 @@ cat fastapi.service
 sudo systemctl stop fastapi.service
 
 ---------------------
+
+In the context of a filesystem, a "binary" typically refers to a binary file that is directly executable by a computer's operating system. These files are called "binaries" because they contain compiled code in binary format, which is a representation of executable machine code that the computer's CPU (Central Processing Unit) can directly read and execute.
+
+A filesystem is a method and data structure that an operating system uses to control how data is stored and retrieved on a storage device such as a hard drive, SSD, USB drive, or memory card. Without a filesystem, storing information on a device would be one large body of data with no way to tell where one piece of information stops and the next begins.

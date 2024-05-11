@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Version Control.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Version Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Version Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Ansible.md"
+                "file": "Linux/Version Control.md"
               }
             }
           },
@@ -174,6 +174,8 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Bash Script.md",
+    "Linux/Ansible.md",
     "Pasted image 20240511193813.png",
     "Pasted image 20240511193624.png",
     "Pasted image 20240511193401.png",
@@ -182,7 +184,6 @@
     "Pasted image 20240511184533.png",
     "Pasted image 20240511181428.png",
     "Linux/?.md",
-    "Linux/Ansible.md",
     "Linux/Network.md",
     "Pasted image 20240511130529.png",
     "Pasted image 20240511130504.png",
@@ -190,8 +191,6 @@
     "Linux/Kubernetes.md",
     "Linux/Logging.md",
     "Pasted image 20240508162850.png",
-    "Pasted image 20240508162641.png",
-    "Linux/Bash Script.md",
     "Linux/Version Control.md",
     "Linux/Prometheus & Grafana.md",
     "Linux/Certificate management.md",
