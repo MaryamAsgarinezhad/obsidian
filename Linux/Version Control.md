@@ -15,6 +15,17 @@ which git
 git config --global user.name 'gihub name'
 git config --global user.email 'gihub email'
 ```
+- This configs will be saved in the '**gitconfig**' file.
+
+6- Create changes to a file on git. It will be saved locally not on your repository. So:
+```shell
+git statu
+```
+- Shows you the changes since the last commit
+```shell
+git diff 'name of the file'
+```
+- shows you what has changed in the file
 
 
 --------------------------------------------
