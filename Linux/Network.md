@@ -202,3 +202,9 @@ A domain, specifically referred to in the context of the Internet, is part of th
 
 -------------------------------------------------
 
+![[Pasted image 20240511130504.png]]
+
+![[Pasted image 20240511130529.png]]
+
+- The token java project creates the daily key for hashing.
+- The regression python project tests this key generation process.
