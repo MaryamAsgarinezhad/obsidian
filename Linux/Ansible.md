@@ -74,4 +74,8 @@ ssh-copy-id -i ~/.ssh/'name of the key'.pub
 
 - The tilde (`~`) character at the beginning of a file path is a shorthand representation for the current user's home directory.
 
-We can have multiple keys on our workstation for multiple purposes (connec)
+We can have multiple keys on our workstation for multiple purposes (connection to different servers):
+![[Pasted image 20240511192811.png]]
+
+**SSH agent** is a process that can run on the background and cache your ssh pass phrase. You can gets id and check its running status.
+- ![[Pasted image 20240511193213.png]]
