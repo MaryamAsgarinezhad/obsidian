@@ -72,4 +72,6 @@ Copy your pub key to the server:
 ssh-copy-id -i ~/.ssh/'name of the key'.pub
 ```
 
-- he tilde (`~`) character at the beginning of a file path is a shorthand representation for the current user's home directory.
+- The tilde (`~`) character at the beginning of a file path is a shorthand representation for the current user's home directory.
+
+We can have multiple keys on our workstation for multiple purposes (connec)
