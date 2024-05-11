@@ -6,7 +6,18 @@ which git
 
 2- Sing in to git hub to have a repository.
 
-3- Create a new ssh key from your github dashboard and give it a name. 
+3- Tap the 'new ssh key' from your github dashboard (you need the enter your system's public key in the dashboard) and give it a name. 
+
+4- Clone with ssh
+
+5- Identify yourself to git:
+```shell
+git config --global user.name 'gihub name'
+git config --global user.email 'gihub email'
+```
+
+
+--------------------------------------------
  
 - The Git command in Linux is used for version control, allowing users to track changes to files and collaborate with others on projects.
 
