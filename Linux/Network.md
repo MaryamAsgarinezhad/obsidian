@@ -198,3 +198,7 @@ A domain, specifically referred to in the context of the Internet, is part of th
 - **Web Browsing**: Visiting `https://www.google.com` involves the domain `google.com`.
 - **Email**: Sending an email to `user@example.com` uses the domain `example.com`.
 - **FTP and Other Protocols**: Accessing resources through different protocols might also use domain names, such as in FTP (`ftp.example.com`).
+
+
+-------------------------------------------------
+
