@@ -45,3 +45,7 @@ end
 ------------------------
 
 Ansible purpose: Provision Servers
+
+![[Pasted image 20240511181428.png]]
+
+Ansible should not be neessarily installed on every server, but only on the 'Ansible Control Host' which can be your local system.
