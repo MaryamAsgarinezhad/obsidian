@@ -16,3 +16,29 @@ Key features of Ansible include:
     
 
 Overall, Ansible simplifies the process of automating infrastructure management tasks, making it an essential tool for DevOps teams and system administrators.
+
+-------------------------------------------------
+
+```LUA
+  
+function validate_hash(key, uri_hash, exp_time, uri)  
+  
+   local secret_str = {}  
+   table.insert(secret_str, exp_time)  
+   table.insert(secret_str, uri)  
+   table.insert(secret_str, key)  
+  
+   if ngx.var.secv ~= nil and ngx.var.secv ~= "" then  
+      table.insert(secret_str, ngx.var.host)  
+   end  
+  
+   local hash = ngx.encode_base64(ngx.md5_bin(table.concat(secret_str, ' ')))  
+   hash = string.gsub(hash, '=', '')  
+   hash = string.gsub(hash, '/', '_')  
+   hash = string.gsub(hash, '+', '-')  
+  
+   return hash == uri_hash  
+  
+end
+```
+
