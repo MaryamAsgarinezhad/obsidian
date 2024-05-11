@@ -1,4 +1,13 @@
+1-
+```shell
+which git
+```
+- shows the binary location of git , no output means you dont have the file to install.
 
+2- Sing in to git hub to have a repository.
+
+3- Create a new ssh key from your github dashboard and give it a name. 
+ 
 - The Git command in Linux is used for version control, allowing users to track changes to files and collaborate with others on projects.
 
 **git init**: Initializes a new Git repository in the current directory. This command creates a new `.git` directory that stores the repository's metadata and configuration.
