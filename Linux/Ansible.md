@@ -51,3 +51,4 @@ Ansible purpose: Provision Servers
 Ansible should not be neessarily installed on every server, but only on the 'Ansible Control Host' which can be your local system.
 
 - Open SSH -->  used to do administration things on a remote serer, and ansible also uses this.
+- ![[Pasted image 20240511184533.png]]
