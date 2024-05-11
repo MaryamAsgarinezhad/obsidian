@@ -61,3 +61,13 @@ ssh-keygen -t ed25519 -C 'meta data about the key'
 - After the above command, its asks the location for storing the key and a pass phrase which makes the conection much more secure.
 
 - SSH keys **automate** connection to remote servers without asking any password. By adding a passphrase to the key, you should enter it on every connection.
+
+See the content of ssh keys (here public):
+```shell
+cat .ssh/'name of the key'.pub
+```
+
+Copy your pub key to the server:
+```shell
+ssh-copy-id -i /.ssh/'name of the key'.pub
+```
