@@ -79,3 +79,11 @@ We can have multiple keys on our workstation for multiple purposes (connection t
 
 **SSH agent** is a process that can run on the background and cache your ssh pass phrase. You can gets id and check its running status.
 - ![[Pasted image 20240511193213.png]]
+- Now that its running, add the identity:
+- ![[Pasted image 20240511193401.png]]
+- Aliasing (temporary):
+- ![[Pasted image 20240511193624.png]]
+- Aliasing (permanent):
+```shell
+nano .bashrc
+```
