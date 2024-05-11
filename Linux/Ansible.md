@@ -52,3 +52,10 @@ Ansible should not be necessarily installed on every server, but only on the 'An
 
 - Open SSH -->  used to do administration things on a remote serer, and ansible also uses this.
 - ![[Pasted image 20240511184533.png]]
+Generating an SSH key:
+```shell
+ssh-keygen -t ed25519 -C 'meta data about the key'
+```
+- more secure kind of an ssh key
+- All ssh keys are stored in the .ssh folder of the pc.
+- After the above command, its asks the location for storing the key and a pass phrase which makes the conection much more secure.
