@@ -59,3 +59,5 @@ ssh-keygen -t ed25519 -C 'meta data about the key'
 - more secure kind of an ssh key
 - All ssh keys are stored in the .ssh folder of the pc.
 - After the above command, its asks the location for storing the key and a pass phrase which makes the conection much more secure.
+
+- SSH keys **automate** connection to remote servers without asking any password. By adding a passphrase to the key, you should enter it on every connection.
