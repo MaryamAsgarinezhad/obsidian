@@ -130,3 +130,35 @@ For example, in "CDN" project we are at the server side.
 - A 503 Service Unavailable Error is an HTTP response status code that **indicates your web server operates properly, but it can't handle a request at the moment**. Since it's just a generic error message, it's difficult to pinpoint the issue's exact cause.
 
 - The 502 Bad Gateway error is an HTTP status code that occurs when a server acting as a gateway or proxy receives an invalid or faulty response from another server in the communication chain.
+
+-------------------------------------
+```bash
+https://www.example.com:80/path/to/resource?query=123#section
+```
+
+### Components of a URL
+
+1. **Protocol (Scheme)**
+    
+    - **Example**: `https`
+    - The protocol or scheme indicates the method by which the resource is accessed. In this example, `https` signifies that the HTTP protocol with SSL/TLS encryption is used for secure communication. Other common protocols include `http` (HyperText Transfer Protocol), `ftp` (File Transfer Protocol), and `mailto` (for emails).
+2. **Domain (Host)**
+    
+    - **Example**: `www.example.com`
+    - The domain or host specifies the server (hosted on a network) on which the resource resides. Domains are translated into IP addresses by DNS (Domain Name System) servers when you try to access the resource. The domain can include subdomains (like `www`) and top-level domains (like `.com`).
+3. **Port**
+    
+    - **Example**: `80`
+    - The port number is optional and specifies the technical gateway through which the server can be accessed. Each protocol typically has a default port (e.g., 80 for `http` and 443 for `https`), which is not required to be included in the URL if the default is used. In this example, port `80` is explicitly specified.
+4. **Path**
+    
+    - **Example**: `/path/to/resource`
+    - The path points to a specific resource or location within the server. It is similar to a file path in computer filesystems. In this example, it points to a hypothetical resource named `resource` located in directories `/path/to/`.
+5. **Query String**
+    
+    - **Example**: `?query=123`
+    - This part is optional and is used to provide additional parameters to the server. It starts with a question mark `?` followed by key-value pairs (e.g., `key=value`). These parameters are often used for passing data to the server to refine the response or behavior (e.g., search parameters, pagination information).
+6. **Fragment**
+    
+    - **Example**: `#section`
+    - Also known as the hash, the fragment is an internal page reference, sometimes called a named anchor. It usually refers to a specific part of the document. In web browsers, this doesn’t result in an HTTP request: it just scrolls the page to the marked section if available.
