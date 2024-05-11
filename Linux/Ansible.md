@@ -69,5 +69,7 @@ cat .ssh/'name of the key'.pub
 
 Copy your pub key to the server:
 ```shell
-ssh-copy-id -i /.ssh/'name of the key'.pub
+ssh-copy-id -i ~/.ssh/'name of the key'.pub
 ```
+
+- 
