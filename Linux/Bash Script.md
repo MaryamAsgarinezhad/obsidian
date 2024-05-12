@@ -479,4 +479,6 @@ A filesystem is a method and data structure that an operating system uses to con
 
 ------------------------------------------
 
-In Unix-like operating systems, including Linux, `/var` is a directory that contains variable data files. It stands for "variable," as opposed to the more static data in directories like `/bin` and `/sbin`. The `/var` directory typically includes files that are expected to grow in size or change frequently during normal system operation, such as log files (`/var/log`), spool directories (`/var/spool`), and temporary files (`/var/tmp`).
+- In Unix-like operating systems, including Linux, `/var` is a directory that contains variable data files. It stands for "variable," as opposed to the more static data in directories like `/bin` and `/sbin`. The `/var` directory typically includes files that are expected to grow in size or change frequently during normal system operation, such as log files (`/var/log`), spool directories (`/var/spool`), and temporary files (`/var/tmp`).
+
+- 
