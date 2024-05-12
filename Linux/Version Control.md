@@ -26,6 +26,23 @@ git statu
 git diff 'name of the file'
 ```
 - shows you what has changed in the file
+```shell
+git add 'name of the file'
+```
+- staged, ready to commit
+```shell
+git commit -m 'message'
+```
+- commited
+```shell
+git push origin 'target branch'
+```
+- pushed
+
+8- See your commands history:
+```shell
+history
+```
 
 
 --------------------------------------------
