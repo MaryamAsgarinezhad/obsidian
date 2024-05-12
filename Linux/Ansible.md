@@ -137,3 +137,7 @@ Install a package (vim-nox) here on all of your servers:
 ansible all -m apt -a name=vim-nox --become --ask-become-pass
 ```
 
+- You can go to the servers and see if it is installed by :
+```shell
+  apt search vim-nox
+```
