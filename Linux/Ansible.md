@@ -88,3 +88,5 @@ We can have multiple keys on our workstation for multiple purposes (connection t
 nano .bashrc
 ```
 ![[Pasted image 20240511193813.png]]
+
+--------------------------------
