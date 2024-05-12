@@ -97,5 +97,8 @@ nano .bashrc
 
 3- Run an ansible command
 ```shell
-ansible all --key-file 'path to the ssk key directory' -i 
+ansible all --key-file 'path to the ssk key directory' -i 'inventory file name' -m ping
 ```
+
+- -m ping: this command specifies the module which is ping, used to connect to each of the servers we defined, and check their status.
+- 
