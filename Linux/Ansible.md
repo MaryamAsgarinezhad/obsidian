@@ -102,5 +102,12 @@ ansible all --key-file 'path to the ssk key directory' -i 'inventory file name' 
 
 - -m ping: this command specifies the module which is ping, used to connect to each of the servers we defined, and check their status.
 
-4- Automate managements by creating the config file. Inside the 
- 
+4- Automate ping by creating the config file. **This file is read by ansible whenever you run it.**
+
+- Add default confings to that file:
+- ![[Pasted image 20240512120638.png]]
+```shell
+
+```
+
+  
