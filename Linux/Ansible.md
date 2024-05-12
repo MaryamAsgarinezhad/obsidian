@@ -95,10 +95,12 @@ nano .bashrc
 
 2- Create the **inventory file**, for storing IP addressed of the hosts we want to configure and manage. There we write those IPs along with their domain names (if we have configured a DNS to figure them out)
 
-3- Run an ansible command
+3- Run an ansible command to connect to the hosts:
 ```shell
 ansible all --key-file 'path to the ssk key directory' -i 'inventory file name' -m ping
 ```
 
 - -m ping: this command specifies the module which is ping, used to connect to each of the servers we defined, and check their status.
-- 
+
+4- Automate managements by creating the config file. Inside the 
+ 
