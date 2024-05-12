@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Network.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Ansible.md"
+                "file": "Linux/Network.md"
               }
             }
           },
@@ -174,8 +174,8 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "Linux/?.md",
     "Linux/Ansible.md",
+    "Linux/?.md",
     "Linux/CDN.md",
     "Pasted image 20240512120638.png",
     "Linux/Network.md",
