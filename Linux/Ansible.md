@@ -112,12 +112,11 @@ ansible all -m ping
 ```
 
 - Get the list of hosts using:
-  
 ```shell
 ansible all --list-hosts
 ```
 
  - When ansible connects to a server, it pulls a list of information about that server including its processors, os, env vars,... . Get those info using the below command:
 ```shell
-ansible all -m gather-facts --limit 'ip '
+ansible all -m gather-facts --limit 'ip of the host you want to limit your request to'
 ```

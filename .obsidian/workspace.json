@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/CDN.md",
+                "file": "Linux/Ansible.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/CDN.md",
+                "file": "Linux/Ansible.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/CDN.md",
+                "file": "Linux/Ansible.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/CDN.md"
+                "file": "Linux/Ansible.md"
               }
             }
           },
@@ -174,6 +174,7 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/?.md",
     "Linux/Ansible.md",
     "Linux/CDN.md",
     "Pasted image 20240512120638.png",
@@ -187,10 +188,8 @@
     "Pasted image 20240511192811.png",
     "Pasted image 20240511184533.png",
     "Pasted image 20240511181428.png",
-    "Linux/?.md",
     "Pasted image 20240511130529.png",
     "Pasted image 20240511130504.png",
-    "Linux/CDN.md",
     "Linux/Kubernetes.md",
     "Linux/Logging.md",
     "Linux/Prometheus & Grafana.md",

@@ -5,5 +5,6 @@
    config file in code
    
 2. Add mapping for `ceph`
-   mapping fo
+   mapping for the new teams original domain and abbreviated domain
+    
 3. Add member to Sre Cdn Rubika Channel
