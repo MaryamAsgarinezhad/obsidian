@@ -90,3 +90,7 @@ nano .bashrc
 ![[Pasted image 20240511193813.png]]
 
 --------------------------------
+
+1- Install ansible client.
+
+2- Create the **inventory file**, for storing IP addressed of the hosts we want to configure and manage. There we 
