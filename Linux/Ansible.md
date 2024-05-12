@@ -120,3 +120,6 @@ ansible all --list-hosts
 ```shell
 ansible all -m gather-facts --limit 'ip of the host you want to limit your request to'
 ```
+
+------------------------------------------------
+
