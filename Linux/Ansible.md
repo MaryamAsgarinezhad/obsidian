@@ -130,3 +130,10 @@ ansible all -m gather-facts --limit 'ip of the host you want to limit your reque
 ```
  - '-m apt' gives you the access to the apt module to modify its parameter, update_cache.
  - '--ask-become-pass' asks you the password of the 'become'
+
+Install a package (vim-nox) here on all of your servers:
+
+```shell
+ansible all -m apt -a name=vim-nox --become --ask-become-pass
+```
+
