@@ -123,8 +123,10 @@ ansible all -m gather-facts --limit 'ip of the host you want to limit your reque
 
 ------------------------------------------------
 
- Modifying configs: For modification purposes, you need 'become' permision (just as you need sudo command for some commands on your local server). Foe example:
+ Modifying configs: For modification purposes, you need 'become' permision (just as you need sudo command for some commands on your local server). For example:
  
  ```shell
- 
+ ansible all -m apt -a update_cache=true --become --ask-become-pass
 ```
+ - '-m apt' gives you the access to the apt module to modify its parameter, update_cache.
+ - '--ask-become-pass' asks you the password of the 'become'
