@@ -208,3 +208,10 @@ A domain, specifically referred to in the context of the Internet, is part of th
 
 - The token java project creates the daily key for hashing.
 - The regression python project tests this key generation process.
+
+-----------------------------------
+
+**Dynamic Host Configuration Protocol**
+
+- Internet protocol
+- The Dynamic Host Configuration Protocol is a network management protocol used on Internet Protocol networks for automatically assigning IP addresses and other communication parameters to devices connected to the network using a client–server architecture.

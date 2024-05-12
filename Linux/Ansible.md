@@ -93,4 +93,4 @@ nano .bashrc
 
 1- Install ansible client.
 
-2- Create the **inventory file**, for storing IP addressed of the hosts we want to configure and manage. There we 
+2- Create the **inventory file**, for storing IP addressed of the hosts we want to configure and manage. There we write those IPs along with their domain names (if we have configured a DNS to figure them out)
