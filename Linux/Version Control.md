@@ -8,9 +8,9 @@ which git
 
 3- Tap the 'new ssh key' from your github dashboard (you need the **enter your system's public key** in the dashboard) and give it a name. 
 
-4- Clone repository with ssh
-- **Change your directory to the path of the cloned repository to make changes and use git commands.**
-- In the .git file of that repository, 
+4- Clone project with ssh
+- **Change your directory to the path of the cloned project to make changes and use git commands.**
+- In the .git file of that project, which is hidden, you have specified which remote repository to write and read from.
 
 5- Identify yourself to git:
 ```shell
