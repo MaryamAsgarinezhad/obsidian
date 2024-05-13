@@ -67,9 +67,9 @@ See the content of ssh keys (here public):
 cat .ssh/'name of the key'.pub
 ```
 
-Copy your pub key to the server:
+**Copy your pub key to the server:**
 ```shell
-ssh-copy-id -i ~/.ssh/'name of the key'.pub
+ssh-copy-id -i ~/.ssh/'name of the key'.pub 'ip address of the target server'
 ```
 
 - The tilde (`~`) character at the beginning of a file path is a shorthand representation for the current user's home directory.
