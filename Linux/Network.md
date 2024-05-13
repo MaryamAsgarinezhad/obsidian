@@ -218,13 +218,16 @@ A domain, specifically referred to in the context of the Internet, is part of th
 
 ----------------------------------------------
 
-"Apache" commonly refers to the Apache HTTP Server, which is a widely-used web server software. Developed and maintained by the Apache Software Foundation, it plays a crucial role in the internet's infrastructure by delivering web content to users.
+"Apache" commonly refers to the Apache HTTP Server, which is a widely-used web server software. Developed and maintained by the Apache Software Foundation, it plays a crucial role in the internet's infrastructure by **delivering web content to users**.
+
   - **Usage**:
     
     - **Serving Web Content**: Apache is primarily used to host static web content and deliver web pages to users’ browsers.
     - **Application Server**: Through integration with other software (like PHP, Python, etc.), it also serves dynamic web content, acting as the backbone for application servers.
     - **Proxy Server**: It can be configured as a reverse proxy server, routing requests from clients across the internet to internal servers.
     - **Load Balancing**: Apache can distribute incoming requests across multiple backend servers to balance load and enhance performance.
+
+
 - **Configuration**:
     
     - Apache is configured through plain-text configuration files, with `httpd.conf` being the main configuration file. Administrators can specify server settings, security configurations, and host settings within these files.
