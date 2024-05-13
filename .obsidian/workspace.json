@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Version Control.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Version Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Version Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Ansible.md"
+                "file": "Linux/Version Control.md"
               }
             }
           },
@@ -174,9 +174,9 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Ansible.md",
     "Linux/Bash Script.md",
     "Linux/Spring(Java).md",
-    "Linux/Ansible.md",
     "Linux/?.md",
     "Pasted image 20240513151823.png",
     "Linux/Network.md",
