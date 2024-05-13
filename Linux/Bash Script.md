@@ -494,3 +494,13 @@ source venv/bin/activate
 
 - Now run the project and install the requirements that raise error.
 - After installing all packages, pip freeze into requirements.
+
+------------------------------------------
+
+Copy the contents of a file into another:
+
+```shell
+cp 'file1' 'file2'
+```
+
+------------------------------------

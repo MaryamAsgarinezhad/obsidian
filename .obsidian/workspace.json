@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Spring(Java).md",
+                "file": "Linux/Ansible.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Spring(Java).md",
+                "file": "Linux/Ansible.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Spring(Java).md",
+                "file": "Linux/Ansible.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Spring(Java).md"
+                "file": "Linux/Ansible.md"
               }
             }
           },
@@ -174,6 +174,8 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Bash Script.md",
+    "Linux/Spring(Java).md",
     "Linux/Ansible.md",
     "Linux/?.md",
     "Pasted image 20240513151823.png",
@@ -183,7 +185,6 @@
     "Pasted image 20240513141059.png",
     "Pasted image 20240513140629.png",
     "Pasted image 20240513111003.png",
-    "Linux/Bash Script.md",
     "Pasted image 20240512120638.png",
     "Pasted image 20240511193813.png",
     "Pasted image 20240511193624.png",
@@ -198,7 +199,6 @@
     "Linux/CI-CD Pipeline.md",
     "Linux/Docker.md",
     "Linux/API Services.md",
-    "Linux/Spring(Java).md",
     "Linux/PSQL.md",
     "Linux/Untitled",
     "Linux/Virtual Environment.md",
