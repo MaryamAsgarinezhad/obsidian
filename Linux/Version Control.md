@@ -259,4 +259,6 @@ pull: fetch + update
 
 ![[Pasted image 20240513111003.png]]
 
+- Specify the desired commit from the commit
+
 3- Delete the previous commit
