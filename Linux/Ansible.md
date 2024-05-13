@@ -169,3 +169,8 @@ ansible-playbook --ask-become-pass 'name of the playbook'
 - Then the settings will be applied to our servers.
 
 4- Check the ansible output after running commands against servers. Check the fields like **changed, unreachable, failed, skipped, rescued**, ... . 
+
+----------------------------------------
+
+'When' in playbooks:
+
