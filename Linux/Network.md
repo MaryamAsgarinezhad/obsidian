@@ -215,3 +215,17 @@ A domain, specifically referred to in the context of the Internet, is part of th
 
 - Internet protocol
 - The Dynamic Host Configuration Protocol is a network management protocol used on Internet Protocol networks for automatically assigning IP addresses and other communication parameters to devices connected to the network using a client–server architecture.
+
+----------------------------------------------
+
+"Apache" commonly refers to the Apache HTTP Server, which is a widely-used web server software. Developed and maintained by the Apache Software Foundation, it plays a crucial role in the internet's infrastructure by delivering web content to users.
+  - **Usage**:
+    
+    - **Serving Web Content**: Apache is primarily used to host static web content and deliver web pages to users’ browsers.
+    - **Application Server**: Through integration with other software (like PHP, Python, etc.), it also serves dynamic web content, acting as the backbone for application servers.
+    - **Proxy Server**: It can be configured as a reverse proxy server, routing requests from clients across the internet to internal servers.
+    - **Load Balancing**: Apache can distribute incoming requests across multiple backend servers to balance load and enhance performance.
+- **Configuration**:
+    
+    - Apache is configured through plain-text configuration files, with `httpd.conf` being the main configuration file. Administrators can specify server settings, security configurations, and host settings within these files.
+    - Virtual hosting allows one Apache installation to serve different websites. For example, hosting both `www.example.com` and `www.test.com` on the same server.
