@@ -2,13 +2,14 @@
 ```shell
 which git
 ```
-- shows the binary location of git , no output means you dont have the file to install.
+- shows the binary location of git , no output means you don't have the file to install.
 
 2- Sing in to git hub to have a repository.
 
 3- Tap the 'new ssh key' from your github dashboard (you need the **enter your system's public key** in the dashboard) and give it a name. 
 
-4- Clone with ssh
+4- Clone repository with ssh
+- **Change your directory to the path of the cloned repository to make changes and use git commands.**
 
 5- Identify yourself to git:
 ```shell
