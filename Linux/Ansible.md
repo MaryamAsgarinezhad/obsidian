@@ -177,4 +177,4 @@ ansible-playbook --ask-become-pass 'name of the playbook'
 - Run the task in specific conditions:  
 ![[Pasted image 20240513163336.png]]
 
-Execute ansible for certain type of servers:
+- Get the information about servers using ''gather_facts" module to **help you write your when conditions**. Consider the parameters it gives you to filter your commands, like 'ansible_product name'.
