@@ -161,7 +161,7 @@ vim install_apache.yml
 - Write each task separatly with its name and variables in each 'task' part.
 - ![[Pasted image 20240513151823.png]]
 
-3- Run the playbook against ansible servers:
+3- Run the playbook against ansible servers: (No need for )
 
 ```shell
 ansible-playbook --ask-become-pass 'name of the playbook'

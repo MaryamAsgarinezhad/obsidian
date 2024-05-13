@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Spring(Java).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Spring(Java).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Spring(Java).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Ansible.md"
+                "file": "Linux/Spring(Java).md"
               }
             }
           },
@@ -174,11 +174,11 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Linux/Ansible.md",
+    "Linux/?.md",
     "Pasted image 20240513151823.png",
     "Linux/Network.md",
     "Linux/CDN.md",
-    "Linux/Ansible.md",
-    "Linux/?.md",
     "Linux/Version Control.md",
     "Pasted image 20240513141059.png",
     "Pasted image 20240513140629.png",
@@ -190,7 +190,6 @@
     "Pasted image 20240511193401.png",
     "Pasted image 20240511193213.png",
     "Pasted image 20240511192811.png",
-    "Pasted image 20240511184533.png",
     "Linux/Kubernetes.md",
     "Linux/Logging.md",
     "Linux/Prometheus & Grafana.md",
