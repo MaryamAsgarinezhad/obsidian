@@ -10,6 +10,7 @@ which git
 
 4- Clone repository with ssh
 - **Change your directory to the path of the cloned repository to make changes and use git commands.**
+- In the .git file of that repository, 
 
 5- Identify yourself to git:
 ```shell
