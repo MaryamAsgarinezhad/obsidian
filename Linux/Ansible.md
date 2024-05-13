@@ -141,3 +141,9 @@ ansible all -m apt -a name=vim-nox --become --ask-become-pass
 ```shell
   apt search vim-nox
 ```
+
+------------------------------------------------
+
+Create and run the first playbook:
+
+Playbooks carryout the commands we want to run on our servers.
