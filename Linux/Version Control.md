@@ -252,4 +252,10 @@ pull: fetch + update
 
 -------------------------------------
 
-Reversing the commit 
+**Reversing the commit on the same branch:**
+
+1- Fetch
+2- Reset the branch to the commit you want
+![[Pasted image 20240513111003.png]]
+
+3- 
