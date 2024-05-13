@@ -259,6 +259,10 @@ pull: fetch + update
 
 ![[Pasted image 20240513111003.png]]
 
-- Specify the desired commit from the commit
+- Specify the desired commit from the commit tree:
+- ![[Pasted image 20240513140629.png]]
 
 3- Delete the previous commit
+
+4- To see the last commit on your local, roll bach the uncommited changes.
+![[Pasted image 20240513141059.png]]
