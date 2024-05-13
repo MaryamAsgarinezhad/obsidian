@@ -255,7 +255,8 @@ pull: fetch + update
 **Reversing the commit on the same branch:**
 
 1- Fetch
-2- Reset the branch to the commit you want
+2- Reset the branch to the commit you want (**change the origin branch**)
+
 ![[Pasted image 20240513111003.png]]
 
-3- 
+3- Delete the previous commit
