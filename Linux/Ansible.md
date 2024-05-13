@@ -144,6 +144,12 @@ ansible all -m apt -a name=vim-nox --become --ask-become-pass
 
 ------------------------------------------------
 
-Create and run the first playbook:
-
+Create and run the first playbook.
 Playbooks carryout the commands we want to run on our servers.
+
+1- Create the playbook yaml file:
+```shell
+vim install_apache.yml
+```
+
+2- Config example:
