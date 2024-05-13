@@ -174,3 +174,7 @@ ansible-playbook --ask-become-pass 'name of the playbook'
 
 'When' in playbooks:
 
+- Run the task in specific conditions:  
+![[Pasted image 20240513163336.png]]
+
+Execute ansible for certain type of servers:
