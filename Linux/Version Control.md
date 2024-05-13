@@ -249,3 +249,7 @@ pull: fetch + update
 **After merging the child branch with parent, the child branch will be deleted on the repository and you have it locally, so delete it locally and create a new branch for later merge requests.**
 
 - fetch, check out to the latest commit of the parent branch,create the new branch, commit, merge request.
+
+-------------------------------------
+
+Reversing the commit 
