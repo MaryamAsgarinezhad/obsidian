@@ -6,7 +6,7 @@ which git
 
 2- Sing in to git hub to have a repository.
 
-3- Tap the 'new ssh key' from your github dashboard (you need the enter your system's public key in the dashboard) and give it a name. 
+3- Tap the 'new ssh key' from your github dashboard (you need the **enter your system's public key** in the dashboard) and give it a name. 
 
 4- Clone with ssh
 
