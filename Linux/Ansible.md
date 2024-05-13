@@ -148,12 +148,22 @@ Create and run the first playbook.
 Playbooks carryout the commands we want to run on our servers.
 
 1- Create the playbook yaml file:
+
 ```shell
 vim install_apache.yml
 ```
+ 
  - YAML, which stands for "YAML Ain't Markup Language" (a recursive acronym), is a human-readable data serialization format. It is commonly used for configuration files and in applications where data is being stored or transmitted. YAML is designed to be more readable and user-friendly than other data serialization formats such as XML or JSON, although it can serve similar purposes.
  
 2- Config example:
 
-- Define the general configs at the beginn
+- Define the general configs at the beginning.
 - Write each task separatly with its name and variables in each 'task' part.
+- ![[Pasted image 20240513151823.png]]
+
+3- Run the playbook against ansible servers:
+
+```shell
+ansible-playbook --ask-become-pass 'name of the playbook'
+```
+- Then the settings will be applied to our servers.
