@@ -23,4 +23,4 @@ This configuration file shows an advanced use of Nginx for handling a complex CD
 
 ----------------------------------------------
 
-For youtube and internet links, administrators create 'username' and 'password' for each team (using /signup endpoint), making them able to call the token application to **receive temporary keys** to make secure hashes to add to their links. 
+For youtube and internet links (not the ceph) ones, administrators create 'username' and 'password' for each team (using /signup endpoint), giving them a token making them able to call the token application to **receive temporary keys** to make secure hashes to add to their links. 
