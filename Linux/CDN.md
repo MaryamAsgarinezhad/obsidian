@@ -35,4 +35,8 @@ Some micellaneous stuff:
 
 We need to add new cacha nodes and load balancers when we need to scale CDN in high traffic situations:
 
-- [](#add-new-cache-node-check-list)Add New Cache Node Check List
+- Add New Cache Node Check List
+  ![[Pasted image 20240514180750.png]]
+  1- Add the cachenode specific playbooks on a new VM to make it a cachenode.
+  
+  2- Add config playbooks to loadbalancers to know these cachenodes.
