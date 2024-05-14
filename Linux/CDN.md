@@ -35,8 +35,13 @@ Some micellaneous stuff:
 
 We need to add new cacha nodes and load balancers when we need to scale CDN in high traffic situations:
 
-- Add New Cache Node Check List
+- **Add New Cache Node Check List**
   ![[Pasted image 20240514180750.png]]
   1- Add the ansible playbooks on your new VM to make it a cachenode.
   
   2- Add config playbooks to loadbalancers to recognize these cachenodes.
+
+
+- **Add new Load-Balancer**
+  ![[Pasted image 20240514181944.png]]
+  1- You need Os roles for security of the reverse proxy. (Loadbalancers are seen as your servers as a proxy)
