@@ -28,3 +28,11 @@ Some micellaneous stuff:
 - OpenResty is a robust web platform that integrates the standard Nginx core with a variety of third-party modules, particularly those developed for extending Nginx with capabilities to run Lua scripts. It's designed to help build scalable web applications, web services, and dynamic web gateways more efficiently by leveraging Nginx's event-driven model. The platform significantly enhances the programmability of Nginx using the Lua programming language, making it a powerful tool for developing complex web-based systems.
 
 - Fluent Bit is an open-source log processor and forwarder, which allows for collecting data like logs, metrics, and traces from different sources, enriching this data, and sending it to multiple destinations. It is part of the Fluentd ecosystem, designed to be lightweight and efficient, with a small memory footprint, making it particularly well-suited for environments like containers and embedded systems.
+
+
+
+-----------------------------------
+
+We need to add new cacha nodes and load balancers when we need to scale CDN in high traffic situations:
+
+- [](#add-new-cache-node-check-list)Add New Cache Node Check List
