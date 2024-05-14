@@ -20,3 +20,7 @@ This YAML file would be processed by management software or scripts that apply t
 - **nginx_cachenode.conf.j2** and **router.conf.j2**
   
 This configuration file shows an advanced use of Nginx for handling a complex CDN setup with dynamically configured paths, caching strategies, and custom request handling logic. It reflects an infrastructure where different components (like cache sizes and policies) are customized per team or service, enhancing performance and scalability. The use of Lua and template variables suggests a highly customizable and programmable environment managed through dynamic configurations possibly derived from the earlier YAML setup. This is typical in environments where performance, scalability, and responsiveness are critical, and where infrastructure needs may vary significantly across different teams or applications.
+
+----------------------------------------------
+
+For youtube and internet links, administrators add 
