@@ -63,3 +63,7 @@ An OpenResty based CDN (Content Delivery Network) leverages the OpenResty web pl
 3. **High Performance**: OpenResty utilizes the event-driven architecture of Nginx and the JIT compilation power of LuaJIT, making it extremely fast and capable of handling a large number of concurrent connections with minimal resource consumption.
     
 4. **Security Enhancements**: CDNs often include security measures such as DDoS mitigation, bot management, and SSL/TLS termination. OpenResty can enhance these aspects with custom Lua scripts, providing flexible and powerful security configurations at the edge.
+
+------------------------------------------------------
+
+The conf.j2 files can also determine the logging format of the HTTP requests sent to hosts
