@@ -51,3 +51,5 @@ We need to add new cacha nodes and load balancers when we need to scale CDN in h
 **OpenResty Web Platform**
 
 - OpenResty is a dynamic web platform that builds on the robust core of Nginx, integrating the standard Nginx core with a variety of third-party modules and Lua scripting capabilities. This integration enhances Nginx’s functionality, turning it into a more capable web server that can also execute application logic and handle network traffic management more efficiently.
+- **Modular Architecture**: OpenResty includes a range of modules that extend its capabilities beyond simple HTTP serving, including support for web sockets, secure web connections, and direct interaction with other databases and storage systems.
+- **Efficient Content Delivery**: OpenResty can be used to develop a fully-featured web application or service **directly on the Nginx server**, leveraging Nginx’s efficient handling of HTTP requests and Lua’s flexibility for scripting complex behaviors.
