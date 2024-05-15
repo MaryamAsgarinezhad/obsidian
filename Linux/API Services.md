@@ -22,6 +22,11 @@ When a web server like Nginx or Uvicorn is installed and configured on a system,
     
 - **Accept Connections**: The web server **accepts incoming TCP connections** on the bound ports. TCP (Transmission Control Protocol) ensures that the data exchanged between the client and server is reliable, ordered, and error-checked.
 
+### 4. **Processing Requests**
+
+- **Request Parsing**: Upon receiving a request, the web server parses the HTTP data to understand what is being requested. This could be a request for a static file (like an image or JavaScript file), dynamic content generation (like querying a database and generating HTML in response), or API data exchange.
+    
+- **Delegate to Handlers**: Depending on the configuration and the nature of the request, the server might handle it directly (serve static content from disk) or delegate the handling to a backend application or script. For example, Nginx might serve static content directly, while proxying requests for dynamic content to a backend Python application running via Uvicorn.
 
 -----------------------------------------------------
 -  `["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]`: This command will run the Uvicorn ASGI server to serve the FastAPI application named `app` from the `main` module. Here's what each part does:
