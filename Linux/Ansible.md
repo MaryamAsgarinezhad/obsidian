@@ -47,7 +47,7 @@ ansible-playbook playbooks/openresty.yml -i inventories/dev/ --ask-become-pass -
 ```
 
 This runs tasks tagged with 'config'.
-Applies on all inventories in -i inventories/dev/, and applies only on cachenodes.
+Applies on inventories in -i inventories/dev/, and applies only on cachenodes.
 
 ------------------------
 

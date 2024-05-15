@@ -45,3 +45,7 @@ We need to add new cacha nodes and load balancers when we need to scale CDN in h
 - **Add new Load-Balancer**
   ![[Pasted image 20240514181944.png]]
   1- You need Os roles for security of the reverse proxy. (Loadbalancers are seen as your servers as a proxy)
+
+-----------------------------------------------------
+
+What is an openresty based CDN?
