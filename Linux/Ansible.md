@@ -46,7 +46,7 @@ end
 ansible-playbook playbooks/openresty.yml -i inventories/dev/ --ask-become-pass --limit cachenode --tags config
 ```
 
-This runs commands that have the 'config' tag.
+This runs tasks tagged with 'config'.
 Applies on all inventories in -i inventories/dev/, and applies only on cachenodes.
 
 ------------------------
