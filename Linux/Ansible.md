@@ -12,8 +12,9 @@ Key features of Ansible include:
     
 5. **Inventory**: Ansible uses an inventory file to define the hosts on which tasks will be executed. The inventory can be static or dynamic, allowing you to manage different sets of hosts easily. We can also define variables configuration purposes in the inventory files.
     
-6. **Roles**: Roles are a way to organize and reuse Ansible playbooks and related files. **Roles can encapsulate a set of** tasks, handlers, variables, and other components, making it easier to manage complex automation tasks. ==They can contain .cong.j2 files to manipulate server configs using Lua language.
-    
+6. **Roles**: Roles are a way to organize and reuse Ansible playbooks and related files. **Roles can encapsulate a set of** tasks, handlers, variables, and other components, making it easier to manage complex automation tasks. ==They can contain .cong.j2 files to manipulate server configs using Lua language.==
+   
+   Tip: Playbooks execute linux commands on the server, but .conf.j2 files define Nginx server configurations and 
 
 Overall, Ansible simplifies the process of automating infrastructure management tasks, making it an essential tool for DevOps teams and system administrators.
 
