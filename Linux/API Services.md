@@ -2,7 +2,9 @@ Start a fastapi service from scratch:
 
 **FastAPI is the framework you'll use to build your API**, and Uvicorn is the server that will use the API you build to serve requests.
 
-**. When our API framework doesn't have its own web server, like php, we use Apache ir Nginx web servers to serve those **
+**When our API framework doesn't have its own web server, like php, we use Apache ir Nginx web servers to serve the API application**
+
+When a web server like Nginx or Uvicorn is installed and configured on a system, it transforms the hardware into a host capable of handling web requests. This process involves several key steps and components that work together to manage the incoming traffic, process requests, and serve responses. Here's an overview of how this transformation occurs:
 
 -  `["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]`: This command will run the Uvicorn ASGI server to serve the FastAPI application named `app` from the `main` module. Here's what each part does:
     - `"uvicorn"`: Specifies the command to run, which is the Uvicorn ASGI server.
