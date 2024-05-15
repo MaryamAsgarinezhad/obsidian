@@ -50,15 +50,13 @@ connection.close()
 3. `host`: Specifies the hostname or IP address of the PostgreSQL server. This is the address where the PostgreSQL server is running.
 4. `port`: Specifies the port number on which the PostgreSQL server is listening for connections. The default port for PostgreSQL is 5432.
 5. `database`: Specifies the name of the database to connect to. This is the database within the PostgreSQL server that you want to interact with.
-```
-```
 
 - We define all of our variables (which may be secret) in the docker-compose file or the docker file. 
 - Access the ENV variables through "os" module. Since we run docker-compose or the docker file on the specific host and do not necessarily have to share it, and we set the host's env variables to our desired values, so our privacy is preserved.
 
 
 
-- Below we show how to handle different types of client requests and take actions upon them:
+- Below we show how to handle different types of client requests and take actions upon them (**this app is called an API**):
   ![[Pasted image 20240426161754.png]]
 
 
