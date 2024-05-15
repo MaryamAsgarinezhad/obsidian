@@ -69,4 +69,18 @@ An OpenResty based CDN (Content Delivery Network) leverages the OpenResty web pl
 The conf.j2 files can also determine the logging format of the HTTP requests sent to hosts:
 
 - ![[Pasted image 20240515183205.png]]
-- 
+
+In Nginx, the variables `upstream_connect_time`, `upstream_header_time`, and `upstream_response_time` are automatically available for use in your log formats when Nginx is configured as a reverse proxy. These variables do not need to be explicitly defined by the user; they are built into Nginx and are populated when Nginx makes requests to upstream servers.
+
+- **`$upstream_connect_time`**: This variable records the time in seconds with millisecond resolution that it took to establish a connection to an upstream server.
+- **`$upstream_header_time`**: This records the time in seconds with millisecond resolution between establishing a connection to an upstream server and receiving the first byte of the response header.
+- **`$upstream_response_time`**: This captures the time in seconds with millisecond resolution taken to receive the entire response from the upstream server, not just the header.
+
+These variables are typically used in an environment **where Nginx acts as a reverse proxy or load balancer.**
+An "upstream server" refers to any server or service to which Nginx forwards requests for processing. Nginx acts as a reverse proxy or load balancer in front of these upstream servers.
+
+### Role of an Upstream Server
+
+1. **Processing Requests**: An upstream server is responsible for handling requests sent by Nginx. It processes these requests and returns the appropriate responses back to Nginx, which then forwards them to the client (end user). This setup allows Nginx to delegate complex application logic or resource-intensive tasks to these backend servers.
+    
+2. **Scaling and Load Balancing**: Multiple upstream servers can be used to distribute the load of incoming requests, improving the reliability and scalability of web applications. Nginx can distribute traffic among several servers based on various methods like round-robin, least connections, or even based on server response times.

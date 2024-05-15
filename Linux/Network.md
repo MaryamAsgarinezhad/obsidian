@@ -239,10 +239,10 @@ You can define your DNS locally in /etc/hosts.
 
 ![[Pasted image 20240515185521.png]]
 
-In Nginx, the variables `upstream_connect_time`, `upstream_header_time`, and `upstream_response_time` are automatically available for use in your log formats when Nginx is configured as a reverse proxy. These variables do not need to be explicitly defined by the user; they are built into Nginx and are populated when Nginx makes requests to upstream servers.
+------------------------------
 
-- **`$upstream_connect_time`**: This variable records the time in seconds with millisecond resolution that it took to establish a connection to an upstream server.
-- **`$upstream_header_time`**: This records the time in seconds with millisecond resolution between establishing a connection to an upstream server and receiving the first byte of the response header.
-- **`$upstream_response_time`**: This captures the time in seconds with millisecond resolution taken to receive the entire response from the upstream server, not just the header.
+```shell
+cd ~/.ssh
+```
 
-These variables are typically used in an environment **where Nginx acts as a reverse proxy or load balancer.**
+In this dirctory, you can define the parameters by which you
