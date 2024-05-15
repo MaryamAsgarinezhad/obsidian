@@ -236,3 +236,5 @@ A domain, specifically referred to in the context of the Internet, is part of th
 ---------------------------------------------
 
 You can define your DNS locally in /etc/hosts.
+
+![[Pasted image 20240515185521.png]]
