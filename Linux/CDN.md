@@ -68,4 +68,5 @@ An OpenResty based CDN (Content Delivery Network) leverages the OpenResty web pl
 
 The conf.j2 files can also determine the logging format of the HTTP requests sent to hosts:
 
+- ![[Pasted image 20240515183205.png]]
 - 
