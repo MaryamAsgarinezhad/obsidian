@@ -1,4 +1,3 @@
-Start a fastapi service from scratch:
 
 **FastAPI is the framework you'll use to build your API**, and Uvicorn is the server that will use the API you build to serve requests.
 
@@ -41,6 +40,9 @@ When a web server like Nginx or Uvicorn is installed and configured on a system,
 - **Closing Connections**: After the response is sent, the server may close the TCP connection or keep it open for a while (keep-alive) to handle possible subsequent requests from the same client.
 
 -----------------------------------------------------
+
+**Start a fastapi service from scratch:**
+
 -  `["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]`: This command will run the Uvicorn ASGI server to serve the FastAPI application named `app` from the `main` module. Here's what each part does:
     - `"uvicorn"`: Specifies the command to run, which is the Uvicorn ASGI server.
     - `"main:app"`: Specifies the module and the object to run. In this case, it runs the `app` object from the `main` module.
