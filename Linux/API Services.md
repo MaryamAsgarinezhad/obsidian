@@ -1,5 +1,6 @@
 Start a fastapi service from scratch:
 
+You can use Nginx, Openresty, or ther web serv
 -  `["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]`: This command will run the Uvicorn ASGI server to serve the FastAPI application named `app` from the `main` module. Here's what each part does:
     - `"uvicorn"`: Specifies the command to run, which is the Uvicorn ASGI server.
     - `"main:app"`: Specifies the module and the object to run. In this case, it runs the `app` object from the `main` module.
