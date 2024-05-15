@@ -16,6 +16,13 @@ When a web server like Nginx or Uvicorn is installed and configured on a system,
 
 - **Listening on Ports**: Web servers are configured to listen on specific network ports (commonly HTTP on port 80 and HTTPS on port 443). When the server starts, ==it binds to these ports on the machine’s network interface==. This means the server claims these ports and starts listening for any incoming connections on them.
 
+### 3. **Handling Incoming Requests**
+
+- **Network Requests**: When a user or client (like a browser or another server) makes a request to the server, it is sent over the network to the IP address of the host, targeting the port where the web server is listening.
+    
+- **Accept Connections**: The web server **accepts incoming TCP connections** on the bound ports. TCP (Transmission Control Protocol) ensures that the data exchanged between the client and server is reliable, ordered, and error-checked.
+
+
 -----------------------------------------------------
 -  `["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]`: This command will run the Uvicorn ASGI server to serve the FastAPI application named `app` from the `main` module. Here's what each part does:
     - `"uvicorn"`: Specifies the command to run, which is the Uvicorn ASGI server.
