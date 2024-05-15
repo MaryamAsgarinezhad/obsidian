@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CDN.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Bash Script.md",
+                "file": "Linux/CDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Bash Script.md"
+                "file": "Linux/CDN.md"
               }
             }
           },
@@ -175,8 +175,9 @@
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
     "Linux/Network.md",
-    "Linux/Bash Script.md",
+    "Linux/Logging.md",
     "Linux/Ansible.md",
+    "Linux/Bash Script.md",
     "Linux/CDN.md",
     "Linux/?.md",
     "Linux/API Services.md",
@@ -193,7 +194,6 @@
     "Pasted image 20240511193813.png",
     "Pasted image 20240511193624.png",
     "Linux/Kubernetes.md",
-    "Linux/Logging.md",
     "Linux/Prometheus & Grafana.md",
     "Linux/Certificate management.md",
     "Linux/Liveness - Readiness.md",
