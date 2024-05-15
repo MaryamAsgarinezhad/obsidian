@@ -53,3 +53,13 @@ We need to add new cacha nodes and load balancers when we need to scale CDN in h
 ### **OpenResty Based CDN**
 
 An OpenResty based CDN (Content Delivery Network) leverages the OpenResty web platform to efficiently serve web content to end-users with high performance and reduced latency. OpenResty achieves this by extending the capabilities of Nginx with Lua to handle web traffic at the edge of the network, closer to users. This setup is particularly effective for dynamic content generation, traffic shaping, and sophisticated request routing that are crucial for a CDN.
+
+#### Key Aspects of an OpenResty Based CDN:
+
+1. **Edge Computing**: OpenResty can execute complex Lua scripts directly at the edge server level, allowing decisions to be made on-the-fly without needing to query back-end servers. This capability is crucial for CDNs where edge nodes determine how best to serve content based on factors like the geographic location of the user, the type of content requested, and current network conditions.
+    
+2. **Dynamic Content Handling**: Unlike traditional CDNs that may primarily focus on caching static assets, an OpenResty based CDN can dynamically modify content at the edge. This might include altering images, compressing files on demand, or even generating personalized content based on user interactions.
+    
+3. **High Performance**: OpenResty utilizes the event-driven architecture of Nginx and the JIT compilation power of LuaJIT, making it extremely fast and capable of handling a large number of concurrent connections with minimal resource consumption.
+    
+4. **Security Enhancements**: CDNs often include security measures such as DDoS mitigation, bot management, and SSL/TLS termination. OpenResty can enhance these aspects with custom Lua scripts, providing flexible and powerful security configurations at the edge.
