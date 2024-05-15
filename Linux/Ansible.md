@@ -2,7 +2,7 @@ Ansible is an open-source automation tool used for configuration management, app
 
 Key features of Ansible include:
 
-1. **Agentless**: Ansible operates over SSH or PowerShell, so it does not require any agent to be installed on managed hosts. This simplifies setup and management compared to agent-based solutions.
+1. ==**Agentless**==: Ansible operates over SSH or PowerShell, so it does not require any agent to be installed on managed hosts. This simplifies setup and management compared to agent-based solutions.
     
 2. **Playbooks**: Ansible uses YAML-based playbooks to define automation tasks. Playbooks describe the desired state of your infrastructure and are used to automate complex tasks or workflows.
     
