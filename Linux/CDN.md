@@ -48,4 +48,6 @@ We need to add new cacha nodes and load balancers when we need to scale CDN in h
 
 -----------------------------------------------------
 
-What is an openresty based CDN? And what is the OpenResty web platform?
+**OpenResty Web Platform**
+
+- OpenResty is a dynamic web platform that builds on the robust core of Nginx, integrating the standard Nginx core with a variety of third-party modules and Lua scripting capabilities. This integration enhances Nginx’s functionality, turning it into a more capable web server that can also execute application logic and handle network traffic management more efficiently.
