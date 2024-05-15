@@ -48,4 +48,4 @@ We need to add new cacha nodes and load balancers when we need to scale CDN in h
 
 -----------------------------------------------------
 
-What is an openresty based CDN?
+What is an openresty based CDN? And what is the OpenResty web platform?
