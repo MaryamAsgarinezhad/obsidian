@@ -28,6 +28,18 @@ When a web server like Nginx or Uvicorn is installed and configured on a system,
     
 - ==**Delegate to Handlers**==: Depending on the configuration and the nature of the request, the server might handle it directly (serve static content from disk) or delegate the handling to a backend application or script. For example, Nginx might serve static content directly, while proxying requests for dynamic content to a backend Python application running via Uvicorn.
 
+### 5. **Generating and Sending Responses**
+
+- **Response Generation**: After processing the request, the server or the delegated application generates an appropriate response. This could involve fetching data, executing application logic, or simply reading a file.
+    
+- **Send Response**: The response, along with appropriate HTTP headers, is sent back to the client via the established TCP connection.
+
+### 6. **Resource and Connection Management**
+
+- **Concurrency Handling**: Web servers like Nginx are designed to handle multiple requests concurrently. They use a combination of worker processes and asynchronous handling to manage multiple connections, making efficient use of system resources.
+    
+- **Closing Connections**: After the response is sent, the server may close the TCP connection or keep it open for a while (keep-alive) to handle possible subsequent requests from the same client.
+
 -----------------------------------------------------
 -  `["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]`: This command will run the Uvicorn ASGI server to serve the FastAPI application named `app` from the `main` module. Here's what each part does:
     - `"uvicorn"`: Specifies the command to run, which is the Uvicorn ASGI server.
