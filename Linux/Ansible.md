@@ -42,6 +42,13 @@ function validate_hash(key, uri_hash, exp_time, uri)
 end
 ```
 
+```shell
+ansible-playbook playbooks/openresty.yml -i inventories/dev/ --ask-become-pass --limit cachenode --tags config
+```
+
+This runs commands that have the 'config' tag.
+Applies on all inventories in -i inventories/dev/, and applies only on cachenodes.
+
 ------------------------
 
 Ansible purpose: Provision Servers
