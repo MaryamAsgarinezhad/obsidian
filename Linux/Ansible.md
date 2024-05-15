@@ -14,7 +14,7 @@ Key features of Ansible include:
     
 6. **Roles**: Roles are a way to organize and reuse Ansible playbooks and related files. **Roles can encapsulate a set of** tasks, handlers, variables, and other components, making it easier to manage complex automation tasks. ==They can contain .cong.j2 files to manipulate server configs using Lua language.==
    
-   Tip: Playbooks execute linux commands on the server, but .conf.j2 files define Nginx server configurations and 
+   Tip: Playbooks execute linux commands on the server, but .conf.j2 files define Nginx server configurations and APIs using Lua.
 
 Overall, Ansible simplifies the process of automating infrastructure management tasks, making it an essential tool for DevOps teams and system administrators.
 
