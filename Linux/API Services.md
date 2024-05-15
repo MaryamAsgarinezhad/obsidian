@@ -12,6 +12,11 @@ When a web server like Nginx or Uvicorn is installed and configured on a system,
     
 - **Configuration**: After installation, the web server is configured. This involves setting up configuration files that dictate how the server should handle different types of requests. Configurations may include ==defining listening ports, server blocks or virtual hosts, security settings (like SSL/TLS for HTTPS), routing rules, static resource locations, and more.==
 
+### 2. **Binding to a Network Interface**
+
+- **Listening on Ports**: Web servers are configured to listen on specific network ports (commonly HTTP on port 80 and HTTPS on port 443). When the server starts, ==it binds to these ports on the machine’s network interface==. This means the server claims these ports and starts listening for any incoming connections on them.
+
+-----------------------------------------------------
 -  `["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]`: This command will run the Uvicorn ASGI server to serve the FastAPI application named `app` from the `main` module. Here's what each part does:
     - `"uvicorn"`: Specifies the command to run, which is the Uvicorn ASGI server.
     - `"main:app"`: Specifies the module and the object to run. In this case, it runs the `app` object from the `main` module.
