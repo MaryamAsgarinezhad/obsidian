@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Bash Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Ansible.md",
+                "file": "Linux/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Ansible.md"
+                "file": "Linux/Bash Script.md"
               }
             }
           },
@@ -174,18 +174,18 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "Linux/CDN.md",
+    "Linux/Network.md",
+    "Linux/Bash Script.md",
     "Linux/Ansible.md",
+    "Linux/CDN.md",
     "Linux/?.md",
     "Linux/API Services.md",
     "Pasted image 20240514181944.png",
     "Pasted image 20240514180750.png",
     "Linux/Version Control.md",
     "Pasted image 20240513163336.png",
-    "Linux/Bash Script.md",
     "Linux/Spring(Java).md",
     "Pasted image 20240513151823.png",
-    "Linux/Network.md",
     "Pasted image 20240513141059.png",
     "Pasted image 20240513140629.png",
     "Pasted image 20240513111003.png",

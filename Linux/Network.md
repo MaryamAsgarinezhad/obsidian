@@ -232,3 +232,7 @@ A domain, specifically referred to in the context of the Internet, is part of th
     
     - Apache is configured through plain-text configuration files, with `httpd.conf` being the main configuration file. Administrators can specify server settings, security configurations, and host settings within these files.
     - Virtual hosting allows one Apache installation to serve different websites. For example, hosting both `www.example.com` and `www.test.com` on the same server.
+
+---------------------------------------------
+
+You can define your DNS locally in /etc/hosts.
