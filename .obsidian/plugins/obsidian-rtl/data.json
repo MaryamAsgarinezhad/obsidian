@@ -1,0 +1,10 @@
+{
+  "fileDirections": {
+    "Linux/?.md": "ltr"
+  },
+  "defaultDirection": "auto",
+  "rememberPerFile": true,
+  "setNoteTitleDirection": true,
+  "setYamlDirection": false,
+  "statusBar": true
+}
