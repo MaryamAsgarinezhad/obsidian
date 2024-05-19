@@ -1,6 +1,6 @@
 {
   "fileDirections": {
-    "Linux/?.md": "ltr"
+    "DevOps/?.md": "ltr"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
