@@ -6,7 +6,7 @@ CTRL:
 
 ### Understanding Prompt Tuning
 
-**Prompt tuning** is a method where you fine-tune a pre-trained model by ==optimizing a set of prompt tokens== (also referred to as soft prompts) that are prepended to the input text. This technique alters the way the model processes inputs, effectively guiding it to generate outputs that are tailored to specific tasks or styles **without the need to modify the model’s core weights**. This can be applied to any large pre-trained model like GPT-3, BERT, or T5.
+**Prompt tuning** is a method where you fine-tune a pre-trained model by ==optimizing a set of prompt tokens== (also referred to as soft prompts) that are prepended to the input text. This technique alters the way the model processes inputs, effectively guiding it to generate outputs that are tailored to specific tasks or styles **without the need to modify the model’s core weights**.
 
 ### Alternatives for Prompt Tuning
 
