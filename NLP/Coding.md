@@ -2,6 +2,8 @@
 
 - **OpenRouter** is a platform that provides access to various models, including but not limited to GPT models from OpenAI.
 
+- Use **tokenizer()** for general NLP tasks that involve text classification, entity recognition, or any task where standard text input is required without the need for dialogue-specific formatting.
+- Use **tokenizer.apply_chat_template()** when working with models that are specifically designed for dialogue tasks, where the format and structure of the input must adhere to specific conversational patterns.
 ------------------------------------------
 
 - If you are setting temperature=0.0, it typically means you want deterministic output, which should not be used unless do_sample=True is also set. By setting temperature to a non-zero value and do_sample=True, you can generate more diverse outputs, or simply remove the temperature parameter if you don't intend to use sampling.
@@ -36,3 +38,7 @@ for index, row in enumerate(inputs[20:]):
     print(f"{index + 90} Done.")
 
 ```
+
+-----------------------------------------
+
+- how to use two different methods of a hypothetical tokenizer in a natural language processing (NLP) framework, each designed for distinct types of tasks?
