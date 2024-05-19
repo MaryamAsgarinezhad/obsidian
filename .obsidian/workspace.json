@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Untitled.md",
+                "file": "NLP/Preprocessing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Untitled.md",
+                "file": "NLP/Preprocessing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Untitled.md",
+                "file": "NLP/Preprocessing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Untitled.md"
+                "file": "NLP/Preprocessing.md"
               }
             }
           },
@@ -172,10 +172,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b2ececbd6de3a9d6",
+  "active": "dd69356c00beccd5",
   "lastOpenFiles": [
+    "NLP/Deep Learning Architectures.md",
+    "NLP/Preprocessing.md",
+    "NLP/Explainability and Interpretability.md",
     "NLP/Fine Tunning.md",
-    "NLP/Untitled.md",
+    "Pasted image 20240426134413.png",
     "NLP/Prompt Engineering.md",
     "DevOps/?.md",
     "NLP",
@@ -198,7 +201,6 @@
     "Pasted image 20240513151823.png",
     "Pasted image 20240513141059.png",
     "Pasted image 20240513140629.png",
-    "Pasted image 20240513111003.png",
     "DevOps/Kubernetes.md",
     "DevOps/Prometheus & Grafana.md",
     "DevOps/Certificate management.md",
