@@ -1,3 +1,5 @@
 - The benefit of using AutoTokenizer is that it abstracts away the need to know the specific tokenizer class associated with each pre-trained model. Instead, it provides a convenient interface for loading tokenizers in a consistent manner across different models.
 
 **OpenRouter** is a platform that provides access to various models, including but not limited to GPT models from OpenAI.
+
+The warning suggests an inconsistency in the parameters passed to the model.generate() method. If you are setting temperature=0.0, it typically means you want deterministic output, which should not be used unless do_sample=True is also set. By setting temperature to a non-zero value and do_sample=True, you can generate more diverse outputs, or simply remove the temperature parameter if you don't intend to use sampling.
