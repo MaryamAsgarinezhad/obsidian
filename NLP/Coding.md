@@ -42,3 +42,13 @@ for index, row in enumerate(inputs[20:]):
 -----------------------------------------
 
 - how to use two different methods of a hypothetical tokenizer in a natural language processing (NLP) framework, each designed for distinct types of tasks?
+
+### 1. Use **tokenizer()** for:
+
+- **Method Usage**: The `tokenizer()` method is a general-purpose function used for preparing text for various NLP tasks. It is likely capable of converting raw text into a format that machine learning models can process, such as tokenizing strings into words or subwords, and possibly converting these tokens into numerical IDs that models can understand.
+    
+- **Applicability**: The method is versatile and suitable for a broad range of NLP tasks, including but not limited to text classification (e.g., sentiment analysis, topic classification) and entity recognition (identifying names, locations, etc. in text). These tasks generally require standard tokenization where the text is segmented and indexed without needing any specialized formatting.
+
+### 2. Use **tokenizer.apply_chat_template()** for:
+
+- **Method Usage**: The `tokenizer.apply_chat_template()` method seems to be a specialized function of the tokenizer, designed to format and preprocess text specifically for dialogue-based models. This might involve applying a template or structure that aligns with how dialogue data is expected to be formatted in these models, such as framing statements and responses in a conversational context.

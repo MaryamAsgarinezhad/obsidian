@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Coding.md",
+                "file": "NLP/Hugging Face pipeline.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Coding.md",
+                "file": "NLP/Hugging Face pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Coding.md",
+                "file": "NLP/Hugging Face pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Coding.md"
+                "file": "NLP/Hugging Face pipeline.md"
               }
             }
           },
@@ -174,17 +174,17 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/Fine Tunning.md",
     "NLP/Hugging Face pipeline.md",
-    "NLP/Coding.md",
+    "NLP/Explainability and Interpretability.md",
+    "NLP/Evaluation Metrics.md",
     "NLP/Deep Learning Architectures.md",
+    "NLP/Coding.md",
     "NLP/Model API Codes.md",
     "DevOps/??.md",
     "NLP/Quantization.md",
     "DevOps/Spring(Java).md",
-    "NLP/Evaluation Metrics.md",
     "NLP/Preprocessing.md",
-    "NLP/Fine Tunning.md",
-    "NLP/Explainability and Interpretability.md",
     "Pasted image 20240426134413.png",
     "NLP/Prompt Engineering.md",
     "DevOps/?.md",
