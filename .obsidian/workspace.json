@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Model API Codes.md",
+                "file": "NLP/Hugging Face pipeline.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Model API Codes.md",
+                "file": "NLP/Hugging Face pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Model API Codes.md",
+                "file": "NLP/Hugging Face pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Model API Codes.md"
+                "file": "NLP/Hugging Face pipeline.md"
               }
             }
           },
@@ -174,8 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "DevOps/Spring(Java).md",
+    "NLP/Quantization.md",
+    "NLP/Hugging Face pipeline.md",
     "NLP/Model API Codes.md",
+    "DevOps/Spring(Java).md",
     "NLP/Evaluation Metrics.md",
     "NLP/Preprocessing.md",
     "NLP/Fine Tunning.md",
@@ -209,9 +211,7 @@
     "DevOps/Certificate management.md",
     "DevOps/CI-CD Pipeline.md",
     "DevOps/Docker.md",
-    "DevOps/PSQL.md",
     "Linux/Untitled",
-    "DevOps/Virtual Environment.md",
     "DevOps"
   ]
 }
