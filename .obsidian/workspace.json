@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Hugging Face pipeline.md",
+                "file": "NLP/Prompt Engineering.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Hugging Face pipeline.md",
+                "file": "NLP/Prompt Engineering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Hugging Face pipeline.md",
+                "file": "NLP/Prompt Engineering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Hugging Face pipeline.md"
+                "file": "NLP/Prompt Engineering.md"
               }
             }
           },
@@ -174,19 +174,21 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240519181213.png",
+    "NLP/Preprocessing.md",
     "NLP/Fine Tunning.md",
+    "Pasted image 20240519181134.png",
+    "NLP/Quantization.md",
+    "NLP/Prompt Engineering.md",
+    "NLP/Model API Codes.md",
     "NLP/Hugging Face pipeline.md",
     "NLP/Explainability and Interpretability.md",
     "NLP/Evaluation Metrics.md",
     "NLP/Deep Learning Architectures.md",
     "NLP/Coding.md",
-    "NLP/Model API Codes.md",
     "DevOps/??.md",
-    "NLP/Quantization.md",
     "DevOps/Spring(Java).md",
-    "NLP/Preprocessing.md",
     "Pasted image 20240426134413.png",
-    "NLP/Prompt Engineering.md",
     "DevOps/?.md",
     "NLP",
     "DevOps/Ansible.md",
@@ -205,12 +207,10 @@
     "Pasted image 20240513163336.png",
     "Pasted image 20240513151823.png",
     "Pasted image 20240513141059.png",
-    "Pasted image 20240513140629.png",
     "DevOps/Kubernetes.md",
     "DevOps/Prometheus & Grafana.md",
     "DevOps/Certificate management.md",
     "DevOps/CI-CD Pipeline.md",
-    "DevOps/Docker.md",
     "Linux/Untitled",
     "DevOps"
   ]
