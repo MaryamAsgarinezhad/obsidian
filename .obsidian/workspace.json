@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Evaluation Metrics.md",
+                "file": "NLP/Model API Codes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Evaluation Metrics.md",
+                "file": "NLP/Model API Codes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Evaluation Metrics.md",
+                "file": "NLP/Model API Codes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Evaluation Metrics.md"
+                "file": "NLP/Model API Codes.md"
               }
             }
           },
@@ -174,10 +174,11 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/Evaluation Metrics.md",
+    "NLP/Model API Codes.md",
     "NLP/Preprocessing.md",
     "NLP/Fine Tunning.md",
     "NLP/Coding.md",
-    "NLP/Evaluation Metrics.md",
     "NLP/Deep Learning Architectures.md",
     "NLP/Explainability and Interpretability.md",
     "Pasted image 20240426134413.png",
@@ -211,7 +212,6 @@
     "DevOps/PSQL.md",
     "Linux/Untitled",
     "DevOps/Virtual Environment.md",
-    "obsidian connection to git.md",
     "DevOps"
   ]
 }
