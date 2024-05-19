@@ -1,3 +1,4 @@
+Wrapping a function means creating another function that adds some additional functionality around the original function without modifying its core behavior. This concept is often used in programming to extend or customize the behavior of existing functions without changing their implementation.
 
 - @PostMapping("/secureLink"):
 
