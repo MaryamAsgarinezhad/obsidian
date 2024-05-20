@@ -66,4 +66,6 @@ Sample metric definition using Lua:
 
 and is modified in this way:
 
-![[Pasted image 20240520155934.png]]
+![[Pasted image 20240520155934.png
+
+- This piece of code is a `log_by_lua_block` directive in an Nginx configuration file using Lua. The purpose of this block is to log metrics and perform custom actions after the request has been processed and the response has been sent to the client.
