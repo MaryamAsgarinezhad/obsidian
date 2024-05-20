@@ -1,7 +1,7 @@
 
 **FastAPI is the framework you'll use to build your API**, and Uvicorn is the server that will use the API you build to serve requests.
 
-**When our API framework doesn't have its own web server, like php, we use Apache ir Nginx web servers to serve the API application**
+**When our API framework doesn't have its own web server, like php, we use Apache or Nginx web servers to serve the API application**
 
 When a web server like Nginx or Uvicorn is installed and configured on a system, it transforms the hardware into a host capable of handling web requests. This process involves several key steps and components that work together to manage the incoming traffic, process requests, and serve responses. Here's an overview of how this transformation occurs:
 
