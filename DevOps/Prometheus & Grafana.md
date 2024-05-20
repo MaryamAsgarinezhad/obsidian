@@ -64,3 +64,6 @@ Sample metric definition using Lua:
 
 ![[Pasted image 20240520154531.png]]
 
+and is modified in this way:
+
+![[Pasted image 20240520155934.png]]
