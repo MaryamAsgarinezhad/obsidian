@@ -17,7 +17,7 @@ This configuration file is likely used by ==system administrators== to set up an
 
 This YAML file would be processed by management software or scripts that apply these configurations to the CDN infrastructure, setting up environments, adjusting parameters, and deploying resources as specified.
 
-- Tip: when we create a new 
+- Tip: when creating a new space for a team, it actually creates a specific folder with the team's name and specific memory and ram on each cachenode, and does the caching based on repeated links for each team on their own folder.
 
 3- **nginx_cachenode.conf.j2** and **router.conf.j2**
   
