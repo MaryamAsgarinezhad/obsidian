@@ -249,4 +249,17 @@ In this dirctory, you can create a config file and there define the parameters b
 
 ----------------------
 
-Web Search 
+**Web Search vs Postman:**
+
+1- Browser:
+
+- **Graphical Interface**: Browsers provide a graphical user interface (GUI), making it easy to navigate, interact with, and visualize web content.
+- **Rendering**: Browsers render HTML, CSS, JavaScript, and other web content, providing a fully formatted and interactive web page.
+- **Ease of Use**: Users can simply enter a URL in the address bar and navigate through links with clicks.
+
+2- Postman
+
+- **Command Line Tool**: `curl` is a command-line tool, making it more suitable for use in scripts and automation.
+- **Text-Based**: `curl` displays raw HTTP responses, which might include HTML, JSON, XML, or plain text, without rendering or interactive elements.
+
+In a typical web browser search, you can't directly specify custom HTTP headers or a request body. Web browsers are designed to provide a user-friendly interface for navigating and interacting with websites, and they handle HTTP headers and request bodies internally without exposing detailed control to the user.
