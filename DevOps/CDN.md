@@ -86,3 +86,10 @@ An "upstream server" refers to any server or service to which Nginx forwards req
 1. **Processing Requests**: An upstream server is responsible for handling requests sent by Nginx. It processes these requests and returns the appropriate responses back to Nginx, which then forwards them to the client (end user). This setup allows Nginx to delegate complex application logic or resource-intensive tasks to these backend servers.
     
 2. **Scaling and Load Balancing**: Multiple upstream servers can be used to distribute the load of incoming requests, improving the reliability and scalability of web applications. Nginx can distribute traffic among several servers based on various methods like round-robin, least connections, or even based on server response times.
+
+------------------------------------------
+
+- The domains we put in our cdnized links (like zbn or sbn), refer to IP addresses corresponding to one or more load balancer. DNS uses round robin algorithms to send requests to multiple loadbalancers.
+
+- We need loadbalancers to get content from the right cachenodes (because cachenodes are not duplicated) using a hashing and a mod number.
+  We need cachenodes for scalability, high speed and multiple point of failure.
