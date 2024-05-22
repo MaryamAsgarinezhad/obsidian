@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/??.md",
+                "file": "NLP/Model API Codes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/??.md",
+                "file": "NLP/Model API Codes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/??.md",
+                "file": "NLP/Model API Codes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/??.md"
+                "file": "NLP/Model API Codes.md"
               }
             }
           },
@@ -174,6 +174,12 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/Hugging Face pipeline.md",
+    "NLP/Explainability and Interpretability.md",
+    "NLP/Fine Tunning.md",
+    "NLP/Evaluation Metrics.md",
+    "NLP/Deep Learning Architectures.md",
+    "DevOps/??.md",
     "DevOps/CDN.md",
     "DevOps/API Services.md",
     "DevOps/?.md",
@@ -184,17 +190,11 @@
     "DevOps/Bash Script.md",
     "DevOps/Logging.md",
     "NLP/Prompt Engineering.md",
-    "DevOps/??.md",
     "Pasted image 20240519181213.png",
     "NLP/Preprocessing.md",
-    "NLP/Fine Tunning.md",
     "Pasted image 20240519181134.png",
     "NLP/Quantization.md",
     "NLP/Model API Codes.md",
-    "NLP/Hugging Face pipeline.md",
-    "NLP/Explainability and Interpretability.md",
-    "NLP/Evaluation Metrics.md",
-    "NLP/Deep Learning Architectures.md",
     "NLP/Coding.md",
     "DevOps/Spring(Java).md",
     "Pasted image 20240426134413.png",
