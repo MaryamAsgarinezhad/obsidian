@@ -63,3 +63,5 @@ Instead of one embadding, we can have multiple embeddings for different use case
 
 How do we modify the existing embedding to create our desired one?
 ![[Pasted image 20240523215444.png]]![[Pasted image 20240523215607.png]]
+We do the linear transformation, assign a score to each embedding and combine them all together to get the desired embedding.
+![[Pasted image 20240523215914.png]]
