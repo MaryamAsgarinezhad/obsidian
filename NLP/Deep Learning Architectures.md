@@ -76,7 +76,13 @@ We do the linear transformation, assign a score to each embedding and combine th
   So if the dot product of two words representation are close, then they are similar.
 
 2- Cosine similarity
+- ![[Pasted image 20240523221713.png]]
 
+
+Tip: if the vectors are normal, then the cosine and dot product similarities are the same.
+- ![[Pasted image 20240523221916.png]]
+
+3-  Scaled dot product : When you have very long vectors
 
 -----------------------------------------------------
 
