@@ -117,4 +117,4 @@ This is how the key, query and value gives you the best embeddings to apply atte
 A whole transformer architecture:
 ![[Pasted image 20240523235139.png]]
 
-- Transformers may use n-grams while predicting the next word, which will only create texts that only the n-adjacent words of it make sense, not longer ones.
+- Text predictors may use n-grams while predicting the next word, which will only create texts that only the n-adjacent words of it make sense, not longer ones. They may not necssarily use a neural network.
