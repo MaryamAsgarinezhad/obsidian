@@ -22,3 +22,7 @@ CTRL:
 ### CTRL in the Context of Prompt Tuning
 
 CTRL can be viewed as a specialized case of hard prompt engineering, where each control code effectively acts as a hard-coded prompt that directs the model’s generation process. However, using CTRL specifically for prompt tuning is limited to scenarios where you have predefined control codes that suit your needs, and you are using the CTRL model specifically.
+
+--------------------------------------------------------
+
+Self Learning : To add the output of the previous data as the input prompt of the current data, this is done by the decoder function.
