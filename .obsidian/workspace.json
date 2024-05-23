@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Libraries and usages.md",
+                "file": "NLP/Coding.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Libraries and usages.md",
+                "file": "NLP/Coding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Libraries and usages.md",
+                "file": "NLP/Coding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Libraries and usages.md"
+                "file": "NLP/Coding.md"
               }
             }
           },
@@ -174,11 +174,11 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "NLP/Deep Learning Architectures.md",
-    "NLP/Libraries and usages.md",
-    "NLP/Coding.md",
-    "NLP/Model API Codes.md",
     "NLP/Prompt Engineering.md",
+    "NLP/Coding.md",
+    "NLP/Libraries and usages.md",
+    "NLP/Deep Learning Architectures.md",
+    "NLP/Model API Codes.md",
     "Pasted image 20240523154550.png",
     "Pasted image 20240523154308.png",
     "Pasted image 20240523153352.png",
