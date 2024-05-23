@@ -136,4 +136,19 @@ print(generated_text)
 1. **Token IDs**:
     
     - These are integer values that uniquely represent each token as understood by the model. The model operates on these IDs during the prediction or generation process.
-    - In your code, `input_ids` is a tensor of such token IDs, which serves as the initial input for the generation l
+    - In your code, `input_ids` is a tensor of such token IDs, which serves as the initial input for the generation loop.
+
+-----------------------------------------------------
+
+### Understanding Logits:
+
+1. **Definition**:
+    
+    - **Logits** are the raw, unnormalized scores that a model's final neural network layer outputs. These scores are real numbers and can range from negative to positive infinity, depending on the input and model's parameters.
+2. **Role in the Model**:
+    
+    - In many neural network applications, especially those involving classification, the logits are passed through a softmax function to convert them into probabilities. The softmax function normalizes the logits in a way that the output values are between 0 and 1 and sum up to 1, making them interpretable as probabilities for each class.
+3. **Usage in the Code**:
+    
+    - In the code snippet you provided, the model predicts the next token in a sequence generation task based on the previously generated tokens. Here's the specific line:
+  
