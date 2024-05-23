@@ -15,3 +15,12 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 
 -----------------------------------------
 
+**General Attention**:
+
+- **Purpose**: The attention mechanism was originally designed to improve sequence-to-sequence models, which are used in tasks like machine translation. The main idea is to allow the model to focus on different parts of the input sequence while generating each word of the output sequence. This mimics how humans pay attention to different words when understanding or translating a sentence.
+- **How it Works**: In a basic attention model, when generating each word of the output, the model can look at the entire input sequence and decide which parts are most relevant. This is achieved through a set of scores (or weights) that indicate the importance of each input word for the current output word. These scores are used to create a weighted sum of the input features, which then informs the generation of the output.
+
+**Key Characteristics**:
+
+- Often used in conjunction with recurrent neural networks (RNNs).
+- Helps the model to "remember" important information throughout long input sequences, mitigating the vanishing gradient problem typical in standard RNNs.
