@@ -155,3 +155,13 @@ This is an architecture that is trained to take the position and context into ac
 - **Unlike RNNs that require sequential data processing, transformers process all tokens in the input simultaneously**. This parallel processing capability significantly speeds up training as it allows for better utilization of modern GPUs and TPUs.
 
 -------------------------------------------
+
+Popular transformer based models:
+
+- **BERT (Bidirectional Encoder Representations from Transformers)**: Designed to pre-train deep bidirectional representations by conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks.
+- **GPT (Generative Pre-trained Transformer)**: Uses a left-to-right architecture and can generate coherent and diverse text based on a given context.
+- **T5 (Text-To-Text Transfer Transformer)**: Converts all NLP problems into a unified text-to-text format, where the task is to convert one type of text into another.
+- **RoBERTa (Robustly Optimized BERT Approach)**: A variant of BERT optimized with more data and training iterations, showing improved performance.
+
+
+
