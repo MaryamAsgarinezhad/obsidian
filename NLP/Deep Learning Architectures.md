@@ -129,4 +129,8 @@ In real applications, we may not recognize what is each neuron for!
 
 - ==A text generation neural network is a classifier that its output domain is all possible words!==
   ![[Pasted image 20240524001649.png]]
-  
+
+--------------------------------------
+
+How do we create embeddings? Usinf neural networks, in which each layer understands deeper and deeper properties of a word:
+![[Pasted image 20240524002604.png]]
