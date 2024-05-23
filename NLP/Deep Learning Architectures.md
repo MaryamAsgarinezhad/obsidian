@@ -137,8 +137,14 @@ How do we create embeddings? Using neural networks, in which each layer understa
 
 -----------------------------------------
 
-Positional encoding: it takes care of the orders of words. Its a preprocessing step that feed the write ordered sentences to the transformer. It actually deviated the words in the embedding to have a write order.
+**Positional encoding**: it takes care of the orders of words. Its a preprocessing step that feed the write ordered sentences to the transformer. It actually deviated the words in the embedding to have a write order.
 
 We get different embeddings for these two sentences:
 ![[Pasted image 20240524004624.png]]
-Now, the neural 
+
+==Now, the neural network will take more care of  learning this order more, and it works well.==
+
+The thing is, you have to add the same 
+
+-----------------------------------------------
+
