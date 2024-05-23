@@ -87,7 +87,9 @@ Tip: if the vectors are normal, then the cosine and dot product similarities are
  
 ==We use the table of similarity (created form computing the similarities between each two word) to move the words around, and that's the attention step:==
 
-
+![[Pasted image 20240523223234.png]]
+- Here we have took each of the words, and send them to a combination of all of the words.
+  We also want the sum of each line's coefficients to be 1 and we **normalize** them.
 -----------------------------------------------------
 
 **The key, query, and value matrices as linear transformations:**
