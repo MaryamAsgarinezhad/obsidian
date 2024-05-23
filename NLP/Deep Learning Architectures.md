@@ -28,7 +28,7 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 
 - Attention uses the context of a sentence in order to help the embedding solve these ambiguities.
   ![[Pasted image 20240523205115.png]]
-  
+  How does transformers use the context to set the weight for an ambiguous woe
 **General Attention**:
 
 - **Purpose**: The attention mechanism was originally designed to improve sequence-to-sequence models, which are used in tasks like machine translation. The main idea is to allow the model to focus on different parts of the input sequence while generating each word of the output sequence. This mimics how humans pay attention to different words when understanding or translating a sentence.
