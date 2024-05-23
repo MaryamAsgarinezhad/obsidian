@@ -2,8 +2,6 @@
 
 - **OpenRouter** is a platform that provides access to various models, including but not limited to GPT models from OpenAI.
 
-- Use **tokenizer()** for general NLP tasks that involve text classification, entity recognition, or any task where standard text input is required without the need for dialogue-specific formatting.
-- Use **tokenizer.apply_chat_template()** when working with models that are specifically designed for dialogue tasks, where the format and structure of the input must adhere to specific conversational patterns.
 ------------------------------------------
 
 - If you are setting temperature=0.0, it typically means you want deterministic output, which should not be used unless do_sample=True is also set. By setting temperature to a non-zero value and do_sample=True, you can generate more diverse outputs, or simply remove the temperature parameter if you don't intend to use sampling.
@@ -52,3 +50,7 @@ for index, row in enumerate(inputs[20:]):
 ### 2. Use **tokenizer.apply_chat_template()** for:
 
 - **Method Usage**: The `tokenizer.apply_chat_template()` method seems to be a specialized function of the tokenizer, designed to format and preprocess text specifically for dialogue-based models. This might involve applying a template or structure that aligns with how dialogue data is expected to be formatted in these models, such as framing statements and responses in a conversational context.
+
+---------------------------------------
+
+**Modularizing a colab noteook** means to create separate scripts (as python classes) for each task to make it able to be imported and used in other scripts.
