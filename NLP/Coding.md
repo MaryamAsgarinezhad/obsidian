@@ -139,6 +139,10 @@ print(generated_text)
 6. `torch.no_grad()`: This context manager tells PyTorch not to compute or store gradients. This is important during inference (model deployment) when you're only making predictions and **not training the model,** as it reduces memory usage and speeds up processing.
    
 7. `outputs = model(generated)`: The model processes the currently generated tokens and outputs logits for the next possible tokens.
+   
+8. `next_token_logits = outputs.logits[:, -1, :]`: Extracts the logits (raw output scores from the model) of the last token generated. Logits are used to determine the probability of each token being the next appropriate token.
+   
+9. `next_token = torch.argmax(next_token_logits, dim=-1).unsqueeze(0)`: **Finds the token with the highest logit** (most likely next token) and reshapes the tensor to maintain the correct dimensions for concatenation.
 
 ---------------------------------------
 
