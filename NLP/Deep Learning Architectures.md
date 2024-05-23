@@ -23,6 +23,11 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
   ![[Pasted image 20240523204346.png]]
 
 - Each column, represents a property or feature of that token(color, size, ...)
+- Embeddings sometimes confuse to know the meaning of some words and cannot categorize them:
+  ![[Pasted image 20240523204834.png]]
+
+- Attention uses the context of a sentence in order to help the embedding solve these ambiguities.
+  ![[Pasted image 20240523205115.png]]
   
 **General Attention**:
 
