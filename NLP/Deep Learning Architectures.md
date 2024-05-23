@@ -23,4 +23,17 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 **Key Characteristics**:
 
 - Often used in conjunction with recurrent neural networks (RNNs).
-- Helps the model to "remember" important information throughout long input sequences, mitigating the vanishing gradient problem typical in standard RNNs.
+- **==Helps the model to "remember" important information throughout long input sequences, mitigating the vanishing gradient problem typical in standard RNNs.==**
+
+------------------------------------
+
+**Self-Attention**:
+
+- **Purpose**: Self-attention, a variant of the attention mechanism, is a more flexible method primarily used in transformer models. Unlike traditional attention that requires separate components for different parts of the model (such as encoder and decoder in sequence-to-sequence models), self-attention allows the model to relate different positions of a single sequence in order to compute a representation of the sequence.
+- **How it Works**: Self-attention computes the attention scores by comparing each token in the sequence with every other token. It calculates three vectors for each token: Query, Key, and Value. The attention scores between tokens are computed by taking the dot product of the Query vector of one token with the Key vector of all other tokens. These scores determine how much focus (or attention) each token should get from other tokens, making it possible for the model to dynamically prioritize which parts of the input are most relevant.
+
+**Key Characteristics**:
+
+- Does not inherently depend on sequence alignment, making it highly parallelizable and efficient.
+- Can handle long-range dependencies with lower computational complexity compared to RNN-based models.
+- Forms the backbone of transformer architectures, which leverage multiple layers of self-attention to process text.
