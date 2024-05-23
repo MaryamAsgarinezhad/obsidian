@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "NLP/Deep Learning Architectures.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "NLP/Deep Learning Architectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "NLP/Deep Learning Architectures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/?.md"
+                "file": "NLP/Deep Learning Architectures.md"
               }
             }
           },
@@ -174,14 +174,18 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/Evaluation Metrics.md",
     "NLP/??.md",
+    "NLP/Deep Learning Architectures.md",
+    "DevOps/Virtual Environment.md",
+    "DevOps/Spring(Java).md",
+    "DevOps/?.md",
     "NLP/Coding.md",
     "DevOps/??.md",
     "Pasted image 20240523170642.png",
     "Pasted image 20240523170600.png",
     "NLP/Prompt Engineering.md",
     "NLP/Libraries and usages.md",
-    "NLP/Deep Learning Architectures.md",
     "NLP/Model API Codes.md",
     "Pasted image 20240523154550.png",
     "Pasted image 20240523154308.png",
@@ -193,10 +197,8 @@
     "NLP/Hugging Face pipeline.md",
     "NLP/Explainability and Interpretability.md",
     "NLP/Fine Tunning.md",
-    "NLP/Evaluation Metrics.md",
     "DevOps/CDN.md",
     "DevOps/API Services.md",
-    "DevOps/?.md",
     "DevOps/Network.md",
     "DevOps/Prometheus & Grafana.md",
     "Pasted image 20240520155934.png",
@@ -204,13 +206,11 @@
     "DevOps/Logging.md",
     "NLP/Preprocessing.md",
     "NLP/Quantization.md",
-    "DevOps/Spring(Java).md",
     "NLP",
     "DevOps/Ansible.md",
     "DevOps/Liveness - Readiness.md",
     "DevOps/Version Control.md",
     "DevOps/Kubernetes.md",
-    "DevOps/Certificate management.md",
     "Linux/Untitled",
     "DevOps"
   ]
