@@ -144,7 +144,7 @@ We get different embeddings for these two sentences:
 
 ==Now, the neural network will take more care of  learning this order more, and it works well.==
 
-The thing is, you have to add the same 
+The thing is, you have to add the same arrows to each sentence.
 
 -----------------------------------------------
 
