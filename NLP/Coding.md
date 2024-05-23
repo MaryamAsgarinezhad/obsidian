@@ -63,5 +63,7 @@ Example usage:
 - ![[Pasted image 20240523153352.png]]
 -------------------------------
 
-The __init__.py file makes directories to be used as libraries:
+The __init__.py file makes directories to be used as libraries.
 
+- In the main folder of the whole project, including several module files, we create the init.py file and write the name of the modules there like this:
+  
