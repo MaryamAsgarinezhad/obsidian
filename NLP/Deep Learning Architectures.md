@@ -84,6 +84,9 @@ Tip: if the vectors are normal, then the cosine and dot product similarities are
 
 3-  Scaled dot product : When you have very long vectors and you need to manage the metric to not to be too large, you devide the dot product by the second root of the length of the vectors (number of features)
 - ![[Pasted image 20240523222319.png]]
+ 
+==We use the table of similarity (created form computing the similarities between each two word) to move the words around, and that's the attention step:==
+
 
 -----------------------------------------------------
 
