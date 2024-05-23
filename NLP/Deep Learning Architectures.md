@@ -111,3 +111,10 @@ Tip: if the vectors are normal, then the cosine and dot product similarities are
 
 This is how the key, query and value gives you the best embeddings to apply attention in.
 ![[Pasted image 20240523231816.png]]
+
+-------------------------------------------
+----------------------------------------------
+
+
+A whole transformer architecture:
+![[Pasted image 20240523235139.png]]
