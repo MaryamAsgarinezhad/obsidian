@@ -28,7 +28,7 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 
 - Attention uses the context of a sentence in order to help the embedding solve these ambiguities.
   ![[Pasted image 20240523205115.png]]
-  How does transformers use the context to set the weight for an ambiguous word? For each word in the context, we check how close is its meaning to the targeted word, and the closest word in the context determines the meaning of ambiguous word.
+  How does transformers use the context to set the weight for an ambiguous word? **==All words pull each other.==** For each word in the context, we check how close is its meaning to the targeted word, and the closest word in the context determines the meaning of ambiguous word.
    - ![[Pasted image 20240523214227.png]] 
 **General Attention**:
 
@@ -71,6 +71,9 @@ We do the linear transformation, assign a score to each embedding and combine th
 **Similarity between words:**
 
 1- Dot product
+
+- a words 
+
 2- Cosine similarity
 
 
