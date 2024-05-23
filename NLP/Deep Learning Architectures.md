@@ -15,6 +15,7 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 
 -----------------------------------------
 
+Attwntion helps the large language models 
 **General Attention**:
 
 - **Purpose**: The attention mechanism was originally designed to improve sequence-to-sequence models, which are used in tasks like machine translation. The main idea is to allow the model to focus on different parts of the input sequence while generating each word of the output sequence. This mimics how humans pay attention to different words when understanding or translating a sentence.
