@@ -65,3 +65,15 @@ How do we modify the existing embedding to create our desired one?
 ![[Pasted image 20240523215444.png]]![[Pasted image 20240523215607.png]]
 We do the linear transformation, assign a score to each embedding and combine them all together to get the desired embedding.
 ![[Pasted image 20240523215914.png]]
+
+-------------------------------------
+
+**Similarity between words:**
+
+1- Dot product
+2- Cosine similarity
+
+
+-----------------------------------------------------
+
+**The key, query, and value matrices as linear transformations:**
