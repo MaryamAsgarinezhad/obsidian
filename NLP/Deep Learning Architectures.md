@@ -91,7 +91,7 @@ Tip: if the vectors are normal, then the cosine and dot product similarities are
 - Here we have took each of the words, and send them to a combination of all of the words.
   We also want the sum of each line's coefficients to be 1 and we **normalize** them using a **softmax** function (e^x)
 
-- Each line is actually an attention step, by which the coordinates of a word's e
+- ==Each line is actually an attention== step, by which the coordinates of a word's embedding representation deviates.
 -----------------------------------------------------
 
 **The key, query, and value matrices as linear transformations:**
