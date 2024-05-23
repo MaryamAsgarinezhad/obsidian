@@ -123,5 +123,9 @@ A whole transformer architecture:
 ![[Pasted image 20240524000719.png]]
 ![[Pasted image 20240524000750.png]]
 
-Make it more complex: 
+Make it more complex (neural network): 
 ![[Pasted image 20240524001130.png]]
+
+- ==A text generation neural network is a classifier that its output domain is all possible words!==
+  ![[Pasted image 20240524001649.png]]
+  
