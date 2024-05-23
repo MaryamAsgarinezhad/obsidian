@@ -150,3 +150,8 @@ The thing is, you have to add the same arrows to each sentence.
 
 This is an architecture that is trained to take the position and context into account and this is why it's so powerful:
 ![[Pasted image 20240524012559.png]] 
+- A transformer model is composed of a stack of identical layers, each containing two main sub-layers: a multi-head self-attention mechanism and a position-wise fully connected feed-forward network. Normalization and residual connections are used around each of these sub-layers.
+
+- **Unlike RNNs that require sequential data processing, transformers process all tokens in the input simultaneously**. This parallel processing capability significantly speeds up training as it allows for better utilization of modern GPUs and TPUs.
+
+-------------------------------------------
