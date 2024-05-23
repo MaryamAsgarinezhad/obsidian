@@ -105,4 +105,5 @@ Tip: if the vectors are normal, then the cosine and dot product similarities are
 
 - The left embedding knows the features of the words, and the right one knows when two words could appear in the same context.
 
-This is how the key, query and value gives you the best embeddings to apply the att
+This is how the key, query and value gives you the best embeddings to apply attention in.
+![[Pasted image 20240523231816.png]]
