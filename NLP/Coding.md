@@ -129,6 +129,8 @@ print(generated_text)
 1. **Generating One Token at a Time**: The script generates one token at a time and appends it to the sequence. This is done until the maximum sequence length is reached.
 2. **Using logits**: The logits (i.e., the raw, non-normalized predictions of the model) of the last generated token are used to predict the next token.
 3. **Concatenation**: Each newly predicted token is concatenated to the existing sequence (`generated`) and used as the new input for the model.
+4. **Purpose**: The `squeeze()` method is called on the `generated` tensor, which may contain one or more singleton dimensions (dimensions of size 1). This often happens in deep learning models where operations like `unsqueeze()`, used earlier in the code, add singleton dimensions to keep the tensor shapes compatible with model requirements.
+5. **Functionality**: By calling `squeeze()`, any dimensions of size 1 are removed from the tensor. For example, if the shape of `generated` was `[1, 50]`, calling `squeeze()` would change its shape to `[50]`. This is important for feeding the tensor into functions that expect inputs of specific dimensions, like `tokenizer.decode()`, which expects a flat list of token IDs.
 
 ---------------------------------------
 
