@@ -68,6 +68,8 @@ How do we modify the existing embedding to create our desired one?
 We do the linear transformation, assign a score to each embedding and combine them all together to get the desired embedding.
 ![[Pasted image 20240523215914.png]]
 
+Here we have multiple (k,q,v) pairs and there is ==a matrix that learns which one is good or bad (gives it a score)== and then we can combine the embeddings linearly together to get a perfect final embedding.
+
 -------------------------------------
 
 **Similarity between words:**
