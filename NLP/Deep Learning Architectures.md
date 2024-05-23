@@ -53,6 +53,8 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 - Can handle long-range dependencies with lower computational complexity compared to RNN-based models.
 - Forms the backbone of transformer architectures, which leverage multiple layers of self-attention to process text.
 
+![[Pasted image 20240523232206.png]]
+
 ---------------------------------------
 
 **Multi-head attention:**
