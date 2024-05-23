@@ -82,7 +82,8 @@ We do the linear transformation, assign a score to each embedding and combine th
 Tip: if the vectors are normal, then the cosine and dot product similarities are the same.
 - ![[Pasted image 20240523221916.png]]
 
-3-  Scaled dot product : When you have very long vectors
+3-  Scaled dot product : When you have very long vectors and you need to manage the metric to not to be too large, you devide the dot product by the second root of the length of the vectors (number of features)
+- ![[Pasted image 20240523222319.png]]
 
 -----------------------------------------------------
 
