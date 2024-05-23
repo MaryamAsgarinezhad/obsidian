@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/??.md",
+                "file": "NLP/Deep Learning Architectures.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/??.md",
+                "file": "NLP/Deep Learning Architectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/??.md",
+                "file": "NLP/Deep Learning Architectures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/??.md"
+                "file": "NLP/Deep Learning Architectures.md"
               }
             }
           },
@@ -174,6 +174,8 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240524012559.png",
+    "NLP/??.md",
     "NLP/Deep Learning Architectures.md",
     "Pasted image 20240524004624.png",
     "Pasted image 20240524002604.png",
@@ -187,7 +189,6 @@
     "Pasted image 20240523231235.png",
     "DevOps/?.md",
     "NLP/Evaluation Metrics.md",
-    "NLP/??.md",
     "DevOps/Virtual Environment.md",
     "DevOps/Spring(Java).md",
     "NLP/Coding.md",

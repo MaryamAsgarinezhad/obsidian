@@ -148,3 +148,5 @@ The thing is, you have to add the same arrows to each sentence.
 
 -----------------------------------------------
 
+This is an architecture that is trained to take the position and context into account and this is why it's so powerful:
+![[Pasted image 20240524012559.png]] 
