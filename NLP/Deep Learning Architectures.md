@@ -118,3 +118,10 @@ A whole transformer architecture:
 ![[Pasted image 20240523235139.png]]
 
 - Text predictors may use n-grams while predicting the next word, which will only create texts that only the n-adjacent words of it make sense, not longer ones. They may not necssarily use a neural network.
+
+**Neural network overview (a single perceptron):**
+![[Pasted image 20240524000719.png]]
+![[Pasted image 20240524000750.png]]
+
+Make it more complex: 
+![[Pasted image 20240524001130.png]]
