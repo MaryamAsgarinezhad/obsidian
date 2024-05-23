@@ -72,7 +72,8 @@ We do the linear transformation, assign a score to each embedding and combine th
 
 1- Dot product
 
-- a words 
+- a words embedding representation, contains columns that are means of the features for that word and wights assigned to that column.
+  So if the dot product of two words representation are close, then they are similar.
 
 2- Cosine similarity
 
