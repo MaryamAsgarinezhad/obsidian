@@ -132,5 +132,11 @@ In real applications, we may not recognize what is each neuron for!
 
 --------------------------------------
 
-How do we create embeddings? Usinf neural networks, in which each layer understands deeper and deeper properties of a word:
+How do we create embeddings? Using neural networks, in which each layer understands deeper and deeper properties of a word (==word2vec==):
 ![[Pasted image 20240524002604.png]]
+
+-----------------------------------------
+
+Positional encoding:
+
+ 
