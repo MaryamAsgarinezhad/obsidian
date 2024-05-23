@@ -137,6 +137,6 @@ How do we create embeddings? Using neural networks, in which each layer understa
 
 -----------------------------------------
 
-Positional encoding:
+Positional encoding: it takes care of the orders of words
 
  
