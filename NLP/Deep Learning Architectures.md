@@ -96,6 +96,8 @@ Tip: if the vectors are normal, then the cosine and dot product similarities are
 
 **The key, query, and value matrices as linear transformations:**
 
-- Keys and queries work together to make a linear transformation to alter the primary embedding into the later embedding, and then we compute the 
+- Keys and queries work together to make a linear transformation to alter the primary embedding into the later embedding, and then we compute the similarity of the two words in the later embedding.
+- ==Suppose that key and query transform the embedding into the one that is better suited for this attention problem.==
+- 
   ![[Pasted image 20240523230432.png]]
-  
+  - Values matrix takes the left embedding and
