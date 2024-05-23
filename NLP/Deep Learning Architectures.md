@@ -137,6 +137,6 @@ How do we create embeddings? Using neural networks, in which each layer understa
 
 -----------------------------------------
 
-Positional encoding: it takes care of the orders of words
+Positional encoding: it takes care of the orders of words. Its a preprocessing step that feed the write ordered sentences to the transformer.
 
  
