@@ -151,31 +151,15 @@ print(generated_text)
 3. **Usage in the Code**:
     
     - In the code snippet you provided, the model predicts the next token in a sequence generation task based on the previously generated tokens. Here's the specific line:
+      ![[Pasted image 20240523170600.png]]
+      
     - This line extracts the logits for the last token position from the model's outputs. The logits here represent the scores for each possible next token in the vocabulary.
     - The `next_token_logits` tensor has a dimension where each index corresponds to a potential token ID, and the value at each index is the score indicating how likely the model thinks that token is the correct next token in the sequence.
+      
 4. **Selecting the Next Token**:
     
 	- The code then uses these logits to determine the most likely next token:
-   
-   
-
-
-
-
-```python
-next_token_logits = outputs.logits[:, -1, :]
-```
-       
-- This line extracts the logits for the last token position from the model's outputs. The logits here represent the scores for each possible next token in the vocabulary.
-- The `next_token_logits` tensor has a dimension where each index corresponds to a potential token ID, and the value at each index is the score indicating how likely the model thinks that token is the correct next token in the sequence.
-
-4.**Selecting the Next Token**:
-
-- The code then uses these logits to determine the most likely next token:
-    
-    python
-    
-
-- `next_token = torch.argmax(next_token_logits, dim=-1).unsqueeze(0)`
-    
-- `torch.argmax(next_token_logits, dim=-1)` selects the index (i.e., the token ID) with the highest score in the logits, which is interpreted as the most probable next token to follow the existing sequence of tokens.
+	  
+	  ![[Pasted image 20240523170642.png]]
+	  
+	- `torch.argmax(next_token_logits, dim=-1)` selects the index (i.e., the token ID) with the highest score in the logits, which is interpreted as the most probable next token to follow the existing sequence of tokens.
