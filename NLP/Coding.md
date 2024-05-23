@@ -123,3 +123,17 @@ generated_text = tokenizer.decode(generated.squeeze().tolist())
 print(generated_text)
 
 ```
+
+---------------------------------------
+
+### Definition and Role of Tokens
+
+1. **Tokens**:
+    
+    - Tokens are essentially the smallest units into which the text can be divided for processing by a natural language model. In computational linguistics, these can be words, parts of words (like prefixes, stems, suffixes in morphologically rich languages), or even punctuation marks, **depending on how the tokenizer is set up**.
+    - Each token is converted into a numerical format, often called a "token ID," which is used by the model for processing. The tokenizer handles the conversion of raw text into these token IDs and vice versa.
+    
+1. **Token IDs**:
+    
+    - These are integer values that uniquely represent each token as understood by the model. The model operates on these IDs during the prediction or generation process.
+    - In your code, `input_ids` is a tensor of such token IDs, which serves as the initial input for the generation l
