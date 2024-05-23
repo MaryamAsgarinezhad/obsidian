@@ -67,3 +67,9 @@ The __init__.py file makes directories to be used as libraries.
 
 - In the main folder of the whole project, including several module files, we create the init.py file and write the name of the modules there like this:
   
+  ![[Pasted image 20240523154308.png]]
+  This way, we don't need to use modules using the above python commands in the code, instead we just import the whole project folder and we are able to a**ccess the attributes of its modules directly**:
+  
+  ![[Pasted image 20240523154550.png]]
+  
+  
