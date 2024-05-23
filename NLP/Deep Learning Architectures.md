@@ -59,7 +59,7 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 
 **Multi-head attention:**
 
-Instead of one embadding, we can have multiple embeddings for different use cases:
+Instead of one embadding, we can have multiple embeddings with different scores:
 
 ![[Pasted image 20240523215000.png]]
 
