@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "NLP/Fine Tunning.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "NLP/Fine Tunning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "NLP/Fine Tunning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md"
+                "file": "NLP/Fine Tunning.md"
               }
             }
           },
@@ -174,9 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240524012849.png",
+    "NLP/Deep Learning Architectures.md",
     "Pasted image 20240524012559.png",
     "NLP/??.md",
-    "NLP/Deep Learning Architectures.md",
     "Pasted image 20240524004624.png",
     "Pasted image 20240524002604.png",
     "Pasted image 20240524001649.png",
@@ -186,7 +187,6 @@
     "Pasted image 20240523235139.png",
     "Pasted image 20240523232206.png",
     "Pasted image 20240523231816.png",
-    "Pasted image 20240523231235.png",
     "DevOps/?.md",
     "NLP/Evaluation Metrics.md",
     "DevOps/Virtual Environment.md",
