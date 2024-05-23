@@ -28,7 +28,7 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 
 - Attention uses the context of a sentence in order to help the embedding solve these ambiguities.
   ![[Pasted image 20240523205115.png]]
-  How does transformers use the context to set the weight for an ambiguous word? 
+  How does transformers use the context to set the weight for an ambiguous word? For each word in the context, we check how close is its meaning to the targeted word, and the closest word in the context determines the meaning of ambiguous word.
    - ![[Pasted image 20240523214227.png]] 
 **General Attention**:
 
@@ -57,4 +57,7 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 
 **Multi-head attention:**
 
-Instead of one embadding, we can have multiple embeddings for a single token.
+Instead of one embadding, we can have multiple embeddings for different use cases:
+
+![[Pasted image 20240523215000.png]]
+
