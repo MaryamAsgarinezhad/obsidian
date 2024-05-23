@@ -124,6 +124,12 @@ print(generated_text)
 
 ```
 
+### Explanation
+
+1. **Generating One Token at a Time**: The script generates one token at a time and appends it to the sequence. This is done until the maximum sequence length is reached.
+2. **Using logits**: The logits (i.e., the raw, non-normalized predictions of the model) of the last generated token are used to predict the next token.
+3. **Concatenation**: Each newly predicted token is concatenated to the existing sequence (`generated`) and used as the new input for the model.
+
 ---------------------------------------
 
 ### Definition and Role of Tokens
