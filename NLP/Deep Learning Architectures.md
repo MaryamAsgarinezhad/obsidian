@@ -95,3 +95,7 @@ Tip: if the vectors are normal, then the cosine and dot product similarities are
 -----------------------------------------------------
 
 **The key, query, and value matrices as linear transformations:**
+
+- Keys and queries work together to make a linear transformation to alter the primary embedding into the later embedding, and then we compute the 
+  ![[Pasted image 20240523230432.png]]
+  
