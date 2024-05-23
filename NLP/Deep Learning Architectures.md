@@ -100,4 +100,9 @@ Tip: if the vectors are normal, then the cosine and dot product similarities are
 - ==Suppose that key and query transform the embedding into the one that is better suited for this attention problem.==
 - 
   ![[Pasted image 20240523230432.png]]
-  - Values matrix takes the left embedding and
+  - Values matrix takes the left embedding and multiplies by it to make the embedding on the right:
+    ![[Pasted image 20240523231235.png]]
+
+- The left embedding knows the features of the words, and the right one knows when two words could appear in the same context.
+
+This is how the key, query and value gives you the best embeddings to apply the att
