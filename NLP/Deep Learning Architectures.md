@@ -17,8 +17,13 @@ BERT-based models, including BertLMHeadModel, are generally limited to input seq
 
 **Attention** helps the large language models understand the whole context of the text, instead of just few words.
 
-- Embeddings are the bridge that transform the words into numbers.
--  
+- Embeddings are the bridge that transform the words into numbers, and are a very important part of the language models.
+  The more work is done on embeddings, the better the language model become.
+-  In reality, each token (word, char, phrase, sentence,...) is mapped to a large dimentional vector like this: 
+  ![[Pasted image 20240523204346.png]]
+
+- Each column, represents a property or feature of that token(color, size, ...)
+  
 **General Attention**:
 
 - **Purpose**: The attention mechanism was originally designed to improve sequence-to-sequence models, which are used in tasks like machine translation. The main idea is to allow the model to focus on different parts of the input sequence while generating each word of the output sequence. This mimics how humans pay attention to different words when understanding or translating a sentence.
