@@ -61,3 +61,5 @@ Instead of one embadding, we can have multiple embeddings for different use case
 
 ![[Pasted image 20240523215000.png]]
 
+How do we modify the existing embedding to create our desired one?
+![[Pasted image 20240523215444.png]]![[Pasted image 20240523215607.png]]
