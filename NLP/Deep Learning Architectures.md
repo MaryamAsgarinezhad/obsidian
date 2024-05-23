@@ -89,7 +89,8 @@ Tip: if the vectors are normal, then the cosine and dot product similarities are
 
 ![[Pasted image 20240523223234.png]]
 - Here we have took each of the words, and send them to a combination of all of the words.
-  We also want the sum of each line's coefficients to be 1 and we **normalize** them.
+  We also want the sum of each line's coefficients to be 1 and we **normalize** them using a **softmax** function (e^x)
+  
 -----------------------------------------------------
 
 **The key, query, and value matrices as linear transformations:**
