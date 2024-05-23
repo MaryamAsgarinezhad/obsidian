@@ -54,3 +54,7 @@ for index, row in enumerate(inputs[20:]):
 ---------------------------------------
 
 **Modularizing a colab noteook** means to create separate scripts (as python classes) for each task to make it able to be imported and used in other scripts.
+
+- ![[Pasted image 20240523153002.png]]
+- ![[Pasted image 20240523153100.png
+- 
