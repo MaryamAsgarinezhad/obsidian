@@ -235,4 +235,6 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 
 - 1. **Encoder**: Processes the input data (like text) and transforms it into a continuous representation that retains all the information of the input but in a form that the model can manipulate. In tasks like translation, the encoder would handle the source language text.
     
-2. **Decoder**: Takes the output of the encoder and generates a sequence of outputs (like translated text). For each output step, the decoder looks at the entire encoder output and its previous outputs to decide the next step. It is specifically designed to output sequences, one element at a time.
+2. **Decoder**: Takes the output of the encoder and generates a sequence of outputs (like translated text). **For each output step, the decoder looks at the entire encoder output and its previous outputs to decide the next step**. It is specifically designed to output sequences, one element at a time.
+
+### GPT's Use of Decoder Blocks:
