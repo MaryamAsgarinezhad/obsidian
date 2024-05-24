@@ -203,3 +203,13 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 1. **Discovering Hidden Patterns**: Unsupervised learning is primarily used to identify patterns or intrinsic structures within a dataset. Since there are no output labels or correct answers provided, the algorithms focus on the relationships between the data points themselves.
     
 2. **Clustering and Association**: Common tasks within unsupervised learning include clustering, where the aim is to group a set of objects in such a way that objects in the same group (a cluster) are more similar to each other than to those in other groups. Another task is association, which is about discovering rules that describe large portions of the data, such as frequent itemsets in market basket analysis.
+
+### Techniques Used in Unsupervised Learning
+
+- **Clustering**: Methods like K-means, hierarchical clustering, and DBSCAN are used to find and group similar data points based on their features. This can help identify distinct groups within the data without prior knowledge of what these groups might be.
+  
+- **Dimensionality Reduction**: Techniques such as principal component analysis (PCA) and t-distributed stochastic neighbor embedding (t-SNE) reduce the number of random variables under consideration, by obtaining a set of principal variables. This can help simplify the data without losing critical information, making patterns more apparent.
+    
+- **Association Rule Learning**: Algorithms like Apriori and Eclat are used in transactional databases to find interesting correlations between items.
+    
+- **Neural Networks**: Certain neural network models can be applied in unsupervised learning. For example, autoencoders, which are designed to compress data and then reconstruct it, effectively learning detailed features of the data.
