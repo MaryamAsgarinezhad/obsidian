@@ -184,13 +184,22 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 
 ---------------------------------------
 
-- **GPT (Generative Pre-trained Transformer)**:
+**GPT (Generative Pre-trained Transformer)**:
   
   **GPT-1**: The original GPT model was designed to demonstrate that pre-training a language model on a diverse corpus of text could significantly improve performance when fine-tuned for specific tasks. This model combined unsupervised pre-training and supervised fine-tuning in a novel way. It was trained using a language modeling objective, which is to predict the next word in a sentence, given all the previous words.
   
   **GPT-2**: Introduced in 2019, GPT-2 expanded on the ideas of GPT-1 with a much larger model architecture and training dataset. GPT-2 was notable for not being fine-tuned on specific tasks in its most famous demonstrations; instead, it performed tasks like translation, question-answering, and summarization in a zero-shot setting, using only prompts to guide its generation. GPT-2 includes 1.5 billion parameters, which allow it to generate remarkably coherent and contextually appropriate text over extended passages.
   
   **GPT-3**: Launched in 2020, GPT-3 further expanded the scale of the model to 175 billion parameters, making it one of the largest and most powerful language models ever created. GPT-3's vast size allows it to perform a wide variety of tasks with little to no task-specific data, often achieving competitive results in a few-shot or even zero-shot settings. Its ability to generate human-like text and solve complex problems through pattern recognition alone has been a subject of both admiration and ethical scrutiny.
+
+### **Key Characteristics of GPT Models**
+
+1. **Architecture**: All GPT models use a transformer architecture based solely on decoder blocks from the original transformer model. This design choice reflects the models' focus on generating text output rather than encoding inputs.
+    
+2. **Training Approach**:
+    
+    - **Unsupervised Learning**: GPT models are primarily trained on a language modeling objective in an unsupervised manner. They learn to predict the next word in sequences of text, gaining a broad understanding of language patterns and structures.
+    - **Transfer Learning**: After pre-training, GPT models can be fine-tuned (though often demonstrated in settings that do not require fine-tuning) on specific tasks by training on smaller, task-specific datasets.
 
 ---------------------------------------
 
