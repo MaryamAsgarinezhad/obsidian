@@ -175,12 +175,18 @@ This is an architecture that is trained to take the position and context into ac
     
     - ==In practice, BERT takes a sequence of tokens, applies multiple layers of the Transformer encoder to these tokens, and each token is then transformed into vectors that represent not just the token but its relationship with all other tokens in the sequence.== This process allows BERT to understand the full context of a sentence or a passage, bi-directionally (i.e., considering both the previous and next tokens simultaneously).
 
-By dropping the decoder and utilizing only the encoder, BERT is optimized for tasks that involve understanding or classifying text rather than translating or generating it. This
+By dropping the decoder and utilizing only the encoder, BERT is optimized for tasks that involve understanding or classifying text rather than translating or generating it.
+
+**Tip**: While BERT’s architecture is capable of understanding language, it doesn't know how to perform specific tasks (like classifying the sentiment of a review or answering a question based on a passage) out of the box. To equip BERT for a particular task, typically, a new output layer is added. For example:
+
+- For sentiment analysis, you might add a simple classifier layer that predicts positive or negative sentiment.
+- For question answering, the layer might predict the start and end positions of the answer within a passage.
 
 ---------------------------------------
 
 
-- **GPT (Generative Pre-trained Transformer)**: Uses a left-to-right architecture and can generate coherent and diverse text based on a given context.
+- **GPT (Generative Pre-trained Transformer)**:
+  
 - **T5 (Text-To-Text Transfer Transformer)**: Converts all NLP problems into a unified text-to-text format, where the task is to convert one type of text into another.
 - **RoBERTa (Robustly Optimized BERT Approach)**: A variant of BERT optimized with more data and training iterations, showing improved performance.
 
