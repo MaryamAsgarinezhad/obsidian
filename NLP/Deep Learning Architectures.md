@@ -238,3 +238,13 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 2. **Decoder**: Takes the output of the encoder and generates a sequence of outputs (like translated text). **For each output step, the decoder looks at the entire encoder output and its previous outputs to decide the next step**. It is specifically designed to output sequences, one element at a time.
 
 ### GPT's Use of Decoder Blocks:
+
+- **Text Generation Focus**: GPT models are designed to generate text. The decoder architecture is naturally suited for this because it predicts the next token in a sequence given the previous tokens. This is essentially what text generation is about — creating the next piece of text based on what you have so far.
+    
+- **Self-Attention in Decoders**: Even though GPT uses only the decoder, it still employs self-attention mechanisms. In a full Transformer with both encoder and decoder, the decoder's self-attention layers are masked to prevent them from 'seeing' future tokens in the output during training. This is crucial because, during generation, the model should not have access to future parts of the sequence it is generating. This type of attention allows the model to consider all the previous tokens it has generated so far to decide the next token.
+
+### Why No Encoder?
+
+- **Direct Learning from Sequence**: Since GPT’s task is to generate text, the encoder part, which is traditionally used for understanding and encoding a fixed input sequence into a continuous representation, is not required. GPT models directly learn to predict the next part of the text from the previous parts, leveraging the context provided by those parts through the self-attention mechanism.
+    
+- **Efficiency and Simplicity**: Removing the encoder simplifies the model architecture and focuses computational resources on generating high-quality text outputs. This design choice reflects a streamlined approach specifically optimized for the needs of language production tasks, rather than the broader requirements of tasks like translation which need both encoding and decoding capabilities.
