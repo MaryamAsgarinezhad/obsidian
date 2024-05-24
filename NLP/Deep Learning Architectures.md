@@ -198,4 +198,8 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 - **RoBERTa (Robustly Optimized BERT Approach)**: A variant of BERT optimized with more data and training iterations, showing improved performance.
 
 -----------------------------------------
+### Key Concepts of Unsupervised Learning
 
+1. **Discovering Hidden Patterns**: Unsupervised learning is primarily used to identify patterns or intrinsic structures within a dataset. Since there are no output labels or correct answers provided, the algorithms focus on the relationships between the data points themselves.
+    
+2. **Clustering and Association**: Common tasks within unsupervised learning include clustering, where the aim is to group a set of objects in such a way that objects in the same group (a cluster) are more similar to each other than to those in other groups. Another task is association, which is about discovering rules that describe large portions of the data, such as frequent itemsets in market basket analysis.
