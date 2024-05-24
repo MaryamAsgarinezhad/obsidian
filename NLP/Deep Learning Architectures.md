@@ -218,3 +218,4 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 
 ### How Do Models Learn Without Supervision?
 
+- ==**Generative Models**:== These models learn the probability distribution or data density of a dataset to generate new data points that have similar characteristics. They adjust their parameters based on how well they can replicate the input data.
