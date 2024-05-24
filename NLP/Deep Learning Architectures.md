@@ -210,6 +210,11 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
   
 - **Dimensionality Reduction**: Techniques such as principal component analysis (PCA) and t-distributed stochastic neighbor embedding (t-SNE) reduce the number of random variables under consideration, by obtaining a set of principal variables. This can help simplify the data without losing critical information, making patterns more apparent.
     
-- **Association Rule Learning**: Algorithms like Apriori and Eclat are used in transactional databases to find interesting correlations between items.
+- **Association Rule Learning**: Algorithms like Apriori and Eclat are used in transactional databases to find interesting ==correlations== between items.
     
-- **Neural Networks**: Certain neural network models can be applied in unsupervised learning. For example, autoencoders, which are designed to compress data and then reconstruct it, effectively learning detailed features of the data.
+- **Neural Networks**: Certain neural network models can be applied in unsupervised learning. For example, ==autoencoders==, which are designed to compress data and then reconstruct it, effectively learning detailed features of the data
+  
+- **Generative Models**: These include Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs), which learn to generate new data points that are similar to the training data.
+
+### How Do Models Learn Without Supervision?
+
