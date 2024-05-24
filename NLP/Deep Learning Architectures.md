@@ -241,7 +241,7 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 
 - **Text Generation Focus**: GPT models are designed to generate text. The decoder architecture is naturally suited for this because it predicts the next token in a sequence given the previous tokens. This is essentially what text generation is about — creating the next piece of text based on what you have so far.
     
-- **Self-Attention in Decoders**: Even though GPT uses only the decoder, it still employs self-attention mechanisms. In a full Transformer with both encoder and decoder, the decoder's self-attention layers are masked to prevent them from 'seeing' future tokens in the output during training. This is crucial because, during generation, the model should not have access to future parts of the sequence it is generating. This type of attention allows the model to consider all the previous tokens it has generated so far to decide the next token.
+- **==Self-Attention in Decoders==**: Even though GPT uses only the decoder, it still employs self-attention mechanisms. In a full Transformer with both encoder and decoder, the decoder's self-attention layers are masked to prevent them from 'seeing' future tokens in the output during training. This is crucial because, during generation, the model should not have access to future parts of the sequence it is generating. This type of attention allows the model to consider all the previous tokens it has generated so far to decide the next token.
 
 ### Why No Encoder?
 
