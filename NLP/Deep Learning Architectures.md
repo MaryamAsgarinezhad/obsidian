@@ -228,3 +228,11 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 ### How Do Models Learn Without Supervision?
 
 - ==**Generative Models**:== These models learn the probability distribution or data density of a dataset to generate new data points that have similar characteristics. They adjust their parameters based on how well they can replicate the input data.
+
+----------------------------------
+
+### Understanding Transformer Architecture:
+
+- 1. **Encoder**: Processes the input data (like text) and transforms it into a continuous representation that retains all the information of the input but in a form that the model can manipulate. In tasks like translation, the encoder would handle the source language text.
+    
+2. **Decoder**: Takes the output of the encoder and generates a sequence of outputs (like translated text). For each output step, the decoder looks at the entire encoder output and its previous outputs to decide the next step. It is specifically designed to output sequences, one element at a time.
