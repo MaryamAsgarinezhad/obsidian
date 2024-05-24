@@ -156,7 +156,7 @@ This is an architecture that is trained to take the position and context into ac
 
 -------------------------------------------
 
-- **BERT (Bidirectional Encoder Representations from Transformers)**: 
+ **BERT (Bidirectional Encoder Representations from Transformers)**: 
   BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. This means that, unlike traditional language models that might only predict each word based on previous words (left-to-right prediction), BERT takes into account the full context of a word—both what comes before and what comes after it.
 
 #### Key Features of BERT:
@@ -184,16 +184,18 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 
 ---------------------------------------
 
-
 - **GPT (Generative Pre-trained Transformer)**:
   
   **GPT-1**: The original GPT model was designed to demonstrate that pre-training a language model on a diverse corpus of text could significantly improve performance when fine-tuned for specific tasks. This model combined unsupervised pre-training and supervised fine-tuning in a novel way. It was trained using a language modeling objective, which is to predict the next word in a sentence, given all the previous words.
   
   **GPT-2**: Introduced in 2019, GPT-2 expanded on the ideas of GPT-1 with a much larger model architecture and training dataset. GPT-2 was notable for not being fine-tuned on specific tasks in its most famous demonstrations; instead, it performed tasks like translation, question-answering, and summarization in a zero-shot setting, using only prompts to guide its generation. GPT-2 includes 1.5 billion parameters, which allow it to generate remarkably coherent and contextually appropriate text over extended passages.
   
-  
+  **GPT-3**: Launched in 2020, GPT-3 further expanded the scale of the model to 175 billion parameters, making it one of the largest and most powerful language models ever created. GPT-3's vast size allows it to perform a wide variety of tasks with little to no task-specific data, often achieving competitive results in a few-shot or even zero-shot settings. Its ability to generate human-like text and solve complex problems through pattern recognition alone has been a subject of both admiration and ethical scrutiny.
+
+---------------------------------------
+
 - **T5 (Text-To-Text Transfer Transformer)**: Converts all NLP problems into a unified text-to-text format, where the task is to convert one type of text into another.
 - **RoBERTa (Robustly Optimized BERT Approach)**: A variant of BERT optimized with more data and training iterations, showing improved performance.
 
-
+-----------------------------------------
 
