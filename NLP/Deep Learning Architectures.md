@@ -161,9 +161,23 @@ This is an architecture that is trained to take the position and context into ac
 
 #### Key Features of BERT:
 
-- **Bidirectionality**: Achieved through a novel training method called Masked Language Model (MLM). In MLM, some percentage of the input tokens are masked at random, and then the model attempts to predict the masked words based on their context. This enables the model to understand context in both directions.
+ - **Bidirectionality**: Achieved through a novel training method called Masked Language Model (MLM). In MLM, some percentage of the input tokens are masked at random, and then the model attempts to predict the masked words based on their context. This enables the model to understand context in both directions.
   - **Next Sentence Prediction (NSP)**: BERT is also trained on a task that involves determining whether a sentence logically follows another sentence, which helps it understand relationships between sentences.
-- **Fine-Tuning**: Once pre-trained, BERT can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering, sentiment analysis, and more.
+  - **Fine-Tuning**: Once pre-trained, BERT can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering, sentiment analysis, and more.
+
+1. **No Decoder**:
+    
+    - BERT is designed without the decoder because its primary function is not to generate text but to understand and represent it. By using only the encoder, BERT processes input text to create a rich and contextually nuanced representation of each token in the sequence.
+2. **Purpose**:
+    
+    - Since BERT focuses on tasks that require a deep understanding of language context (such as predicting the sentiment of a sentence, answering questions based on a passage, or filling in missing words), it doesn't need the ability to generate sequences from scratch, which is the primary function of the decoder in the original Transformer.
+3. **How It Works**:
+    
+    - ==In practice, BERT takes a sequence of tokens, applies multiple layers of the Transformer encoder to these tokens, and each token is then transformed into vectors that represent not just the token but its relationship with all other tokens in the sequence.== This process allows BERT to understand the full context of a sentence or a passage, bi-directionally (i.e., considering both the previous and next tokens simultaneously).
+
+By dropping the decoder and utilizing only the encoder, BERT is optimized for tasks that involve understanding or classifying text rather than translating or generating it. This
+
+---------------------------------------
 
 
 - **GPT (Generative Pre-trained Transformer)**: Uses a left-to-right architecture and can generate coherent and diverse text based on a given context.
