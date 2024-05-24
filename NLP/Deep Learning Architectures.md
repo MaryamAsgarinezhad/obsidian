@@ -187,6 +187,11 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 
 - **GPT (Generative Pre-trained Transformer)**:
   
+  **GPT-1**: The original GPT model was designed to demonstrate that pre-training a language model on a diverse corpus of text could significantly improve performance when fine-tuned for specific tasks. This model combined unsupervised pre-training and supervised fine-tuning in a novel way. It was trained using a language modeling objective, which is to predict the next word in a sentence, given all the previous words.
+  
+  **GPT-2**: Introduced in 2019, GPT-2 expanded on the ideas of GPT-1 with a much larger model architecture and training dataset. GPT-2 was notable for not being fine-tuned on specific tasks in its most famous demonstrations; instead, it performed tasks like translation, question-answering, and summarization in a zero-shot setting, using only prompts to guide its generation. GPT-2 includes 1.5 billion parameters, which allow it to generate remarkably coherent and contextually appropriate text over extended passages.
+  
+  
 - **T5 (Text-To-Text Transfer Transformer)**: Converts all NLP problems into a unified text-to-text format, where the task is to convert one type of text into another.
 - **RoBERTa (Robustly Optimized BERT Approach)**: A variant of BERT optimized with more data and training iterations, showing improved performance.
 
