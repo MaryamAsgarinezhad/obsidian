@@ -158,7 +158,10 @@ This is an architecture that is trained to take the position and context into ac
 
 Popular transformer based models:
 
-- **BERT (Bidirectional Encoder Representations from Transformers)**: Designed to pre-train deep bidirectional representations by conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks.
+- **BERT (Bidirectional Encoder Representations from Transformers)**: 
+  
+  BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. This means that, unlike traditional language models that might only predict each word based on previous words (left-to-right prediction), BERT takes into account the full context of a word—both what comes before and what comes after it.
+  
 - **GPT (Generative Pre-trained Transformer)**: Uses a left-to-right architecture and can generate coherent and diverse text based on a given context.
 - **T5 (Text-To-Text Transfer Transformer)**: Converts all NLP problems into a unified text-to-text format, where the task is to convert one type of text into another.
 - **RoBERTa (Robustly Optimized BERT Approach)**: A variant of BERT optimized with more data and training iterations, showing improved performance.
