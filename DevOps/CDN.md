@@ -200,7 +200,7 @@ spec:
 
 ```
 
-**`kind: ServiceMonitor`**: Specifies that the resource type is a `ServiceMonitor`, which is responsible for defining how Prometheus should discover and scrape targets (services) within the cluster.
+**`kind: ServiceMonitor`**: Specifies that the resource type is a `ServiceMonitor`, which is responsible for ==defining how Prometheus should discover and scrape targets (services) within the cluster.==
 
 - **`selector:`**
     - **`matchLabels:`**
