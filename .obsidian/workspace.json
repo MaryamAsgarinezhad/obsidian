@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "DevOps/CDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "DevOps/CDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md"
+                "file": "DevOps/CDN.md"
               }
             }
           },
@@ -185,8 +184,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b62a70b668390601",
+  "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/Deep Learning Architectures.md",
     "Pasted image 20240525115502.png",
     "Pasted image 20240525115313.png",
     "Pasted image 20240525115213.png",
@@ -196,14 +196,12 @@
     "Pasted image 20240525112251.png",
     "Pasted image 20240525111019.png",
     "DevOps/CDN.md",
-    "NLP/Deep Learning Architectures.md",
     "Pasted image 20240525110007.png",
     "DevOps/?.md",
     "Pasted image 20240525103435.png",
     "NLP/??.md",
     "NLP/Coding.md",
     "NLP/Fine Tunning.md",
-    "Pasted image 20240524012849.png",
     "NLP/Evaluation Metrics.md",
     "DevOps/Virtual Environment.md",
     "DevOps/Spring(Java).md",
