@@ -8,4 +8,8 @@ Task-Specific Fine-Tuning:
 Why we need fine tunning? 
 ![[Pasted image 20240524012849.png]]
 **Solution? Train it on Q&A datasets.**
+
+------------------------------------------------------
+
+**PEFT(parameter efficient fine tuning):**
  

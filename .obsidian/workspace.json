@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Transformers.md",
+                "file": "NLP/Fine Tunning.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Transformers.md",
+                "file": "NLP/Fine Tunning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Transformers.md",
+                "file": "NLP/Fine Tunning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Transformers.md"
+                "file": "NLP/Fine Tunning.md"
               }
             }
           },
@@ -174,13 +174,14 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/??.md",
     "NLP/Decoding.md",
+    "NLP/Transformers.md",
     "Pasted image 20240525153904.png",
     "Pasted image 20240525153646.png",
     "DevOps/CDN.md",
     "Pasted image 20240525151420.png",
     "Pasted image 20240525150833.png",
-    "NLP/Transformers.md",
     "Pasted image 20240525144217.png",
     "Pasted image 20240525143935.png",
     "NLP/Preprocessing.md",
@@ -191,7 +192,6 @@
     "NLP/Explainability and Interpretability.md",
     "NLP/Evaluation Metrics.md",
     "NLP/Code sample.md",
-    "NLP/??.md",
     "NLP/Autoencoder.md",
     "Pasted image 20240525124211.png",
     "Pasted image 20240525123643.png",
