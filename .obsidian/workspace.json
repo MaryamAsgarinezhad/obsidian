@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/??.md",
+                "file": "DevOps/Ansible.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/??.md",
+                "file": "DevOps/Ansible.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/??.md",
+                "file": "DevOps/Ansible.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/??.md"
+                "file": "DevOps/Ansible.md"
               }
             }
           },
@@ -174,16 +174,22 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "DevOps/Kubernetes.md",
+    "DevOps/Docker.md",
+    "DevOps/CI-CD Pipeline.md",
+    "DevOps/CDN.md",
+    "DevOps/Bash Script.md",
+    "DevOps/Ansible.md",
+    "DevOps/?.md",
+    "NLP/??.md",
     "NLP/Autoencoder.md",
     "NLP/Code sample.md",
     "NLP/Explainability and Interpretability.md",
-    "NLP/??.md",
     "NLP/Transformers.md",
     "NLP/Decoding.md",
     "NLP/Fine Tunning.md",
     "Pasted image 20240525153904.png",
     "Pasted image 20240525153646.png",
-    "DevOps/CDN.md",
     "Pasted image 20240525151420.png",
     "Pasted image 20240525150833.png",
     "Pasted image 20240525144217.png",
@@ -197,7 +203,6 @@
     "Pasted image 20240525123643.png",
     "Pasted image 20240525123518.png",
     "Pasted image 20240525123300.png",
-    "DevOps/?.md",
     "DevOps/Virtual Environment.md",
     "DevOps/Spring(Java).md",
     "DevOps/??.md",
@@ -205,11 +210,7 @@
     "DevOps/API Services.md",
     "DevOps/Network.md",
     "DevOps/Prometheus & Grafana.md",
-    "DevOps/Bash Script.md",
-    "DevOps/Logging.md",
-    "NLP/Quantization.md",
     "NLP",
-    "DevOps/Ansible.md",
     "Linux/Untitled",
     "DevOps"
   ]
