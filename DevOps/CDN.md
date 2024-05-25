@@ -199,3 +199,12 @@ spec:
       name: nebula-dev
 
 ```
+
+**`kind: ServiceMonitor`**: Specifies that the resource type is a `ServiceMonitor`, which is responsible for defining how Prometheus should discover and scrape targets (services) within the cluster.
+
+- **`selector:`**
+    - **`matchLabels:`**
+        - **`name: clickhouse-{{ cluster_name }}`**: This is a label selector that tells Prometheus to apply this ServiceMonitor configuration ==to any services that have a label== `name` with the value `clickhouse-{{ cluster_name }}`. This should correspond to the labels given to the Kubernetes `Service` resources that expose metrics for ClickHouse instances.
+
+
+name?label???
