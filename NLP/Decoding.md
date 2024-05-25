@@ -6,6 +6,7 @@ We are going to explain the steps after encoding and applying attention:
 
 ------------------------------------------------
 
-GPT vs Transformer:
+decoding of GPT vs Transformer:
 
 ![[Pasted image 20240525153646.png]]
+![[Pasted image 20240525153904.png]]
