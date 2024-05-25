@@ -291,7 +291,7 @@ These weight determine what vector would the word turn into, and is begined rand
 
 -------------------------------------------------------
 
-**Transfer learning: Fine tuning:**
+**GPT1 - Transfer learning(Fine tuning):*
 
 ![[Pasted image 20240525115502.png]]
 
@@ -301,4 +301,12 @@ GPT is pretrained on the ==language modelling== task, in which the model is give
 - **Language modelling is a self-supervised task**, where the sentences themselves form the input and output lables.
 - Fine-tunning of the model is done as a supervised task.
 
-There are some problems in the fine-tunnig that made scientists to alter to gpt2 from gpt 1
+There are some problems in the fine-tunnig that made scientists to alter to gpt2 from gpt 1:
+![[Pasted image 20240525123300.png]]
+
+
+**GPT2 - Meta learning (zero-shot learning):**
+![[Pasted image 20240525123518.png]]
+
+GPT3 - much bigger model with 175 billion parameters:
+![[Pasted image 20240525123643.png]]
