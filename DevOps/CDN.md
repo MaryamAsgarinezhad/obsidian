@@ -93,3 +93,111 @@ An "upstream server" refers to any server or service to which Nginx forwards req
 
 - We need loadbalancers to get content from the right cachenodes (because cachenodes are not duplicated) using a hashing and a mod number.
   We need cachenodes for scalability, high speed and multiple point of failure.
+
+----------------------------------------------
+
+### Endpoint Manual Configuration
+
+Alternatively, if the service doesn't use a selector, it might be manually mapped to specific pods through an ==**`Endpoints`**== object, as seen in another part of your provided code. This `Endpoints` resource manually specifies the IP addresses of the pods to which the service routes traffic. This method is less common and typically used in special scenarios where automatic pod discovery via selectors is not desired.
+
+```shell
+```
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: nebula-dev
+  name: nebula-dev
+  namespace: gse-graph-dev
+spec:
+  type: ClusterIP
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 9100
+    protocol: TCP
+    targetPort: 9100
+    name: metrics
+  - port: 9200
+    protocol: TCP
+    targetPort: 9200
+    name: stats
+  - port: 9900
+    protocol: TCP
+    targetPort: 9900
+    name: domains
+
+---
+apiVersion: v1
+kind: Endpoints
+metadata:
+  labels:
+    name: nebula-dev
+  name: nebula-dev
+  namespace: gse-graph-dev
+  
+subsets:
+- addresses:
+  - ip: 172.16.8.15
+  ports:
+  - name: metrics
+    port: 9100
+    protocol: TCP
+  - name: stats
+    port: 9200
+    protocol: TCP
+  - name: domains
+    port: 9900
+    protocol: TCP
+- addresses:
+  - ip: 172.16.8.16
+  ports:
+  - name: metrics
+    port: 9100
+    protocol: TCP
+  - name: stats
+    port: 9200
+    protocol: TCP
+  - name: domains
+    port: 9900
+    protocol: TCP
+- addresses:
+  - ip: 172.16.8.14
+  ports:
+  - name: metrics
+    port: 9100
+    protocol: TCP
+  - name: stats
+    port: 9200
+    protocol: TCP
+  - name: domains
+    port: 9900
+    protocol: TCP
+  
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: nebula-dev
+  namespace: gse-graph-dev
+spec:
+  endpoints:
+  - interval: 30s
+    path: /metrics
+    port: stats
+    scheme: http
+    scrapeTimeout: 100s
+  - interval: 30s
+    path: /metrics
+    port: metrics
+    scheme: http
+    scrapeTimeout: 100s
+  - interval: 30s
+    path: /metrics
+    port: domians
+    scheme: http
+    scrapeTimeout: 100s
+  selector:
+    matchLabels:
+      name: nebula-dev
+```
+```
