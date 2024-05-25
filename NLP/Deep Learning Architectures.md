@@ -276,3 +276,6 @@ Deep down into the MLP part:
 1- Emedding matrix: has a single column for each word possible, defined in the model's vocabulary list:
 ![[Pasted image 20240525112251.png]]
 These weight determine what vector would the word turn into, and is begined randomly but learned by training.
+
+2- Unembedding matrix: used at the last step for altering vactors into word
+![[Pasted image 20240525113507.png]]
