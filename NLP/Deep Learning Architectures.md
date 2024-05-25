@@ -305,8 +305,9 @@ There are some problems in the fine-tunnig that made scientists to alter to gpt2
 ![[Pasted image 20240525123300.png]]
 
 
-**GPT2 - Meta learning (zero-shot learning):**
+**GPT2 - Meta learning (prompt learning):**
 ![[Pasted image 20240525123518.png]]
 
-GPT3 - much bigger model with 175 billion parameters:
-![[Pasted image 20240525123643.png]]
+**GPT3 - much bigger model with 175 billion parameters:**
+- This model is pretrained and ==fine-tunned with a meta-learning objective==
+- It includes few-shot or one-shot learnig, because it is even hard for humans to learn without any examples provided.
