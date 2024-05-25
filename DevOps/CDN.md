@@ -101,7 +101,6 @@ An "upstream server" refers to any server or service to which Nginx forwards req
 Alternatively, if the service doesn't use a selector, it might be manually mapped to specific pods through an ==**`Endpoints`**== object, as seen in another part of your provided code. This `Endpoints` resource manually specifies the IP addresses of the pods to which the service routes traffic. This method is less common and typically used in special scenarios where automatic pod discovery via selectors is not desired.
 
 ```shell
-```
 apiVersion: v1
 kind: Service
 metadata:
@@ -125,7 +124,6 @@ spec:
     protocol: TCP
     targetPort: 9900
     name: domains
-
 ---
 apiVersion: v1
 kind: Endpoints
@@ -172,7 +170,7 @@ subsets:
   - name: domains
     port: 9900
     protocol: TCP
-  
+
 ---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
@@ -199,5 +197,5 @@ spec:
   selector:
     matchLabels:
       name: nebula-dev
-```
+
 ```
