@@ -158,7 +158,9 @@ These feed-forward layers are MLPs. You can see these MLPs as **asking a long li
 
 ![[Pasted image 20240525103435.png]]
 
-At the very end, the hope is that all of the essential meaning of the passage have been baked into the vary last vector in the sequesnce
+At the very end, the hope is that all of the essential meaning of the passage have been baked into the vary last vector in the sequesnce. We then **perform a certain operation on that last vector that produces a probability distribution over all possible tokens that might come next**:
+
+![[Pasted image 20240525110007.png]]
 
 -------------------------------------------
 
