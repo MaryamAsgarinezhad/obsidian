@@ -295,5 +295,7 @@ These weight determine what vector would the word turn into, and is begined rand
 
 ![[Pasted image 20240525115502.png]]
 
-GPT is pretrained on the language modelling task, 
-![[Pasted image 20240525115313.png]]
+GPT is pretrained on the ==language modelling== task, in which the model is given random sentence parts and is made to predict the word that comes next.
+
+- It acts as good base for understanding the fundamentals of language and can be easily fine-tuned.
+- **Language modelling is a self-supervised task**, where the sentences themselves form the input and output lables.
