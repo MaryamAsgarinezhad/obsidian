@@ -271,7 +271,7 @@ How to convert GPT into a chatbot? (prompt eng)
 
 ---------------------------------------------
 
-Deep down into the MLP part:
+**Deep down into the MLP part:**
 
 1- Emedding matrix: has a single column for each word possible, defined in the model's vocabulary list:
 ![[Pasted image 20240525112251.png]]
@@ -289,4 +289,11 @@ These weight determine what vector would the word turn into, and is begined rand
 - The input of the softmax function is called "logits" and the outputs are probabilities.
 - ![[Pasted image 20240525114348.png]]
 
-----------------------------
+-------------------------------------------------------
+
+**Transfer learning: Fine tuning:**
+
+![[Pasted image 20240525115502.png]]
+
+GPT is pretrained on the language modelling task, 
+![[Pasted image 20240525115313.png]]
