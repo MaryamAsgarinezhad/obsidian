@@ -268,3 +268,9 @@ The primary transformers were to translate a text to another language, but the G
 How to convert GPT into a chatbot? (prompt eng)
 
 ![[Pasted image 20240525111019.png]]
+
+---------------------------------------------
+
+Deep down into the MLP part:
+
+1- Emedding matrix: has a single column for each word possible, defined in the model's vocabulary list
