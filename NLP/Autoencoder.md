@@ -20,3 +20,4 @@ The architecture of an autoencoder can be broadly divided into two parts:
    - ==**Denoising Autoencoder**==: This type is trained to use a corrupted version of the input at the encoder, while still aiming to produce the original, uncorrupted input at the decoder. The idea is to make the learned representations robust to small, random changes in the input.
     
 5. **Generative Models**: Particularly variational autoencoders, which can generate new data points that are similar to the training data.
+   - **Variational Autoencoder (VAE)**: These are generative models that add a probabilistic twist to autoencoders. Instead of learning a function to describe the hidden layer (the encoding), the encoder in a VAE models the input data as a probability distribution in the latent space, which helps in generating new data points.
