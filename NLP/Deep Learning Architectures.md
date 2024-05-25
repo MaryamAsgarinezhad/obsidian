@@ -299,3 +299,4 @@ GPT is pretrained on the ==language modelling== task, in which the model is give
 
 - It acts as good base for understanding the fundamentals of language and can be easily fine-tuned.
 - **Language modelling is a self-supervised task**, where the sentences themselves form the input and output lables.
+- Fine-tunning of the model is done as a supervised task.
