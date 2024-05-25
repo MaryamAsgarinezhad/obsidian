@@ -154,9 +154,11 @@ This is an architecture that is trained to take the position and context into ac
 
 - **Unlike RNNs that require sequential data processing, transformers process all tokens in the input simultaneously**. This parallel processing capability significantly speeds up training as it allows for better utilization of modern GPUs and TPUs.
 
-These feed-forward layers are MLPs. You can see these MLPs as **asking a long list of question about each vector** (token representation) and then **updating the wights based on the answers to those questions**:
+These feed-forward layers are MLPs. You can see these MLPs as **asking a long list of question about each vector** (token representation) and then **updating the vectors based on the answers to those questions and repeating the feed-forward/attention multiple times**:
 
 ![[Pasted image 20240525103435.png]]
+
+At the very end, the hope is that all of the essential meaning of the passage have been baked into the vary last vector in the sequesnce
 
 -------------------------------------------
 
