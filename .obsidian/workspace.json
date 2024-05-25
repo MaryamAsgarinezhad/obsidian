@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Decoding.md",
+                "file": "DevOps/CDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Decoding.md",
+                "file": "DevOps/CDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Decoding.md"
+                "file": "DevOps/CDN.md"
               }
             }
           },
@@ -185,13 +184,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b62a70b668390601",
+  "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/Decoding.md",
+    "Pasted image 20240525151420.png",
     "Pasted image 20240525150833.png",
     "NLP/Transformers.md",
     "Pasted image 20240525144217.png",
     "Pasted image 20240525143935.png",
-    "NLP/Decoding.md",
     "NLP/Preprocessing.md",
     "NLP/Model API Codes.md",
     "NLP/Libraries and usages.md",
@@ -209,8 +209,6 @@
     "DevOps/CDN.md",
     "Pasted image 20240525115502.png",
     "Pasted image 20240525115313.png",
-    "Pasted image 20240525115213.png",
-    "Pasted image 20240525114348.png",
     "DevOps/?.md",
     "DevOps/Virtual Environment.md",
     "DevOps/Spring(Java).md",
