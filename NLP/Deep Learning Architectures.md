@@ -311,3 +311,4 @@ There are some problems in the fine-tunnig that made scientists to alter to gpt2
 **GPT3 - much bigger model with 175 billion parameters:**
 - This model is pretrained and ==fine-tunned with a meta-learning objective==
 - It includes few-shot or one-shot learnig, because it is even hard for humans to learn without any examples provided.
+- ![[Pasted image 20240525124211.png]]
