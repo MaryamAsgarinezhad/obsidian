@@ -17,5 +17,6 @@ The architecture of an autoencoder can be broadly divided into two parts:
 3. **Anomaly Detection**: In scenarios where autoencoders are trained only on normal data, the reconstruction error will be significantly higher for anomalies (outliers), which can be used to ==detect abnormal instances==.
     
 4. **Data Denoising**: As seen in denoising autoencoders, they are capable of removing noise from data effectively.
+   - ==**Denoising Autoencoder**==: This type is trained to use a corrupted version of the input at the encoder, while still aiming to produce the original, uncorrupted input at the decoder. The idea is to make the learned representations robust to small, random changes in the input.
     
 5. **Generative Models**: Particularly variational autoencoders, which can generate new data points that are similar to the training data.
