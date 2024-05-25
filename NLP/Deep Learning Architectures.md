@@ -154,6 +154,8 @@ This is an architecture that is trained to take the position and context into ac
 
 - **Unlike RNNs that require sequential data processing, transformers process all tokens in the input simultaneously**. This parallel processing capability significantly speeds up training as it allows for better utilization of modern GPUs and TPUs.
 
+These feed-forward layers are MLPs. 
+
 -------------------------------------------
 
  **BERT (Bidirectional Encoder Representations from Transformers)**: 
