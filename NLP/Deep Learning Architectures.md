@@ -277,7 +277,7 @@ Deep down into the MLP part:
 ![[Pasted image 20240525112251.png]]
 These weight determine what vector would the word turn into, and is begined randomly but learned by training.
 
-2- Unembedding matrix: used at the last step for altering vactors into word
+2- Unembedding matrix: used at the last step for altering vactors into word. The uotput of this layer is called logit.
 ![[Pasted image 20240525113507.png]]
 
 3- Softmax with temperature:
@@ -285,4 +285,6 @@ These weight determine what vector would the word turn into, and is begined rand
 
 - When T is larger, you get more weights to the lower values, and if the T is small then the bigger values will dominate.
 - A lower temprature predicts the most probable word at the time, and may not perform well in large contexts.
-- Avery high temprature, almo
+- Avery high temprature, almost larger than 2, makes the generated text nonsense.  
+- The input of the softmax function is called "logits" and the outputs are probabilities.
+- ![[Pasted image 20240525114348.png]]
