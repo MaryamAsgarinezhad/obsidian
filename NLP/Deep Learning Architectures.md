@@ -231,11 +231,13 @@ By dropping the decoder and utilizing only the encoder, BERT is optimized for ta
 
 ----------------------------------
 
-### Understanding Transformer Architecture:
+### Understanding Transformer vs GPT:
 
-The primary transformers were to translate a text to another language, but the GPT is for take a piece of text, maybe with some surrounding relevant data, to produce a prediction for what comes next in the passage.
+The primary transformers were to translate a text to another language, but the GPT is for taking a piece of text, maybe with some surrounding relevant data (prompts), to produce a prediction for what comes next in the passage.
 
-This d
+==This prediction takes the form of a probability distribution over many chunks of text that might follow.== This is why GPT is called a generative model.
+
+You might think that predicting the ne
 
 - 1. **Encoder**: Processes the input data (like text) and transforms it into a continuous representation that retains all the information of the input but in a form that the model can manipulate. In tasks like translation, the encoder would handle the source language text.
     
