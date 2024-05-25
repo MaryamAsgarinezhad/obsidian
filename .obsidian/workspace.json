@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "NLP/Autoencoder.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "NLP/Autoencoder.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "NLP/Autoencoder.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md"
+                "file": "NLP/Autoencoder.md"
               }
             }
           },
@@ -187,21 +187,22 @@
   },
   "active": "b62a70b668390601",
   "lastOpenFiles": [
+    "NLP/??.md",
+    "NLP/Autoencoder.md",
+    "NLP/Decoding.md",
+    "NLP/Deep Learning Architectures.md",
     "Pasted image 20240525124211.png",
     "Pasted image 20240525123643.png",
     "Pasted image 20240525123518.png",
     "Pasted image 20240525123300.png",
     "DevOps/CDN.md",
-    "NLP/Deep Learning Architectures.md",
     "Pasted image 20240525115502.png",
     "Pasted image 20240525115313.png",
     "Pasted image 20240525115213.png",
     "Pasted image 20240525114348.png",
     "Pasted image 20240525113842.png",
     "Pasted image 20240525113507.png",
-    "Pasted image 20240525112251.png",
     "DevOps/?.md",
-    "NLP/??.md",
     "NLP/Coding.md",
     "NLP/Fine Tunning.md",
     "NLP/Evaluation Metrics.md",
@@ -223,7 +224,6 @@
     "NLP",
     "DevOps/Ansible.md",
     "DevOps/Liveness - Readiness.md",
-    "DevOps/Version Control.md",
     "Linux/Untitled",
     "DevOps"
   ]
