@@ -273,4 +273,6 @@ How to convert GPT into a chatbot? (prompt eng)
 
 Deep down into the MLP part:
 
-1- Emedding matrix: has a single column for each word possible, defined in the model's vocabulary list
+1- Emedding matrix: has a single column for each word possible, defined in the model's vocabulary list:
+![[Pasted image 20240525112251.png]]
+These weight determine what vector would the word turn into, and is begined randomly but learned by training.
