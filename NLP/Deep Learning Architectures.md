@@ -279,3 +279,10 @@ These weight determine what vector would the word turn into, and is begined rand
 
 2- Unembedding matrix: used at the last step for altering vactors into word
 ![[Pasted image 20240525113507.png]]
+
+3- Softmax with temperature:
+![[Pasted image 20240525113842.png]]
+
+- When T is larger, you get more weights to the lower values, and if the T is small then the bigger values will dominate.
+- A lower temprature predicts the most probable word at the time, and may not perform well in large contexts.
+- Avery high temprature, almo
