@@ -257,6 +257,9 @@ The primary transformers were to translate a text to another language, but the G
     
 - **==Self-Attention in Decoders==**: Even though GPT uses only the decoder, it still employs self-attention mechanisms. In a full Transformer with both encoder and decoder, the decoder's self-attention layers are masked to prevent them from 'seeing' future tokens in the output during training. This is crucial because, during generation, the model should not have access to future parts of the sequence it is generating. **This type of attention** allows the model to consider all the previous tokens it has generated so far to decide the next token.
 - ![[Pasted image 20240525143935.png]]
+- ![[Pasted image 20240525144217.png]]
+- Once the similarities are calculated, they are used to determine how GPT encodes each word (deviation of vectors)
+- ==Self attention is autoregressive (no look-back)==
 ### Why No Encoder?
 
 - **Direct Learning from Sequence**: Since GPT’s task is to generate text, the encoder part, which is traditionally used for understanding and encoding a fixed input sequence into a continuous representation, is not required. GPT models **==directly==** learn to predict the next part of the text from the previous parts, leveraging the context provided by those parts through the self-attention mechanism.
