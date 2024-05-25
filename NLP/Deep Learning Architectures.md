@@ -162,6 +162,8 @@ At the very end, the hope is that all of the essential meaning of the passage ha
 
 ![[Pasted image 20240525110007.png]]
 
+==The last vector is a list of numbers representing the probability distibution of all possible next tokens.==
+
 -------------------------------------------
 
  **BERT (Bidirectional Encoder Representations from Transformers)**: 
