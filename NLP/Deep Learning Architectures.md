@@ -260,3 +260,9 @@ The primary transformers were to translate a text to another language, but the G
 - **Direct Learning from Sequence**: Since GPT’s task is to generate text, the encoder part, which is traditionally used for understanding and encoding a fixed input sequence into a continuous representation, is not required. GPT models **==directly==** learn to predict the next part of the text from the previous parts, leveraging the context provided by those parts through the self-attention mechanism.
     
 - **Efficiency and Simplicity**: Removing the encoder simplifies the model architecture and focuses computational resources on generating high-quality text outputs. This design choice reflects a streamlined approach specifically optimized for the needs of language production tasks, rather than the broader requirements of tasks like translation which need both encoding and decoding capabilities.
+
+------------------------------------------------
+
+How to convert GPT into a chatbot? (prompt eng)
+
+![[Pasted image 20240525111019.png]]
