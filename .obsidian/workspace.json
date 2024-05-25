@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/??.md",
+                "file": "NLP/Preprocessing.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/??.md",
+                "file": "NLP/Preprocessing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/??.md",
+                "file": "NLP/Preprocessing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/??.md"
+                "file": "NLP/Preprocessing.md"
               }
             }
           },
@@ -187,7 +187,13 @@
   },
   "active": "b62a70b668390601",
   "lastOpenFiles": [
+    "NLP/Model API Codes.md",
+    "NLP/Libraries and usages.md",
+    "NLP/Hugging Face pipeline.md",
+    "NLP/Fine Tunning.md",
     "NLP/Explainability and Interpretability.md",
+    "NLP/Evaluation Metrics.md",
+    "NLP/Code sample.md",
     "NLP/??.md",
     "NLP/Autoencoder.md",
     "NLP/Transformers.md",
@@ -204,16 +210,10 @@
     "Pasted image 20240525113842.png",
     "Pasted image 20240525113507.png",
     "DevOps/?.md",
-    "NLP/Coding.md",
-    "NLP/Fine Tunning.md",
-    "NLP/Evaluation Metrics.md",
     "DevOps/Virtual Environment.md",
     "DevOps/Spring(Java).md",
     "DevOps/??.md",
     "NLP/Prompt Engineering.md",
-    "NLP/Libraries and usages.md",
-    "NLP/Model API Codes.md",
-    "NLP/Hugging Face pipeline.md",
     "DevOps/API Services.md",
     "DevOps/Network.md",
     "DevOps/Prometheus & Grafana.md",
