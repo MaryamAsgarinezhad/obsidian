@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "DevOps/CDN.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "DevOps/CDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md",
+                "file": "DevOps/CDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Deep Learning Architectures.md"
+                "file": "DevOps/CDN.md"
               }
             }
           },
@@ -174,9 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "DevOps/?.md",
+    "NLP/Deep Learning Architectures.md",
     "Pasted image 20240525103435.png",
     "NLP/??.md",
-    "NLP/Deep Learning Architectures.md",
     "NLP/Coding.md",
     "NLP/Fine Tunning.md",
     "Pasted image 20240524012849.png",
@@ -188,8 +189,6 @@
     "Pasted image 20240524000750.png",
     "Pasted image 20240524000719.png",
     "Pasted image 20240523235139.png",
-    "Pasted image 20240523232206.png",
-    "DevOps/?.md",
     "NLP/Evaluation Metrics.md",
     "DevOps/Virtual Environment.md",
     "DevOps/Spring(Java).md",
