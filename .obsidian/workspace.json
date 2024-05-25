@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Decoding.md",
+                "file": "NLP/Transformers.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Decoding.md",
+                "file": "NLP/Transformers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Decoding.md",
+                "file": "NLP/Transformers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Decoding.md"
+                "file": "NLP/Transformers.md"
               }
             }
           },
@@ -174,10 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/Decoding.md",
     "Pasted image 20240525153904.png",
     "Pasted image 20240525153646.png",
     "DevOps/CDN.md",
-    "NLP/Decoding.md",
     "Pasted image 20240525151420.png",
     "Pasted image 20240525150833.png",
     "NLP/Transformers.md",
@@ -197,7 +197,6 @@
     "Pasted image 20240525123643.png",
     "Pasted image 20240525123518.png",
     "Pasted image 20240525123300.png",
-    "Pasted image 20240525115502.png",
     "DevOps/?.md",
     "DevOps/Virtual Environment.md",
     "DevOps/Spring(Java).md",
