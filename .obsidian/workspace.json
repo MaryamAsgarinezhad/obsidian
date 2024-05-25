@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Decoding.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b62a70b668390601",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NLP/Decoding.md",
+                "file": "DevOps/CDN.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Decoding.md",
+                "file": "DevOps/CDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Decoding.md",
+                "file": "DevOps/CDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Decoding.md"
+                "file": "DevOps/CDN.md"
               }
             }
           },
@@ -186,8 +174,8 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
-    "DevOps/CDN.md",
     "NLP/Decoding.md",
+    "DevOps/CDN.md",
     "Pasted image 20240525151420.png",
     "Pasted image 20240525150833.png",
     "NLP/Transformers.md",
