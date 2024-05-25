@@ -10,3 +10,5 @@ decoding of GPT vs Transformer:
 
 ![[Pasted image 20240525153646.png]]
 ![[Pasted image 20240525153904.png]]
+
+-Supervised or unsupervised training of the decoder depends
