@@ -86,5 +86,10 @@ GRANT USAGE ON SCHEMA public TO cdn_dev;
 
 CONNECT privilege to allow the user to connect to the database and the USAGE privilege to allow the user to use objects in the database.
 
+--------------------------------------
 
+If you want to access the databases(created by linux) in pgAdmin, ==create a database server==:
+![[Pasted image 20240526114323.png]]
 
+In creating the server, you can specify the user and username:
+![[Pasted image 20240526114542.png]]
