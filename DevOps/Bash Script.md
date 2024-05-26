@@ -504,3 +504,17 @@ cp 'file1' 'file2'
 ```
 
 ------------------------------------
+
+```shell
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list'
+```
+
+This command is used to add a new repository to the list of software sources in Ubuntu or Debian-based systems.
+
+**`sh -c`**: This tells the system to use the shell (`sh`) to execute the command contained within the following single quotes. The `-c` option stands for "command", telling `sh` to execute the string that follows as a command.
+
+**`echo "..."`**: The `echo` command is used here to output the string inside the quotes. The string in this case is a repository source line.
+
+**`deb`**: Indicates that the line describes a binary repository.
+
+ **`pgadmin4 main`**: This refers to the repository component. The term `main` usually indicates that the repository contains free, open-source software supported by the repository maintainers.
