@@ -47,3 +47,5 @@ Using Conda environments like this is beneficial because:
 - **Flexibility**: Different projects can use different versions of libraries or Python itself without affecting one another.
 
 These environment management capabilities are part of why Conda is popular for data science, scientific computing, and other development work that requires careful management of software versions and dependencies.
+
+resume --> https://medium.com/@techsachin/parameter-efficient-fine-tuning-for-models-categories-and-algorithms-4481fb2bdef0
