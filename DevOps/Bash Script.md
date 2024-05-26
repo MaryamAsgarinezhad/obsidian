@@ -518,3 +518,5 @@ This command is used to add a new repository to the list of software sources in 
 **`deb`**: Indicates that the line describes a binary repository.
 
  **`pgadmin4 main`**: This refers to the repository component. The term `main` usually indicates that the repository contains free, open-source software supported by the repository maintainers.
+
+- A **binary repository** is a type of software repository that stores binary files, which are the compiled versions of software. These are ready-to-install software packages that have been pre-compiled for a specific operating system and hardware architecture. This contrasts with a source repository, which contains the source code of software that must be compiled before it can be installed.
