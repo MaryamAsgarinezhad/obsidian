@@ -94,3 +94,8 @@ If you want to access the databases(created by linux) in pgAdmin, ==create a dat
 In creating the server, you can specify the user and username:
 ![[Pasted image 20240526114542.png]]
 
+{% if inventory_hostname in cdn_cachenodes %}  
+      metric_requests_total:inc(1, {env,ngx.var.status,service_name})  
+      metric_requests_teams:inc(1, {env,ngx.var.status,service_name, ngx.var.app_name})  
+      metric_latency:observe(tonumber(ngx.var.request_time), {env,service_name})  
+      metric_upstream_latency:observe((tonumber(ngx.var.upstream_connect_time) + tonumber(ngx.var.upstream_header_time) + tonumber(ngx.var.upstream_response_time)), {env,service_name})
