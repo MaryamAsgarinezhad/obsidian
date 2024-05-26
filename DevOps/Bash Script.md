@@ -520,3 +520,24 @@ This command is used to add a new repository to the list of software sources in 
  **`pgadmin4 main`**: This refers to the repository component. The term `main` usually indicates that the repository contains free, open-source software supported by the repository maintainers.
 
 - A **binary repository** is a type of software repository that stores binary files, which are the compiled versions of software. These are ready-to-install software packages that have been pre-compiled for a specific operating system and hardware architecture. This contrasts with a source repository, which contains the source code of software that must be compiled before it can be installed.
+
+--------------------------------------
+
+Conda is an **open source package and environment management system** that runs on Windows, Mac OS and Linux. Conda can quickly install, run, and update packages and associated dependencies. Conda can create, save, load, and switch between project specific software environments on your local computer.
+
+- **APT (Advanced Package Tool)**: `apt` is the package management system used by Debian-based distributions like Ubuntu. It primarily manages system-level software and libraries. The packages available through `apt` are tailored for general software management on a Debian-based system.
+- **Conda**: Conda is a cross-platform package manager that is particularly popular in the data science and scientific computing community. It can manage packages from any language, but it is especially oriented towards Python and R environments. Conda packages might include software that is outside the scope of what's typically available in `apt` repositories, especially for specialized scientific libraries or tools.
+
+install conda:
+- Use `wget` or `curl` to download the Miniconda installer for Linux. Replace `Miniconda3-latest-Linux-x86_64.sh` with the appropriate filename if a newer version is available.
+```shell
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+```
+
+-  Make the installer script executable and run it.
+
+```shell
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+```
