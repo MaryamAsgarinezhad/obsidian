@@ -36,7 +36,7 @@ This command activates the previously created `ivnews` environment.
 - **`conda activate`**: This is the command used to switch between Conda environments.
 - **`ivnews`**: The name of the environment to activate.
 
-Once activated, any further operations involving Python, pip, or other command-line tools will operate within the context of the `ivnews` environment. This means any Python scripts run will use the Python interpreter and libraries available in `ivnews`, and any packages installed using pip or conda will be contained within this environment.
+Once activated, ==any further operations involving Python, pip, or other command-line tools will operate within the context of the `ivnews` environment==. This means any Python scripts run will use the Python interpreter and libraries available in `ivnews`, and any packages installed using pip or conda will be contained within this environment.
 
 ### Purpose and Benefits
 
