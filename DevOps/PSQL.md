@@ -93,3 +93,8 @@ If you want to access the databases(created by linux) in pgAdmin, ==create a dat
 
 In creating the server, you can specify the user and username:
 ![[Pasted image 20240526114542.png]]
+
+
+torch==1.12.0
+
+torchvision==0.18.0
