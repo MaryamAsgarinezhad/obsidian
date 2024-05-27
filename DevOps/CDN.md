@@ -205,6 +205,3 @@ spec:
 - **`selector:`**
     - **`matchLabels:`**
         - **`name: clickhouse-{{ cluster_name }}`**: This is a label selector that ==tells Prometheus to apply this ServiceMonitor configuration== ==to any services that have a label== `name` with the value `clickhouse-{{ cluster_name }}`. This should correspond to the labels given to the Kubernetes `Service` resources that expose metrics for ClickHouse instances.
-
-
-name?label??? that connects endpoint to service
