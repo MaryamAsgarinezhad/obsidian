@@ -227,5 +227,7 @@ Restart a service on the server when a line in a file is changed:
 
 --------------------
 
-Manage server's os users:
+Manage (server's os) users:
 
+Use Ansible user module to add a new user to a group:
+- ![[Pasted image 20240527192921.png]]
