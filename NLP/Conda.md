@@ -31,6 +31,8 @@ The result of this command is a new, isolated environment where Python 3.8 is in
 
 ### 2. `conda activate ivnews`
 
+- Do it in python terminal
+![[Pasted image 20240527124106.png]]
 This command activates the previously created `ivnews` environment.
 
 - **`conda activate`**: This is the command used to switch between Conda environments.

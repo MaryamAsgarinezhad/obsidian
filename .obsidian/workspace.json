@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "NLP/Conda.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "NLP/Conda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "NLP/Conda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/?.md"
+                "file": "NLP/Conda.md"
               }
             }
           },
@@ -174,9 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "Pasted image 20240527124106.png",
+    "DevOps/?.md",
     "NLP/Conda.md",
     "NLP/??.md",
-    "DevOps/?.md",
     "NLP/Fine Tunning.md",
     "DevOps/PSQL.md",
     "Pasted image 20240526114542.png",
@@ -209,7 +210,6 @@
     "DevOps/Virtual Environment.md",
     "DevOps/Spring(Java).md",
     "DevOps/??.md",
-    "NLP/Prompt Engineering.md",
     "NLP",
     "Linux/Untitled",
     "DevOps"
