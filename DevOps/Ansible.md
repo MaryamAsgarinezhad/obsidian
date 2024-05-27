@@ -213,4 +213,4 @@ The **unarchive** module in Ansible **helps unpack compressed archives** like ta
 Manage services:
 
 Use Ansible 'service' module to perform systemd commands on the servers:
-- ![[Pasted image 20240527190618.png]]
+- ![[Pasted image 20240527191156.png]]
