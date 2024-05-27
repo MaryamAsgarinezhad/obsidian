@@ -175,6 +175,7 @@
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
     "DevOps/?.md",
+    "DevOps/Ansible.md",
     "DevOps/CDN.md",
     "DevOps/Bash Script.md",
     "DevOps/Kubernetes.md",
@@ -187,7 +188,6 @@
     "Pasted image 20240526114323.png",
     "DevOps/Version Control.md",
     "Pasted image 20240525191811.png",
-    "DevOps/Ansible.md",
     "DevOps/Docker.md",
     "DevOps/CI-CD Pipeline.md",
     "NLP/Autoencoder.md",
