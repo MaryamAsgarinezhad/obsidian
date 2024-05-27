@@ -49,3 +49,26 @@ Using Conda environments like this is beneficial because:
 These environment management capabilities are part of why Conda is popular for data science, scientific computing, and other development work that requires careful management of software versions and dependencies.
 
 resume --> https://medium.com/@techsachin/parameter-efficient-fine-tuning-for-models-categories-and-algorithms-4481fb2bdef0 
+
+
+SQLAlchemy==1.4.30
+
+srsly==1.0.5
+
+tensorboard==2.8.0
+
+tensorboard-data-server==0.6.1
+
+tensorboard-plugin-wit==1.8.1
+
+tensorflow==2.8.0
+
+tensorflow-estimator==2.7.0
+
+tensorflow-io-gcs-filesystem==0.23.1
+
+termcolor==1.1.0
+
+terminado==0.12.1
+
+testpath==0.5.0
