@@ -208,9 +208,17 @@ The Ansible '**copy**'/'template' module is used to move a raw/executed(jinja) f
 The **unarchive** module in Ansible **helps unpack compressed archives** like tar.gz, zip, and others on remote machines. This module offers convenience and consistency in managing deployments and configurations that involve archived files. Functionality: Unpacks archives on remote machines after optionally copying them from the local system.
 - ![[Pasted image 20240527185900.png]]
 
+Use Ansible 'lineinfile' module to change a line in a file on a server:
+
+The 'regexexp' is used to search for lines that start with that regex to be changed.
+- ![[Pasted image 20240527191527.png]]
+
 -------------------------------------------
 
 Manage services:
 
 Use Ansible 'service' module to perform systemd commands on the servers:
 - ![[Pasted image 20240527191156.png]]
+
+Restart a service on the server when a line in a file is changed:
+- 
