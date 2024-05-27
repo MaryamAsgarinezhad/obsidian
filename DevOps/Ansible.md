@@ -232,5 +232,5 @@ Manage (server's os) users:
 Use Ansible user module to add a new user to a group:
 - ![[Pasted image 20240527192921.png]]
 
-Use Ansible 'authorized_key' add the new user's ssh key:
+Use Ansible 'authorized_key' add the new user's ssh key (makes the user able to log into the server):
 - ![[Pasted image 20240527193501.png]]
