@@ -197,3 +197,5 @@ Improve your playbook:
 Create server groups:
 
 - ![[Pasted image 20240527173150.png]]
+- ![[Pasted image 20240527173531.png]]
+- 
