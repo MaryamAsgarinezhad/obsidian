@@ -224,3 +224,8 @@ Restart a service on the server when a line in a file is changed:
 ==(**when**: httpd.changed  ,   **register**: httpd )==
 'register' module stores the changes made.
 - ![[Pasted image 20240527191851.png]]
+
+--------------------
+
+Manage server's os users:
+
