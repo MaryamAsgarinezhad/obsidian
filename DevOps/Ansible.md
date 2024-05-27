@@ -192,4 +192,8 @@ ansible-playbook --ask-become-pass 'name of the playbook'
 Improve your playbook:
 
 - Variables that we use in every playbook are already defined in the inventories.
-- 
+- Use specific Ansible modules to write more flexible playbooks.
+
+Create server groups:
+
+- ![[Pasted image 20240527173150.png]]
