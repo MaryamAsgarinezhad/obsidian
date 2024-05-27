@@ -206,3 +206,9 @@ The Ansible '**copy**'/'template' module is used to move a raw/executed(jinja) f
 - ![[Pasted image 20240527184206.png]]
 
 The **unarchive** module in Ansible **helps unpack compressed archives** like tar.gz, zip, and others on remote machines. This module offers convenience and consistency in managing deployments and configurations that involve archived files. Functionality: Unpacks archives on remote machines after optionally copying them from the local system.
+- ![[Pasted image 20240527185900.png]]
+
+-------------------------------------------
+
+Manage services:
+
