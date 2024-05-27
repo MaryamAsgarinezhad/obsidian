@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "NLP/Conda.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "NLP/Conda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "NLP/Conda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/?.md"
+                "file": "NLP/Conda.md"
               }
             }
           },
@@ -174,6 +174,7 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "DevOps/?.md",
     "NLP/??.md",
     "NLP/Conda.md",
     "NLP/Fine Tunning.md",
@@ -188,7 +189,6 @@
     "DevOps/Ansible.md",
     "DevOps/Docker.md",
     "DevOps/CI-CD Pipeline.md",
-    "DevOps/?.md",
     "NLP/Autoencoder.md",
     "NLP/Code sample.md",
     "NLP/Explainability and Interpretability.md",
