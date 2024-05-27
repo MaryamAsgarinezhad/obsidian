@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/Conda.md",
+                "file": "DevOps/?.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/Conda.md",
+                "file": "DevOps/?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/Conda.md",
+                "file": "DevOps/?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/Conda.md"
+                "file": "DevOps/?.md"
               }
             }
           },
@@ -174,9 +174,9 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/Conda.md",
     "DevOps/?.md",
     "NLP/??.md",
-    "NLP/Conda.md",
     "NLP/Fine Tunning.md",
     "DevOps/PSQL.md",
     "Pasted image 20240526114542.png",
