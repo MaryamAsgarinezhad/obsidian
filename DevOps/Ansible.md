@@ -198,4 +198,7 @@ Create server groups:
 
 - ![[Pasted image 20240527173150.png]]
 - ![[Pasted image 20240527173531.png]]
-- 
+
+
+The Ansible 'copy'/'template' module is used to move a raw/executed(jinja) file into the server.
+- ![[Pasted image 20240527184206.png]]
