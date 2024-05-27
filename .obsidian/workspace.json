@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "DevOps/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "DevOps/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/?.md",
+                "file": "DevOps/Kubernetes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/?.md"
+                "file": "DevOps/Kubernetes.md"
               }
             }
           },
@@ -174,9 +174,10 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "DevOps/CDN.md",
+    "DevOps/?.md",
     "NLP/Conda.md",
     "Pasted image 20240527124106.png",
-    "DevOps/?.md",
     "NLP/??.md",
     "NLP/Fine Tunning.md",
     "DevOps/PSQL.md",
@@ -185,7 +186,6 @@
     "DevOps/Bash Script.md",
     "DevOps/Version Control.md",
     "Pasted image 20240525191811.png",
-    "DevOps/CDN.md",
     "DevOps/Kubernetes.md",
     "DevOps/Ansible.md",
     "DevOps/Docker.md",
