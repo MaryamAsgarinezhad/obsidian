@@ -99,3 +99,18 @@ In creating the server, you can specify the user and username:
       metric_requests_teams:inc(1, {env,ngx.var.status,service_name, ngx.var.app_name})  
       metric_latency:observe(tonumber(ngx.var.request_time), {env,service_name})  
       metric_upstream_latency:observe((tonumber(ngx.var.upstream_connect_time) + tonumber(ngx.var.upstream_header_time) + tonumber(ngx.var.upstream_response_time)), {env,service_name})
+
+--------------------------------
+
+Create a new table in the database:
+
+- Enter the databse shell (\c db_name):
+- create the table
+```sql
+CREATE TABLE people (
+    name VARCHAR(100),
+    age INT,
+    city VARCHAR(100)
+);
+```
+- insert the data into it:

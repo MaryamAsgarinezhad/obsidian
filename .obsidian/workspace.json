@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Bash Script.md",
+                "file": "DevOps/PSQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Bash Script.md",
+                "file": "DevOps/PSQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Bash Script.md",
+                "file": "DevOps/PSQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Bash Script.md"
+                "file": "DevOps/PSQL.md"
               }
             }
           },
@@ -174,6 +174,7 @@
   },
   "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "DevOps/Bash Script.md",
     "DevOps/PSQL.md",
     "NLP/Conda.md",
     "DevOps/Ansible.md",
@@ -189,7 +190,6 @@
     "Pasted image 20240527173150.png",
     "DevOps/?.md",
     "DevOps/CDN.md",
-    "DevOps/Bash Script.md",
     "DevOps/Kubernetes.md",
     "NLP/??.md",
     "NLP/Fine Tunning.md",
