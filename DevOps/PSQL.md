@@ -118,3 +118,5 @@ CREATE TABLE people (
 \copy tablename(column1, column2, column3) FROM '/path/to/your/file.csv' DELIMITER ',' CSV HEADER;
 
 ```
+
+If postgres user do not have the permision to access your csv file in a specific file, move the file in the '/tmp'
