@@ -114,3 +114,7 @@ CREATE TABLE people (
 );
 ```
 - insert the data into it:
+```SQL
+\copy tablename(column1, column2, column3) FROM '/path/to/your/file.csv' DELIMITER ',' CSV HEADER;
+
+```
