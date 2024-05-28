@@ -119,4 +119,9 @@ CREATE TABLE people (
 
 ```
 
-If postgres user do not have the permision to access your csv file in a specific file, move the file in the '/tmp'
+If postgres user do not have the permision to access your csv file in a specific file, move the file in the '/tmp' directory and set the permissions for the file.
+
+```SQL
+sudo mv /home/maryam/Downloads/prompt.csv /tmp/
+sudo chmod 644 /tmp/prompt.csv
+```
