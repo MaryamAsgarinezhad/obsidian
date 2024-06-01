@@ -261,4 +261,5 @@ We create a new directory to store that files that contain variables (here host_
 
 Then create the host variables in it:
 ![[Pasted image 20240601113601.png]]
-==We will use these in our task-books.== Since we defined these vars, we are able to use them like 
+==We will use these in our task-books.== Since we defined these vars, we are able to use them like this in our playbooks:
+![[Pasted image 20240601114213.png]]
