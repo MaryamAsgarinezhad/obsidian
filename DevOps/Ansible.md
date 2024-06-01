@@ -246,5 +246,7 @@ write the tasks of the previous playbooks in distinct task files like this:
 
 - The task files need to be places in the directory of each server group (like db_servers), which we define in the role files for.
 - the directory is like: roles/server_group_name/tasks/name_of_the_tasks_file
+![[Pasted image 20240601111714.png]]
 
-
+- The above code is located in a playbook that we run like "ansible-playbook playbook_name"
+- Here the ansible ==looks for a directory called 'roles'== and ==looks for the name we specified for in the '-roles' section in that file.==
