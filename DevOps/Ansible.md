@@ -271,8 +271,11 @@ Handlers:
 One way to restart the server in case anything is changed is this:
 ![[Pasted image 20240601114842.png]]
 
-but if all tasks are set to 'changed_when: false', it will not work. Handlers do this in an effective way.
+but it does not handle multiple changes, just the change of the corresponding '==register==' name. Handlers do this in an effective way.
 Make a new **directory called handlers in the location of tasks, and create a main.yml file in it**:
-
 ![[Pasted image 20240601120600.png]]
-Then it will be triggered by the 'notify: restart_apache' line in each task:
+
+==Then it will be triggered by the 'notify: restart_apache' line in each task:==
+![[Pasted image 20240601120718.png]]
+
+
