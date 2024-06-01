@@ -254,7 +254,7 @@ write the tasks of the previous playbooks in distinct task files like this:
 
 -----------------------------------
 
-Host variables and Handlers:
+Host variables:
 
 We create a new directory to store that files that contain variables (here host_vars/), and then create the host.yml file:
 ![[Pasted image 20240601113433.png]]
@@ -263,3 +263,12 @@ Then create the host variables in it:
 ![[Pasted image 20240601113601.png]]
 ==We will use these in our task-books.== Since we defined these vars, we are able to use them like this in our playbooks:
 ![[Pasted image 20240601114213.png]]
+
+-------------------------------
+
+Handlers:
+
+One way to restart the server in case anything is changed is this:
+![[Pasted image 20240601114842.png]]
+
+but if all tasks are set to 'changed_when: false', it will not work. Handlers do this in an effective way:
