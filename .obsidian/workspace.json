@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Bash Script.md",
+                "file": "DevOps/Ansible.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "port",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Bash Script.md",
+                "file": "DevOps/Ansible.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Bash Script.md",
+                "file": "DevOps/Ansible.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Bash Script.md"
+                "file": "DevOps/Ansible.md"
               }
             }
           },
@@ -173,11 +172,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2df9153840ebfcee",
+  "active": "b2ececbd6de3a9d6",
   "lastOpenFiles": [
+    "NLP/??.md",
+    "DevOps/?.md",
+    "DevOps/Bash Script.md",
     "DevOps/API Services.md",
     "DevOps/PSQL.md",
-    "DevOps/Bash Script.md",
     "NLP/Conda.md",
     "DevOps/Ansible.md",
     "Pasted image 20240527193501.png",
@@ -190,10 +191,8 @@
     "Pasted image 20240527184206.png",
     "Pasted image 20240527173531.png",
     "Pasted image 20240527173150.png",
-    "DevOps/?.md",
     "DevOps/CDN.md",
     "DevOps/Kubernetes.md",
-    "NLP/??.md",
     "NLP/Fine Tunning.md",
     "DevOps/Version Control.md",
     "DevOps/Docker.md",

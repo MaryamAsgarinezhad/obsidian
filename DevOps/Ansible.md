@@ -236,3 +236,8 @@ Use Ansible 'authorized_key' add the new user's ssh key (makes the user able to 
 - ![[Pasted image 20240527193501.png]]
 
 Tip: 'changed_when: false' makes the task not to be considered as a change when it changes!
+
+-------------------------------
+
+Roles:
+
