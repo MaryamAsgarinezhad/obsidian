@@ -244,6 +244,7 @@ Roles:
 write the tasks of the previous playbooks in distinct task files like this:
 ![[Pasted image 20240601110607.png]]
 
-- The task files need to be places in the directory of each server group (like db_servers), which we define in the roles file.
+- The task files need to be places in the directory of each server group (like db_servers), which we define in the role files for.
+- the directory is like: roles/server_group_name/tasks/name_of_the_tasks_file
 
 
