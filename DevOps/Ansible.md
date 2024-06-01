@@ -256,4 +256,8 @@ write the tasks of the previous playbooks in distinct task files like this:
 
 Host variables and Handlers:
 
-We create a new dir
+We create a new directory to store that files that contain variables (here host_vars/), and then create the host.yml file:
+![[Pasted image 20240601113433.png]]
+
+Then create the host variables in it:
+![[Pasted image 20240601113601.png]]
