@@ -278,4 +278,6 @@ Make a new **directory called handlers in the location of tasks, and create a ma
 ==Then it will be triggered by the 'notify: restart_apache' line in each task:==
 ![[Pasted image 20240601120718.png]]
 
+-----------------------------------------
 
+Templates:
