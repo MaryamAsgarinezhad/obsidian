@@ -241,3 +241,9 @@ Tip: 'changed_when: false' makes the task not to be considered as a change when 
 
 Roles:
 
+write the tasks of the previous playbooks in distinct task files like this:
+![[Pasted image 20240601110607.png]]
+
+- The task files need to be places in the directory of each server
+
+
