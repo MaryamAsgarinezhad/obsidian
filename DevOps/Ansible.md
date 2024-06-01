@@ -251,3 +251,9 @@ write the tasks of the previous playbooks in distinct task files like this:
 - The above code is located in a playbook that we run like "ansible-playbook playbook_name"
 - Here the ansible ==looks for a directory called 'roles'== and ==looks for the name we specified for in the '-roles' section in that file.== Then it looks for a ==task folder inside==, and the **==main.yml==** file inside the task folder.
 - It knows the host groups based on the inventory file.
+
+-----------------------------------
+
+Host variables and Handlers:
+
+We create a new dir
