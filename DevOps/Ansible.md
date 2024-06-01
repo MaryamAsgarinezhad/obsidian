@@ -286,4 +286,5 @@ Make a new **directory called templates in the location of tasks (base tasks in 
 ![[Pasted image 20240601130425.png]]
 - jinja2 is the default type of template files in ansible.
 
-Then we can add variables to those files from our 'host variables'
+1- Add variables to those files from our 'host variables'. Or try any other way to create a template file with variables.
+2- Add a template command (used to copy temp)
