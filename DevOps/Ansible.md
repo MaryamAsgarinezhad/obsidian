@@ -282,7 +282,6 @@ Make a new **directory called handlers in the location of tasks, and create a ma
 
 Templates:
 
-Make a new **directory called templates in the location of tasks (base tasks in most of the times).** Then you can add a config file, like the sshd_config to this directory in a jinja2 format:
-
-
-
+Make a new **directory called templates in the location of tasks (base tasks in most of the times).** Then you can add a config file (from local server and remote host), like the sshd_config to this directory in a jinja2 format:
+![[Pasted image 20240601130425.png]]
+- jinja2 is the default type of template files in ansible.
