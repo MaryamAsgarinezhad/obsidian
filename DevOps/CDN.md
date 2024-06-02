@@ -205,3 +205,18 @@ spec:
 - **`selector:`**
     - **`matchLabels:`**
         - **`name: clickhouse-{{ cluster_name }}`**: This is a label selector that ==tells Prometheus to apply this ServiceMonitor configuration== ==to any services that have a label== `name` with the value `clickhouse-{{ cluster_name }}`. This should correspond to the labels given to the Kubernetes `Service` resources that expose metrics for ClickHouse instances.
+
+
+--------------------------------
+
+If the config file faced error and there is no error in the error.log file, then:
+
+```shell
+openresty -t
+```
+
+if you want to see the error with the service:
+
+```shell
+journalctl -xeu openresty.service
+```
