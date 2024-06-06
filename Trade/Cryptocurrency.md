@@ -1,20 +1,4 @@
 
-![[Pasted image 20240606185154.png]]
-
-![[Pasted image 20240606185215.png]]
-
-These transactions are validated and then added block by block.
-Those who validate these blocks are called miners.
-
-![[Pasted image 20240606185503.png]]
-
-with this, the wallets are updated.
-
-One example of using blockchain:
-![[Pasted image 20240606185733.png]]
-
------------------------------------
-
 Cryptocurrency is a kind of digital currency that works on blockchain technology.
 
 What's the difference between cryptocurrency and other currencies?
@@ -30,4 +14,21 @@ How it works without the control of an external authority?
 - ![[Pasted image 20240606185059.png]]
 
 - Then it is verified and validated by every node to proceed with the process of  making transactions. 
-- Hashing 
+- Hashing agorithms are used to secure this process.
+- ![[Pasted image 20240606185154.png]]
+- ![[Pasted image 20240606185215.png]]
+
+- These transactions are validated and then added block by block.
+  Those who validate these blocks are called **miners**.
+  There are two steps that miners do : 
+  1- Proof of work
+  2- mining
+  ![[Pasted image 20240606185503.png]]
+with this, the wallets are updated.
+
+---------------------------------
+
+One example of using blockchain:
+![[Pasted image 20240606185733.png]]
+
+-----------------------------------
