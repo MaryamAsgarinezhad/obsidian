@@ -329,12 +329,10 @@ The server sends this token to the client, which stores it, typically in the bro
 6. Token Storage Options:
 The client can store the token in different ways like HttpOnly Cookies, Session Storage, or Local Storage. Storing in HttpOnly Cookies is recommended as it prevents JavaScript access, enhancing security against XSS attacks.
 
-### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#7-token-expiry-and-security)7. Token Expiry and Security:
-
+7. Token Expiry and Security:
 Tokens often have an expiration time to enhance security.
 
-### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#8-including-token-in-requests)8. Including Token in Requests:
-
+8. Including Token in Requests:
 For every request to the server, the client sends the token in the Authorization header.
 
 It's a good practice to prefix the token with "Bearer ".  
@@ -347,12 +345,10 @@ axios.get(URL, {
 })
 ```
 
-### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#9-serverside-validation)9. Server-Side Validation:
-
+9. Server-Side Validation:
 Upon receiving a request, the server retrieves the token.
 
-### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#10-token-validation-and-user-authentication)10. Token Validation and User Authentication:
-
+10. Token Validation and User Authentication:
 Using the secret key, the server validates the token and extracts claims from it. If the user information from the claims exists in the server's user table, the server authenticates the user, granting access to requested resources.
 
 [![Token based authentication](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvj8jdjwssswe9dcldfga.png)](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvj8jdjwssswe9dcldfga.png)
