@@ -296,13 +296,67 @@ Here’s a sneak peek at how `express-session` works:
     
 - The browser automatically includes this session ID cookie🍪 in subsequent requests to the server.
     
-- When the server receives a request, express-session middleware uses the session ID from the cookie🍪 to retrieve the relevant session data.
+- When the server receives a request, ==express-session middleware== uses the session ID from the cookie🍪 to retrieve the relevant session data.
     
 - The data stored in **req.session** (such as userId) becomes available to handle the request.
     
 
-### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#7-access-granted)7. Access Granted:
+7. Access Granted:
 
 If everything matches up, the server knows the user is genuine and responds to them with access to what they asked for.
 
 [![Session auth working](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3g42u59txhhuaflzsj52.png)](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3g42u59txhhuaflzsj52.png)
+
+## Token-based auth
+
+JWT authentication uses digitally signed tokens containing user information to allow secure and verified access to websites or applications without needing to repeatedly log in. Let’s take a look at the step-by-step workflow of token-based authentication.
+
+1. User Login Request:
+Users log in by sending their email and password to the server through a specific request.
+
+2. Credential Verification:
+The server verifies the provided credentials against the stored user data.
+
+### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#3-token-generation)3. Token Generation:
+
+Upon successful verification, the server creates a token (commonly JWT - JSON Web Token). This token holds user information (claims) such as user_id, permissions.
+
+### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#4-token-signing-and-hashing)4. Token Signing and Hashing:
+
+The token is signed with a secret key and processed with a hashing algorithm (like SHA256) to create a hash.
+
+### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#5-sending-the-token)5. Sending the Token:
+
+The server sends this token to the client, which stores it, typically in the browser.
+
+### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#6-token-storage-options)6. Token Storage Options:
+
+The client can store the token in different ways like HttpOnly Cookies, Session Storage, or Local Storage. Storing in HttpOnly Cookies is recommended as it prevents JavaScript access, enhancing security against XSS attacks.
+
+### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#7-token-expiry-and-security)7. Token Expiry and Security:
+
+Tokens often have an expiration time to enhance security.
+
+### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#8-including-token-in-requests)8. Including Token in Requests:
+
+For every request to the server, the client sends the token in the Authorization header.
+
+It's a good practice to prefix the token with "Bearer ".  
+
+```
+axios.get(URL, {
+    headers: {
+        'Authorization': 'Bearer ' + token,
+    },
+})
+```
+
+### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#9-serverside-validation)9. Server-Side Validation:
+
+Upon receiving a request, the server retrieves the token.
+
+### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#10-token-validation-and-user-authentication)10. Token Validation and User Authentication:
+
+Using the secret key, the server validates the token and extracts claims from it. If the user information from the claims exists in the server's user table, the server authenticates the user, granting access to requested resources.
+
+[![Token based authentication](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvj8jdjwssswe9dcldfga.png)](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvj8jdjwssswe9dcldfga.png)
