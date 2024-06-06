@@ -30,6 +30,6 @@ Targeted advertising aims to deliver personalized ads to users based on their pr
     - By using vector representations and similarity searches, the advertising system can deliver ads that are more relevant to individual users. This increases the chances that the user will find the ad interesting and take action, such as clicking on it or making a purchase.
     - This improved relevance leads to higher engagement rates, better user experiences, and ultimately, more effective advertising campaigns.
 
-### Summary
+### What is Indexing?
 
-The use of **vector databases** in targeted advertising allows for the efficient storage, indexing, and retrieval of complex data related to user behavior and interests. This capability enhances the precision of ad targeting, ensuring that ads are shown to the most relevant audience, thereby improving the effectiveness of advertising efforts.
+**Indexing** is a data structure technique that improves the speed of data retrieval operations on a database at the cost of additional storage space and slight overhead on insertions and deletions. Indexes are used to quickly locate data without having to search every row in a database table every time a database table is accessed.
