@@ -317,20 +317,16 @@ Users log in by sending their email and password to the server through a specifi
 2. Credential Verification:
 The server verifies the provided credentials against the stored user data.
 
-### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#3-token-generation)3. Token Generation:
-
+3. Token Generation:
 Upon successful verification, the server creates a token (commonly JWT - JSON Web Token). This token holds user information (claims) such as user_id, permissions.
 
-### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#4-token-signing-and-hashing)4. Token Signing and Hashing:
-
+4. Token Signing and Hashing:
 The token is signed with a secret key and processed with a hashing algorithm (like SHA256) to create a hash.
 
-### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#5-sending-the-token)5. Sending the Token:
-
+5. Sending the Token:
 The server sends this token to the client, which stores it, typically in the browser.
 
-### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#6-token-storage-options)6. Token Storage Options:
-
+6. Token Storage Options:
 The client can store the token in different ways like HttpOnly Cookies, Session Storage, or Local Storage. Storing in HttpOnly Cookies is recommended as it prevents JavaScript access, enhancing security against XSS attacks.
 
 ### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#7-token-expiry-and-security)7. Token Expiry and Security:
