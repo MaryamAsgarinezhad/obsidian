@@ -280,3 +280,29 @@ The server checks if the provided details match what's stored for the user.
 
  3. Creating a Session:
 If everything is correct, the server makes a 'session' that holds user info (like user ID, permissions, and time limits). This info is kept safe in the server's storage. Exam or can also be managed using libraries such as `express-session`.
+
+ 4. Getting a Session ID:
+The server sends this 'session ID' back to the user's device, usually ==as a cookie in the response.==
+
+5. Using the Session ID:
+Whenever the user wants something from the server, ==their device automatically includes this session ID in its requests.==
+
+6. Server Checks:
+The server uses this session ID to find the stored information about the session user in the session storage.
+
+Here’s a sneak peek at how `express-session` works:
+
+- When the user logs in, the server creates a session for that user and sets a cookie🍪 in the response containing the session ID.
+    
+- The browser automatically includes this session ID cookie🍪 in subsequent requests to the server.
+    
+- When the server receives a request, express-session middleware uses the session ID from the cookie🍪 to retrieve the relevant session data.
+    
+- The data stored in **req.session** (such as userId) becomes available to handle the request.
+    
+
+### [](https://dev.to/fidalmathew/session-based-vs-token-based-authentication-which-is-better-227o#7-access-granted)7. Access Granted:
+
+If everything matches up, the server knows the user is genuine and responds to them with access to what they asked for.
+
+[![Session auth working](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3g42u59txhhuaflzsj52.png)](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3g42u59txhhuaflzsj52.png)
