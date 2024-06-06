@@ -16,3 +16,13 @@ with this, the wallets are updated.
 
 One example of using blockchain:
 ![[Pasted image 20240606185733.png]]
+
+-----------------------------------
+
+Cryptocurrency is a kind of digital currency that works on blockchain technology.
+
+- What's the difference between cryptocurrency and other currencies?
+
+1- It's decentralized.
+2- Free from any third party interferance.
+3- A cryptocurrency transaction is never failed.
