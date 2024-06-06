@@ -9,3 +9,10 @@
 
 These transactions are validated and then added block by block.
 Those who validate these blocks are called miners.
+
+![[Pasted image 20240606185503.png]]
+
+with this, the wallets are updated.
+
+One example of using blockchain:
+![[Pasted image 20240606185733.png]]
