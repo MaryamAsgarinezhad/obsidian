@@ -14,15 +14,18 @@ Targeted advertising aims to deliver personalized ads to users based on their pr
     
     - The **database** stores vast amounts of data related to user behavior (e.g., pages visited, searches performed), demographics (e.g., age, gender, location), and interests (e.g., preferred categories, products).
     - This data is often represented as high-dimensional vectors, where each dimension might represent a specific attribute or feature. For example, a vector could include dimensions for age, location, browsing history, etc.
-2. **Indexing Data**:
     
-    - The database indexes these vectors, allowing for efficient retrieval and querying. Indexing in this context involves organizing data in a way that enables quick similarity searches.
-3. **Ad Targeting**:
+1. **Indexing Data**:
+    
+    - The database indexes these vectors, allowing for efficient retrieval and querying. Indexing in this context involves organizing data in a way that ==enables quick similarity searches.==
+    
+1. **Ad Targeting**:
     
     - In targeted advertising, the goal is to match ads with the users who are most likely to be interested in them.
     - Vector databases help by enabling similarity searches, where the system can quickly find users whose vector representation (i.e., their attributes and behaviors) closely matches a given profile or query.
     - For example, an ad for a new sports drink might be targeted to users whose vectors indicate a strong interest in fitness and sports.
-4. **Relevance and Effectiveness**:
+    
+1. **Relevance and Effectiveness**:
     
     - By using vector representations and similarity searches, the advertising system can deliver ads that are more relevant to individual users. This increases the chances that the user will find the ad interesting and take action, such as clicking on it or making a purchase.
     - This improved relevance leads to higher engagement rates, better user experiences, and ultimately, more effective advertising campaigns.
