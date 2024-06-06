@@ -263,3 +263,6 @@ In this dirctory, you can create a config file and there define the parameters b
 - **Text-Based**: `curl` displays raw HTTP responses, which might include HTML, JSON, XML, or plain text, without rendering or interactive elements.
 
 In a typical web browser search, you can't directly specify custom HTTP headers or a request body. Web browsers are designed to provide a user-friendly interface for navigating and interacting with websites, and they handle HTTP headers and request bodies internally without exposing detailed control to the user.
+
+--------------------------------------
+
