@@ -266,3 +266,17 @@ In a typical web browser search, you can't directly specify custom HTTP headers 
 
 --------------------------------------
 
+# Session-Based vs. Token-Based Authentication
+
+![[Pasted image 20240606201144.png]]
+
+In simple words, session-based authentication uses a special code(session id) stored on your device to remember who you are when you visit a website, keeping you logged in and remembering your information until you leave or log out. Didn’t get it? Don’t worry, let’s take a look step by step.
+
+1. User Login:
+Users log in by sending their email and password to the server through a special request.
+
+ 2. Checking Details:
+The server checks if the provided details match what's stored for the user.
+
+ 3. Creating a Session:
+If everything is correct, the server makes a 'session' that holds user info (like user ID, permissions, and time limits). This info is kept safe in the server's storage. Exam or can also be managed using libraries such as `express-session`.
