@@ -21,9 +21,13 @@ One example of using blockchain:
 
 Cryptocurrency is a kind of digital currency that works on blockchain technology.
 
-- What's the difference between cryptocurrency and other currencies?
+What's the difference between cryptocurrency and other currencies?
 
-1- It's decentralized.
-2- Free from any third party interferance.
-3- A cryptocurrency transaction is never failed.
-4- It has no to little transaction cost.
+- It's decentralized.
+- Free from any third party interferance.
+- A cryptocurrency transaction is never failed.
+- It has no to little transaction cost.
+
+How it works without the control of an external authority?
+
+- It works based on the blockchain technology, which is a set of blocks that record the information of each transaction (who made the transaction to whom, the amount of trade in the form of a digital ledger that is distributed across the entire network)
