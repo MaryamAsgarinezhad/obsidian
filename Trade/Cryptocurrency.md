@@ -29,4 +29,5 @@ How it works without the control of an external authority?
 - It works based on the blockchain technology, which is a set of blocks that record the information of each transaction (who made the transaction to whom, the amount of trade in the form of a digital ledger that is distributed across the entire network, meaning the data is replicated and stored on each node across the entire blockchain network, making it more secure and impossible to change, hack, or cheat a system)
 - ![[Pasted image 20240606185059.png]]
 
-- Then it is verified and validated by every node
+- Then it is verified and validated by every node to proceed with the process of  making transactions. 
+- Hashing 
