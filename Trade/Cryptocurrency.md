@@ -26,3 +26,4 @@ Cryptocurrency is a kind of digital currency that works on blockchain technology
 1- It's decentralized.
 2- Free from any third party interferance.
 3- A cryptocurrency transaction is never failed.
+4- It has no to little transaction cost.
