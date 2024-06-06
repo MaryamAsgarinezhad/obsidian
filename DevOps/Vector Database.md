@@ -1,0 +1,4 @@
+
+A vector database, vector store or vector search engine is a database that can store vectors (fixed-length lists of numbers) along with other data items. Vector databases typically implement one or more Approximate Nearest Neighbor (ANN) algorithms, so that one can search the database with a query vector to retrieve the closest matching database records.
+
+**Vector** databases can be used in targeted advertising to improve the relevance and effectiveness of ad targeting. In this context, the **database** can store and index large amounts of data related to user behavior, demographics, and interests as high-dimensional vectors.
