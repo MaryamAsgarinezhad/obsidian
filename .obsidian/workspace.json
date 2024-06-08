@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/??.md",
+                "file": "DevOps/Bash Script.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8940f3edc9d9b10d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevOps/Bash Script.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/??.md",
+                "file": "DevOps/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/??.md",
+                "file": "DevOps/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/??.md"
+                "file": "DevOps/Bash Script.md"
               }
             }
           },
@@ -172,8 +185,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b2ececbd6de3a9d6",
+  "active": "8940f3edc9d9b10d",
   "lastOpenFiles": [
+    "DevOps/API Services.md",
+    "NLP/??.md",
     "DevOps/?.md",
     "DevOps/Network.md",
     "Pasted image 20240606201144.png",
@@ -188,7 +203,6 @@
     "Untitled.md",
     "DevOps/Vector Database.md",
     "DevOps/Version Control.md",
-    "NLP/??.md",
     "NLP/Explainable AI.md",
     "Pasted image 20240605175820.png",
     "Pasted image 20240605175801.png",
@@ -196,7 +210,6 @@
     "DevOps/CDN.md",
     "DevOps/Ansible.md",
     "DevOps/Bash Script.md",
-    "DevOps/API Services.md",
     "DevOps/PSQL.md",
     "NLP/Conda.md",
     "DevOps/Kubernetes.md",

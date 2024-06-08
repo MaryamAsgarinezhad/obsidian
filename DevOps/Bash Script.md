@@ -523,3 +523,7 @@ This command is used to add a new repository to the list of software sources in 
 
 --------------------------------------
 
+- Set your default browser:
+```shell
+xdg-settings set default-web-browser firefox.desktop
+```
