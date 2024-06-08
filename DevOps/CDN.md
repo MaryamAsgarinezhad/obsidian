@@ -228,7 +228,25 @@ The difference between .conf.j2 filles (generally config files) and ansible play
 
 -------------------------
 
-Token and Regression apps are running on kuber pods. Thus, theirs api
+==Different endpoints of CDN:==
+
+Token and Regression apps are running on kuber pods. Thus, theirs api's domains are like this:
+```shell
+sre-api-auth.pr.mci.dev
+```
+
+- example:
+- ![[Pasted image 20240608162852.png]]
+
+But the cdnized links that you search in the browser, are the ones that are defined with openresty web server. Like the response of the above API:
+
+```shell
+10.19.5.49/SgjIzoUrUMNY5TGkl7gLjw/4764998504/digikala-products/958e073db44ebe698a82e9a0bcff039e13722576_1652172823.jpg?x-oss-process=image/resize,w_1600/quality,q_80&zb_svc=fajr-im-prod&zb_scm=https&zb_dmn=dkstatics-public.digikala.com&zb_secv=1_0_0&zb_type=internet
+```
+
+-----------------------------------------------
+
+```
 ```lua
 location /delete_cache { content_by_lua_block { local file_to_delete = ngx.var.arg_file if file_to_delete then local lfs = require("lfs") local cache_path = "/srv/cache/openresty/" local file_path = cache_path .. file_to_delete local attr = lfs.attributes(file_path) if attr and attr.mode == "file" then os.remove(file_path) ngx.say("File deleted: " .. file_to_delete) else ngx.say("File not found: " .. file_to_delete) end else ngx.say("No file specified for deletion") end } }
 ```
@@ -239,4 +257,3 @@ location /delete_cache { content_by_lua_block { local file_to_delete = ngx.var.a
 - The `content_by_lua_block` handles the logic of deleting a file.
 - It retrieves the filename to delete from the query parameter `file`.
 - It uses the `luafilesystem` library to check if the file exists and delete it.
-- 
