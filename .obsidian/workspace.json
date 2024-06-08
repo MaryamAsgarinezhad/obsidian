@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Network.md",
+                "file": "DevOps/CDN.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Network.md",
+                "file": "DevOps/CDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Network.md",
+                "file": "DevOps/CDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Network.md"
+                "file": "DevOps/CDN.md"
               }
             }
           },
@@ -187,11 +187,11 @@
   },
   "active": "8940f3edc9d9b10d",
   "lastOpenFiles": [
+    "DevOps/Network.md",
     "DevOps/Bash Script.md",
     "DevOps/API Services.md",
     "NLP/??.md",
     "DevOps/?.md",
-    "DevOps/Network.md",
     "Pasted image 20240606201144.png",
     "Trade/Cryptocurrency.md",
     "Pasted image 20240606185733.png",

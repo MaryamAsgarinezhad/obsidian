@@ -220,3 +220,8 @@ if you want to see the error with the service:
 ```shell
 journalctl -xeu openresty.service
 ```
+
+--------------------------------------
+
+The difference between .conf.j2 filles and ansible playbooks or tasks:
+- is that .conf.j2 files are written to define the "**openresty.service**" on the nodes, but ansible files are written to apply linux commands on the nodes.
