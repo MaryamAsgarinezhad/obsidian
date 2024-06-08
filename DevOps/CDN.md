@@ -225,3 +225,9 @@ journalctl -xeu openresty.service
 
 The difference between .conf.j2 filles (generally config files) and ansible playbooks or tasks:
 - is that .conf.j2 files are written to define the "**openresty.service**" on the nodes, but ansible files are written to apply linux commands on the nodes.
+
+-------------------------
+
+```lua
+location /delete_cache { content_by_lua_block { local file_to_delete = ngx.var.arg_file if file_to_delete then local lfs = require("lfs") local cache_path = "/srv/cache/openresty/" local file_path = cache_path .. file_to_delete local attr = lfs.attributes(file_path) if attr and attr.mode == "file" then os.remove(file_path) ngx.say("File deleted: " .. file_to_delete) else ngx.say("File not found: " .. file_to_delete) end else ngx.say("No file specified for deletion") end } }
+```
