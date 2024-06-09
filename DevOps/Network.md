@@ -135,7 +135,7 @@ For example, in "CDN" project we are at the server side.
 ```bash
 https://www.example.com:80/path/to/resource?query=123#section
 ```
-
+![[Pasted image 20240609120302.png]]
 ### Components of a URL
 
 1. **Protocol (Scheme)**

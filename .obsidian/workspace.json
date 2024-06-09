@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d7a588e747afbfa1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -172,8 +183,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6f57b8be7e3750f0",
+  "active": "d7a588e747afbfa1",
   "lastOpenFiles": [
+    "Pasted image 20240609120302.png",
     "DevOps/CDN.md",
     "DevOps/?.md",
     "DevOps/Network.md",
