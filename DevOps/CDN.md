@@ -245,15 +245,3 @@ But the cdnized links that you search in the browser, are the ones that are defi
 ```
 
 -----------------------------------------------
-
-```
-```lua
-location /delete_cache { content_by_lua_block { local file_to_delete = ngx.var.arg_file if file_to_delete then local lfs = require("lfs") local cache_path = "/srv/cache/openresty/" local file_path = cache_path .. file_to_delete local attr = lfs.attributes(file_path) if attr and attr.mode == "file" then os.remove(file_path) ngx.say("File deleted: " .. file_to_delete) else ngx.say("File not found: " .. file_to_delete) end else ngx.say("No file specified for deletion") end } }
-```
-
-**`location /delete_cache`**:
-
-- This block defines a new location `/delete_cache` where you can send requests to delete specific cache files.
-- The `content_by_lua_block` handles the logic of deleting a file.
-- It retrieves the filename to delete from the query parameter `file`.
-- It uses the `luafilesystem` library to check if the file exists and delete it.
