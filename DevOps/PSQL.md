@@ -139,12 +139,10 @@ GROUP BY usename, state;
 The SQL command you provided is a query that interacts with PostgreSQL's `pg_stat_activity` system view to extract and summarize information about the active sessions (connections) to the PostgreSQL server. Here's a breakdown of what each part of the command does:
 
 ### SELECT Statement
-- **usename**: This field represents the username of the user who initiated the session. By including `usename` in the SELECT clause, the query will list the usernames of the users connected to the database.
-- **state**: This field indicates the current state of each session. PostgreSQL defines several possible states such as `active`, `idle`, `idle in transaction`, `idle in transaction (aborted)`, and `disabled`. Including `state` in the SELECT clause shows the current state of each session.
 - **count(*)**: This is an aggregation function that counts the number of sessions (or connections) that match the grouping criteria specified. It provides the count of sessions for each combination of user and state.
 
 ### FROM Clause
-- **pg_stat_activity**: This is the system view that contains one row per server process, showing information related to the current activity of that process, such as the user connected, the database connected to, the current query being executed, and the state of the session.
+- **pg_stat_activity**: This is the system view that ==contains one row per server process, showing information related to the current activity of that process==, such as the user connected, the database connected to, the current query being executed, and the state of the session.
 
 ### GROUP BY Clause
 - **GROUP BY usename, state**: This clause groups the results of the query by the username (`usename`) and the state of the session (`state`). This means the output will aggregate (count) sessions based on unique combinations of user and their respective session states.
