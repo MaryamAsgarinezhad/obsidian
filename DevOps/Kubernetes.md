@@ -74,6 +74,7 @@ Connecting to a pod in kuber have several ways:
 
 - Enter its shell: 
 - This way you connect to its operating system and can access its OS.
+- Its identical to an ssh request.
 ```shell
 kubectl exec -it pod-name -- /bin/bash
 ```
@@ -81,7 +82,12 @@ kubectl exec -it pod-name -- /bin/bash
 - Connect to a specific port of it:
 - This way you only access that specific process on that port
 ```shell
-kubectl port-forward service/sre-platform-pg-stage-stolon-proxy 5432:5433
+kubectl port-forward service/service-name-of-pod 5432:5433
+```
+
+- If a public IP is defined for the internal kuber network, you can connect to that with your local user using the username and password of the public IP:
+```shell
+psql -h [IP_ADDRESS] -p [PORT] -U [USERNAME] -d [DATABASE_NAME]
 ```
 
 ------------------------------------------------
