@@ -69,6 +69,23 @@ kubectl ns sre-platform
 ```
 
 ----------------------------
+
+Connecting to a pod in kuber have several ways:
+
+- Enter its shell: 
+- This way you connect to its operating system and can access its OS.
+```shell
+kubectl exec -it pod-name -- /bin/bash
+```
+
+- Connect to a specific port of it:
+- This way you only access that specific process on that port
+```shell
+kubectl port-forward service/sre-platform-pg-stage-stolon-proxy 5432:5433
+```
+
+------------------------------------------------
+
 - Kuber is a container orchestration tool to manage applications in **different deployment environments**.
 - **Microservices** are a software development approach where applications are built as a collection of small, loosely coupled, independently deployable services, each responsible for a specific business function. These services are designed to do one thing well and communicate with each other over well-defined APIs, typically using lightweight protocols such as HTTP or messaging queues.
 - rise of micro services offered container technology cause they are the best host for micro services
