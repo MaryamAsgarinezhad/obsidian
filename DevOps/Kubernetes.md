@@ -85,7 +85,7 @@ kubectl exec -it pod-name -- /bin/bash
 kubectl port-forward service/service-name-of-pod 5432:5433
 ```
 
-- If a public IP is defined for the internal kuber network, you can connect to that with your local user using the username and password of the public IP:
+- If a public IP is defined for the internal kuber network, you can connect to that with your local postgres user using the username and password of the public IP:
 ```shell
 psql -h [IP_ADDRESS] -p [PORT] -U [USERNAME] -d [DATABASE_NAME]
 ```
