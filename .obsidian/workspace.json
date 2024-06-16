@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLP/??.md",
-                "mode": "source",
+                "file": "DevOps/Version Control.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLP/??.md",
+                "file": "DevOps/Version Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLP/??.md",
+                "file": "DevOps/Version Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLP/??.md"
+                "file": "DevOps/Version Control.md"
               }
             }
           },
@@ -187,10 +187,10 @@
   },
   "active": "d7a588e747afbfa1",
   "lastOpenFiles": [
+    "NLP/??.md",
     "DevOps/PSQL.md",
     "DevOps/Kubernetes.md",
     "DevOps/?.md",
-    "NLP/??.md",
     "DevOps/CDN.md",
     "DevOps/Certificate management.md",
     "Pasted image 20240609183232.png",
