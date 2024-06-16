@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Version Control.md",
-                "mode": "preview",
+                "file": "DevOps/Bash Script.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Version Control.md",
+                "file": "DevOps/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Version Control.md",
+                "file": "DevOps/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Version Control.md"
+                "file": "DevOps/Bash Script.md"
               }
             }
           },
@@ -187,6 +187,7 @@
   },
   "active": "d7a588e747afbfa1",
   "lastOpenFiles": [
+    "DevOps/Version Control.md",
     "NLP/??.md",
     "DevOps/PSQL.md",
     "DevOps/Kubernetes.md",
@@ -194,7 +195,6 @@
     "DevOps/CDN.md",
     "DevOps/Certificate management.md",
     "Pasted image 20240609183232.png",
-    "DevOps/Version Control.md",
     "Pasted image 20240609120302.png",
     "DevOps/Network.md",
     "DevOps/Bash Script.md",
