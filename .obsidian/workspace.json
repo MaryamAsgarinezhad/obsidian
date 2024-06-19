@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Version Control.md",
+                "file": "DevOps/CDN.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Version Control.md",
+                "file": "DevOps/CDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Version Control.md",
+                "file": "DevOps/CDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Version Control.md"
+                "file": "DevOps/CDN.md"
               }
             }
           },
@@ -187,10 +187,10 @@
   },
   "active": "d7a588e747afbfa1",
   "lastOpenFiles": [
+    "DevOps/Version Control.md",
     "DevOps/Bash Script.md",
     "NLP/??.md",
     "NLP/Autoencoder.md",
-    "DevOps/Version Control.md",
     "DevOps/PSQL.md",
     "DevOps/Kubernetes.md",
     "DevOps/?.md",

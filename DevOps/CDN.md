@@ -245,3 +245,9 @@ But the cdnized links that you search in the browser, are the ones that are defi
 ```
 
 -----------------------------------------------
+
+Default path of logs of servers:
+```shell
+/usr/local/openresty/nginx/logs/
+```
+
