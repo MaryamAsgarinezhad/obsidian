@@ -260,6 +260,23 @@ Variable formats in different file types:
 - Lua: ngx.var. .....
 - Nginx config: $
 
+1- **To use invntory variables in config files, we Set Inventory Variables in Nginx Configuration**:
+
+```lua
+server {
+    listen 443 ssl http2;
+    set $env '{{ env }}';
+    set $server_addr '{{ ansible_default_ipv4.address }}';
+}
+```
+
+2- **Access the Nginx Variables in Lua Code:**
+In your Lua code, you can access these variables using the `ngx.var` table. Here’s how you can update your Lua code to use these variables:
+
+```lua
+`local log_file = ngx.var.arg_zb_svc`
+```
+
 -----------------------------------------
 
 This directory is used to store lua modules to be used in other configs or codes:
@@ -268,12 +285,3 @@ This directory is used to store lua modules to be used in other configs or codes
 lua_package_path "/lualib/lualib/?.lua;;";
 ```
 
-To use invntory variables in config files, we Set Inventory Variables in Nginx Configuration:
-
-```shell
-server {
-    listen 443 ssl http2;
-    set $env '{{ env }}';
-    set $server_addr '{{ ansible_default_ipv4.address }}';
-}
-```
