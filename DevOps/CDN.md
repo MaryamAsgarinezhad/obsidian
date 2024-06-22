@@ -251,3 +251,7 @@ Default path of logs of servers:
 /usr/local/openresty/nginx/logs/
 ```
 
+
+-----------------------------------------------------------------
+
+Variable 
