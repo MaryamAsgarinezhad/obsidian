@@ -254,4 +254,10 @@ Default path of logs of servers:
 
 -----------------------------------------------------------------
 
-Variable 
+Variable formats in different file types:
+
+- Jinja: {{ }}
+- Lua: ngx.var. .....
+- Nginx config: $
+
+-----------------------------------------
