@@ -267,3 +267,13 @@ This directory is used to store lua modules to be used in other configs or codes
 ```lua
 lua_package_path "/lualib/lualib/?.lua;;";
 ```
+
+To use invntory variables in config files, we Set Inventory Variables in Nginx Configuration:
+
+```shell
+server {
+    listen 443 ssl http2;
+    set $env '{{ env }}';
+    set $server_addr '{{ ansible_default_ipv4.address }}';
+}
+```
