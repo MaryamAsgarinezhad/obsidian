@@ -261,3 +261,9 @@ Variable formats in different file types:
 - Nginx config: $
 
 -----------------------------------------
+
+This directory is used to store lua modules to be used in other configs or codes:
+
+```lua
+lua_package_path "/lualib/lualib/?.lua;;";
+```
