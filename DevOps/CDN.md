@@ -257,8 +257,8 @@ Default path of logs of servers:
 Variable formats in different file types:
 
 - Jinja: {{ }}
-- Lua: ngx.var. .....
 - Nginx config: $
+- Lua: ngx.var. .....
 
 1- **To use inventory variables in config files, we Set Inventory Variables in Nginx Configuration**:
 
