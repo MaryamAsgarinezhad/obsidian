@@ -282,6 +282,6 @@ In your Lua code, you can access these variables using the `ngx.var` table. Here
 This directory is used to store lua modules to be used in other configs or codes:
 
 ```lua
-lua_package_path "/lualib/lualib/?.lua;;";
+lua_package_path "/lualib/lualib/?.lua;";
 ```
 
