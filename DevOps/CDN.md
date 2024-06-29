@@ -260,7 +260,7 @@ Variable formats in different file types:
 - Lua: ngx.var. .....
 - Nginx config: $
 
-1- **To use invntory variables in config files, we Set Inventory Variables in Nginx Configuration**:
+1- **To use inventory variables in config files, we Set Inventory Variables in Nginx Configuration**:
 
 ```lua
 server {
