@@ -268,3 +268,7 @@ pull: fetch + update
 
 4- To see the last commit on your local, roll bach the uncommited changes.
 ![[Pasted image 20240513141059.png]]
+
+---------------------------------------------------
+
+**==To resolve conflicts, merge the branch containing new changes into the conflicting branch.==**
