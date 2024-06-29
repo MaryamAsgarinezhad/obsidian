@@ -19,3 +19,13 @@ There are various ML serving tools for deploying machine-learning models in secu
 - [Azure Machine Learning](https://azure.microsoft.com/en-us/services/machine-learning/) supports enterprises building and deploying machine-learning products at scale using the Azure platform.
 - [Google’s Prediction API](https://cloud.google.com/ai-platform/training/docs/reference/rest) eases machine-learning model implementation, as it automatically learns from a user’s training data and generates an AI model.
 - [IBM Watson](https://www.ibm.com/watson/products-services) offers pre-built applications for natural lan
+
+
+## Model Serving with Iguazio
+
+Iguazio’s [MLOps platform](https://www.iguazio.com/mlops/) can ease the management of model serving pipelines. The platform ticks all the boxes when it comes to the major features required for model serving, complete with open-source tools like Iguazio’s [MLRun](https://www.iguazio.com/open-source/mlrun/) and [Nuclio](https://www.iguazio.com/open-source/nuclio/).
+
+MLRun is an MLOps orchestration tool for deploying machine-learning models in multiple containers. It can automate model training and validation and supports a real-time deployment pipeline. Its feature store can handle pre- and post-processing of requests. You can cut time to production by automating MLOps.
+
+MLRun leverages Nuclio ,which is a serverless function platform, for deploying machine-learning models, making it easy to handle on-demand resource utilization and auto-scaling. It also integrates well with streaming engine (e.g. kafka, kinesis) so the function that runs the model runs it on live events. Moreover, it supports multiple worker processes ingesting data concurrently in real time.  
+MLrun provides a simple way for converting a machine-learning model to a deployable function by using an easy to use python SDK that can be run from your Jupyter notebook.
