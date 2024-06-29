@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "430f9c63119542d4",
+        "id": "5483251ba054c311",
         "type": "tabs",
         "children": [
           {
-            "id": "6f57b8be7e3750f0",
+            "id": "320d92088b5735bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Network.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d7a588e747afbfa1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/Version Control.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da2f0acd4e62fdf1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DevOps/CDN.md",
+                "file": "NLP/Model Serving.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "NLP/Model Serving.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "NLP/Model Serving.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/CDN.md"
+                "file": "NLP/Model Serving.md"
               }
             }
           },
@@ -197,12 +172,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "da2f0acd4e62fdf1",
+  "active": "320d92088b5735bb",
   "lastOpenFiles": [
-    "DevOps/Version Control.md",
+    "NLP/Model Serving.md",
+    "NLP/Model Serving",
     "DevOps/CDN.md",
-    "DevOps/?.md",
+    "DevOps/Version Control.md",
     "DevOps/Network.md",
+    "DevOps/?.md",
     "Pasted image 20240629140548.png",
     "DevOps/Bash Script.md",
     "NLP/??.md",
