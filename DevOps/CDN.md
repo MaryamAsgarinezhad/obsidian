@@ -287,6 +287,8 @@ This directory is used to store lua modules to be used in other configs or codes
 lua_package_path "/lualib/lualib/?.lua;";
 ```
 
+Then we can "require" the modei
+
 -------------------------------------------
 
 how to add logging in the lua file?
@@ -295,8 +297,4 @@ how to add logging in the lua file?
 ngx.log(ngx.INFO, "JSON string to be decoded: ", json_str)
 ```
 
-
-
-
-modularization in ansible
 
