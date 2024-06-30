@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "DevOps/Ansible.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "DevOps/Ansible.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "DevOps/Ansible.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/CDN.md"
+                "file": "DevOps/Ansible.md"
               }
             }
           },
@@ -174,9 +174,9 @@
   },
   "active": "320d92088b5735bb",
   "lastOpenFiles": [
+    "DevOps/CDN.md",
     "NLP/Model Serving.md",
     "NLP/Model Serving",
-    "DevOps/CDN.md",
     "DevOps/Version Control.md",
     "DevOps/Network.md",
     "DevOps/?.md",
