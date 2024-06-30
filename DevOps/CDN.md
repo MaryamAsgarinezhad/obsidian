@@ -294,3 +294,14 @@ how to add logging in the lua file?
 ```lua
 ngx.log(ngx.INFO, "JSON string to be decoded: ", json_str)
 ```
+
+
+
+
+- name: Config | Copying the openresty_team_specific_log_access.lua.j2 file  
+  become: true  
+  template:  
+    src: "files/lualib/openresty_team_specific_log_access.lua.j2"  
+    dest: /lualib/lualib  
+  notify:  
+    - handler_service_restart_node
