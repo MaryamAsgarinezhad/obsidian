@@ -305,7 +305,15 @@ Where are nginx predefined "$" variables visible?
     
     - In the main `nginx.conf` file and any included configuration files.
     - Within server blocks and location blocks.
-2. **HTTP Context:**
+    - Proxying
+      When proxying requests, you might need to set the `Host` header to the value of `$host`.
+```nginx
+server { listen 80; server_name example.com; location / { proxy_pass http://backend_server; proxy_set_header Host $host; } }
+```
+      
+
+nginx
+1. **HTTP Context:**
     
     - The `$host` variable can be used in directives within the HTTP context, such as `server`, `location`, `if`, `log_format`, and others.
 
