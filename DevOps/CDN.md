@@ -289,3 +289,8 @@ lua_package_path "/lualib/lualib/?.lua;";
 
 -------------------------------------------
 
+how to add logging in the lua file?
+
+```lua
+ngx.log(ngx.INFO, "JSON string to be decoded: ", json_str)
+```

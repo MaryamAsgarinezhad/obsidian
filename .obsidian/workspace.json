@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Ansible.md",
+                "file": "DevOps/CDN.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Ansible.md",
+                "file": "DevOps/CDN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Ansible.md",
+                "file": "DevOps/CDN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Ansible.md"
+                "file": "DevOps/CDN.md"
               }
             }
           },
@@ -174,12 +174,13 @@
   },
   "active": "320d92088b5735bb",
   "lastOpenFiles": [
+    "DevOps/?.md",
     "DevOps/CDN.md",
+    "DevOps/Ansible.md",
     "NLP/Model Serving.md",
     "NLP/Model Serving",
     "DevOps/Version Control.md",
     "DevOps/Network.md",
-    "DevOps/?.md",
     "Pasted image 20240629140548.png",
     "DevOps/Bash Script.md",
     "NLP/??.md",
@@ -202,7 +203,6 @@
     "Untitled.md",
     "DevOps/Vector Database.md",
     "NLP/Explainable AI.md",
-    "DevOps/Ansible.md",
     "NLP/Conda.md",
     "NLP/Fine Tunning.md",
     "DevOps/Docker.md",
