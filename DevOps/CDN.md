@@ -287,7 +287,7 @@ This directory is used to store lua modules to be used in other configs or codes
 lua_package_path "/lualib/lualib/?.lua;";
 ```
 
-Then we can "require" the modei
+Then we can "require" the .lua modules written available in this directory in our code.
 
 -------------------------------------------
 
@@ -297,4 +297,26 @@ how to add logging in the lua file?
 ngx.log(ngx.INFO, "JSON string to be decoded: ", json_str)
 ```
 
+------------------------------
 
+Where are nginx predefined "$" variables visible?
+
+1. **Nginx Configuration Files:**
+    
+    - In the main `nginx.conf` file and any included configuration files.
+    - Within server blocks and location blocks.
+2. **HTTP Context:**
+    
+    - The `$host` variable can be used in directives within the HTTP context, such as `server`, `location`, `if`, `log_format`, and others.
+
+```nginx
+http { log_format main '$remote_addr - $remote_user [$time_local] "$request" ' '$status $body_bytes_sent "$http_referer" ' '"$http_user_agent" "$host"'; access_log /var/log/nginx/access.log main; }
+```
+
+3. **Lua Scripts (OpenResty):**
+    
+    - When using Lua scripts within the Nginx configuration (using `access_by_lua_block`, `content_by_lua_block`, etc.), you can access `$host` via `ngx.var.host`.
+
+```nginx
+server { listen 80; server_name example.com; location / { access_by_lua_block { local host = ngx.var.host ngx.log(ngx.ERR, "Host: ", host) } proxy_pass http://backend_server; proxy_set_header Host $host; } }
+```
