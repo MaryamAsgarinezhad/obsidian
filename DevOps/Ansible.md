@@ -290,8 +290,3 @@ Make a new **directory called templates in the location of tasks (base tasks in 
 2- Add a template command (used to copy template files with variables) to your role tasks:
 ![[Pasted image 20240601132130.png]]
 
-
-
-
-notify:  
-  - handler_service_restart_node
