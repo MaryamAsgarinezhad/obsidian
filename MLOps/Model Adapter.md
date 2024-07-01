@@ -88,3 +88,13 @@ print("BERT Result:", bert_result)
 - **Flexibility**: Adapters allow you to switch models without changing the core logic of your application.
 - **Standardization**: Ensures that inputs and outputs are consistent across different models.
 - **Integration**: Simplifies the integration process, especially when dealing with models from different frameworks or with varying requirements.
+
+-----------------------------------------------------
+
+### Example of a Foundry:
+
+To illustrate this with an example, consider a hypothetical machine learning platform named "AI Foundry." This platform is designed to support the entire lifecycle of machine learning projects, from data preprocessing to model deployment. Here's how model adapters would fit into this scenario:
+
+1. **AI Foundry**: A comprehensive platform that offers tools for data preprocessing, model training, evaluation, deployment, and monitoring.
+    
+2. **Model Adapters**: Components within AI Foundry that allow it to interact with different machine learning models, regardless of their underlying frameworks (e.g., TensorFlow, PyTorch, scikit-learn).
