@@ -374,3 +374,75 @@ server_name boom.mohtava.cloud nimboom.zarebin.ir biboom.zarebin.ir;
 server_name boom.st.mci.dev;  
 {% endif %}
 ```
+
+----------------------------------
+
+In an **Nginx configuration file**, the `http`, `server`, and `location` blocks are key structural components that define how Nginx handles requests and serves content. Here's a brief overview of each:
+
+### `http` Block
+
+The `http` block is a top-level context that contains configuration ==directives related to HTTP and HTTPS traffic==. It is within this block that you configure settings that apply to all HTTP traffic handled by the server.
+
+```nginx
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout  65;
+    
+    # Logging settings
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+
+    # Server blocks go here
+    server {
+        ...
+    }
+}
+
+```
+
+### `server` Block
+
+The `server` block is nested within the `http` block and defines the configuration for a specific virtual server. This includes details like the server's domain name, IP address, port, and how requests are handled for this server.
+
+```nginx
+http {
+    server {
+        listen       80;         # Port to listen on (HTTP)
+        server_name  example.com; # Domain name of the server
+
+        # Location blocks go here
+        location / {
+            ...
+        }
+    }
+}
+```
+
+### `location` Block
+
+The `location` block is nested within the `server` block and specifies how to process requests for a given URI or path. It can include rules for routing requests, proxying, rewriting URLs, and more.
+
+```nginx
+http {
+    server {
+        listen       80;
+        server_name  example.com;
+
+        location / {
+            root   /usr/share/nginx/html;
+            index  index.html index.htm;
+        }
+
+        location /images/ {
+            alias /usr/share/nginx/images/;
+        }
+
+        location /api/ {
+            proxy_pass http://backend_server;
+        }
+    }
+}
+
+```
