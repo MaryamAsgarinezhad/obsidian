@@ -457,8 +457,9 @@ http {
 - **`worker_processes`**: Defines the number of worker processes.
 - **`events`**: Defines settings for event handling, like the maximum number of simultaneous connections.
 - **`http`**: The main block for configuring HTTP settings.
-    - **`include mime.types`**: Includes the file that maps file extensions to MIME types.
-    - **`default_type`**: Sets the default MIME type for files.
+    - **`include mime.types`**: Includes the file that maps file extensions to MIME types. In this example, the `mime.types` file, which is included in the Nginx configuration, maps file extensions to MIME types. This ensures that when a browser requests a file, the server sends the appropriate MIME type, helping the browser understand how to handle and display the file.
+    - **`default_type`**: This directive sets the default MIME type that Nginx will use if it cannot determine the MIME type of a file based on its extension.
+    - **`application/octet-stream`**: This is the MIME type for binary data. It is a general-purpose MIME type that indicates the file should be treated as a binary stream, ==meaning it is not specifically identified as any particular type of file (like text, image, or audio).==
     - **`sendfile on`**: Enables the use of `sendfile` for file transfers.
     - **`keepalive_timeout`**: Configures the timeout for keep-alive connections.
 - **`server`**: Defines a virtual server.
