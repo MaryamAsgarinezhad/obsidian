@@ -43,3 +43,48 @@ class SVMAdapter:
    
 	- Tokenizes and segments text inputs.
 	- Converts BERT's output (probability distribution) into a standardized format (e.g., {'sentiment': 'positive', 'confidence': 0.85}).
+
+```python
+class BERTAdapter:
+    def preprocess_input(self, text):
+        # Tokenize and segment text
+        return tokenized_input
+
+    def postprocess_output(self, output):
+        # Convert BERT output to a standardized format
+        sentiment = ...  # Determine sentiment from probability distribution
+        confidence = ...  # Calculate confidence level
+        return {'sentiment': sentiment, 'confidence': confidence}
+
+```
+
+
+**Integration in Application:**
+
+In your application, you would use these adapters to interact with the models:
+
+```python
+svm_model = SVMModel()
+bert_model = BERTModel()
+
+svm_adapter = SVMAdapter()
+bert_adapter = BERTAdapter()
+
+# Example usage
+input_text = "This movie was great!"
+svm_input = svm_adapter.preprocess_input(input_text)
+svm_output = svm_model.predict(svm_input)
+svm_result = svm_adapter.postprocess_output(svm_output)
+print("SVM Result:", svm_result)
+
+bert_input = bert_adapter.preprocess_input(input_text)
+bert_output = bert_model.predict(bert_input)
+bert_result = bert_adapter.postprocess_output(bert_output)
+print("BERT Result:", bert_result)
+```
+
+### Benefits of Model Adapters:
+
+- **Flexibility**: Adapters allow you to switch models without changing the core logic of your application.
+- **Standardization**: Ensures that inputs and outputs are consistent across different models.
+- **Integration**: Simplifies the integration process, especially when dealing with models from different frameworks or with varying requirements.
