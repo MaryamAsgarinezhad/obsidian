@@ -469,6 +469,6 @@ http {
         - **`root /usr/share/nginx/html;`**: Specifies the directory from which Nginx serves files in response to requests.
         - **`index index.html index.htm;`**: Defines the default files to look for in the specified root directory when a directory is requested.
     - **`location /images/`**: Handles requests to the `/images/` path.
-        - **`alias`**: Specifies the alias directory for this location. Requests like `http://example.com/images/` or `http://example.com/images/image.jpg` will be handled by this block.
+        - **`alias`**: Specifies the alias directory for this location. For instance, a request for `http://example.com/images/image.jpg` would translate to serving the file `/usr/share/nginx/images/image.jpg`.
     - **`location /api/`**: Handles requests to the `/api/` path.
         - **`proxy_pass`**: Forwards requests to a backend server.
