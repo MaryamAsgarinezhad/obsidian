@@ -98,3 +98,51 @@ To illustrate this with an example, consider a hypothetical machine learning pla
 1. **AI Foundry**: A comprehensive platform that offers tools for data preprocessing, model training, evaluation, deployment, and monitoring.
     
 2. **Model Adapters**: Components within AI Foundry that allow it to interact with different machine learning models, regardless of their underlying frameworks (e.g., TensorFlow, PyTorch, scikit-learn).
+
+---------------------------------
+
+# Model adapter overview
+
+Model adapters are a generalized framework to enable Foundry to interoperate with arbitrary models. Model adapters are one of the two components that make a [model](https://www.palantir.com/docs/foundry/integrate-models/integrate-overview/):
+
+- **Model artifacts:** The model files, parameters, weights, containers, or credentials where a trained model is saved.
+- **Model adapter:** The logic and the environment dependencies needed for Foundry to interact with the **model artifacts** to load, initialize, and perform inference with the model.
+
+Model adapters can enable Foundry to interoperate with the following:
+
+1. [Models trained in Foundry](https://www.palantir.com/docs/foundry/integrate-models/model-asset-code-repositories/)
+2. [Model files trained outside of Foundry](https://www.palantir.com/docs/foundry/integrate-models/integrate-overview/)
+3. [Models containerized outside of Foundry and pushed into the Foundry Docker registry](https://www.palantir.com/docs/foundry/integrate-models/container-overview/)
+4. [Models trained and hosted outside of Foundry](https://www.palantir.com/docs/foundry/integrate-models/external-model-connection/)
+
+## [permalink](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-overview/#adapter-components)
+
+## Adapter Components
+
+Palantir interacts with all models in the same way by interfacing with the model adapter class of that model version.
+
+### [permalink](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-overview/#initialization)
+
+### Initialization
+
+Since models can be created once, and used in multiple places within the platform, the adapter needs to be aware of how to initialize an instance of models from either the weights or the underlying container.
+
+For weights trained within the platform, users should use the [@auto_serialize](https://www.palantir.com/docs/foundry/integrate-models/serialization/#auto-serialization) annotation to leverage built-in serializers that should work with most model types. In advanced cases where seralization / deserialization logic must be explicitly specified, see: [load() and _save() methods](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-reference/).
+
+For container and external models, the adapter is initialized with the relevant configuration using either the [`init_container()`](https://www.palantir.com/docs/foundry/integrate-models/container-model-adapter-example/), or [`init_external()`](https://www.palantir.com/docs/foundry/integrate-models/container-model-adapter-example/) method, so that it can be used for inference.
+
+### [permalink](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-overview/#api)
+
+### API
+
+Each adapter is required to declare an API description. The platform relies on this description, which includes the expected inputs, outputs, column names and type, for enabling integrations with other applications for a variety of model consumption patterns.
+
+For supported types and examples of API definitions, review the [API reference](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-api/).
+
+### [permalink](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-overview/#inference)
+
+### Inference
+
+Once intialized, the adapter can be used for inference for either batch or interactive workloads. The inference logic must be defined as part of the [`predict()`](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-api/) method.
+
+The platform uses the provided [API](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-overview/#api) definition to call the [`predict()`](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-api/) method with the defined names and types so that inference can be performed.
