@@ -527,3 +527,11 @@ This command is used to add a new repository to the list of software sources in 
 ```shell
 xdg-settings set default-web-browser firefox.desktop
 ```
+
+-----------------------------------------
+
+To view accessibility of files in a directory:
+
+```shell
+ls -l
+```

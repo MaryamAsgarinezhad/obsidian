@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "DevOps/Bash Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "DevOps/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "DevOps/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/CDN.md"
+                "file": "DevOps/Bash Script.md"
               }
             }
           },
@@ -174,8 +174,8 @@
   },
   "active": "320d92088b5735bb",
   "lastOpenFiles": [
-    "DevOps/?.md",
     "DevOps/CDN.md",
+    "DevOps/?.md",
     "DevOps/Ansible.md",
     "NLP/Model Serving.md",
     "NLP/Model Serving",
