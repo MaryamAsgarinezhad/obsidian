@@ -466,9 +466,9 @@ http {
     - **`listen 80`**: Listens on port 80 for HTTP requests.
     - **`server_name`**: Sets the server's domain name.
     - **`location /`**: Handles requests to the root path.
-        - **`root`**: Specifies the root directory for this location.
-        - **`index`**: Specifies the index file(s) to use.
+        - **`root /usr/share/nginx/html;`**: Specifies the directory from which Nginx serves files in response to requests.
+        - **`index index.html index.htm;`**: Defines the default files to look for in the specified root directory when a directory is requested.
     - **`location /images/`**: Handles requests to the `/images/` path.
-        - **`alias`**: Specifies the alias directory for this location.
+        - **`alias`**: Specifies the alias directory for this location. Requests like `http://example.com/images/` or `http://example.com/images/image.jpg` will be handled by this block.
     - **`location /api/`**: Handles requests to the `/api/` path.
         - **`proxy_pass`**: Forwards requests to a backend server.
