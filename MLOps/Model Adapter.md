@@ -105,7 +105,7 @@ To illustrate this with an example, consider a hypothetical machine learning pla
 
 Model adapters are a generalized framework to enable Foundry to interoperate with arbitrary models. Model adapters are one of the two components that make a [model](https://www.palantir.com/docs/foundry/integrate-models/integrate-overview/):
 
-- **Model artifacts:** The model files, parameters, weights, containers, or credentials where a trained model is saved.
+-  **Model artifacts:** The model files, parameters, weights, containers, or credentials where a trained model is saved.
 - **Model adapter:** The logic and the environment dependencies needed for Foundry to interact with the **model artifacts** to load, initialize, and perform inference with the model.
 
 Model adapters can enable Foundry to interoperate with the following:
@@ -114,8 +114,6 @@ Model adapters can enable Foundry to interoperate with the following:
 2. [Model files trained outside of Foundry](https://www.palantir.com/docs/foundry/integrate-models/integrate-overview/)
 3. [Models containerized outside of Foundry and pushed into the Foundry Docker registry](https://www.palantir.com/docs/foundry/integrate-models/container-overview/)
 4. [Models trained and hosted outside of Foundry](https://www.palantir.com/docs/foundry/integrate-models/external-model-connection/)
-
-## [permalink](https://www.palantir.com/docs/foundry/integrate-models/model-adapter-overview/#adapter-components)
 
 ## Adapter Components
 
