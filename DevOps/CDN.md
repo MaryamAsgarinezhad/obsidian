@@ -342,8 +342,9 @@ how to add logging in the nginx config file?
 log_format  main  '$request_uri - $remote_addr - $remote_user [$time_local] '
 ```
 
-2- In the "server" block, submit the logs:
+2- In the "server" block, submit the logs into certain paths in the server:
 
 ```shell
-
+access_log {{ cdn_log_dir }}/host.access.log main;  
+error_log {{ cdn_log_dir }}/error.log error;
 ```
