@@ -30,3 +30,21 @@ Fluent Bit configuration file sets up the service to read logs from various sour
 
 - ### Output Sections: These sections define where Fluent Bit sends the processed logs.
 
+1- Forward Output for Nginx Access Logs
+
+```plaintext
+[OUTPUT]
+    name  forward
+    match nginx
+    host 172.16.0.6
+    port 32502
+    tag sre_boom_app
+    shared_key e5c2d2f01cbb2d4a3c75
+```
+
+- **name**: Specifies the output plugin to use (`forward`), which forwards logs to another Fluent Bit or Fluentd instance.
+- **match**: Matches logs tagged with `nginx`.
+- **host**: The destination host IP address (`172.16.0.6`).
+- **port**: The destination port (`32502`).
+- **tag**: Assigns a new tag (`sre_boom_app`) to the forwarded logs.
+- **shared_key**: Authentication key used for secure forwarding.
