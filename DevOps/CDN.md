@@ -404,7 +404,7 @@ http {
 
 ### `server` Block
 
-The `server` block is nested within the `http` block and defines the configuration for a specific virtual server. This includes details like the server's domain name, IP address, port, and how requests are handled for this server.
+The `server` block is nested within the `http` block and defines the ==configuration for a specific virtual server==. This includes details like the server's domain name, IP address, port, and how requests are handled for this server.
 
 ```nginx
 http {
@@ -422,7 +422,7 @@ http {
 
 ### `location` Block
 
-The `location` block is nested within the `server` block and specifies how to process requests for a given URI or path. It can include rules for routing requests, proxying, rewriting URLs, and more.
+The `location` block is nested within the `server` block and specifies ==how to process requests for a given URI or path==. It can include rules for **routing** requests, **proxying**, rewriting URLs, and more.
 
 ```nginx
 http {
