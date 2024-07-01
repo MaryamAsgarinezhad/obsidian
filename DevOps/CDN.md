@@ -304,13 +304,18 @@ Where are nginx predefined "$" variables visible?
 1. **Nginx Configuration Files:**
     
     - In the main `nginx.conf` file and any included configuration files.
-    - Within server blocks and location blocks.
+    - Within ==server blocks== and l==ocation blocks==.
     - Proxying
       When proxying requests, you might need to set the `Host` header to the value of `$host`.
+    - Redirects
+      You can use `$host` to ensure the redirect goes to the correct host.
 ```nginx
 server { listen 80; server_name example.com; location / { proxy_pass http://backend_server; proxy_set_header Host $host; } }
 ```
-      
+
+```nginx
+server { listen 80; server_name example.com; location / { return 301 https://$host$request_uri; } }
+```
 
 nginx
 1. **HTTP Context:**
