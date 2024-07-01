@@ -318,10 +318,12 @@ server { listen 80; server_name example.com; location / { access_by_lua_block { 
 ```
 -----------------------------------------
  
- Adding lua scripts to the nginx config:
+**Adding lua scripts to the nginx config:**
 
 ```
-content/log/... by_lua_block{}
+content/log/access... _by_lua_block{
+"here you write your lua code"
+}
 ```
 
 -----------------------------------------------
