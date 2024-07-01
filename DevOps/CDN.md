@@ -292,6 +292,7 @@ Where are nginx predefined "$" variables visible?
       When proxying requests, you might need to set the `Host` header to the value of `$host`.
     - Redirects
       You can use `$host` to ensure the redirect goes to the correct host.
+
 ```nginx
 server { listen 80; server_name example.com; location / { proxy_pass http://backend_server; proxy_set_header Host $host; } }
 ```
@@ -300,8 +301,7 @@ server { listen 80; server_name example.com; location / { proxy_pass http://back
 server { listen 80; server_name example.com; location / { return 301 https://$host$request_uri; } }
 ```
 
-nginx
-1. **HTTP Context:**
+2. **HTTP Context:**
     
     - The `$host` variable can be used in directives within the HTTP context, such as `server`, `location`, `if`, `log_format`, and others.
 
@@ -317,6 +317,16 @@ http { log_format main '$remote_addr - $remote_user [$time_local] "$request" ' '
 server { listen 80; server_name example.com; location / { access_by_lua_block { local host = ngx.var.host ngx.log(ngx.ERR, "Host: ", host) } proxy_pass http://backend_server; proxy_set_header Host $host; } }
 ```
 -----------------------------------------
+ 
+ Adding lua scripts to the nginx config:
+
+```
+content/log/... by_lua_block{}
+```
+
+-----------------------------------------------
+
+**Modularization in lua language:**
 
 This directory is used to store lua modules to be used in other configs or codes:
 
@@ -327,6 +337,8 @@ lua_package_path "/lualib/lualib/?.lua;";
 Then we can "require" the .lua modules written available in this directory in our code.
 
 -------------------------------------------
+
+**Logging**
 
 how to add logging in the lua file?
 
@@ -347,4 +359,16 @@ log_format  main  '$request_uri - $remote_addr - $remote_user [$time_local] '
 ```shell
 access_log {{ cdn_log_dir }}/host.access.log main;  
 error_log {{ cdn_log_dir }}/error.log error;
+```
+
+------------------------------
+
+Jinja conditions format:
+
+```nginx
+{% if enable_production_conf is defined and enable_production_conf == True %}  
+server_name boom.mohtava.cloud nimboom.zarebin.ir biboom.zarebin.ir;  
+{% else %}  
+server_name boom.st.mci.dev;  
+{% endif %}
 ```
