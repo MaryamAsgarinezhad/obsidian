@@ -405,7 +405,6 @@ http {
         ...
     }
 }
-
 ```
 
 ### `server` Block
@@ -450,5 +449,25 @@ http {
         }
     }
 }
-
 ```
+
+
+**Code Explanation:**
+
+- **`worker_processes`**: Defines the number of worker processes.
+- **`events`**: Defines settings for event handling, like the maximum number of simultaneous connections.
+- **`http`**: The main block for configuring HTTP settings.
+    - **`include mime.types`**: Includes the file that maps file extensions to MIME types.
+    - **`default_type`**: Sets the default MIME type for files.
+    - **`sendfile on`**: Enables the use of `sendfile` for file transfers.
+    - **`keepalive_timeout`**: Configures the timeout for keep-alive connections.
+- **`server`**: Defines a virtual server.
+    - **`listen 80`**: Listens on port 80 for HTTP requests.
+    - **`server_name`**: Sets the server's domain name.
+    - **`location /`**: Handles requests to the root path.
+        - **`root`**: Specifies the root directory for this location.
+        - **`index`**: Specifies the index file(s) to use.
+    - **`location /images/`**: Handles requests to the `/images/` path.
+        - **`alias`**: Specifies the alias directory for this location.
+    - **`location /api/`**: Handles requests to the `/api/` path.
+        - **`proxy_pass`**: Forwards requests to a backend server.
