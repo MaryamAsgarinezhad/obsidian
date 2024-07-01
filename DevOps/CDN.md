@@ -280,24 +280,6 @@ In your Lua code, you can access these variables using the `ngx.var` table. Here
 `local log_file = ngx.var.arg_zb_svc`
 ```
 
------------------------------------------
-
-This directory is used to store lua modules to be used in other configs or codes:
-
-```lua
-lua_package_path "/lualib/lualib/?.lua;";
-```
-
-Then we can "require" the .lua modules written available in this directory in our code.
-
--------------------------------------------
-
-how to add logging in the lua file?
-
-```lua
-ngx.log(ngx.INFO, "JSON string to be decoded: ", json_str)
-```
-
 ------------------------------
 
 Where are nginx predefined "$" variables visible?
@@ -333,4 +315,35 @@ http { log_format main '$remote_addr - $remote_user [$time_local] "$request" ' '
 
 ```nginx
 server { listen 80; server_name example.com; location / { access_by_lua_block { local host = ngx.var.host ngx.log(ngx.ERR, "Host: ", host) } proxy_pass http://backend_server; proxy_set_header Host $host; } }
+```
+-----------------------------------------
+
+This directory is used to store lua modules to be used in other configs or codes:
+
+```lua
+lua_package_path "/lualib/lualib/?.lua;";
+```
+
+Then we can "require" the .lua modules written available in this directory in our code.
+
+-------------------------------------------
+
+how to add logging in the lua file?
+
+```lua
+ngx.log(ngx.INFO, "JSON string to be decoded: ", json_str)
+```
+
+how to add logging in the nginx config file?
+
+1- In the "http" block, define the log as follows:
+
+```shell
+log_format  main  '$request_uri - $remote_addr - $remote_user [$time_local] '
+```
+
+2- In the "server" block, submit the logs:
+
+```shell
+
 ```
