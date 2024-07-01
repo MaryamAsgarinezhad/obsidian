@@ -384,6 +384,12 @@ In an **Nginx configuration file**, the `http`, `server`, and `location` blocks 
 The `http` block is a top-level context that contains configuration ==directives related to HTTP and HTTPS traffic==. It is within this block that you configure settings that apply to all HTTP traffic handled by the server.
 
 ```nginx
+worker_processes 1; 
+
+events { 
+    worker_connections 1024; 
+}
+
 http {
     include       mime.types;
     default_type  application/octet-stream;
@@ -422,7 +428,7 @@ http {
 
 ### `location` Block
 
-The `location` block is nested within the `server` block and specifies ==how to process requests for a given URI or path==. It can include rules for **routing** requests, **proxying**, rewriting URLs, and more.
+The `location` block is nested within the `server` block and specifies ==how to process requests for a given URI or path==. It can include rules for **routing** requests, **proxying**, **rewriting** URLs, and more.
 
 ```nginx
 http {
