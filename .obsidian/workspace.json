@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "MLOps/Model Adapter.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "MLOps/Model Adapter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/CDN.md",
+                "file": "MLOps/Model Adapter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/CDN.md"
+                "file": "MLOps/Model Adapter.md"
               }
             }
           },
@@ -174,17 +174,19 @@
   },
   "active": "320d92088b5735bb",
   "lastOpenFiles": [
-    "DevOps/Fluentbit.md",
-    "DevOps/CDN.md",
-    "DevOps/Bash Script.md",
-    "DevOps/?.md",
+    "NLP/??.md",
+    "MLOps/Model Adapter.md",
+    "MLOps",
     "DevOps/Ansible.md",
+    "DevOps/?.md",
+    "DevOps/CDN.md",
+    "DevOps/Fluentbit.md",
+    "DevOps/Bash Script.md",
     "NLP/Model Serving.md",
     "NLP/Model Serving",
     "DevOps/Version Control.md",
     "DevOps/Network.md",
     "Pasted image 20240629140548.png",
-    "NLP/??.md",
     "NLP/Autoencoder.md",
     "DevOps/PSQL.md",
     "DevOps/Kubernetes.md",
@@ -211,7 +213,6 @@
     "NLP/Code sample.md",
     "NLP/Explainability and Interpretability.md",
     "NLP/Transformers.md",
-    "NLP/Decoding.md",
     "NLP",
     "Linux/Untitled",
     "DevOps"
