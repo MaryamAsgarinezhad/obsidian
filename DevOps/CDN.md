@@ -256,10 +256,11 @@ Default path of logs of servers:
 
 Variable formats in different file types:
 
-- Jinja: {{ }}
-- Nginx config: $
+- Jinja: {{ a variable define in the inventory }}
+- Nginx predefined variables, that could be set to other amounts: $
 - Lua: ngx.var. .....
-- pre defied Nginx variables:
+
+pre defied Nginx variables:
   e.g.: In the context of Nginx, the variable **$host** typically refers to the host name of the request. It's one of the predefined variables in Nginx that captures various aspects of the HTTP request.
 
 1- **To use inventory variables in config files, we Set Inventory Variables in Nginx Configuration**:
