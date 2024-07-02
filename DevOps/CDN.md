@@ -265,12 +265,17 @@ pre defied Nginx variables:
 
 1- **To use inventory variables in config files, we Set Inventory Variables in Nginx Configuration**:
 
-```lua
+```nginx
 server {
     listen 443 ssl http2;
     set $env '{{ env }}';
     set $server_addr '{{ ansible_default_ipv4.address }}';
 }
+```
+
+- You can also set nginx predefined variables by lua script:
+```lua
+set_by_lua $schema 'return ngx.var.arg_zb_scm';
 ```
 
 2- **Access the Nginx Variables in Lua Code:**
