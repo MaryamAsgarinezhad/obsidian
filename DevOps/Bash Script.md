@@ -561,3 +561,4 @@ In the case of operating systems like Linux, a keyring is often used to manage a
 ----------------------------
 
 
+The "export" linux word creates a new environment variable.

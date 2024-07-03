@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Logical volume.md",
+                "file": "MLOps/Serving.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "824b2b2a9e8da51f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevOps/Bash Script.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Logical volume.md",
+                "file": "DevOps/Bash Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Logical volume.md",
+                "file": "DevOps/Bash Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Logical volume.md"
+                "file": "DevOps/Bash Script.md"
               }
             }
           },
@@ -172,12 +185,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "320d92088b5735bb",
+  "active": "824b2b2a9e8da51f",
   "lastOpenFiles": [
     "MLOps/Serving.md",
-    "DevOps/Logical volume.md",
-    "DevOps/Bash Script.md",
     "MLOps/Model Adapter.md",
+    "DevOps/Bash Script.md",
+    "DevOps/API Services.md",
+    "DevOps/Logical volume.md",
     "DevOps/CDN.md",
     "NLP/??.md",
     "MLOps",
@@ -196,7 +210,6 @@
     "Pasted image 20240609183232.png",
     "Pasted image 20240609120302.png",
     "Pasted image 20240608162852.png",
-    "DevOps/API Services.md",
     "Pasted image 20240606201144.png",
     "Trade/Cryptocurrency.md",
     "Pasted image 20240606185733.png",
