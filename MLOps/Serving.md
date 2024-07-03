@@ -46,7 +46,7 @@ ENV LLAMA_CUDA_NVCC=1
 
 RUN mkdir build && cd build && cmake .. -DLLAMA_CUDA=ON && make GGML_CUDA=1
 
-COPY /path/to/local/model.gguf /workspace/model.gguf
+COPY ./models/aya-23-8B-Q8_0.gguf /workspace/model.gguf
 
 EXPOSE 8080
 
