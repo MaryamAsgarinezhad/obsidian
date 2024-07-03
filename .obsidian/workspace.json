@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Bash Script.md",
+                "file": "MLOps/Serving.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Bash Script.md",
+                "file": "MLOps/Serving.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Bash Script.md",
+                "file": "MLOps/Serving.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Bash Script.md"
+                "file": "MLOps/Serving.md"
               }
             }
           },
@@ -174,9 +174,9 @@
   },
   "active": "320d92088b5735bb",
   "lastOpenFiles": [
+    "DevOps/Bash Script.md",
     "MLOps/Serving.md",
     "MLOps/Model Adapter.md",
-    "DevOps/Bash Script.md",
     "DevOps/CDN.md",
     "NLP/??.md",
     "MLOps",
