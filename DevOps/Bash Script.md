@@ -560,15 +560,17 @@ In the case of operating systems like Linux, a keyring is often used to manage a
 
 ----------------------------
 
-The "export" linux word creates a new environment variable.
+The "**export**" linux word creates a new environment variable.
 ```shell
 env | grep -i proxy
 ```
 - View the proxies you defined.
 - Instead of setting 'http_proxy' env variable, you can use proxychains and tmux.
-- Using tmux, you do not need to 
+- Using tmux, the proxy env variable won't be destroyed.
+- Tmux allows users to create multiple sessions, each of which can contain multiple windows and panes.
 
-Tmux
+**Tmux**:
 ```shell
-
+tmux attach -t serving
 ```
+This command is used to reattach to an existing `tmux` session named `serving`.
