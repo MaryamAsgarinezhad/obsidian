@@ -55,3 +55,8 @@ CMD ["./build/server", "-m", "/workspace/model.gguf", "-ngl", "10000000", "--hos
 
 ----------------------------------------------
 
+Main conepts:
+
+Model = weights + architecture
+- It can be stored as different extension formats: gguf, pytorch, tensorRT, onnx
+- Backends translate the models and their corrs
