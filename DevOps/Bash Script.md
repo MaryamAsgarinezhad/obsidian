@@ -562,3 +562,14 @@ In the case of operating systems like Linux, a keyring is often used to manage a
 
 
 The "export" linux word creates a new environment variable.
+```shell
+env | grep -i proxy
+```
+- View the proxies you defined.
+- Instead of setting 'http_proxy' env variable, you can use proxychains and tmux.
+- Using tmux, oyu dont need to 
+
+CURL uploads and downloads resources, whereas Wget primarily downloads files.
+```shell
+
+```
