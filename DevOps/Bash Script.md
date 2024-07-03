@@ -19,7 +19,7 @@ docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 
 enp4s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         ether 00:2b:67:c6:ce:4f  txqueuelen 1000  (Ethernet)
-        RX packets 0  bytes 0 (0.0 B)
+        RX packets 0  bytes 0 (0.0 B)[[Bash Script]]
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 0  bytes 0 (0.0 B)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
@@ -535,3 +535,17 @@ To view accessibility of files in a directory:
 ```shell
 ls -l
 ```
+
+------
+
+```shell
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.debsudo dpkg -i cuda-keyring_1.1-1_all.debsudo apt-get updatesudo apt-get -y install cuda-toolkit-12-5
+```
+
+- **`wget` Command**: This retrieves the `cuda-keyring` package from NVIDIA's server, which contains the GPG keys required to authenticate other CUDA packages.
+    
+- **`sudo dpkg -i` Command**: This installs the downloaded keyring package. The `dpkg` command is used to install, remove, and manage packages on Debian-based systems like Ubuntu.
+    
+- **`sudo apt-get update` Command**: Refreshes the repository indexes. This is important after adding new repositories or keyrings to ensure that the package database is up to date.
+    
+- **`sudo apt-get -y install cuda-toolkit-12-5` Command**: Installs the CUDA Toolkit. The `-y` flag automatically answers "yes" to all prompts, allowing the installation to proceed without manual intervention.
