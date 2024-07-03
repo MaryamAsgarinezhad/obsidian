@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLOps/Serving.md",
+                "file": "DevOps/Logical volume.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MLOps/Serving.md",
+                "file": "DevOps/Logical volume.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MLOps/Serving.md",
+                "file": "DevOps/Logical volume.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MLOps/Serving.md"
+                "file": "DevOps/Logical volume.md"
               }
             }
           },
@@ -174,8 +174,9 @@
   },
   "active": "320d92088b5735bb",
   "lastOpenFiles": [
-    "DevOps/Bash Script.md",
     "MLOps/Serving.md",
+    "DevOps/Logical volume.md",
+    "DevOps/Bash Script.md",
     "MLOps/Model Adapter.md",
     "DevOps/CDN.md",
     "NLP/??.md",
@@ -212,7 +213,6 @@
     "DevOps/Docker.md",
     "DevOps/CI-CD Pipeline.md",
     "NLP/Code sample.md",
-    "NLP/Explainability and Interpretability.md",
     "NLP",
     "Linux/Untitled",
     "DevOps"
