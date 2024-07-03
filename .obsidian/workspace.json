@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/Logical volume.md",
+                "file": "MLOps/Serving.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DevOps/Logical volume.md",
+                "file": "MLOps/Serving.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/Logical volume.md",
+                "file": "MLOps/Serving.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DevOps/Logical volume.md"
+                "file": "MLOps/Serving.md"
               }
             }
           },
@@ -187,12 +187,12 @@
   },
   "active": "824b2b2a9e8da51f",
   "lastOpenFiles": [
+    "DevOps/Logical volume.md",
     "MLOps/Serving.md",
     "DevOps/API Services.md",
     "DevOps/Ansible.md",
     "DevOps/Bash Script.md",
     "DevOps/Vector Database.md",
-    "DevOps/Logical volume.md",
     "MLOps/Model Adapter.md",
     "DevOps/CDN.md",
     "NLP/??.md",

@@ -51,6 +51,7 @@ COPY ./models/aya-23-8B-Q8_0.gguf /workspace/model.gguf
 EXPOSE 8080
 
 CMD ["./build/server", "-m", "/workspace/model.gguf", "-ngl", "10000000", "--host", "0.0.0.0", "--port", "8080"]
-
-
 ```
+
+----------------------------------------------
+
