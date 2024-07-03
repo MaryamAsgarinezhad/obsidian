@@ -44,16 +44,12 @@ WORKDIR /workspace/llama.cpp
 
 ENV LLAMA_CUDA_NVCC=1
 
-# Build the project with CUDA support
-RUN mkdir build && cd build && cmake .. -DLLAMA_CUDA=ON && make
+RUN mkdir build && cd build && cmake .. -DLLAMA_CUDA=ON && make GGML_CUDA=1
 
-# Copy the locally downloaded GGUF model into the Docker image
 COPY /path/to/local/model.gguf /workspace/model.gguf
 
-# Expose the port for the HTTP server
 EXPOSE 8080
 
-# Command to run the server
 CMD ["./build/server", "-m", "/workspace/model.gguf", "-c", "2048", "--host", "0.0.0.0", "--port", "8080"]
 
 
