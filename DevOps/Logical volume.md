@@ -25,6 +25,12 @@ sudo mount /dev/vg_data/lv_data /mnt/data
 This command is useful in scenarios where you need to dynamically increase the storage capacity of a logical volume without downtime or data loss.
 
 ```shell
+sudo lvextend -l +100%FREE /dev/vg_data/lv_data
+```
+
+**Filesystem Resize Needed**: After extending the logical volume, you may need to resize the filesystem on the logical volume to utilize the new space. For example, if the logical volume contains an ext4 filesystem, you can resize it with:
+
+```shell
 sudo resize2fs /dev/vg_data/lv_data
 ```
 
@@ -45,7 +51,7 @@ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/
 
 -----------------
 
-### Operating Systems and Package Managers
+**Keyring**:
 
 In the case of operating systems like Linux, a keyring is often used to manage authentication keys for secure package management. For example, when you install software from a repository, the package manager (such as APT in Ubuntu) checks the digital signature of the package against a list of trusted keys stored in a keyring. This ensures that the software you are installing is authentic and hasn't been tampered with.
 
@@ -54,4 +60,8 @@ In the case of operating systems like Linux, a keyring is often used to manage a
 --------------------------
 
 The point is, apt downloads the files to the root directory.
-If the root has little capacity due to "logical volume" settings, use this:
+
+If the root has little capacity due to "logical volume" settings, use logical volume commands above to solve it.
+
+------------------------------------
+
