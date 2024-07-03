@@ -25,6 +25,11 @@ Here’s a Dockerfile that outlines the necessary steps:
 # Use the official CUDA image as the base image
 FROM docker.mci.dev/nvidia/cuda:12.4.1-devel-ubuntu22.04
 
+ENV http_proxy=http://172.16.56.71:8086
+ENV https_proxy=http://172.16.56.71:8086
+ENV HTTP_PROXY=http://172.16.56.71:8086
+ENV HTTPS_PROXY=http://172.16.56.71:8086
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     git \
