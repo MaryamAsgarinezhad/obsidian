@@ -60,3 +60,5 @@ Main concepts:
 Model = weights + architecture
 - It can be stored as different extension formats: gguf, pytorch, tensorRT, onnx
 - Backends translate the models representations (gguf, pytorch, tensorRT, onnx) and their corresponding codes to CUDA instructions that GPUs can understand and execute the computations (GPUs only do computations commanded by CUDA script)
+- Some backends are abl 
+- Engines manage requests sent to GPUs and handle batching, model distribution over GPUs, ....
