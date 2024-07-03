@@ -50,7 +50,7 @@ COPY /path/to/local/model.gguf /workspace/model.gguf
 
 EXPOSE 8080
 
-CMD ["./build/server", "-m", "/workspace/model.gguf", "-c", "2048", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["./build/server", "-m", "/workspace/model.gguf", "-ngl", "10000000", "--host", "0.0.0.0", "--port", "8080"]
 
 
 ```
