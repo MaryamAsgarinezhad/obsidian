@@ -23,7 +23,7 @@ Here’s a Dockerfile that outlines the necessary steps:
 
 ```dockerfile
 # Use the official CUDA image as the base image
-FROM nvidia/cuda:12.5-devel-ubuntu22.04
+FROM docker.mci.dev/nvidia/cuda:12.4.1-devel-ubuntu22.04
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
