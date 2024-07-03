@@ -1,4 +1,22 @@
 
+A logical volume (LV) is a storage device management concept within the Linux Logical Volume Manager (LVM). It abstracts and simplifies the management of storage devices, allowing for more flexible disk management compared to traditional partitioning methods.
+
+### Key Concepts
+
+1. **Logical Volume (LV)**:
+    
+    - A logical volume is a virtual disk partition created from a volume group (VG) that can span multiple physical volumes (PVs).
+    - It acts like a regular disk partition, but it is not restricted to the physical limitations of a single disk. Instead, it can be resized, extended, and moved across different physical volumes.
+2. **Volume Group (VG)**:
+    
+    - A volume group is a pool of storage that combines multiple physical volumes into a single administrative unit.
+    - Logical volumes are allocated from the space within a volume group.
+3. **Physical Volume (PV)**:
+    
+    - A physical volume refers to a physical storage device (e.g., hard disk, SSD) or a partition on such a device that has been initialized for use with LVM.
+    - PVs provide the actual storage capacity that is pooled together in a volume group.
+
+----------------------------------------
 
 ```shell
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.1-1_all.debsudo dpkg -i cuda-keyring_1.1-1_all.debsudo apt-get updatesudo apt-get -y install cuda-toolkit-12-5
