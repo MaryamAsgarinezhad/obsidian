@@ -552,3 +552,58 @@ env | grep -i proxy
 tmux attach -t serving
 ```
 This command is used to reattach to an existing `tmux` session named `serving`.
+
+.==When you run an ssh command, you are establishing a connection between your client and the serer, but when you start a tmux, a process will be started in your server, regardless of the state of your connection.==
+
+------------------------
+
+```shell
+lsblk
+df -h
+```
+
+--------------
+
+```shell
+pip install -r requirements.txt --index https://repo.mci.dev/artifactory/pypi/
+```
+
+Give a costume repository as an index to pypi.
+
+---------------
+![[Pasted image 20241028115012.png]]
+
+----------------
+
+The `ip route` command in Linux is used to display and manipulate the kernel's IP routing table. It is part of the `ip` suite of commands provided by the `iproute2` package and offers a modern alternative to the older `route` command.
+
+-----------
+
+To use `rsync` to move a whole Python project folder to your server, you can follow this general syntax:
+
+```bash
+rsync -avz -e "ssh -p 5566" /path/to/your/python/project/ username@server_address:/path/to/destination/folder/
+```
+
+### Explanation:
+
+- **`rsync`**: The command to sync files and directories.
+- **`-a` (archive mode)**: Ensures that files are copied recursively and preserves symbolic links, file permissions, timestamps, and other attributes.
+- **`-v` (verbose mode)**: Provides detailed information about the transfer process.
+- **`-z` (compression)**: Compresses the data during transfer (useful for faster transfer over slow networks).
+
+------------------
+
+1. **`sudo` Changes Environment**:
+    
+    - When you run a command with `sudo`, it uses the system Python environment and not the virtual environment (`venv`) where `hyperpyyaml` is installed.
+    - Packages installed with `pip` under the `venv` or user scope (`~/.local/lib/...`) are not available to the root user's environment.
+
+solution:
+
+```bash
+sudo -E python3 evaluate_asr.py settings.yaml
+```
+
+----------
+

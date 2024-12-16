@@ -1,6 +1,9 @@
 {
   "fileDirections": {
-    "DevOps/?.md": "ltr"
+    "DevOps/?.md": "ltr",
+    "MLOps/ML libraries, Computational graph.md": "ltr",
+    "ML and Deep Learning/Deep genrative models.md": "ltr",
+    "Reliability and trustworthiness/Poisioning.md": "ltr"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,

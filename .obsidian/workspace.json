@@ -4,31 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "5483251ba054c311",
+        "id": "77c440b47a2627f8",
         "type": "tabs",
         "children": [
           {
-            "id": "320d92088b5735bb",
+            "id": "19c40144df6eddf5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLOps/Serving.md",
+                "file": "DevOps/ASR.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "ASR"
             }
           },
           {
-            "id": "824b2b2a9e8da51f",
+            "id": "7964f6820072977e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLOps/Serving.md",
-                "mode": "source",
+                "file": "LLM/Session 1.md",
+                "mode": "preview",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Session 1"
             }
           }
         ],
@@ -52,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -67,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -75,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -98,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MLOps/Serving.md",
+                "file": "DevOps/ASR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +116,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for ASR"
             }
           },
           {
@@ -115,10 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MLOps/Serving.md",
+                "file": "DevOps/ASR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from ASR"
             }
           },
           {
@@ -129,7 +143,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -138,8 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MLOps/Serving.md"
-              }
+                "file": "DevOps/Network.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Network"
             }
           },
           {
@@ -147,11 +165,13 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "95de7eb8e967c0ac",
@@ -162,7 +182,57 @@
             "type": "leaf",
             "state": {
               "type": "ob_comments",
-              "state": {}
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Comments"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ac1c5681e7794165",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "542d484753781f0d",
+            "type": "leaf",
+            "state": {
+              "type": "ob_comments",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Comments"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c27c06c013469db2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23613ff02da0b3d8",
+            "type": "leaf",
+            "state": {
+              "type": "ob_comments",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Comments"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a72aeb0a68567c1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "720a8c874e733fea",
+            "type": "leaf",
+            "state": {
+              "type": "ob_comments",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Comments"
             }
           }
         ]
@@ -185,47 +255,50 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "824b2b2a9e8da51f",
+  "active": "7964f6820072977e",
   "lastOpenFiles": [
-    "DevOps/Logical volume.md",
-    "MLOps/Serving.md",
+    "Pasted image 20241214195520.png",
+    "Pasted image 20241214194225.png",
+    "Pasted image 20241214194706.png",
+    "Pasted image 20241214195051.png",
+    "Pasted image 20241214195353.png",
+    "LLM/Session 1.md",
+    "DevOps/Ray.md",
+    "Pasted image 20240426134852.png",
+    "DevOps/Test.md",
+    "NLP/Model API Codes.md",
+    "Reliability and trustworthiness/Compositional generalization.md",
+    "LLM",
+    "Pasted image 20241214195407.png",
+    "Pasted image 20241214194807.png",
+    "Pasted image 20241214194425.png",
+    "Pasted image 20241214194320.png",
+    "ML and Deep Learning/Deep.md",
+    "DevOps/Operating system.md",
+    "Reliability and trustworthiness/Spurious Correlation (OOD Generalization).md",
+    "Reliability and trustworthiness/Anomaly Detection.md",
+    "Reliability and trustworthiness/Adversarial attacks, robustness improvement.md",
+    "MLOps/Triton serving codes.md",
+    "DevOps/Bash Script.md",
+    "DevOps/Docker.md",
+    "DevOps/?.md",
+    "DevOps/Network.md",
+    "DevOps/ASR.md",
+    "DevOps/Kubernetes.md",
+    "DevOps/Infrastructure.md",
+    "DevOps/CDN.md",
+    "DevOps/Cassandra Client.md",
     "DevOps/API Services.md",
     "DevOps/Ansible.md",
-    "DevOps/Bash Script.md",
-    "DevOps/Vector Database.md",
-    "MLOps/Model Adapter.md",
-    "DevOps/CDN.md",
-    "NLP/??.md",
+    "ML and Deep Learning/Federated Learning.md",
+    "MLOps/ML libraries, Computational graph.md",
+    "ML and Deep Learning/Vision.md",
+    "Reliability and trustworthiness",
+    "ML and Deep Learning",
+    "Excalidraw",
     "MLOps",
-    "DevOps/?.md",
-    "DevOps/Fluentbit.md",
-    "NLP/Model Serving.md",
     "NLP/Model Serving",
-    "DevOps/Version Control.md",
-    "DevOps/Network.md",
-    "Pasted image 20240629140548.png",
-    "NLP/Autoencoder.md",
-    "DevOps/PSQL.md",
-    "DevOps/Kubernetes.md",
-    "DevOps/Certificate management.md",
-    "Pasted image 20240609183232.png",
-    "Pasted image 20240609120302.png",
-    "Pasted image 20240608162852.png",
-    "Pasted image 20240606201144.png",
-    "Trade/Cryptocurrency.md",
-    "Pasted image 20240606185733.png",
-    "Pasted image 20240606185503.png",
-    "Pasted image 20240606185215.png",
-    "Pasted image 20240606185154.png",
-    "Pasted image 20240606185059.png",
     "Trade",
-    "Untitled.md",
-    "NLP/Explainable AI.md",
-    "NLP/Conda.md",
-    "NLP/Fine Tunning.md",
-    "DevOps/Docker.md",
-    "DevOps/CI-CD Pipeline.md",
-    "NLP/Code sample.md",
     "NLP",
     "Linux/Untitled",
     "DevOps"

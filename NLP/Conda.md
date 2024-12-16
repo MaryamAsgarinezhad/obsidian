@@ -7,7 +7,6 @@ install conda:
 - Use `wget` or `curl` to download the Miniconda installer for Linux. Replace `Miniconda3-latest-Linux-x86_64.sh` with the appropriate filename if a newer version is available.
 ```shell
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-
 ```
 
 -  Make the installer script executable and run it.

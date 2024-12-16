@@ -1,4 +1,4 @@
-A network interface is a hardware or software component that enables a device to connect to a network. It provides the necessary communication between the device and the network, allowing the device to send and receive data. Network interfaces can be physical, such as Ethernet or Wi-Fi adapters, or virtual, such as those created by virtualization software like VMware or VirtualBox. Each network interface has a unique identifier, typically called a MAC address, and can be configured with an IP address to facilitate communication over the network.
+A network interface is a hardware or software component that enables a device to connect to a network. It provides the necessary communication between the device and the network, allowing the device to send and receive data. Network interfaces can be physical, sتتپuch as Ethernet or Wi-Fi adapters, or virtual, such as those created by virtualization software like VMware or VirtualBox. Each network interface has a unique identifier, typically called a MAC address, and can be configured with an IP address to facilitate communication over the network.
 
 
 IP (Internet Protocol) addresses and MAC (Media Access Control) addresses are both used in computer networking, but they serve different purposes and operate at different layers of the networking stack.
@@ -352,3 +352,137 @@ Upon receiving a request, the server retrieves the token.
 Using the secret key, the server validates the token and extracts claims from it. If the user information from the claims exists in the server's user table, the server authenticates the user, granting access to requested resources.
 
 [![Token based authentication](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvj8jdjwssswe9dcldfga.png)](https://media.dev.to/cdn-cgi/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fvj8jdjwssswe9dcldfga.png)
+-----------------------
+
+Network full course:
+
+https://www.youtube.com/watch?v=qiQR5rTSshw
+
+![[Pasted image 20241127163737.png]]
+![[Pasted image 20241127164100.png]]
+
+- The difference between Analog and Digital is how the data is transmitted. **Digital signals are transmitted as 1s and 0s, whereas analog signals are transmitted in waves**. One is not necessarily better than another, but one may be preferred over the other depending on the situation.
+
+- The goal is to produce a signal that can be transmitted easily and decoded reliably. Modems can be used with almost any means of transmitting analog signals, from [LEDs](https://en.wikipedia.org/wiki/Light-emitting_diode "Light-emitting diode") to [radio](https://en.wikipedia.org/wiki/Radio "Radio").
+
+- A hub is a networking device that serves as a central connection point within a local area network (LAN). Its primary function is **to receive data signals from connected devices and broadcast them to all other connected devices, regardless of the intended recipient**.
+
+![[Pasted image 20241127165744.png]]
+
+- ==Distinguish between physical links and data links==. In a single network, physical links are connections between adjacent devices, such as hosts, switches, and access points. The data link is the path that a packet takes across one or more (usually more) physical links in a single network.
+
+- Chip: 
+        1. when a device is on a network
+        2. which ports it is connected to via that device's MAC address
+
+In computer networking, a wireless access point is a networking hardware device that allows other Wi-Fi devices to connect to a wired network or wireless network. 
+
+**A switch connects devices such as a desktop, laptop, and access point to the router.** **An access point connects a device wirelessly**. Sometimes modem, router, switch, and access point come all bundled in one device. Finally the router connects to ISP.
+
+![[Pasted image 20241127174835.png]]
+
+VLANs **allow devices that must be kept separate to share the cabling of a physical network and yet be prevented from directly interacting with one another**. This managed sharing yields gains in simplicity, security, traffic management, and economy.
+![[Pasted image 20241127180607.png]]
+
+Just as **a switch connects multiple devices to create a network, a router connects multiple switches, and their respective networks, to form an even larger network**. These networks may be in a single location or across multiple locations.
+
+We like to think of the Internet as 'wireless', but **nearly everything that makes the internet function is wired**. Individual devices like laptops and smartphones are capable of communicating with a network (Wi-Fi or cellular network), but the routers that they connect to are almost always connected by wires.
+
+------------------
+
+**Multilayer Switch vs Layer 2 Switch**
+
+The Layer 2 switch forwards data packets based on the Layer 2 information like MAC addresses. As a traditional switch, it can inspect frames. While multilayer switches not only can do all the job that Layer 2 switches do, it has routing function as well, including ==static routing and dynamic routing==. So multilayer switches can inspect deeper into the protocol description unit.
+
+**Multilayer Switch vs Router**
+
+Generally, multilayer switches and routers have three key differences. Firstly, routers typically use software to route. While multilayer switches route packets on ASCI (Application Specific Integrated Circuit) hardware. Another difference is that multilayer switches route packets faster than routers. In addition, based on IP addresses, routers can support numerous different WAN technologies. However, multilayer switches lack some QoS (Quality of Service) features. It is commonly used in LAN environment.
+
+- You may find MLSs only in an enterprised local area network. It is regarded as a technology to enhance the network routing performance on LANs.
+
+  ![[Pasted image 20241127182339.png]]
+
+![[Pasted image 20241127183013.png]]
+
+
+- Note: A port is a virtual point where **network connections start and end**. Ports are software-based and managed by a computer's operating system. Each port is associated with a specific ==process or service==. Ports allow computers to easily differentiate between different kinds of traffic: emails go to a different port than webpages, for instance, even though both reach a computer over the same Internet connection.
+
+------------------
+
+Security network devices:
+
+![[Pasted image 20241127184858.png]]
+
+![[Pasted image 20241127185337.png]]
+![[Pasted image 20241127185347.png]]
+
+---------
+
+The **kernel's IP routing table** is a data structure in the Linux kernel that determines how packets are routed through the network. It acts as a set of rules that specify where to send data packets based on their destination address.
+
+### Key Components of the Kernel's Routing Table
+
+1. **Destination**:
+    
+    - Specifies the IP address or network to which packets are destined.
+    - Example: `192.168.1.0/24` (for a network) or `10.0.0.5` (for a single host).
+2. **Gateway**:
+    
+    - The next-hop IP address through which the packet should be forwarded.
+    - If no gateway is specified, the destination is assumed to be directly reachable on the connected interface.
+3. **Interface**:
+    
+    - The network interface (e.g., `eth0`, `wlan0`) used to send packets for a particular destination.
+4. **Metric**:
+    
+    - A value that determines the preference for a route; lower metrics are preferred.
+5. **Default Route**:
+    
+    - A special route (`default`) that specifies where packets should go if no other specific route matches the destination.
+    - Typically used to forward packets to the internet via a gateway.
+6. **Scope**:
+    
+    - Defines the accessibility of a route:
+        - `link`: Directly reachable within the same local network.
+        - `global`: Routes to other networks or over the internet.
+
+```bash
+default via 192.168.1.1 dev eth0
+192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.100
+10.10.0.0/16 via 192.168.1.254 dev eth0
+```
+
+- `default via 192.168.1.1 dev eth0`:
+    - All non-local traffic is forwarded to the gateway `192.168.1.1` through `eth0`.
+- `192.168.1.0/24 dev eth0`:
+    - Traffic destined for the local network (`192.168.1.x`) is sent directly via `eth0`.
+- `10.10.0.0/16 via 192.168.1.254 dev eth0`:
+    - Traffic for the `10.10.x.x` network is routed via the gateway `192.168.1.254` on `eth0`.
+---------------
+
+A network interface refers to a point of connection between a computer (or any network device) and a network. It can be either physical (like a network card) or virtual (like a software-defined interface). Each network interface is identified by a unique name (e.g., eth0, wlan0, lo), and it allows the device to send and receive data over a network.
+Types of Network Interfaces:
+
+    Ethernet Interface (Wired):
+        Usually named eth0, eth1, etc.
+        Used for wired network connections.
+
+    Wireless Interface (Wi-Fi):
+        Typically named wlan0, wlan1, etc.
+        Used for Wi-Fi connections.
+
+    Loopback Interface:
+        Named lo.
+        Used to test internal communication within the device itself (e.g., accessing 127.0.0.1).
+
+    Virtual Interfaces:
+        Created through software for things like VPNs, container networks, or virtual machines.
+        Examples include veth0, br0, docker0.
+
+Key Points:
+
+    Physical Network Interfaces: Correspond to actual hardware on the machine (like Ethernet cards or Wi-Fi adapters).
+    Virtual Network Interfaces: Created for specific purposes like creating virtual networks, tunneling, or Docker containers.
+
+
+----------------------

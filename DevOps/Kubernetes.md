@@ -256,3 +256,146 @@ vim ~/.kube/config
 ```
 
 - Here you set the clusters and namespaces you can access.
+
+-----------------------------
+
+### **Service Types in Kubernetes**
+
+- **`ClusterIP`**:
+    - The default Kubernetes service type.
+    - Exposes the service on an internal IP within the cluster.
+    - **Accessible only from within the Kubernetes cluster**.
+- **`LoadBalancer`**:
+    - Exposes the service externally using a cloud provider's load balancer.
+    - **Accessible from outside the Kubernetes cluster**.
+    - Requires a cloud environment that supports load balancers (e.g., AWS, GCP, Azure).
+    - Kubernetes will provision an **external IP address for the service.**
+
+- If you cannot use `LoadBalancer` (e.g., in a local or on-premises cluster), you can use **port forwarding**.
+
+```shell
+kubectl port-forward service/ray-cluster-head-svc 10001:10001
+
+ray submit --address <external-ip>:10001 ray-cluster.yaml your_training_script.py
+```
+
+- You can also enter container's shell to run commands there:
+
+```shell
+kubectl exec -it ray-cluster-worker-ray-worker-7xsc2 -- bash
+```
+------------------------
+
+If you are using loadbalancer:
+
+![[Pasted image 20240918152721.png]]
+The `--address` flag is **not** an accepted option in this context. Instead, the cluster address is specified within the cluster configuration file or by other means.
+
+--------------------
+
+To mount a volume from your Kubernetes node to your Ray head node container, you can achieve this by specifying a hostPath volume in your Kubernetes headGroupSpec. This allows you to expose a directory on the Kubernetes node to the container.
+
+```yaml
+apiVersion: ray.io/v1alpha1
+kind: RayCluster
+metadata:
+  name: ray-cluster
+spec:
+  rayVersion: "2.30.0"
+  headGroupSpec:
+    serviceType: ClusterIP
+    replicas: 1
+    rayStartParams:
+      dashboard-host: "0.0.0.0"
+      num-cpus: "2"  # Example configuration
+      num-gpus: "0"
+      metrics-export-port: "8080"
+    template:
+      spec:
+        tolerations:
+          - key: "nodepool"
+            operator: "Equal"
+            value: "high-ram"
+            effect: "NoSchedule"
+        containers:
+          - name: ray-head
+            image: docker.mci.dev/rayproject/ray-ml:latest-gpu
+            resources:
+              limits:
+                cpu: 1
+                memory: 40Gi
+            volumeMounts:
+              - name: my-pvc-volume
+                mountPath: /mnt/data  # Path inside the container where the PVC will be mounted
+            ports:
+              - name: redis
+                containerPort: 6379
+              - name: dashboard
+                containerPort: 8265
+              - name: metrics
+                containerPort: 8080
+        volumes:
+          - name: my-pvc-volume
+            persistentVolumeClaim:
+              claimName: my-pvc
+
+```
+
+
+- **`volumeMounts`**:
+    
+    - Specifies where the PVC will be mounted inside the container.
+    - Example: `/mnt/data`.
+- **`volumes`**:
+    
+    - Defines the volume configuration, linking it to the PVC.
+    - Replace `my-pvc` with the name of your existing PVC.
+- **PersistentVolumeClaim**:
+    
+    - This references the PVC already created in your cluster.
+
+-------------
+
+#### 1. **PersistentVolume (PV)**
+
+- **Definition**: A **PersistentVolume** is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using a **StorageClass**.
+- **Scope**: It exists at the cluster level and is independent of any specific pod.
+- **Purpose**: Provides actual storage resources (like disk space) that can be mounted into pods.
+
+#### 2. **PersistentVolumeClaim (PVC)**
+
+- **Definition**: A **PersistentVolumeClaim** is a request for storage by a user.
+- **Scope**: PVC is namespaced and tied to the namespace where it's defined.
+- **Purpose**: Pods use PVCs to claim and attach to a PersistentVolume.
+
+When a PVC is created, Kubernetes looks for a matching PV to bind to the claim. If a matching PV is found, the PVC is bound to it, and the storage becomes available for the pod.
+
+```yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ray-pv
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /mnt/data 
+```
+
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ray-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  volumeName: ray-pv
+
+```

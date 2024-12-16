@@ -66,11 +66,19 @@ docker exec -it container_name /bin/bash
 
 - `web`: This is the name of the service.
 - `image: nginx:latest`: This specifies the Docker image to use for the `web` service. In this case, it uses the latest version of the Nginx image available on Docker Hub.
-- `ports: - "8080:80"`: This maps port 8080 on the host to port 80 inside the container. So, you can access the Nginx web server running inside the container on port 8080 of your host machine.
+- ==`ports: - "8080:80"`: This maps port 8080 on the host to port 80 inside the container.== So, you can access the Nginx web server running inside the container on port 8080 of your host machine.
 - `volumes: - ./html:/usr/share/nginx/html`: This mounts the `./html` directory from your host machine to `/usr/share/nginx/html` inside the container. This allows you to serve your own HTML files through Nginx.
 - `depends_on: - db`: This specifies that the `web` service depends on the `db` service. It ensures that the `db` service is started before the `web` service.
 - **Here the "db" service (which is a container) acts as your database server within which you create your database.**
 
+-------------------------------
+
+### Docker Port Configuration
+
+- **Container Port**: This is the port on which the application inside the Docker container listens. For example, if the application is configured to listen on port 8080 inside the container, it means the application expects incoming connections on port 8080 within the container's network namespace.
+    
+- ==**Host Port**:== This is the port on the host machine that is mapped to the container port. This allows you to access the application running inside the container from outside the host machine.
+-------------------------
 
 let's say you have a Docker Compose file with multiple services, and you want to define a custom network to isolate some of these services. Here's an example:
 
@@ -80,11 +88,12 @@ let's say you have a Docker Compose file with multiple services, and you want to
 - - There are two services defined: `frontend` and `backend`.
 - The `frontend` service exposes port 8080 on the host and uses the `frontend:latest` image.
 - The `backend` service uses the `backend:latest` image.
-- Both services are connected to a custom network called `mynetwork` using the `networks` section.
+- ==Both services are connected to a custom network called `mynetwork` using the `networks` section.==
 - The `mynetwork` network is defined at the bottom of the file with the `driver` set to `bridge`. This means it will be a bridge network, which is the default network driver in Docker Compose.
 
 By defining a custom network, you can isolate the `frontend` and `backend` services from other services in your application. Additionally, containers within the same network can communicate with each other using service names as hostnames, making it easy to establish communication between services.
 
+--------------------
 
 Portforwarding and exposing ports:
 
@@ -93,10 +102,10 @@ Portforwarding and exposing ports:
     - When you define a service in Docker Compose without explicitly specifying ports, the ports exposed by the service in its Dockerfile (via the `EXPOSE` instruction) are automatically exposed within the Docker network created by Docker Compose.
 2. **Port Mapping**:
     
-    - If you want to make a port of a service accessible from outside the Docker network (e.g., from the host machine), you specify port mappings in the `ports` section of the service definition in the `docker-compose.yml` file. This is similar to using the `-p` or `--publish` flag with `docker run`.
+    - If you want to make a port of a service accessible from ==outside the Docker network== (e.g., from the host machine), you specify port mappings in the `ports` section of the service definition in the `docker-compose.yml` file. This is similar to using the `-p` or `--publish` flag with `docker run`.
 
 
-We use either "docker run -p" or "docker-compose -f "file name" up" for running an application in docker. Also use "docker build" to build an image from a docker file.
+==We use either "docker run -p HOST_PORT:CONTAINER_PORT" or "docker-compose -f "file name" up" for running an application in docker. Also use "docker build" to build an image from a docker file.==
 
 
 --------------------------------
