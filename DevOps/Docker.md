@@ -128,3 +128,43 @@ The content that is running in the dockerfile, including the CMD, is running in 
 - Exposing the container port, on which the application is running, is necessary to make portforwarding possible.
 
 - run the "dockerfile" to build the image, use "docker-compose up" or "docker run" to run that image
+
+----------------
+
+```D
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest  
+    environment:
+      - CLICKHOUSE_DB=tts
+      - CLICKHOUSE_USER=default
+      - CLICKHOUSE_PASSWORD= 
+    ports:
+      - "8123:8123"  # HTTP port for web UI and query execution
+      - "9000:9000"  # TCP port for ClickHouse queries
+    volumes:
+      - clickhouse-data:/var/lib/clickhouse  
+    networks:
+      - tts-network
+
+volumes:
+  clickhouse-data: 
+
+```
+
+### Why Use Both?
+
+- The **volume inside the service** tells Docker where to mount the volume inside the container, ensuring that the container's data is persisted across restarts and deletions.
+    
+- The **top-level volume definition** ensures that the volume is actually created and managed by Docker Compose.
+    
+
+If you don’t define the volume at the top level, Docker Compose will still create the volume automatically, but **it won't be as clearly managed or visible in your Compose configuration**. By declaring the volume at the top level, you're providing a clear and explicit configuration for Docker Compose, especially when you want to use named volumes in **multiple services**.
+
+
+--------------------
+
+Solve network issue:
+![[Pasted image 20241217140724.png]]
+
+------------

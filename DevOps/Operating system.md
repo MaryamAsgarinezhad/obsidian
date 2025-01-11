@@ -17,4 +17,3 @@ It's probably worth adding that in many implementations an asynchronous method c
    In contrast, **`aiobotocore`** is an asynchronous version of `boto3`, designed specifically for **non-blocking** I/O operations. By using `aiobotocore`, you can handle the S3 upload in the background while allowing the rest of your code to continue executing (e.g., processing inference requests, generating speech).
 
 -------
-

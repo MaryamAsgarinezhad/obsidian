@@ -17,7 +17,7 @@ which git
 git config --global user.name 'gihub name'
 git config --global user.email 'gihub email'
 ```
-- This configs will be saved in the '**gitconfig**' file.
+- This configs will be saved in the '**gitconfig**' file. (/etc/gitconfig)
 
 6- Create changes to a file on git. It will be saved locally not on your repository. So:
 ```shell
@@ -78,7 +78,7 @@ history
 **git pull**: Fetches changes from a remote repository and merges them into the current branch. This command is used to update your local repository with changes from the remote server.
 
 
-**git branch**: Lists all branches in the repository. This command shows the current branch and highlights the branch you are currently on.
+**git branch**: Lists all branches in the repository. This command shows the current branch and highlights the branch you are currently on. ==It also creates a new branch from the current branch if it does not exist.==
 
 
 **git checkout -b<branch>**: Switches to the specified branch. This command allows you to move between branches in the repository.
@@ -130,6 +130,7 @@ Here's how `git cherry-pick` works:
     
 
 Here's the basic syntax for cherry-picking a commit:
+![[Pasted image 20241229183441.png]]
 
 bash
 
@@ -272,3 +273,151 @@ pull: fetch + update
 ---------------------------------------------------
 
 **==To resolve conflicts, merge the branch containing new changes into the conflicting branch.==**
+
+------------
+
+multiple people are using a server to develop a code . we have multiple ssh keys to pull and push git. how to handle it
+
+**1. Use a Per-User SSH Key Configuration**
+
+```shell
+ssh-keygen -t rsa -b 4096 -C zareiminooo@gmail.com
+```
+![[Pasted image 20241223170333.png]]
+
+Then users pub and private keys are generated.
+
+### **2. Configure `~/.ssh/config`**
+
+Each user can configure their own `~/.ssh/config` file to manage multiple identities. Here's an example configuration:
+
+```plaintext
+# Default GitHub identity
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+# Additional identities for different projects
+Host project1-github
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/project1_key
+
+Host project2-gitlab
+  HostName gitlab.com
+  User git
+  IdentityFile ~/.ssh/project2_key
+
+```
+
+Your SSH `config` file has two conflicting `Host git.mci.dev` entries. To use multiple identities for the same host, you need to distinguish them using ==**Host aliases**==. Here's how to fix and use the configuration effectively:
+
+```plaintext
+
+Host git-sorush
+    HostName git.mci.dev
+    User git
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/sorush
+
+
+Host git-maryam
+    HostName git.mci.dev
+    User git
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/maryam
+
+```
+
+**Clone a Repository with Sorush's Key**: Use the alias `git-sorush` when cloning:
+
+```bash
+git clone git@git-sorush:your-repo.git
+```
+---------
+
+Setting the `name` and `email` in Git is important because these values are used to identify you as the author of commits.
+
+``` bash
+git config user.name "Your Work Name"
+git config user.email "your.work@example.com"  //repository level
+```
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"  //global level
+```
+
+this will change the config of the git.
+
+Git uses a hierarchy to determine which configuration to apply:
+
+1. **Repository-Level** (`.git/config`): Overrides global and system settings.
+2. **Global-Level** (`~/.gitconfig`): Overrides system settings.
+3. **System-Level** (`/etc/gitconfig`): Base-level configuration.
+
+
+If you want to use **both Sorush and Maryam identities** in the same repository, you can achieve this by switching between identities as needed. Here’s how to configure and use them effectively:
+
+```bash
+git commit --author="Maryam <maryam@example.com>" -m "Commit message"
+```
+
+You can also control which SSH key is used for pushing by using your `~/.ssh/config` setup. For example:
+
+```bash
+git clone git@git-sorush:your-repo.git
+```
+
+==Tip==: Use alias for remote git actions (like pull, push, clone,...) and use --global for local git actions (commit, ...)
+
+==Tip==: Since you created a new ssh key for server machine git authentication, you need to add it to your git server account.
+
+-----------
+
+**==You need to initialize git for a new directory which you want to turn it into a repository (this is not a cloned project, since cloned projects are already a repository==**
+
+```bash
+`git init`
+
+//setup git configuration
+git config user.name "Your Name"
+git config user.email "your.email@example.com"
+
+//add all files to the repository
+git add .
+
+//commit changes
+```
+
+### **1. Create a GitHub Repository**
+
+Go to [GitHub](https://github.com/) and create a new repository:
+
+1. Go to the **Repositories** tab on your GitHub profile and click **New**.
+2. Enter a repository name (e.g., `tts`), add a description if desired, and make the repository public or private.
+3. Do **not** initialize the repository with a README or `.gitignore` (since you already have a project).
+4. Click **Create repository**.
+
+### **2. ==Link== Your Local Repository to GitHub**
+
+Copy the URL for your newly created GitHub repository. Then, in your terminal, add this as a remote repository:
+
+```bash
+git remote add origin https://github.com/yourusername/tts.git
+```
+
+now you can push the changes.
+
+The error fatal: not a git repository (or any of the parent directories): .git means that the current directory (~/maryam) is not recognized as a Git repository.
+
+-----------
+
+return to the last commits on you local (used when merging to remote faces lots of conflicts) :
+
+```
+git reset --hard
+```
+
+Tip: if you delete "a" branch using (git branch -D branch_name) it will delete it from your local, then you can fetch all changes (git fetch --all) and switch to remote "a" branch.

@@ -607,3 +607,4 @@ sudo -E python3 evaluate_asr.py settings.yaml
 
 ----------
 
+local machine ~/.ssh/config file is used to set variables to ssh a server, but a remote server's ssh config file may be used primarily to set git ssh configurations for one or many users. 
