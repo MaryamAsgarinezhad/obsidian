@@ -107,3 +107,25 @@ View the log and container terminal of a pod in argocd:
 This stage is equivalent to pushing the application's new version to the git-ops project. It is automated.
 
 ![[Pasted image 20240504200422.png]]
+
+----
+
+نکته بسیار مهم:
+
+اون ورژنی که "دستی" یا بطور اتوماتیک با CD pipeline میزدیم برای tag ایمیج یک اپلیکیشن (که داخل values.yaml بود) برای زمانی هست که app رو خودمون نوشتیم (مث cdn) و یک app اماده مثل vector نیست که صرفا بخایم value هاشو تغییر بدیم و هر بار با عوض شدن کد اپلیکیشن باید image اش هم عوض بشه.
+
+اگر یک app شخصی نباشه اون ورژن براش ثابته در اغلب موارد - چون ما کدشو تغییر نمیدیم.
+
+-  اگر برنامه شخصی نباشه باید ریپازیتوری چارت هاشو به helm خودمون اضافه کنیم و بعد توی dependency چارت از ادرس helm اش استفاده کنیم.
+- اگر شخصی باشه chart اش نمیدونم چجوری ساخته میشه تو helm که ما اینجوری استفاده کنیم.
+
+![[Pasted image 20250112182936.png]]
+
+----
+
+به کمک helm و بدون نیاز به argo هم میشه با دستور helm create اپلیکیشن رو از روی chart و value ساخت و بالا اورد. argo یه ابزار کمکی هست که automate شده تر هست و UI خوبی میده.
+
+مثلا ارگو کمک میکنه اگه ورژن ها و مقادیر values عوض شد اپلیکیشن با مقادیر update شده ساخته بشه.
+
+-------
+
