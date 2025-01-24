@@ -52,3 +52,6 @@ If A has eigenvalues λ1​,λ2​,… and eigenvectors v1,v2​,…, these eige
 Linear operators (on space of polynomials) have eigenvalues too:
 ![[Pasted image 20250124190745.png]]
 
+
+---------
+
