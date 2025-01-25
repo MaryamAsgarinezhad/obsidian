@@ -273,7 +273,7 @@ Pull the packaged helm chart of an app:
 
 - Deploy pipeline (CD) is for replacing generated image versions into values.yaml file.
 
-**All the CI/CD pipeline if before deploying applcation using helm commands or argoCD.**
+**All the CI/CD pipeline if before deploying application using helm commands or argoCD.**
 
 -----
 

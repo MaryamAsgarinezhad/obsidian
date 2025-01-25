@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/CI-CD Pipeline.md",
+                "file": "ML and Deep Learning/CNNs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CI-CD Pipeline"
+              "title": "CNNs"
+            }
+          },
+          {
+            "id": "b9a7b451b3f3123a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML and Deep Learning/Deep genrative models.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Deep genrative models"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -240,12 +255,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9feb5f8230641e2a",
+  "active": "b9a7b451b3f3123a",
   "lastOpenFiles": [
+    "ML and Deep Learning/Federated Learning.md",
+    "ML and Deep Learning/Python codes.md",
+    "ML and Deep Learning/Representation Learning and SSL.md",
+    "ML and Deep Learning/Types of generative models.md",
+    "ML and Deep Learning/Vision.md",
+    "ML and Deep Learning/Deep genrative models.md",
+    "DevOps/Version Control.md",
+    "ML and Deep Learning/Deep.md",
+    "ML and Deep Learning/CNNs.md",
+    "DevOps/MOS KPI.md",
+    "DevOps/CI-CD Pipeline.md",
     "Pasted image 20250121152820.png",
     "Pasted image 20250121152405.png",
-    "DevOps/CI-CD Pipeline.md",
-    "DevOps/Version Control.md",
     "DevOps/Docker.md",
     "DevOps/Spring(Java).md",
     "DevOps/Infrastructure.md",
@@ -253,7 +277,6 @@
     "DevOps/Kubernetes.md",
     "DevOps/Virtual Environment.md",
     "DevOps/PSQL.md",
-    "DevOps/MOS KPI.md",
     "Operating systems/Session4- Files and IO (programmers' view).md",
     "Operating systems/Session3 - Programmer's view.md",
     "DevOps/Bash Script.md",
@@ -268,16 +291,8 @@
     "DevOps/clickhouse.md",
     "Pasted image 20250112180937.png",
     "Pasted image 20250112172822.png",
-    "Pasted image 20250112172502.png",
     "DevOps/CDN.md",
     "LLM/Session3- Transformer encoder-decoder.md",
-    "LLM/Session2-Transformers- Encoder model.md",
-    "Operating systems/Session1 - What is an operating system.md",
-    "Operating systems/Session2 - Four fundamental OS concepts.md",
-    "LLM/Session 1.md",
-    "DevOps/Kafka.md",
-    "DevOps/API Services.md",
-    "DevOps/Logging.md",
     "Operating systems",
     "LLM",
     "Reliability and trustworthiness",

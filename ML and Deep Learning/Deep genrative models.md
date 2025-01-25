@@ -40,21 +40,21 @@ Variational autoencoder (**VAE**):
 
 Explanation of its encoder and decoder:
 ![[Pasted image 20240828152541.png]]
-- Since we assumed z has a normal distribution, we require the encoder to output the mean and variance of z, then we enclose it to the amount we want during training.
+- Since we assumed z has a normal distribution, we require the ==encoder to output the mean and variance of z==, then we enclose it to the amount we want during training.
   
 - **Loss function:** The right term forces the mean and variance encoded data to be close to N(0,1). The lest term is reconstruction loss, makes the generated output to be similar to input samples.
 
 ![[Pasted image 20240828162720.png]]
 
-- The decoder generates a mean and variance for x, while encoder generate them for z, and sampling form the distribution of x equals to generating an output.
+- ==The decoder generates a mean and variance for x, while encoder generate them for z, and sampling form the distribution of x equals to generating an output.==
 
 Z space attributes:
 ![[Pasted image 20240828165503.png]]
 
 
-- **Encoder (Recognition Model)**: In a VAE, the encoder maps the input data x\mathbf{x}x not to a single point in the latent space, but to a **distribution** over the latent variables z\mathbf{z}z. Specifically, the encoder outputs the parameters (mean μ\muμ and variance σ2\sigma^2σ2) of a Gaussian distribution.
-- **Latent Space Sampling**: Instead of directly using the latent space representation from the encoder, a VAE samples from the distribution q(z∣x)q(\mathbf{z}|\mathbf{x})q(z∣x), ensuring the model learns to generate diverse outputs.
-- **Decoder (Generative Model)**: The decoder takes a sample z\mathbf{z}z from the latent distribution and tries to reconstruct the original input x\mathbf{x}x by generating p(x∣z)p(\mathbf{x}|\mathbf{z})p(x∣z), the probability of x\mathbf{x}x given z\mathbf{z}z.
+- **Encoder (Recognition Model)**: In a VAE, the encoder maps the input data x not to a single point in the latent space, but to a **distribution** over the latent variables z. Specifically, the encoder outputs the parameters (mean μ and variance σ2) of a Gaussian distribution.
+- **Latent Space Sampling**: Instead of directly using the latent space representation from the encoder, a VAE samples from the distribution q(z∣x), ensuring the model learns to generate diverse outputs.
+- **Decoder (Generative Model)**: The decoder takes a sample z from the latent distribution and tries to reconstruct the original input x by generating p(x∣z), the probability of x given z.
 
 ### **Applications**
 
