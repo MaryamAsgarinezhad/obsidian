@@ -13,6 +13,48 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "ML and Deep Learning/CNNs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CNNs"
+            }
+          },
+          {
+            "id": "2f7e2a3a614253ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevOps/Kafka.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Kafka"
+            }
+          },
+          {
+            "id": "b9a7b451b3f3123a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DevOps/Version Control.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Version Control"
+            }
+          },
+          {
+            "id": "c0dd88068105c775",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "DevOps/CI-CD Pipeline.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +63,8 @@
               "title": "CI-CD Pipeline"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -40,7 +83,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -240,12 +284,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9feb5f8230641e2a",
+  "active": "b9a7b451b3f3123a",
   "lastOpenFiles": [
-    "Pasted image 20250121152820.png",
-    "Pasted image 20250121152405.png",
+    "Pasted image 20250202130645.png",
+    "Pasted image 20250202130634.png",
+    "Pasted image 20250202130626.png",
     "DevOps/CI-CD Pipeline.md",
     "DevOps/Version Control.md",
+    "DevOps/clickhouse.md",
+    "DevOps/Kafka.md",
+    "ML and Deep Learning/Deep genrative models.md",
+    "ML and Deep Learning/CNNs.md",
+    "ML and Deep Learning/Federated Learning.md",
+    "ML and Deep Learning/Python codes.md",
+    "ML and Deep Learning/Representation Learning and SSL.md",
+    "ML and Deep Learning/Types of generative models.md",
+    "ML and Deep Learning/Vision.md",
+    "ML and Deep Learning/Deep.md",
+    "DevOps/MOS KPI.md",
+    "Pasted image 20250121152820.png",
+    "Pasted image 20250121152405.png",
     "DevOps/Docker.md",
     "DevOps/Spring(Java).md",
     "DevOps/Infrastructure.md",
@@ -253,7 +311,6 @@
     "DevOps/Kubernetes.md",
     "DevOps/Virtual Environment.md",
     "DevOps/PSQL.md",
-    "DevOps/MOS KPI.md",
     "Operating systems/Session4- Files and IO (programmers' view).md",
     "Operating systems/Session3 - Programmer's view.md",
     "DevOps/Bash Script.md",
@@ -265,19 +322,6 @@
     "Pasted image 20250112183504.png",
     "Pasted image 20250112183422.png",
     "Pasted image 20250112182936.png",
-    "DevOps/clickhouse.md",
-    "Pasted image 20250112180937.png",
-    "Pasted image 20250112172822.png",
-    "Pasted image 20250112172502.png",
-    "DevOps/CDN.md",
-    "LLM/Session3- Transformer encoder-decoder.md",
-    "LLM/Session2-Transformers- Encoder model.md",
-    "Operating systems/Session1 - What is an operating system.md",
-    "Operating systems/Session2 - Four fundamental OS concepts.md",
-    "LLM/Session 1.md",
-    "DevOps/Kafka.md",
-    "DevOps/API Services.md",
-    "DevOps/Logging.md",
     "Operating systems",
     "LLM",
     "Reliability and trustworthiness",

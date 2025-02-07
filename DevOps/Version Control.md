@@ -421,3 +421,12 @@ git reset --hard
 ```
 
 Tip: if you delete "a" branch using (git branch -D branch_name) it will delete it from your local, then you can fetch all changes (git fetch --all) and switch to remote "a" branch.
+
+
+---
+
+Divergent branches:
+
+![[Pasted image 20250202130626.png]]
+![[Pasted image 20250202130634.png]]
+![[Pasted image 20250202130645.png]]

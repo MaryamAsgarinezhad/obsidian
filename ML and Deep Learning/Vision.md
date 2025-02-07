@@ -54,10 +54,13 @@ How to make a CNN from those? adding activation funcs between those layers:
 ![[Pasted image 20240820185047.png]]
 
 
+Note: ==Convolution is a feature learning mechanism in visual networks.== And it does this task through **==multiple layers==**.
+
 The goal of this CNN is to extract complex features and the apply MLPs on these features for certain tasks (that was described initially at this course).
 
 ![[Pasted image 20240820185412.png]]
-------------------------------------------------------
+
+---
 
 Different settings (hypermarameters) of convoltion:
 ![[Pasted image 20240821111155.png]]
@@ -69,7 +72,7 @@ Padding is used to make the output of a filter to the desired size as the input 
 
 Pooling Layer:
 
-- Its goal is to choose representatives from different areas of the input by choosing the stride more than 1. (this will avoid extra overlapping between the inputs of filter that lead to similar outputs, thus extracting features or representatives from different areas)
+- Its goal is to choose ==representatives== from different areas of the input by choosing the stride more than 1. (this will avoid extra overlapping between the inputs of filter that lead to similar outputs, thus extracting features or representatives from different areas)
 - In this example we learn the wights of convolution.
 ![[Pasted image 20240821111853.png]]
 
@@ -131,3 +134,7 @@ This solution helps a lot with the training process and optimization. Later, thi
 
 - The point is shallow wieghts are more general and can be assigned to every dataset. Then you train residual weights.
 ![[Pasted image 20240821183915.png]]
+
+
+-----
+
