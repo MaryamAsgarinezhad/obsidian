@@ -52,3 +52,5 @@ Cardinality check --> countable vs uncountable
 ![[Pasted image 20250208183240.png]]
 
 ![[Pasted image 20250208183808.png]]
+
+- (0,1) is the power set of 
