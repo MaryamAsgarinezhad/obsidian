@@ -13,22 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Logic and Set Theory/Logic.md",
+                "file": "Chat history llm/Chat history.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Logic"
-            }
-          },
-          {
-            "id": "78cc387a06d724c6",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Chat history"
             }
           }
         ]
@@ -253,15 +243,23 @@
   },
   "active": "2f7e2a3a614253ba",
   "lastOpenFiles": [
-    "Pasted image 20250208183808.png",
-    "Pasted image 20250208183240.png",
-    "Pasted image 20250208180036.png",
-    "Pasted image 20250208175838.png",
-    "Pasted image 20250208175739.png",
-    "Pasted image 20250208165944.png",
-    "Pasted image 20250208165825.png",
+    "LLM/Session 1.md",
+    "Chat history llm/Chat history.md",
+    "Chat history llm",
+    "DevOps/clickhouse.md",
+    "Linear Algebra/Eigenvalues, Eigenvector.md",
     "Logic and Set Theory/Logic.md",
-    "Pasted image 20250208160853.png",
+    "Automata Language Theory/Definitions.md",
+    "Pasted image 20250207140440.png",
+    "Pasted image 20250207140440 - Copy.png",
+    "Pasted image 20250207140104.png",
+    "Pasted image 20250207140055.png",
+    "Pasted image 20250207140018.png",
+    "Pasted image 20250207135039.png",
+    "Pasted image 20250207133232.png",
+    "Pasted image 20250207125054.png",
+    "Pasted image 20250207124332.png",
+    "Pasted image 20250207124311.png",
     "DevOps/CI-CD Pipeline.md",
     "DevOps/Version Control.md",
     "DevOps/Virtual Environment.md",
@@ -270,13 +268,8 @@
     "Untitled.md",
     "Linear Algebra/Idempotent Matrix.md",
     "Linear Algebra/Determinant.md",
-    "Automata Language Theory/Definitions.md",
     "DevOps/MOS KPI.md",
     "DevOps/Kafka.md",
-    "Pasted image 20250202130645.png",
-    "Pasted image 20250202130634.png",
-    "Pasted image 20250202130626.png",
-    "DevOps/clickhouse.md",
     "ML and Deep Learning/Deep genrative models.md",
     "ML and Deep Learning/CNNs.md",
     "ML and Deep Learning/Federated Learning.md",
@@ -288,8 +281,6 @@
     "DevOps/Docker.md",
     "DevOps/Spring(Java).md",
     "DevOps/Infrastructure.md",
-    "DevOps/Vector Database.md",
-    "DevOps/Kubernetes.md",
     "Operating systems",
     "LLM",
     "Reliability and trustworthiness",
@@ -297,7 +288,6 @@
     "Excalidraw",
     "MLOps",
     "NLP/Model Serving",
-    "Trade",
-    "NLP"
+    "Trade"
   ]
 }
