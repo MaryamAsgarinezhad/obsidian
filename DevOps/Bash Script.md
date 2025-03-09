@@ -608,3 +608,62 @@ sudo -E python3 evaluate_asr.py settings.yaml
 ----------
 
 local machine ~/.ssh/config file is used to set variables to ssh a server, but a remote server's ssh config file may be used primarily to set git ssh configurations for one or many users. 
+
+---
+
+The **==dig==** (Domain Information Groper) command is a network administration utility used primarily for querying DNS (Domain Name System) name servers. It helps you:
+
+ - Look up DNS records (A, AAAA, CNAME, MX, NS, etc.) for a given domain.
+- Troubleshoot DNS-related problems, such as propagation issues or misconfigured DNS records.
+- Verify the path a request takes to resolve a domain name to its corresponding IP address.
+
+## Interpreting the Output
+
+A typical `dig` output is divided into sections:
+
+1. **Header**: Displays the version of `dig` and technical details about the query.
+2. **Question**: Shows what was asked (e.g., the domain and record type).
+3. **Answer**: Contains the DNS server’s response, including relevant record details.
+4. **Authority**: Indicates which DNS servers can provide an authoritative response for the queried domain.
+5. **Additional**: Extra information that might be useful, such as IP addresses of the authoritative name servers.
+
+---
+
+==**`ip route`**== is a command used in Linux systems (part of the [iproute2](https://en.wikipedia.org/wiki/Iproute2) package) to view and manipulate the system’s IP routing table. It allows you to:
+
+1. **Display existing routes**
+2. **Add or remove routes**
+3. **Configure default gateways**
+4. **Set up policy-based routing**
+
+By using `ip route`, you can control how network traffic is directed through different interfaces and gateways on your machine.
+
+## Why Use `ip route`?
+
+- **Modern Replacement**: The `ip` command suite (including `ip route`) is a modern replacement for older networking utilities like `route` and `ifconfig`.
+- **Greater Control**: It offers more advanced features such as policy-based routing and traffic shaping (via `tc`), letting you handle complex routing scenarios.
+- **Script-Friendly**: Output is typically easier to parse in scripts or automation compared to older tools.
+
+
+`sudo ip route add 10.10.10.0/24 via 192.168.1.1 dev eth0`
+
+==Routes traffic destined for `10.10.10.0/24` through `192.168.1.1` on `eth0`.==
+
+- **`10.10.10.0/24`** represents a private IPv4 subnet encompassing all IP addresses from `10.10.10.0` to `10.10.10.255`.
+- **`192.168.1.1`** is another private IPv4 address (often used as a gateway/router address).
+- They are “mapped” together in a routing rule so that traffic destined for the `10.10.10.x` subnet will be sent (routed) to `192.168.1.1`, which then forwards it appropriately.
+
+---
+
+The **`tracepath`** command is a network utility on Linux that traces the path (route) packets take from your local system to a specified destination, **without requiring superuser privileges**. It is similar in concept to **`traceroute`** but typically simpler to use. Additionally, `tracepath` tries to discover the **maximum transmission unit (MTU)** of each hop along the route, providing valuable information about potential bottlenecks.
+
+## Key Points
+
+1. **Routing Path**: Displays each hop (router) on the way to the target host.
+2. **No Root Required**: Unlike some `traceroute` operations, `tracepath` usually doesn’t require special permissions or elevated privileges.
+3. **MTU Discovery**: Shows the maximum size of packets that can travel along each hop without needing to be fragmented.
+
+![[Pasted image 20250309174829.png]]
+
+---
+

@@ -7,13 +7,13 @@ GPT-3 attends to _all_ tokens in that prompt to decide how to generate the next 
 
 ### What the Paper Says
 
-- A **core contribution** of Brown et al. (2020) is the concept that _no parameter updates are needed_ for GPT-3 to perform tasks if you provide examples of the task in the input text. They call this _in-context learning_.
+- A **core contribution** of Brown et al. (2020) is the concept that ==_no parameter updates== are needed_ for GPT-3 to perform tasks if you provide examples of the task in the input text. They call this _==in-context learning_.==
 - For instance, if you want GPT-3 to act as a question-answering system, you can include a handful of (Question, Answer) examples in the prompt. GPT-3 then infers _from context alone_ what it should do for the next query.
 
 ### Relevance to “Chat History”
 
 - In a chat-like scenario, you can treat each (User query, GPT-3 response) pair as _one example_ in the prompt. Once you provide a few such pairs, the model learns the “pattern” and continues the “chat” style.
-- The user’s next question is appended after these pairs, and GPT-3 produces an answer based on everything it has “seen” so far. This procedure is exactly the same as how GPT-3 does few-shot learning for other tasks—it’s just that your demonstration examples happen to be question-answer pairs or dialogue turns.
+- ==The user’s next question is appended after these pairs, and GPT-3 produces an answer based on everything it has “seen” so far.== This procedure is exactly the same as how GPT-3 does few-shot learning for other tasks—it’s just that your demonstration examples happen to be question-answer pairs or dialogue turns.
 
 ---
 
@@ -21,7 +21,7 @@ GPT-3 attends to _all_ tokens in that prompt to decide how to generate the next 
 
 ### What the Paper Says
 
-- GPT-3 is _purely autoregressive_: it does not maintain an internal state or memory beyond the hidden state computed from the current prompt. In other words, if something isn’t _in_ that prompt text, the model has no direct record of it.
+- ==GPT-3 is _purely autoregressive_==: it does not maintain an internal state or memory beyond the hidden state computed from the current prompt. In other words, if something isn’t _in_ that prompt text, the model has no direct record of it.
 - This means the model can handle or “remember” earlier parts of a conversation only if they still appear in the context window (i.e., if they haven’t been truncated).
 
 ### Relevance to “Chat History”
@@ -42,7 +42,7 @@ GPT-3 attends to _all_ tokens in that prompt to decide how to generate the next 
 
 ### Relevance to “Chat History”
 
-- In practical chatbot usage with GPT-3, developers often implement a _rolling window_ or a _summary mechanism_ to keep the model within token limits.
+- In practical chatbot usage with GPT-3, developers often implement a _rolling window_ or a _summary mechanism_ to ==keep the model within token limits.==
 - Brown et al. focus more on the phenomenon that GPT-3 can _learn in context_ rather than how to scale that learning across very long dialogues.
 
 ---
@@ -59,7 +59,7 @@ https://openai.com/blog/chatgpt/
 
 ### Relevance to Chat History
 
-- Because ChatGPT’s training data includes _dialogue snippets_ and _multi-turn interactions_, the model is naturally oriented toward referencing _prior user inputs and prior model outputs_ when generating new responses.
+- ==Because ChatGPT’s training data includes _dialogue snippets_ and _multi-turn interactions_, the model is naturally oriented toward referencing _prior user inputs and prior model outputs_ when generating new responses.==
 - This is distinct from older, single-turn GPT models, as ChatGPT’s fine-tuning process directly conditions it to handle conversation history rather than just a single query.
 
 ### What the Post Implies
@@ -81,7 +81,7 @@ https://openai.com/blog/chatgpt/
 
 ### What the Post Says
 
-- The blog mentions that ChatGPT was trained with **Reinforcement Learning from Human Feedback (RLHF)**, building on the approach introduced in InstructGPT.
+- The blog mentions that ChatGPT was ==trained with **Reinforcement Learning from Human Feedback (RLHF)**==, building on the approach introduced in InstructGPT.
 - Human feedback shapes how ChatGPT responds to different prompts, ensuring it follows instructions, remains helpful, and avoids disallowed content.
 
 ### Relevance to Chat History

@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chat history llm/Chat history.md",
+                "file": "DevOps/Bash Script.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chat history"
+              "title": "Bash Script"
+            }
+          },
+          {
+            "id": "1f63727d739de2ea",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.7"
             }
           }
         ]
@@ -243,8 +255,15 @@
   },
   "active": "2f7e2a3a614253ba",
   "lastOpenFiles": [
-    "LLM/Session 1.md",
+    "Pasted image 20250309174829.png",
+    "DevOps/CDN.md",
+    "DevOps/Bash Script.md",
+    "DevOps/API Services.md",
+    "LLM/Session2-Transformers- Encoder model.md",
+    "DevOps/Infrastructure.md",
+    "DevOps/Version Control.md",
     "Chat history llm/Chat history.md",
+    "LLM/Session 1.md",
     "Chat history llm",
     "DevOps/clickhouse.md",
     "Linear Algebra/Eigenvalues, Eigenvector.md",
@@ -261,7 +280,6 @@
     "Pasted image 20250207124332.png",
     "Pasted image 20250207124311.png",
     "DevOps/CI-CD Pipeline.md",
-    "DevOps/Version Control.md",
     "DevOps/Virtual Environment.md",
     "Linear Algebra/Rank and null space.md",
     "Logic and Set Theory",
@@ -275,12 +293,6 @@
     "ML and Deep Learning/Federated Learning.md",
     "ML and Deep Learning/Python codes.md",
     "ML and Deep Learning/Representation Learning and SSL.md",
-    "ML and Deep Learning/Types of generative models.md",
-    "ML and Deep Learning/Vision.md",
-    "ML and Deep Learning/Deep.md",
-    "DevOps/Docker.md",
-    "DevOps/Spring(Java).md",
-    "DevOps/Infrastructure.md",
     "Operating systems",
     "LLM",
     "Reliability and trustworthiness",
