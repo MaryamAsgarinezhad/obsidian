@@ -13,24 +13,30 @@ From a language model we can create an auto regressive language model. Then we c
     
 
 ![[Pasted image 20241222172831.png]]
+![[Pasted image 20250323003915.png]]
 
 Here introduces a method to compute the language model ( p(w1,w2,…) ). Problems:
 
-- It does not consider the meaning of the sentence (relationship between words)
-    
-- Since it represents each word as a vector of zeros that equals 1 on only one derray representing that word, the relation between each two word (their inner vector product) is 0 .
+- It cannot generate anything it hasn't seen before.
     
 - It is more suitable to be used for correcting other kind of tasks (speech recognition, …)
     
 
 ![[Pasted image 20241222172851.png]]
+
+For classification:
+![[Pasted image 20250323010240.png]]
+![[Pasted image 20250323011344.png]]
+
+For Language modeling:
+
 - Here input is n-1 vector of words, and the output is a vector that shows the probability of all words to be the next word.
     
 - The size of vectors is n, which is the size of our dictionary (computationally inefficient)
     
 - A simple feed forward architecture
     
-- A neural network is capable of **generalizing** because it maps **one hop** inputs into feature space, and thus can extract meanings (despite N-gram)
+- A neural network is capable of **==generalizing==** because it maps **one hop** inputs into feature space, and thus can extract meanings (despite N-gram)
     
 - N-gram attributes zero probability to a sentence it have never seen, but NN doesn’t.
     
@@ -40,7 +46,11 @@ Here introduces a method to compute the language model ( p(w1,w2,…) ). Problem
     
 - Its flow is uni-directional, meaning that the information in the model flows in only one direction—forward—from the input nodes, through the hidden nodes (if any) and to the output nodes, without any cycles or loops (in contrast to recurrent neural networks, which have a bi-directional flow). Modern feedforward networks are trained using backpropagation, and are colloquially referred to as "vanilla" neural networks.
     
-- **Lack of Sequential Understanding**: A FFNN treats each input as an independent feature vector, without any inherent understanding of the sequence or order of the inputs. When you change the order of the words, the network doesn’t have any mechanism to capture the new relationship between them. This can make it difficult to maintain meaning, especially in tasks like natural language processing, where word order significantly impacts the meaning of a sentence.
+- **Lack of Sequential Understanding**: ==No relationship between words==. A FFNN treats each input as an independent feature vector, without any inherent understanding of the sequence or order of the inputs. When you change the order of the words, the network doesn’t have any mechanism to capture the new relationship between them. This can make it difficult to maintain meaning, especially in tasks like natural language processing, where word order significantly impacts the meaning of a sentence.
+  
+- The main problem is that it ==does not consider large contexts== because it has a fix sized context window.
+  ![[Pasted image 20250323010922.png]]
+
 
 ![[Pasted image 20241222172926.png]]
 
