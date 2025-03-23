@@ -61,26 +61,29 @@ RNNs: Summerizes whatever-length context into a specified-size vector.
 
 An **RNN (Recurrent Neural Network)** summarizes previous context through its **hidden state**, which acts as a kind of "memory" for the network. Here's a more detailed breakdown of how this works:
 
-- **Sequential Processing**: Unlike a feed-forward network, an RNN processes inputs sequentially. When the RNN receives an input (like a word in a sentence), it not only uses the current input but also the hidden state from the previous time step.
+- **Sequential Processing**: Unlike a feed-forward network, ==an RNN processes inputs sequentially (not all at once).== When the RNN receives an input (like a word in a sentence), it not only uses the current input but also the hidden state from the previous time step.
     
-- **Hidden State**: The hidden state, often denoted as hth_tht​, is a vector that stores information about the context from all previous inputs. After processing the input at time step ttt, the hidden state is updated based on:
+- **Hidden State**: The hidden state, often denoted as ht​, is a vector that stores information about the context from all previous inputs. After processing the input at time step t, the hidden state is updated based on:
     
-    - The current input xtx_txt​.
+    - The current input xt​.
         
-    - The previous hidden state ht−1h_{t-1}ht−1​.
+    - The previous hidden state ht−1​.
         
-- Concatenated input [xt​,ht−1​] is passed through a linear transformation (a matrix multiplication), which applies weights to both the current input and the previous hidden state. This step mixes information from both xtx_txt​ and ht−1h_{t-1}ht−1​ to form an intermediate signal.
+- Concatenated input [xt​,ht−1​] is passed through a linear transformation (a matrix multiplication), which applies weights to both the current input (W_e) and the previous hidden state (W_h) . This step mixes information from both xt​ and ht−1 to form an intermediate signal.
     
-- The intermediate signal​ is then passed through a nonlinear activation function, like the **tanh** or **ReLU**, to introduce nonlinearity into the model. This ensures that the model can learn complex patterns and relationships in the data.
+- The intermediate signal​ is then passed through a nonlinear activation function (f) , like the **tanh** or **ReLU**, to introduce nonlinearity into the model. This ensures that the model can learn complex patterns and relationships in the data.
     
 - Soft-max is used at the last layer for classification(like what logistic regression did), ReLU used between layers (well defined gradient and suitable for back propagation)
     
-![[Pasted image 20241222172947.png]]
+- The Output Layer is the final component of the RNN Language Model, responsible for producing the probability distribution over the vocabulary. It takes the information from the hidden state and generates a probability distribution, allowing the model to predict the likelihood of the next word in the sequence.
+  
+![[Pasted image 20250323191556.png]]
+
 **Challenges:**
 
-- **Vanishing/Exploding Gradient Problem**: As sequences get longer, the hidden state may "forget" earlier parts of the sequence, especially when using vanilla RNNs. This is because the gradients during backpropagation can either vanish (making it hard to learn long-term dependencies) or explode (causing instability).
+- **Vanishing/Exploding Gradient Problem**: As sequences get longer, the hidden state may =="forget"== earlier parts of the sequence, especially when using vanilla RNNs. This is because the gradients during backpropagation can either vanish (making it hard to learn long-term dependencies) or explode (causing instability).
     
-- **Long-Term Dependencies**: Simple RNNs struggle with learning long-term dependencies because they are limited in how much context they can store in the hidden state. This issue is addressed by more advanced architectures like **LSTMs (Long Short-Term Memory)** and **GRUs (Gated Recurrent Units)**, which have mechanisms to better retain information over long sequences.
+- **Long-Term Dependencies**: Simple RNNs struggle with learning long-term dependencies because they are limited in how much context they can store in the hidden state. This issue is addressed by more advanced architectures like **LSTMs (Long Short-Term Memory)** and **==GRUs== (Gated Recurrent Units)**, which have mechanisms to better retain information over long sequences.
     
 - In theory, RNNs are absolutely capable of handling such “long-term dependencies.” A human could carefully pick parameters for them to solve toy problems of this form. Sadly, in practice, RNNs don’t seem to be able to learn them. The problem was explored in depth by Hochreiter (1991) [German] and Bengio, et al. (1994), who found some pretty fundamental reasons why it might be difficult.
 -------------------
@@ -92,26 +95,28 @@ An **RNN (Recurrent Neural Network)** summarizes previous context through its **
 While RNNs are capable of processing sequential data (like text or time series), they suffer from a major issue known as the **vanishing gradient problem**, which makes it hard for them to learn long-term dependencies. **LSTMs** were specifically designed to overcome this problem.
 
 LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn!
+
 ![[Pasted image 20241222173033.png]]
+
 **How LSTM Works:**
 
-LSTMs are a type of RNN that introduces a more sophisticated memory cell mechanism. An LSTM unit consists of several components that help it control what information is stored, updated, and discarded, which is why they are more effective than regular RNNs for long-term sequence learning.
+LSTMs are a type of RNN that introduces a more sophisticated memory cell mechanism. An LSTM unit ==consists of several components that help it **control** what information is stored, updated, and discarded==, which is why they are more effective than regular RNNs for long-term sequence learning.
 
 An LSTM unit has the following key components:
 
-1. **Cell State (ctc_tct​)**:
+1. **Cell State (c_t)**:
     
     - This is the long-term memory of the LSTM, which carries relevant information throughout the sequence.
         
-    - It is updated at each time step by adding new information and removing irrelevant data, helping to avoid the vanishing gradient problem.
+    - It is updated at each time step by **adding new information and removing irrelevant data**, helping to avoid the vanishing gradient problem.
         
     - ![[Pasted image 20241222173111.png]]
         
-2. **Hidden State (hth_tht​)**:
+2. **Hidden State (h_t​)**:
     
     - This is the short-term memory of the LSTM, which carries the output of the LSTM unit at each time step.
         
-    - It is passed on to the next LSTM unit or the output layer.
+    - It is passed on to the ==next LSTM unit== (to be used for generating next hidden state) or the ==output layer== (for generating the output).
         
 3. **Gates**: LSTM uses gates to control the flow of information. These gates decide what information should be:
     
@@ -124,11 +129,11 @@ An LSTM unit has the following key components:
 
 These gates are:
 
-- **Forget Gate** (ftf_tft​): Decides which information from the cell state should be discarded. It looks at ht−1ht−1 and xtxt, and outputs a number between 00 and 11 for each number in the cell state Ct−1Ct−1. A 11 represents “completely keep this” while a 00 represents “completely get rid of this.” (In such a problem, the cell state might include the gender of the present subject, so that the correct pronouns can be used. When we see a new subject, we want to forget the gender of the old subject.)
+- **Forget Gate** (f_t​): Decides which information from the cell state should be discarded. It looks at ht−1 and xt, and outputs a number between 0 and 1 for each number in the cell state Ct−1. A 1 represents “completely keep this” while a 0 represents “completely get rid of this.” (In such a problem, the cell state might include the gender of the present subject, so that the correct pronouns can be used. When we see a new subject, we want to forget the gender of the old subject.) It performs this b learning W_f.
     
 - ![[Pasted image 20241222173134.png]]
     
-- **Input Gate** (iti_tit​): Decides which values from the input should be stored in the cell state. The next step is to decide what new information we’re going to store in the cell state. This has two parts. First, a sigmoid layer called the “input gate layer” decides which values we’ll update. Next, a tanh layer creates a vector of new candidate values, C~tC~t, that could be added to the state. In the next step, we’ll combine these two to create an update to the state. (In the example of our language model, we’d want to add the gender of the new subject to the cell state, to replace the old one we’re forgetting.)
+- **Input Gate** (i_t​): Decides which values from the input should be stored in the cell state. The next step is to decide what **new information we’re going to store in the cell state**. This has two parts. First, a sigmoid layer called the “input gate layer” decides ==which values== we’ll update (by learning W_i). Next, a tanh layer creates a vector of ==new candidate values==, C~t, that could be added to the state (By learning W_C). In the next step, we’ll combine these two to create an update to the state. (In the example of our language model, we’d want to add the gender of the new subject to the cell state, to replace the old one we’re forgetting.)
     
 - ![[Pasted image 20241222173149.png]]
     
@@ -136,7 +141,7 @@ These gates are:
     
 - So. Long term information is not the whole information cumulated through the process, but it is pruned and grom at each step.
     
-- **Output Gate** (oto_tot​): Decides what the hidden state should be, which is passed to the next LSTM unit and output layer. Finally, we need to decide what we’re going to output. This output will be based on our cell state, but will be a filtered version. First, we run a sigmoid layer which decides what parts of the cell state we’re going to output. Then, we put the cell state through tanhtanh (to push the values to be between −1−1 and 11) and multiply it by the output of the sigmoid gate, so that we only output the parts we decided to. ) For the language model example, since it just saw a subject, it might want to output information relevant to a verb, in case that’s what is coming next. For example, it might output whether the subject is singular or plural, so that we know what form a verb should be conjugated into if that’s what follows next.(
+- **Output Gate** (o_t​): ==**Decides what the hidden state should be**==, which is passed to the **next LSTM unit and output layer**. Finally, we need to decide what we’re going to output. This output will be based on our cell state, but will be a filtered version. First, we run a sigmoid layer which decides what parts of the cell state we’re going to output. Then, we put the cell state through tanh (to push the values to be between −1 and 1) and multiply it by the output of the sigmoid gate, so that we only output the parts we decided to. ) For the language model example, since it just saw a subject, it might want to output information relevant to a verb, in case that’s what is coming next. For example, it might output whether the subject is singular or plural, so that we know what form a verb should be conjugated into if that’s what follows next.
     
 - ![[Pasted image 20241222173229.png]]
     
@@ -149,7 +154,7 @@ RNN has the problem of complexity because it computes hidden state n times and e
 
 - Shared weights
     
-- Self-attention mechanism + FFNN
+- ==Self-attention mechanism + FFNN==
     
 - All inputs processed at the same time and their embeddings created.
 --------------------
@@ -187,13 +192,12 @@ The final input to the model is the sum of the token embeddings and positional e
 
 **4. Query (Q), Key (K), and Value (V) Calculation**
 
-For each token in the sequence, the Transformer computes three vectors: **Query (Q)**, **Key (K)**, and **Value (V)**. These vectors are derived by multiplying the input embeddings (which are augmented with positional encodings) by three learned weight matrices WQW_QWQ​, WKW_KWK​, and WVW_VWV​ respectively.
+For each token in the sequence, the Transformer computes three vectors: **Query (Q)**, **Key (K)**, and **Value (V)**. These vectors are derived by multiplying the input embeddings (which are augmented with positional encodings) by three learned weight matrices W_Q​, W_K​, and W_V​ respectively.
 
 - ![[Pasted image 20241222173419.png]]
-- WQ,WK,WVW_Q, W_K, W_VWQ​,WK​,WV​ are the weight matrices learned during training for the Query, Key, and Value, respectively.
+- W_Q, W_K, W_V​ are the weight matrices learned during training for the Query, Key, and Value, respectively.
     
-- These weight matrices are shared across all tokens in the sequence, but the embeddings EtokenE_{\text{token}}Etoken​ differ for each token.
-    
+- These weight matrices are shared across all tokens in the sequence, but the embeddings E_token​ differ for each token.
 
 The result of these operations is a set of **Q**, **K**, and **V** vectors for each token in the sequence:
 
@@ -201,15 +205,17 @@ The result of these operations is a set of **Q**, **K**, and **V** vectors for e
 
 **5. Self-Attention Scores (Dot Product)**
 
-For each token (for example, "sun"), we compute the **self-attention scores** with respect to all other tokens in the sequence using the Query of the current token and the Keys of all tokens.
+For each token (for example, "sun"), we compute the **self-attention scores** with respect to all other tokens in the sequence using the **==Query of the current token and the Keys of all tokens.==**
 
-The **self-attention score** between token iii and token jjj is calculated as the **dot product** between the Query of token iii and the Key of token jjj:
+The **self-attention score** between token i and token j is calculated as the **dot product** between the Query of token i and the Key of token j:
+
 ![[Pasted image 20241222173503.png]]
-This gives a measure of how much token iii "attends" to token jjj when generating the next token.
+
+This gives a measure of how much token i "**attends**" to token j when generating the next token.
 
 **6. Scaling the Scores**
 
-The dot products can grow large, so we **scale** them by dividing by the square root of the dimension of the key vector dkd_kdk​ (usually the size of the embedding vector). This scaling helps stabilize training.
+The dot products can grow large, so we **scale** them by dividing by the square root of the dimension of the key vector d_k​ (usually the size of the embedding vector). This scaling helps stabilize training.
 ![[Pasted image 20241222173523.png]]
 
 **7. Softmax to Get Attention Weights**
@@ -217,11 +223,11 @@ The dot products can grow large, so we **scale** them by dividing by the square 
 After scaling the scores, we apply the **softmax** function to the scores to convert them into a probability distribution. This gives the **attention weights** that determine how much each token should "pay attention" to all the other tokens in the sequence.
 
 ![[Pasted image 20241222173543.png]]
-This results in a set of attention weights αij\alpha_{ij}αij​ for token iii, which tells the model how much token iii should focus on each token jjj when predicting the next token.
+This results in a set of attention weights αij​ for token i, which tells the model how much token i should focus on each token j when predicting the next token.
 
 **8. Weighted Sum of Value Vectors**
 
-The next step is to compute the **weighted sum** of the Value vectors based on the attention weights. For each token iii, the output of the self-attention layer is a weighted sum of all Value vectors VjV_jVj​, where the weights are the attention scores αij\alpha_{ij}αij​:
+The next step is to compute the **weighted sum** of the Value vectors based on the attention weights. For each token i, the output of the self-attention layer is a weighted sum of all Value vectors V_j​, where the weights are the attention scores αij:
 
 ![[Pasted image 20241222173601.png]]
 
@@ -229,7 +235,7 @@ This output represents a new context-aware embedding for each token in the seque
 
 **2. Feedforward Network (FFN):**
 
-Each of the contextualized embeddings is passed through a **Feedforward Neural Network (FFN)**, which consists of two layers of linear transformations with a nonlinear activation function (like ReLU) in between. This step further processes the token's representation and allows for more complex transformations. The output from this FFN becomes the updated representation of each token.
+Each of the contextualized embeddings is passed through a **Feedforward Neural Network (FFN)**, which consists of two layers of linear transformations with a nonlinear activation function (like ReLU) in between. This step further processes the token's representation and allows for **more complex transformations**. The output from this FFN becomes the updated representation of each token.
 
 After this step, each token has an updated, context-aware representation.
 
@@ -237,11 +243,11 @@ After this step, each token has an updated, context-aware representation.
 
 Now that we have the updated representation for each token, we need to convert these representations into actual tokens (words or subwords). To do this:
 
-- The output of the final layer is passed through a **linear transformation** (a dense layer), which projects the token's embedding into a space the size of the vocabulary. This is a simple matrix multiplication, where the weights correspond to the learned representations of each word in the vocabulary.
+- The output of the final layer is passed through a **linear transformation** (**a dense layer**), which projects the token's embedding into a space the size of the vocabulary. This is a simple matrix multiplication, where the weights correspond to the learned representations of each word in the vocabulary.
 
 **4. Softmax Function:**
 
-The logits zt\mathbf{z}_tzt​ are then passed through a **softmax function**, which converts these raw scores into probabilities. The softmax ensures that the output is a valid probability distribution over the vocabulary
+The logits zt​ are then passed through a **softmax function**, which converts these raw scores into probabilities. The softmax ensures that the output is a valid probability distribution over the vocabulary
 
 **5. Token Prediction:**
 
@@ -252,100 +258,32 @@ The model then selects the next token based on this probability distribution. Us
 - **Sampling**: Randomly selecting a word according to the probabilities.
     
 - **Top-k sampling** or **top-p (nucleus) sampling**: Selecting from the top-k most probable words or sampling from the most probable words that cumulatively sum to a threshold probability.
+
 ![[Pasted image 20241222173626.png]]
+
 ------------------------
+
+in the context of transformers and attention mechanism, what parameter is learned by the model?
+
+![[Pasted image 20241231181211.png]]
+
+==These weight matrices are shared across all tokens in the sequence, but the embeddings X differ for each token.==
+
+![[Pasted image 20241231182034.png]]
+
+![[Pasted image 20241231182044.png]]
+
+![[Pasted image 20241231182240.png]]
+
+![[Pasted image 20241231182327.png]]
+
+![[Pasted image 20241231182420.png]]
+
+---
 
 What factors caused the creation of LLMs?
 
 ![[Pasted image 20241216185046.png]]
-
-----------
-
-Architectures:
-![[Pasted image 20241216185140.png]]
-
-Encoder only: used to create embedding. Is it used in generation? not directly, but for ==sentiment analysis, supervised learning, classification, question answering==...
-![[Pasted image 20241216185235.png]]
-
-How are encoders trained?
-
-**BERT** (Bidirectional Encoder Representations from Transformers) is a pre-trained language model based on the **Transformer architecture**. It uses a **masked language model (MLM)** pre-training task and is fine-tuned for specific downstream tasks (like text classification, question answering, etc.). The training process can be divided into two main phases: **pre-training** and **fine-tuning**.
-
-### 1. **Pre-training BERT**
-
-BERT is pre-trained on a large corpus of text to learn general language representations. During this phase, BERT is not trained for a specific task but instead learns to model language through two main tasks:
-
-#### 1.1 **Masked Language Modeling (MLM)**
-
-- **Objective**: The goal of MLM is for BERT to predict missing words (masked tokens) in a sentence, using context from both directions (left and right) around the mask.
-    
-- **How it works**:
-    
-    - Randomly select 15% of the tokens in a sentence.
-    - For each selected token, replace it with a special token `[MASK]`. The remaining 85% of tokens are kept unchanged.
-    - The model is trained to predict the original token that was replaced by `[MASK]`, using the surrounding context.
-    - This task allows BERT to learn bidirectional context, meaning it can consider both the left and right contexts when predicting a word.
-    
-    **Example**: Suppose the input sentence is:  
-    **"The cat sat on the mat."**
-    
-    The tokenized version might be:  
-    **["The", "cat", "sat", "on", "the", "mat"]**
-    
-    The model might randomly mask the word **"sat"**:  
-    **"The cat [MASK] on the mat."**
-    
-    BERT then tries to predict the masked word based on the context: **"sat"**.
-    
-
-#### 1.2 **Next Sentence Prediction (NSP)**
-
-- **Objective**: The goal of NSP is for BERT to predict whether two sentences are likely to follow each other in the original text.
-- **How it works**:
-    
-    - During training, two sentences are sampled: one is a **true pair** (the second sentence follows the first in the original text), and the other is a **false pair** (a random sentence from the corpus).
-    - BERT is trained to predict whether the second sentence follows the first one.
-    
-    **Example**:
-    - Sentence 1: **"The cat sat on the mat."**
-    - Sentence 2 (True): **"It looked very comfortable."**
-    - Sentence 2 (False): **"The sun is shining brightly."**For a true pair, BERT would predict that the second sentence follows the first, and for a false pair, it would predict the opposite.
-
-
-### 2. **Fine-tuning BERT**
-
-After pre-training, BERT can be fine-tuned for specific downstream tasks like **text classification**, **question answering**, **named entity recognition**, etc. Fine-tuning is done by adding a task-specific output layer on top of BERT and training it with labeled data for that task.
-
-#### 2.1 **Fine-tuning Steps**:
-
-1. **Add a task-specific layer**:
-    
-    - For example, for **text classification**, a **classification layer** (a simple feed-forward neural network) is added on top of BERT.
-    - For **question answering**, a **span prediction layer** is added to predict the start and end of the answer span in the text.
-2. **Train on labeled data**:
-    
-    - During fine-tuning, the ==entire model== (including both the pre-trained layers and the added task-specific layer) is trained using labeled task-specific data.
-    - The training process involves **backpropagation** and **gradient descent** to minimize the task-specific loss function.
-    
-    For instance, in text classification:
-    
-    - The input text is passed through the pre-trained BERT model.
-    - The classification layer outputs a probability distribution over the classes (e.g., spam or not spam).
-    - The model's weights are adjusted to minimize the classification error.
-
-#### 2.2 **Fine-tuning for Different Tasks**:
-
-- **Text Classification**: BERT’s output for the [CLS] token (the classification token) is passed to a ==feed-forward network== for class prediction.
-- **Named Entity Recognition (NER)**: The output for each token is used to predict labels for entities (e.g., "PERSON," "LOCATION").
-- **Question Answering (SQuAD)**: The model predicts the start and end tokens of the answer span.
-
------------------
-
-Encoder-decoder: Has embedding features, used for ==text generation (by decoder)==.
-![[Pasted image 20241216193648.png]]
-
-Decoder only:
-![[Pasted image 20241216193836.png]]
 
 ------------------
 
@@ -357,61 +295,10 @@ In ==**sequence-to-sequence models**==, there are two main architectures: **Enco
 
 Encoder-Decoder models, like the ==**Transformer**== (which consists of both an encoder and a decoder), are primarily used for **sequence-to-sequence tasks**, such as ==**machine translation**, **summarization**, or **speech recognition**.==
 
-#### **Architecture**:
-
-- **Encoder**: Processes the input sequence and compresses it into a fixed-size context representation (usually called a **context vector** or **encoded representation**).
-- **Decoder**: Takes this context vector and generates the output sequence, one token at a time, using the context and previous tokens (or its own outputs) to predict the next token.
-
-#### **Training Encoder-Decoder Models**:
-
-The training procedure of Encoder-Decoder models typically involves the following steps:
-
-1. **Input Sequence**: The input sequence (e.g., a sentence in English) is passed into the **encoder**.
-2. **Context Representation**: The encoder processes the sequence and generates a fixed-length representation (for traditional RNNs) or a set of context-aware embeddings (for Transformers).
-3. **Start Token**: A special **start-of-sequence token** (e.g., `<s>`) is passed into the decoder.
-4. **Decoder Generation**: The decoder takes the encoder’s output (the context) and the previous tokens it has generated (starting with the start token) to predict the next token in the sequence.
-5. **Teacher Forcing**: During training, **teacher forcing** is used, meaning the true output token (from the target sequence) is fed to the decoder at each step, instead of using the decoder’s own previous prediction.
-6. **Loss Calculation**: The model’s predictions are compared to the true target tokens, and the loss is computed (usually using **cross-entropy loss**).
-7. **Backpropagation**: The gradients of the loss are calculated and backpropagated through the network, updating the parameters to reduce the loss.
-
-### **2. Decoder-Only Models**
-
-Decoder-only models, like **GPT (Generative Pretrained Transformer)**, are used for ==**autoregressive generation tasks**==, such as **text generation**, **language modeling**, or **text completion**.
-
-#### **Architecture**:
-
-- **Decoder**: These models consist of just the **decoder** part of the Transformer, where the input is passed as a sequence and the model autoregressively generates the output, one token at a time.
-- **Autoregressive**: The output token from the previous time step is used as the input for the next time step.
-
-#### **Training Decoder-Only Models**:
-
-The training procedure of a decoder-only model is similar in some ways to the encoder-decoder model but with ==key differences due to its autoregressive nature:==
-
-1. **Input Sequence**: The input sequence is passed into the **decoder**.
-2. **Autoregressive Generation**: The model predicts the next token in the sequence based on the previous tokens. During training, it uses **teacher forcing** as well, where the actual token from the target sequence is used as input to predict the next token.
-3. **Masking**: The key difference is that the model is trained with **causal masking** to prevent it from "seeing" future tokens during training. This ensures the model generates the sequence one token at a time, from left to right.
-4. **Loss Calculation**: Like in the encoder-decoder model, the model’s predictions are compared to the true tokens, and the loss (usually cross-entropy) is computed.
-5. ![[Pasted image 20241216200038.png]]
-
-6. **Backpropagation**: The gradients are backpropagated through the model, updating the weights to improve the predictions.
-
-#### **Example**: **Text Generation (Autoregressive)**
-
-In the case of **GPT**, if the task is to generate a continuation for the input prompt "The weather is", the model would:
-
-- **Input**: "The weather is"
-- **Output**: "The weather is great today."
-
-During training, the model is fed sequences like:
-
-- **Input**: "The weather is great"
-- **Target**: "weather is great today."
-
-It learns to predict the next token in the sequence ("today") based on the context of the previous tokens.
-![[Pasted image 20241216195953.png]]
 -------------------
 
 Tip: In text generation, almost always we are looking for estimating the ==distribution== from which the sentence is generated from (**maximum likelihood**)
+
 ![[Pasted image 20241216195851.png]]
 
 - In autoregressive approaches for text generation, we are using teacher forcing that forces an ideal target text while training. But at testing time we may face problems because there is no teacher and the previous token that model generated may not be accurate and this will cause a ==distribution shift==.
@@ -422,11 +309,13 @@ Tip: In text generation, almost always we are looking for estimating the ==distr
 
 Prompting idea(==for pretrained models==) was observed after gpt3 model introduced.
 It was just observed not invented, that giving a prompt to language models can **make a pre-trained model to a task-speific model** :
+
 ![[Pasted image 20241216200848.png]]
 
 ------------------
 
 Emergence:
+
 ![[Pasted image 20241216201213.png]]
 Large data improves results. Since they can absorb more knowledge for reasoning.
 

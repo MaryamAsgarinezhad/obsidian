@@ -1,18 +1,3 @@
-in the context of transformers and attention mechanism, what parameter is learned by the model?
-
-![[Pasted image 20241231181211.png]]
-
-==These weight matrices are shared across all tokens in the sequence, but the embeddings X differ for each token.==
-
-![[Pasted image 20241231182034.png]]
-
-![[Pasted image 20241231182044.png]]
-
-![[Pasted image 20241231182240.png]]
-
-![[Pasted image 20241231182327.png]]
-
-![[Pasted image 20241231182420.png]]
 
 -------------
 
@@ -191,6 +176,7 @@ In essence, BERT's role in attention-based models is twofold:
 
 BERT uses the **attention mechanism** in both the **pretraining** and **fine-tuning** processes. Here's how the attention mechanism is employed in each phase:
 
+- **Pretraining and fine-tuning a Bert better optimizes its W_Q, W_K, W_V and other learned parameters.**
 ### **1. Pretraining: Unsupervised/Self-Supervised Learning**
 
 During pretraining, BERT uses the **attention mechanism** extensively as part of its underlying transformer architecture. Key roles include:
