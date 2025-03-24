@@ -297,7 +297,9 @@ Encoder-Decoder models, like the ==**Transformer**== (which consists of both an 
 
 -------------------
 
-Tip: In text generation, almost always we are looking for estimating the ==distribution== from which the sentence is generated from (**maximum likelihood**)
+Tip: In text generation, almost always we are looking for estimating the distribution from which the sentence is generated from (**maximum likelihood**)
+
+- **Maximum likelihood hypothesis is used in defining the loss formula of all these networks.**
 
 ![[Pasted image 20241216195851.png]]
 

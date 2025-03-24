@@ -1,25 +1,21 @@
 
--------------
-
 ![[Pasted image 20241222165609.png]]
 With this definition, many things in the nature are considered as a language, like protein structures.
 
 Why nature's elements(alphabet) are finite? otherwise, there will be no structure to be repeated to make a discipline to create predictivity.
 
-![[Pasted image 20241222170331.png]]
-![[Pasted image 20241222170347.png]]
-A word is defined by its neighbor embedding distributions.
-
 -------------------
 
 ![[Pasted image 20241222170700.png]]
+
 Again the definition of language modeling.
+
 ![[Pasted image 20241222170857.png]]
+
 ![[Pasted image 20241222183310.png]]
 
-----------
-
 ![[Pasted image 20241222183350.png]]
+
 Its a kind of fixed embedding. In this method of representation learning, we build the representation of a word based on its surrounding cords and context.
 
 Problems:
@@ -41,15 +37,12 @@ Pros:
 
 ![[Pasted image 20241222184622.png]]
 ![[Pasted image 20241222191400.png]]
-In this embedding idea, the general embedding (maybe made from ship-gram) is modified based on the context (attention-based). It can be done by a linear combination of all context words.
-
-Weight of a certain ontect word can be due to part of speech, being synonymous,... (dot product between two vectors)
 
 - The word we want to make an embedding for is called ==query==. 
 - All the context words and the word itself are called ==keys==.
 - The contribution of each key to the query (similarity between them) are weights
 - ==values== are the actual vectors being weight summed together.
-- If key equals the value, then it is called ==self-attention==.
+- **If key equals the value, then it is called ==self-attention==.**
 - On the other hand we have multi-head attention:
   ![[Pasted image 20241222192321.png]]
 
@@ -58,6 +51,7 @@ Weight of a certain ontect word can be due to part of speech, being synonymous,.
 ![[Pasted image 20241230183038.png]]
 
 Can we do this in **parallel**?
+
 ![[Pasted image 20241222192411.png]]
 ![[Pasted image 20241222192452.png]]
 Multi-Head Attention is an extension of the basic attention mechanism, used primarily in transformer models like BERT and GPT. It improves the model's ability to capture different types of relationships within the data. The key differences are:
@@ -65,14 +59,14 @@ Multi-Head Attention is an extension of the basic attention mechanism, used prim
 1. **Multiple attention heads**:
     
     - Instead of a single attention calculation, the input is split into multiple **attention heads**.
-    - Each head calculates its own set of QQQ, KKK, and VVV matrices and performs its own attention computation independently.
+    - Each head calculates its own set of Q, K, and V matrices and performs its own attention computation independently.
 2. **Diverse focus**:
     
     - Different heads can learn to focus on different parts of the input data or different types of relationships (e.g., syntactic vs. semantic connections).
     - This parallel computation enables the model to capture more nuanced and complex interactions.
 3. **Dimensionality reduction**:
     
-    - After each head computes its output, the results are concatenated and passed through a linear layer to combine the information into a single representation.
+    - After each head computes its output, the **results are concatenated** and passed through a linear layer to combine the information into a single representation.
 
 ---------
 
@@ -95,6 +89,7 @@ since attention is applied to all surrounding words without order, how can we do
 - Absolute position in a sentence or relative distance between words
 
 Usage:
+
 ![[Pasted image 20241230184348.png]]
 
 - Absolute for classification - O(n^2)
@@ -106,9 +101,11 @@ Usage:
 How to apply positional embedding into model?
 
 - Sum input and positional embeddings
+  
 ![[Pasted image 20241230185333.png]]
 
 - Or use positional embedding to adjust input embedding matrix
+
 ![[Pasted image 20241230185746.png]]
 
 ------------
@@ -116,11 +113,13 @@ How to apply positional embedding into model?
 ![[Pasted image 20241230185952.png]]
 
 positional embedding must be reproduced from a shifted one:
+
 ![[Pasted image 20241230190310.png]]
 
 ----------
 
 A transformer (encoder part) block architecture:
+
 ![[Pasted image 20241230190544.png]]
 
 -------------
@@ -128,7 +127,6 @@ A transformer (encoder part) block architecture:
 Layer Normalization (vs batch normalization):
 
 ![[Pasted image 20241230191008.png]]
-
 
 ---------
 
@@ -142,7 +140,7 @@ Layer Normalization (vs batch normalization):
 
 BERT is designed to generate high-quality ==contextualized embeddings== of words or sentences, which are essentially dense vector representations capturing their meaning based on context. Key aspects of BERT's role in representation learning include:
 
-- **Bidirectional Contextual Understanding**: Unlike unidirectional models (==mainly decoder only models like GPT==), BERT uses a ==bidirectional attention== mechanism, allowing it to consider both left and right contexts simultaneously. This makes its representations particularly rich and nuanced.
+- **Bidirectional Contextual Understanding**: Unlike unidirectional models (==mainly decoder only models like GPT==), BERT uses a **==bidirectional attention==** mechanism, allowing it to consider both left and right contexts simultaneously. This makes its representations particularly rich and nuanced.
     
 - **Pretrained Representations**: BERT is pretrained on massive corpora using tasks like:
     
@@ -152,7 +150,7 @@ BERT is designed to generate high-quality ==contextualized embeddings== of words
 
 ### **2. Role in Attention-Based Models**
 
-BERT is itself an attention-based model built on the transformer architecture, and it demonstrates how self-attention mechanisms enhance representation learning. Its role includes:
+BERT is itself an attention-based model built on the transformer architecture, and it demonstrates how **self-attention** mechanisms enhance representation learning. Its role includes:
 
 - **Self-Attention Mechanism**: BERT uses the self-attention mechanism to compute weighted representations of input tokens, emphasizing words that are contextually important relative to one another. This is central to learning semantic and syntactic relationships.
     
@@ -160,17 +158,6 @@ BERT is itself an attention-based model built on the transformer architecture, a
     
 - **Capturing Long-Range Dependencies**: Attention mechanisms allow BERT to effectively capture dependencies between distant words in a sequence, which traditional models like RNNs struggle with.
     
-
-### **Summary**
-
-In essence, BERT's role in attention-based models is twofold:
-
-1. To learn **contextualized representations** of text using attention mechanisms that consider global context.
-2. To act as a **foundation model** for a variety of NLP tasks, leveraging its attention-driven ability to encode rich linguistic information.
-
-![[Pasted image 20241230191924.png]]![[Pasted image 20241230192013.png]]
-
-![[Pasted image 20241230192113.png]]
 
 ------------
 
@@ -242,20 +229,6 @@ The **token embeddings, segment embeddings, and position embeddings** are **lear
 
 ### **How Are Initial Token and Segment Embeddings Generated?**
 
-BERT does **not use attention** for generating token and segment embeddings. Instead, it uses:
-
-1. **Token Embeddings**
-    
-    - Each token is mapped to a **pretrained embedding vector** using a lookup table.
-    - These embeddings are **part of BERT’s embedding matrix**, learned during training.
-2. **Segment Embeddings**
-    
-    - BERT has a **fixed embedding matrix** for distinguishing sentence A from sentence B.
-    - These embeddings are also **learned parameters** (just like token embeddings).
-3. **Position Embeddings**
-    
-    - Since Transformers have no recurrence, **a fixed learned position embedding** is added to each token to encode order information.
-
 ==These embeddings are pre-defined and **learned during BERT's pretraining**.==
 
 ### **Where Does Attention Start?**
@@ -269,9 +242,10 @@ The processed input embeddings are passed into **multiple Transformer encoder la
 
 - The **Multi-Head Self-Attention** mechanism operates **inside the Transformer Encoder**, but it does **not** influence the initial token and segment embeddings.
 
-
 ![[Pasted image 20250106142549.png]]
 ![[Pasted image 20250106142631.png]]
+The role of FFNN in the transformer block is to expand the dimensionality and complexity of representations.
+
 ![[Pasted image 20250106142646.png]]
 ![[Pasted image 20250106142718.png]]
 ## **6. Stacking Multiple Encoder Layers**
@@ -295,7 +269,7 @@ Each hi is a vector representing token i, enriched with context from all tokens.
 
 ---
 
-Pretraining tasks including attention (==both based on maximum likelihood==):
+### **Pretraining tasks including attention (==both based on maximum likelihood==):**
 
 (A) Masked Language Modeling (MLM):
 ![[Pasted image 20250106143146.png]]
@@ -304,13 +278,16 @@ Pretraining tasks including attention (==both based on maximum likelihood==):
 ![[Pasted image 20250106143603.png]]
 and y is the label predicted by BERT.
 
-- ==Predicted x_i and y in each task come from minimizing the corresponding likelihood shown above. Then by comparing the outputs to true outputs, attention matrixes get updated.==
+- Predicted x_i and y in each task come from minimizing the corresponding likelihood shown above. Then by comparing the outputs to true outputs, ==attention matrixes get updated.==
   
-- ==**Both probabilities (P) are computed using fully connected Dense layers which take contextualized representations as input.**==
+- **Both probabilities (P) are computed using fully connected Dense layers which take contextualized representations as input.**
 - ![[Pasted image 20250104192923.png]]
   Bert's objective is to minimize both 
 - ![[Pasted image 20250106144816.png]]
-- ![[Pasted image 20250106151959.png]]
+- ### Important 
+  
+  ==Every token including mask, attends to all other tokens. It must be proven that if we got optimized W_q,k,v then representation of mask is computed correctly.==
+  ![[Pasted image 20250106151959.png]]
 - ![[Pasted image 20250106151128.png]]
 ### **Step 2: Attention-Based Sentence Interaction**
 
@@ -327,14 +304,15 @@ and y is the label predicted by BERT.
 
 Without **self-attention**, BERT would treat both sentences independently, failing to model relationships.
 
+- ==MASK token and CLS token are used for MLM and NSP respectively.==
+- CLS represents the relationships between sentences. Then h_CLS is passed through a fully conncted layer and softmax for NSP task answer.
+
 - ![[Pasted image 20250106151258.png]]
 - ![[Pasted image 20250106151323.png]]
 
 Note: 
 
 ![[Pasted image 20250106153908.png]]
-
-![[Pasted image 20250106154050.png]]
 
 -------------
 
