@@ -106,9 +106,10 @@ It deletes negatives while preventing the network to collapse.
 ![[Pasted image 20240827185926.png]]
 It only encloses positives and moments to the target. it is proven that it won't collapse.
 ![[Pasted image 20240827190205.png]]
----------------
 
+---
 Another:
+
 ![[Pasted image 20240827190426.png]]
 ![[Pasted image 20240827190608.png]]
 

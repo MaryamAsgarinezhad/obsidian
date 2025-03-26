@@ -49,7 +49,7 @@ Solve overfitting:
 
 - More training data
 - Simpler model
-- ==Regularization== (different from normalization)
+- ==Regularization== (different from normalization): to improve generalization and solve overfitting
 
 ------------------------------
 
@@ -184,7 +184,8 @@ In neural networks, loss is a function of the output of network. how to calculat
 
 ![[Pasted image 20240808180712.png]]
 
-Back Propagation: Libraries like pytorch get the computational graph and do the automatic differentiation themselves.
+**Back Propagation**: Libraries like pytorch get the computational graph and do the automatic differentiation themselves. 
+
 ![[Pasted image 20240808181215.png]]
 
 This chain multiplication may cause gradient **vanishing** (multiplication of zero or near zero numbers) and gradient **explosion**.
@@ -193,13 +194,13 @@ By using ==ReLU==,  since it has the constant 1 derivation, vanishing will not h
 ----------------------------------------------
 
 How to deal with local mins in GD?
-- by over parametrization (more wights and neurons and layers), we can guarantee that almost every local minimum is near to the actual minimum. This way we have many enough local mins.
+- **by over parametrization (more wights and neurons and layers), we can guarantee that almost every local minimum is near to the actual minimum. This way we have many enough local mins.**
 
 ---------------------------------------------
 
 Instead of computing gradient for all points, do it on a mini batch of data.
 
-- Full-batch gradient descent uses the entire training dataset to compute the gradient of the cost function. This ensures the direction of the steepest descent is the most accurate.
+- Full-batch gradient descent uses the ==entire training dataset== to compute the gradient of the cost function. **This ensures the direction of the steepest descent is the most accurate.**
 - In the case of mini-batch SGD, a small subset (mini-batch) of the training data is used to compute the gradient, balancing between the efficiency of SGD and the accuracy of full-batch GD.
 ![[Pasted image 20240808202739.png]]
 
@@ -214,9 +215,9 @@ utilize the average of previous gradients as the updating value, this can solve 
 This can also help in reducing frequency of loss function. 
 ![[Pasted image 20240808205327.png]]
 
--------------------------------------
+---
+### RMSProp: separate learning rate for each direction
 
-RMSProp: separate learing rate for each direction
 ![[Pasted image 20240808205633.png]]
 
 Combine the two:
@@ -230,7 +231,7 @@ Choosing the learning rate:
 
 -----------------------------  
 
-Regularization: to improve generalization and solve overfiting:
+Regularization: to improve generalization and solve overfitting
 
 ![[Pasted image 20240808213711.png]]
 
@@ -246,7 +247,6 @@ Hoe do decrease the variance?
 ![[Pasted image 20240808215701.png]]
 
 -----------------------------------------
-
 ### Federated Learning
 
 Federated learning is a distributed approach to machine learning where the model is trained across multiple devices or servers holding local data, without sharing the data itself.

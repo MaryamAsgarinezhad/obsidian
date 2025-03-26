@@ -135,6 +135,5 @@ This solution helps a lot with the training process and optimization. Later, thi
 - The point is shallow wieghts are more general and can be assigned to every dataset. Then you train residual weights.
 ![[Pasted image 20240821183915.png]]
 
-
 -----
 

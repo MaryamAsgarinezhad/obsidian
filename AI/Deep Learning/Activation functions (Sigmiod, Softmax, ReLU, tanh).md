@@ -22,7 +22,6 @@ This means:
     
 - If x is negative, the output is 0.
     
-
 #### **Advantages of ReLU**
 
 ✅ **Avoids Vanishing Gradients**: Unlike sigmoid or tanh, ReLU does not squash large values, so gradients do not become too small.  
