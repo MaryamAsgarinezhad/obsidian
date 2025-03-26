@@ -1,6 +1,6 @@
 - feature engineering
 - model selection
-- we want to avoid overfiting and underfitting
+- we want to avoid overfitting and underfitting
 
 We cannot predict a random noise, we have to assume the data has a specific trend.
 
@@ -9,11 +9,11 @@ The inductive bias of a learning algorithm is the ==set of assumptions that the 
 
 -------------------------
 
-Supervised learning: predicting the output based on labled data (regression, classification)
+Supervised learning: predicting the output based on labeld data (regression, classification)
 
-Unsupervised learning: finding certain patterns and hidden features in the data(clustering, dimention reduction)
+Unsupervised learning: finding certain patterns and hidden features in the data(clustering, dimension reduction, data has labels already within it)
 
-Reinforcement learning: learning the next action based on the reward recieved through time.
+Reinforcement learning: learning the next action based on the reward received through time.
 
 - In clustering you have to decide the classes, while in classification, you have to predict the predefined classes.
 
