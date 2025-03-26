@@ -1,3 +1,0 @@
-Preprocessing: Tokenization often involves preprocessing steps such as lowercasing, removing punctuation, handling special characters, and splitting words into subwords or handling out-of-vocabulary (OOV) words. These steps help standardize the input data and improve the model's performance.
-
-Handling Variable-Length Inputs: NLP models like Mistral 7B typically accept fixed-length input sequences. Tokenization allows us to handle variable-length inputs by padding or truncating sequences to a specified length.

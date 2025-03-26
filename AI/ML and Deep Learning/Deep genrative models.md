@@ -62,6 +62,21 @@ Z space attributes:
 - ==**Anomaly Detection**==: VAEs can detect anomalies by comparing the reconstruction error of the input with the error from typical data points.
 - **Data Compression**: VAEs can be used to compress data into a lower-dimensional latent space efficiently.
 
+### Applications of Autoencoders
+
+1. **Dimensionality Reduction**: Similar to PCA, autoencoders can reduce the dimensionality of data, which is useful for visualization (e.g., using the 2D latent space to visualize high-dimensional data).
+    
+2. **Feature Extraction and Learning**: Autoencoders can learn useful features from the data automatically, which can be used for further classification or other machine learning tasks.
+    
+3. **Anomaly Detection**: In scenarios where autoencoders are trained only on normal data, the reconstruction error will be significantly higher for anomalies (outliers), which can be used to ==detect abnormal instances==.
+    
+4. **Data Denoising**: As seen in denoising autoencoders, they are capable of removing noise from data effectively.
+   - ==**Denoising Autoencoder**==: This type is trained to use a corrupted version of the input at the encoder, while still aiming to produce the original, uncorrupted input at the decoder. The idea is to make the learned representations robust to small, random changes in the input.
+    
+5. **Generative Models**: Particularly variational autoencoders, which can ==generate new data points that are similar to the training data.==
+   - **Variational Autoencoder (VAE)**: These are generative models that add a probabilistic twist to autoencoders. Instead of learning a function to describe the hidden layer (the encoding), the encoder in a VAE models the input data as a probability distribution in the latent space, which helps in generating new data points.
+
+
 **Why is VAE not autoregressive?**
 
 A Variational Autoencoder (VAE) is not considered autoregressive because its generation process does not depend on previously generated elements of the output sequence or data. To understand this better, let's delve into what autoregressive models are and how VAEs differ.

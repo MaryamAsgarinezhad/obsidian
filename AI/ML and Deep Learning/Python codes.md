@@ -1,3 +1,132 @@
+
+- Load the dataset using pandas library.
+- By using pandas .describe() function, you can see statistics of each feature and measure if they are in the **same scale** or not, thus if you need normalization or not. Also look for **corelation matrix**.
+  Or check if the dataset is **balanced** or not.
+  ![[Pasted image 20240809220625.png]]
+
+- Do not forget to split the data (test, train, validation) using scikit learn.
+- Also use scikit learn to import several kind of regression models (like linear regression)
+- We can use scikit learns's PCA for dimension reduction of large data inputs. W e do the dimension reduction form 784 to 2 to be able to visualize the clustered data in 2 dims.
+  ![[Pasted image 20240809215204.png]]
+- K-means algorithm also exist in scikit learn library.
+- Scikit learns provides various validation metric calculation, like accuracy, precision, recall, etc and a classification report to report all those metrics.
+
+------------------------------
+
+In PCA, it is important to avoid losing information in the reduced data, by preserving the data points' variance. So we map all point to a plane that data points have the largest variance in that direction.
+
+![[Pasted image 20240809215929.png]]
+
+------------------------------------------
+
+Binary classification using a neural network:
+
+- WE use pytorch library.
+- torch.nn to define the network and torch.optim to minimize the loss.
+- And scikit learn for data creation (make_blobs), etc:
+  ![[Pasted image 20240809222138.png]]
+
+- To use pytorch, **you have to transform your data to tensors** and to use GPUs for computations.
+- Defining a neural network using pytorch:
+  ![[Pasted image 20240809222459.png]]
+  choose loss and optimizer:
+  ![[Pasted image 20240809224032.png]]
+  
+  trainig loop (set the model to train mode for epoch numbers, calculate the loss for each output, derive the loss bt loos.backward and optimize, .zero_grad makes the gradient zero in each step)
+  ![[Pasted image 20240809225416.png]]
+Test step (set the model to evaluation)
+
+--------------------------------------------------
+
+Pytorch:
+
+- Tensor is sth to help in fast matrix operation.
+- .device and .requires grad(enables derivation from that variable and the derivation value then stored in x.grad) for tensors
+- You can also use numpy arrays but they can't be used with GPUs.
+- When we do derivation and polynomials in torch, **it is automatically done with computational graph.**
+  ![[Pasted image 20240809235121.png]]
+
+ - x.grad is cumulative and is added to every time we compute y.backward.
+ - If we want to do some operations that do not need gradient and computational graph, we use "with torch.no_grad": 
+   It is more efficient
+   ![[Pasted image 20240810000617.png]]
+
+- Another way of defining NN:
+  ![[Pasted image 20240810001127.png]]
+-----------
+
+```python
+from sklearn.manifold import TSNE
+
+  
+
+# Sample a subset of the data for t-SNE due to computational constraints
+
+sample_data = df.sample(n=5000, random_state=42)
+
+sample_features = sample_data.drop(columns=['Class'])
+
+sample_labels = sample_data['Class']
+
+  
+
+tsne = TSNE(n_components=2, random_state=42)
+
+tsne_results = tsne.fit_transform(sample_features)
+
+  
+
+plt.figure(figsize=(5, 4))
+
+sns.scatterplot(x=tsne_results[:, 0], y=tsne_results[:, 1], hue=sample_labels, palette='bright')
+
+plt.title('t-SNE Visualization of Transactions')
+
+plt.xlabel('t-SNE Component 1')
+
+plt.ylabel('t-SNE Component 2')
+
+plt.show()
+```
+
+This code is used to **visualize high-dimensional data** (such as transaction data) in a two-dimensional space using t-SNE, a popular technique for visualizing complex data. By reducing the data to two dimensions, you can visually inspect how the data points are grouped or separated, which can provide insights into patterns, clusters, and relationships in the data, especially when the data points are colored by their class labels.
+
+--------------------------------------------
+
+```python
+from sklearn.ensemble import IsolationForest
+
+  
+
+copy_df = df.copy()
+
+copy_df = copy_df.dropna()
+
+  
+
+iso_forest = IsolationForest(contamination=0.01, random_state=42)
+
+outliers = iso_forest.fit_predict(copy_df.drop(columns=['Class']))
+
+  
+
+copy_df['Outlier'] = outliers
+
+  
+
+plt.figure(figsize=(5, 4))
+
+sns.scatterplot(x='V1', y='V2', hue='Outlier', data=copy_df.sample(n=5000, random_state=42), palette='coolwarm')
+
+plt.title('Isolation Forest Outlier Detection')
+
+plt.show()
+```
+
+This code is used to detect and visualize outliers in a dataset using the Isolation Forest algorithm. Outliers are points that differ significantly from the majority of the data and can indicate anomalies, fraudulent transactions, or errors in data collection. The final plot provides a visual representation of how these outliers are distributed in the feature space defined by `V1` and `V2`.
+
+-------------------------------------------
+
 - The benefit of using AutoTokenizer is that it abstracts away the need to know the specific tokenizer class associated with each pre-trained model. Instead, it provides a convenient interface for loading tokenizers in a consistent manner across different models.
 
 - **OpenRouter** is a platform that provides access to various models, including but not limited to GPT models from OpenAI.
@@ -10,32 +139,6 @@
  - **Setting the max_length parameter in the model.generate() method to be equal to the input length**: When the max_length parameter is set to a value that equals the length of the input_ids being passed in, it means there's no room allowed for the model to add any tokens, leading to the model generating nothing.
    
    To solve this issue, you need to ensure that max_length is greater than the length of your input_ids to give space for the model to generate a response. Alternatively, you can use the max_new_tokens parameter instead of max_length to specify how many new tokens you want the model to generate beyond the input length.
-
-- **For Berts**: Make sure that the total length, including both the input and the maximum number of new tokens (max_new_tokens), does not exceed 512. If you're at the limit already with your input, you can't add more tokens without exceeding this boundary.
-  
-  Handling Input Length:
-  Truncate or Segment Inputs: Before tokenizing the inputs, you should ensure they do not exceed 512 tokens. If they do, consider strategies like truncating the input or splitting it into manageable segments.
-
-```python
-result = {}
-print(type(inputs))
-for index, row in enumerate(inputs[20:]):
-    print("salam")
-    prompt = prompt_enhancements.format(order=row['foods'], comment=row['comment'], ingredients=row['materials'])
-    messages = [{"role": "system", "content": f"{system_role}"},
-                {"role": "user", "content": f"{prompt}"}]
-
-    tokenized_inputs = tokenizer(messages, max_length=512, truncation=True, return_tensors="pt")
-
-    # Generate response, make sure to handle sampling and temperature correctly
-    outputs = model.generate(tokenized_inputs.input_ids, max_length=512, temperature=1.0, do_sample=True)
-    text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-
-    # Save the response
-    result[index + 90] = text  # Adjust the index if necessary
-    print(f"{index + 90} Done.")
-
-```
 
 -----------------------------------------
 
@@ -51,16 +154,6 @@ for index, row in enumerate(inputs[20:]):
 
 - **Method Usage**: The `tokenizer.apply_chat_template()` method seems to be a specialized function of the tokenizer, designed to format and preprocess text specifically for dialogue-based models. This might involve applying a template or structure that aligns with how dialogue data is expected to be formatted in these models, such as framing statements and responses in a conversational context.
 
----------------------------------------
-
-**Modularizing a colab noteook** means to create separate scripts (as python classes) for each task to make it able to be imported and used in other scripts.
-
-- ![[Pasted image 20240523153002.png]]
-- ![[Pasted image 20240523153100.png]]
-- ![[Pasted image 20240523153224.png]]
-
-Example usage:
-- ![[Pasted image 20240523153352.png]]
 -------------------------------
 
 The __init__.py file makes directories to be used as libraries.
@@ -142,21 +235,7 @@ print(generated_text)
    
 8. `next_token_logits = outputs.logits[:, -1, :]`: Extracts the logits (raw output scores from the model) of the last token generated. Logits are used to determine the probability of each token being the next appropriate token.
    
-9. `next_token = torch.argmax(next_token_logits, dim=-1).unsqueeze(0)`: **Finds the token with the highest logit** (most likely next token) and reshapes the tensor to maintain the correct dimensions for concatenation.
-
----------------------------------------
-
-### Definition and Role of Tokens
-
-1. **Tokens**:
-    
-    - Tokens are essentially the smallest units into which the text can be divided for processing by a natural language model. In computational linguistics, these can be words, parts of words (like prefixes, stems, suffixes in morphologically rich languages), or even punctuation marks, **depending on how the tokenizer is set up**.
-    - Each token is converted into a numerical format, often called a "token ID," which is used by the model for processing. The tokenizer handles the conversion of raw text into these token IDs and vice versa.
-    
-1. **Token IDs**:
-    
-    - These are integer values that uniquely represent each token as understood by the model. The model operates on these IDs during the prediction or generation process.
-    - In your code, `input_ids` is a tensor of such token IDs, which serves as the initial input for the generation loop.
+9. `next_token = torch.argmax(next_token_logits, dim=-1).unsqueeze(0)`: ==**Finds the token with the highest logit** (most likely next token) and reshapes the tensor to maintain the correct dimensions for concatenation.==
 
 -----------------------------------------------------
 
@@ -168,18 +247,3 @@ print(generated_text)
 2. **Role in the Model**:
     
     - In many neural network applications, especially those involving classification, the logits are passed through a softmax function to convert them into probabilities. The softmax function normalizes the logits in a way that the output values are between 0 and 1 and sum up to 1, making them interpretable as probabilities for each class.
-3. **Usage in the Code**:
-    
-    - In the code snippet you provided, the model predicts the next token in a sequence generation task based on the previously generated tokens. Here's the specific line:
-      ![[Pasted image 20240523170600.png]]
-      
-    - This line extracts the logits for the last token position from the model's outputs. The logits here represent the scores for each possible next token in the vocabulary.
-    - The `next_token_logits` tensor has a dimension where each index corresponds to a potential token ID, and the value at each index is the score indicating how likely the model thinks that token is the correct next token in the sequence.
-      
-4. **Selecting the Next Token**:
-    
-	- The code then uses these logits to determine the most likely next token:
-	  
-	  ![[Pasted image 20240523170642.png]]
-	  
-	- `torch.argmax(next_token_logits, dim=-1)` selects the index (i.e., the token ID) with the highest score in the logits, which is interpreted as the most probable next token to follow the existing sequence of tokens.

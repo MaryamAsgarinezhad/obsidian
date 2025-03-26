@@ -77,3 +77,10 @@ This way, the model generates text autoregressively, predicting one token at a t
 ![[Pasted image 20250324195510.png]]
 
 ![[Pasted image 20250324195532.png]]
+
+decoding of GPT vs Transformer:
+
+![[Pasted image 20240525153646.png]]
+![[Pasted image 20240525153904.png]]
+
+-Supervised or unsupervised training of the decoder depends on the task. For example translation/text generation is well suited with supervised/unsupervised approaches.
