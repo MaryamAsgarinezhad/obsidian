@@ -4,7 +4,8 @@
  ![[Pasted image 20240828111612.png]]
  Example of Unsupervised tasks:
  ![[Pasted image 20240828111701.png]]
---------------------------------
+ 
+---
 
 Generative models are unsupervised. We aim to ==generate data== in these models.
 ![[Pasted image 20240828111841.png]]
@@ -34,7 +35,7 @@ Variational autoencoder (**VAE**):
   
 - How to build a generator so? By variational autoencoders.
   ==It supposes Z has a normal standard distribution (zero mean and 1 variance).==
-  It samples from this distribution and gives it as an inpit to a network to generate.
+  It samples from this distribution and gives it as an input to a network to generate.
   ![[Pasted image 20240828142922.png]]
 
 
@@ -76,18 +77,6 @@ Z space attributes:
 5. **Generative Models**: Particularly variational autoencoders, which can ==generate new data points that are similar to the training data.==
    - **Variational Autoencoder (VAE)**: These are generative models that add a probabilistic twist to autoencoders. Instead of learning a function to describe the hidden layer (the encoding), the encoder in a VAE models the input data as a probability distribution in the latent space, which helps in generating new data points.
 
-
-**Why is VAE not autoregressive?**
-
-A Variational Autoencoder (VAE) is not considered autoregressive because its generation process does not depend on previously generated elements of the output sequence or data. To understand this better, let's delve into what autoregressive models are and how VAEs differ.
-
-### Autoregressive Models
-
-Autoregressive models generate data one element at a time, where each element is conditioned on the previously generated elements. For example, in the context of sequence data like text or time series:
-
-- **Text Generation**: An autoregressive model like GPT generates the next word or token in a sequence based on the previous words or tokens.
-- **Time Series Forecasting**: An autoregressive model predicts the next value in a time series based on prior values.
-
 In these models, the process is sequential: you generate one element, then use that element as input (along with previous elements) to generate the next one. This sequential dependency is the key feature of autoregressive models.
 
 ![[Pasted image 20240828180407.png]]
@@ -97,6 +86,7 @@ In these models, the process is sequential: you generate one element, then use t
 **Generative adversarial networks**
 
 - ==It learns sampling form distribution, instead of learning the distribution itself.==
+
 ![[Pasted image 20240828182453.png]]
 ![[Pasted image 20240828182508.png]]
 ![[Pasted image 20240828182534.png]]
@@ -112,13 +102,13 @@ This adversarial procedure causes the outputs to be real and of a high quality.
 
 Loss function:
 ![[Pasted image 20240828190026.png]]
-- The **discriminator** tries to maximize the probability of correctly classifying real and fake data. The loss function for the discriminator is typically the binary cross-entropy loss. 
+- The **discriminator** tries to maximize the probability of correctly classifying real and fake data. The loss function for the discriminator is typically the binary ==cross-entropy loss==. 
   Here, D(x)is the discriminator's output for a real data sample x, and D(G(z))is its output for a generated sample G(z) where z is the random noise input to the generator.
 - ![[Pasted image 20240828191602.png]]
-- The **generator** tries to minimize the discriminator’s ability to distinguish between real and fake data. This encourages the generator to produce data that the discriminator classifies as real. We continue trainig until we reach a certain precession.
+- The **generator** tries to minimize the discriminator’s ability to distinguish between real and fake data. This encourages the generator to produce data that the discriminator classifies as real. We continue training until we reach a certain precession.
 - ![[Pasted image 20240828191752.png]]
 
-- After training we only use generator, while in VAE after training we only use decoder.
+- **After training we only use generator, while in VAE after training we only use decoder.**
 
 In VAE, dimensions of z were independent. In GAN, sampled data from a noisy distribution are independent:
 ![[Pasted image 20240828192859.png]]
@@ -127,6 +117,8 @@ You can use conditional GAN when you want to generate certain pics: (more to stu
 ![[Pasted image 20240828193011.png]]
 ![[Pasted image 20240828193204.png]]
 GAN needs more epochs to be trained.
+
+![[Pasted image 20250328153411.png]]
 
 -----------------------------------------
 
@@ -138,7 +130,7 @@ Diffusion is easy but denoising is difficult and is done by a neural network. Th
 Forward process is a fixed process.
 ![[Pasted image 20240831120345.png]]
 ![[Pasted image 20240831120413.png]]
-After training the denoiser network, we keep aside the noiser and only use denoiser.
+**After training the denoiser network, we keep aside the noise generator and only use denoiser.**
 
 Forward process: It adds noise the an input, then it becomes noisy!
 **==Noise is a random sample from N(0,1).==**
@@ -146,7 +138,7 @@ Forward process: It adds noise the an input, then it becomes noisy!
 ![[Pasted image 20240831120841.png]]
 
 Reverse process: The goal of this network is to **==estimate q(xi-1|xi)==**
-**So the output of this network must be mean and variance of a gaussian distribution.**
+**So the output of this network must be ==mean and variance of a gaussian distribution.**==
 ![[Pasted image 20240831120915.png]]
 ![[Pasted image 20240831121033.png]]
 ![[Pasted image 20240831124122.png]]

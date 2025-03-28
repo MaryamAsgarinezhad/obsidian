@@ -27,18 +27,18 @@ different kernel, different processing tasks.
 
 -------------------------------------
 ![[Pasted image 20240820182750.png]]
-each layer add a bit of more complexity to the features we can extract.
-The input of the NN will be along vertical matrix from the data. This way we lose some data from the neighborness of points.
+each layer adds a bit of more complexity to the features we can extract.
+The input of the NN will be along vertical matrix from the data. This way we lose some data from the neighbourness of points.
 
 ![[Pasted image 20240820183403.png]]
 
-So weneed the NN to have below features:
+So we need the NN to have below features:
 ![[Pasted image 20240820183701.png]]
 
 **How to create this feature? convolution** 
 instead of applying the MLP on the whole vertical data, apply the same weights on smaller patches.
 ![[Pasted image 20240820183835.png]]
-- So instead of using MLPs, we can aplly certain convolution filters, and **==then the goal is to learn these filters.==** Each neuron becomes a convolution filter
+- So instead of using MLPs, we can apply certain convolution filters, and **==then the goal is to learn these filters.==** Each neuron becomes a convolution filter
 
 ![[Pasted image 20240820184626.png]]
 

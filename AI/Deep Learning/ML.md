@@ -257,3 +257,11 @@ Wrapping up, we can say that distributed learning is about having centralized da
 
 ---
 
+### Loss functions:
+
+Cross-enthropy:
+- Mostly used for discontinuous output
+
+MSE:
+- Mostly used for continuous output
+
