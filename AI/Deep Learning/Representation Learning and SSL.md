@@ -1,8 +1,12 @@
 ![[Pasted image 20240826164347.png]]
-It demonstrates what kind of patterns the model have extracted from the input, which is shown in a layer near to the output. (e.g. a vector of size 128)
+
 ![[Pasted image 20240826164821.png]]
-A good representation learning model must extract the meaning related features no the details.![[Pasted image 20240826165319.png]]
+A good representation learning model must extract the meaning related features not the details.
+
+![[Pasted image 20240826165319.png]]
 ![[Pasted image 20240826165434.png]]
+- **Shortcut-learning happens in supervised models, despite self-supervised representation learning models.**
+
 - Neural networks get good results if trained on a large dataset.
   
 - There are multiple explainability and interpretability methods that demonstrate from what parts of the input, the model knows what to generte as a response. These methods tell us that supervised models are prone to shortcut learning, meaning they can mistakenly pay attention to wrong but common features in a group of inputs to generate a response.
@@ -49,24 +53,25 @@ Pretext task example:
 ![[Pasted image 20240826182900.png]]
 ![[Pasted image 20240827123306.png]]
 ![[Pasted image 20240827123407.png]]
------------------------
+
+---
 
 Contrastive learning:
 ![[Pasted image 20240827123532.png]]
 
-- Representation learning means to find a good embedding for each input. In contrastive learning we aim to enclose the representation of an input to its positive pair and distance it from its negative pair.
+- Representation learning means to find a good embedding for each input. In contrastive learning we aim to enclose the representation of an input to its positive pair and distance it from its negative pair. (See how adversarial is different from contrastive)
 - ![[Pasted image 20240827150555.png]]
 
 
 - Positive pairs are generated using **data augmentation**.
-   Every input except the dataitself is considered negative. What is the metric for similarity here?
+   Every input except the data itself is considered negative. What is the metric for similarity here?
 -  ![[Pasted image 20240827151710.png]]
-- And the loss function NN is (==Every input except the dataitself is considered a negative pair==):
+- And the loss function NN is (==Every input except the data itself is considered a negative pair==):
 - ![[Pasted image 20240827152657.png]]
 - So the loss function is dependent to batch size:
   ![[Pasted image 20240827153325.png]]
 
-A sample model: Its a semi supervised model and supervised training (above contstrative loss function) is applied to **network f (not g)** that is more general with less probability of overfitting to the supervised data. Here f and g extracts a representation.
+A sample model: Its a semi supervised model and **==supervised training==** (above contrastive loss function) is applied to **network f (not g)** that is more general with less probability of overfitting to the supervised data. Here f and g extracts a representation.
 ![[Pasted image 20240827164320.png]]
 ![[Pasted image 20240827165325.png]]
 ![[Pasted image 20240827165349.png]]
@@ -113,5 +118,7 @@ Another:
 ![[Pasted image 20240827190426.png]]
 ![[Pasted image 20240827190608.png]]
 
+Tip:
+- Generative models are tied to representation learning models.
 
 What is the value of target function?
