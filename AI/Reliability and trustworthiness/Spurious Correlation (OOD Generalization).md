@@ -22,7 +22,8 @@ T:
 
 ![[Pasted image 20241213220742.png]]
 
----------------------------
+---
+
 ![[Pasted image 20241213221601.png]]
 
 PMI: Label predictability based on core feature. This term is fixed and does not cause distribution shift. (bacause Xcore features are fixed)
@@ -79,7 +80,7 @@ Balanced 50%: Half of data has correlated spurious feature with label, and half 
 
 ------------------
 
-So, what is we don't know about spurious features and minority groups?
+So, what if we don't know about spurious features and minority groups?
 
 Upweight underperforming samples:
 ![[Pasted image 20241213231706.png]]
@@ -98,7 +99,6 @@ When is OOD- generalization possible?
 
 **definitions:**
 ![[Pasted image 20241213232808.png]]
-
 
 Our **extracted** features must be **epsilon-invariant** and **informative**.
 

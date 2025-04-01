@@ -25,7 +25,7 @@ Since sometimes we get training dataset from an unreliable source, we may be pro
 
 ![[Pasted image 20240909112001.png]]
 
-We aim to keep test accuracy unchanged (for not being easy to mitigate) while having the ==controler== for targeted misclassification (described above).
+We aim to keep test accuracy unchanged (for not being easy to mitigate) while having the ==control== for targeted misclassification (described above).
 
 ![[Pasted image 20240909112705.png]]
 ![[Pasted image 20240909112746.png]]
@@ -50,7 +50,7 @@ Flaw of this method: Creator of the model can understand backdoored data by chec
 -  We make adversarial inputs (by ==GANs==) that are hard to understand for the model, so it has to learn simpler patterns like backdoor.
 - ![[Pasted image 20240909132213.png]]
 - ![[Pasted image 20240909132217.png]]
-- Te more perturbation the input has, the more it learns backdoors and the more accuracy we will have. 
+- The more perturbation the input has, the more it learns backdoors and the more accuracy we will have. 
 - Backdoors should not be human perceptible.
 
 -----------------------------
