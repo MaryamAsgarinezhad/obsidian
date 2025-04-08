@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "9a30d84f17584bd6",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e1106888f83fc34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1db85dde26651ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PredictiveRollingBear/Remaining_paper/Dataset.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dataset"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fdd370ddea312c4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e7faa64ab8f012c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12c7f4ad3b3586dd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c8c58f58a9c3630b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "fc54565a18744dc5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "36927e90eea73a37",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e1cd56066d379f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88d5edc6a4967cbc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "PredictiveRollingBear/Remaining_paper/Dataset.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Dataset"
+            }
+          },
+          {
+            "id": "48e05ef94ba4dc5a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "PredictiveRollingBear/Remaining_paper/Dataset.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Dataset"
+            }
+          },
+          {
+            "id": "36e50a098e5089c9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cd3143b075c40e38",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "PredictiveRollingBear/Remaining_paper/Dataset.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Dataset"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f1db85dde26651ba",
+  "lastOpenFiles": [
+    "PredictiveRollingBear/Literature review/A new intelligent bearing fault diagnosis model based on triplet network and SVM.md",
+    "PredictiveRollingBear/Literature review/Fault diagnosis method of rolling bearing based on SSA-VMD and RCMDE.md",
+    "Local-LLM/Live voice-bot MVP/OpenAI function calling (tools).md",
+    "Local-LLM/Live voice-bot MVP/Realtime API with WebRTC.md",
+    "Local-LLM/Live voice-bot MVP/Realtime API with WebSockets.md",
+    "Local-LLM/Live voice-bot MVP/Function call on realtime API (websocket).md",
+    "Interpretability/TF-IDF.md",
+    "Interpretability/Energy function.md",
+    "Interpretability/BERTopic.md",
+    "Course and work notes/Trade/Cryptocurrency.md",
+    "Course and work notes/DevOps/Bash Script.md",
+    "Course and work notes/DevOps/Cassandra Client.md",
+    "Course and work notes/DevOps/CI-CD Pipeline.md",
+    "Course and work notes/DevOps/clickhouse.md",
+    "Course and work notes/DevOps/Infrastructure.md",
+    "Course and work notes/AI/LLM/Session2- Transformers (Encoder model).md",
+    "Course and work notes/AI/LLM/Session3- Transformer encoder-decoder.md",
+    "Course and work notes/AI/LLM/Session4 - Decoder-only transformer.md"
+  ]
+}
