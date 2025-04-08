@@ -1,0 +1,308 @@
+{
+  "main": {
+    "id": "4967d2c0f71273f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5ee0423e083544c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5da89121233f66d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MLOps/Triton serving codes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Triton serving codes"
+            }
+          },
+          {
+            "id": "4d9d4467dc68f468",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MLOps/Triton serving codes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Triton serving codes"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5044b9019c4e5972",
+    "type": "split",
+    "children": [
+      {
+        "id": "f7b26a06d35a404b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd69356c00beccd5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2df9153840ebfcee",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6167924f2111d573",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 483.5
+  },
+  "right": {
+    "id": "6d1b80c64de4353e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3491323a131a7ffe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23e5ba45be59944a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DevOps/ASR.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for ASR"
+            }
+          },
+          {
+            "id": "8efa47513b8136ae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DevOps/ASR.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from ASR"
+            }
+          },
+          {
+            "id": "cf793a0d48037222",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ba379e657e0c76fb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DevOps/Network.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Network"
+            }
+          },
+          {
+            "id": "e40305f8dce99f69",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "95de7eb8e967c0ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30461cdd1b4cbf67",
+            "type": "leaf",
+            "state": {
+              "type": "ob_comments",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ac1c5681e7794165",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "542d484753781f0d",
+            "type": "leaf",
+            "state": {
+              "type": "ob_comments",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c27c06c013469db2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23613ff02da0b3d8",
+            "type": "leaf",
+            "state": {
+              "type": "ob_comments",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a72aeb0a68567c1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "720a8c874e733fea",
+            "type": "leaf",
+            "state": {
+              "type": "ob_comments",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-comments:Show Comments Panel": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "4d9d4467dc68f468",
+  "lastOpenFiles": [
+    "Local-LLM/Pasted image 20250310133804.png",
+    "Local-LLM/Pasted image 20250310155505.png",
+    "Local-LLM/Pasted image 20250303161423.png",
+    "Local-LLM/Pasted image 20250303161345.png",
+    "Local-LLM/Live voice-bot MVP/Function call on realtime API (websocket).md",
+    "Local-LLM/Live voice-bot MVP/Realtime API with WebSockets.md",
+    "Local-LLM/Live voice-bot MVP/API.md",
+    "Local-LLM/Live voice-bot MVP/Realtime API with WebRTC.md",
+    "Local-LLM/Live voice-bot MVP/OpenAI function calling (tools).md",
+    "Local-LLM/Live voice-bot MVP",
+    "Local-LLM",
+    "MLOps/Serving (llamacpp).md",
+    "MLOps/Ray clusters.md",
+    "MLOps/Triton serving codes.md",
+    "Pasted image 20240426134413.png",
+    "MLOps/Object Storage.md",
+    "MLOps/Ray.md",
+    "MLOps/Triton (tensorflow backend).md",
+    "AI/LLM/Hugging Face pipeline.md",
+    "AI/Reliability and trustworthiness/Poisoning.md",
+    "AI/Reliability and trustworthiness/Compositional generalization (and reasoning).md",
+    "AI/Reliability and trustworthiness/Adversarial attacks, robustness improvement.md",
+    "AI/Reliability and trustworthiness/Spurious Correlation (OOD Generalization).md",
+    "AI/Deep Learning/Autoencoders.md",
+    "AI/Deep Learning/ML libraries, Computational graph.md",
+    "AI/Deep Learning/Representation Learning and SSL.md",
+    "AI/Deep Learning/Activation functions (Sigmiod, Softmax, ReLU, tanh).md",
+    "AI/Deep Learning/ML.md",
+    "AI/Deep Learning/Generative models.md",
+    "AI/Deep Learning/CNNs.md",
+    "AI/LLM/Session 1.md",
+    "AI/LLM/Session4 - Decoder-only transformer.md",
+    "Pasted image 20250309174829.png",
+    "Chat history llm",
+    "Pasted image 20250207140440.png",
+    "Pasted image 20250207140440 - Copy.png",
+    "Pasted image 20250207140104.png",
+    "Pasted image 20250207140055.png",
+    "Pasted image 20250207140018.png",
+    "Logic and Set Theory",
+    "Operating systems",
+    "LLM",
+    "Reliability and trustworthiness",
+    "ML and Deep Learning",
+    "Excalidraw",
+    "MLOps"
+  ]
+}
