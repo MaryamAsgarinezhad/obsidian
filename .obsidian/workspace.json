@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PredictiveRollingBear/Remaining_paper/Dataset.md",
+                "file": "LLM Interpretability with energy networks/SPEN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dataset"
+              "title": "SPEN"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "36927e90eea73a37",
@@ -170,6 +171,18 @@
   },
   "active": "f1db85dde26651ba",
   "lastOpenFiles": [
+    "Pasted image 20250410211255.png",
+    "Pasted image 20250410211225.png",
+    "Pasted image 20250410211210.png",
+    "Pasted image 20250410195620.png",
+    "Pasted image 20250410194100.png",
+    "Pasted image 20250410193210.png",
+    "Pasted image 20250410192633.png",
+    "Pasted image 20250410192606.png",
+    "Pasted image 20250410185118.png",
+    "Pasted image 20250410183340.png",
+    "Pasted image 20250410182525.png",
+    "LLM Interpretability with energy networks/SPEN.md",
     "PredictiveRollingBear/Literature review/A new intelligent bearing fault diagnosis model based on triplet network and SVM.md",
     "PredictiveRollingBear/Literature review/Fault diagnosis method of rolling bearing based on SSA-VMD and RCMDE.md",
     "Local-LLM/Live voice-bot MVP/OpenAI function calling (tools).md",
