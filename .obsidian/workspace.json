@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Course and work notes/MLOps/Ray.md",
+                "file": "PredictiveRollingBearing/RUL_Estimation/Notebook explanation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ray"
+              "title": "Notebook explanation"
+            }
+          },
+          {
+            "id": "acfe3382d624e192",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ipynb file"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "36927e90eea73a37",
@@ -168,22 +184,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f1db85dde26651ba",
+  "active": "acfe3382d624e192",
   "lastOpenFiles": [
+    "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
+    "Local-LLM/BERT Fine-Tuning Sentence Classification",
+    "PredictiveRollingBearing/RUL_Estimation/Notebook explanation.md",
+    "Pasted image 20250412155035.png",
+    "PredictiveRollingBearing/Codes/TrainDataset Class.md",
+    "PredictiveRollingBearing/RUL_Estimation",
+    "PredictiveRollingBearing/Codes/Resnet Class.md",
+    "PredictiveRollingBearing/Codes/PINN.md",
+    "PredictiveRollingBearing/Codes/NN Classes.md",
+    "PredictiveRollingBearing/Codes/Data preparation.md",
+    "LLM Interpretability with energy networks/SPEN.md",
+    "LLM Interpretability with energy networks/Pasted image 20250410195620.png",
+    "LLM Interpretability with energy networks/Pasted image 20250410192633.png",
+    "LLM Interpretability with energy networks/Pasted image 20250410183340.png",
+    "Course and work notes/MLOps/Ray.md",
     "LLM Interpretability with energy networks/Pasted image 20250410211255.png",
     "LLM Interpretability with energy networks/Pasted image 20250410211225.png",
     "LLM Interpretability with energy networks/Pasted image 20250410211210.png",
-    "LLM Interpretability with energy networks/Pasted image 20250410195620.png",
     "LLM Interpretability with energy networks/Pasted image 20250410194100.png",
     "LLM Interpretability with energy networks/Pasted image 20250410193210.png",
-    "LLM Interpretability with energy networks/Pasted image 20250410192633.png",
     "LLM Interpretability with energy networks/Pasted image 20250410192606.png",
-    "LLM Interpretability with energy networks/Pasted image 20250410185118.png",
-    "LLM Interpretability with energy networks/Pasted image 20250410183340.png",
-    "LLM Interpretability with energy networks/Pasted image 20250410182525.png",
-    "LLM Interpretability with energy networks/SPEN.md",
     "Course and work notes/MLOps/Ray clusters.md",
-    "Course and work notes/MLOps/Ray.md",
     "Course and work notes/MLOps/Serving (llamacpp).md",
     "PredictiveRollingBear/Literature review/A new intelligent bearing fault diagnosis model based on triplet network and SVM.md",
     "PredictiveRollingBear/Literature review/Fault diagnosis method of rolling bearing based on SSA-VMD and RCMDE.md",
@@ -199,9 +223,6 @@
     "Course and work notes/DevOps/Cassandra Client.md",
     "Course and work notes/DevOps/CI-CD Pipeline.md",
     "Course and work notes/DevOps/clickhouse.md",
-    "Course and work notes/DevOps/Infrastructure.md",
-    "Course and work notes/AI/LLM/Session2- Transformers (Encoder model).md",
-    "Course and work notes/AI/LLM/Session3- Transformer encoder-decoder.md",
-    "Course and work notes/AI/LLM/Session4 - Decoder-only transformer.md"
+    "Course and work notes/DevOps/Infrastructure.md"
   ]
 }
