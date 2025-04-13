@@ -216,7 +216,345 @@ validation_sampler = SequentialSampler(validation_data)
 validation_dataloader = DataLoader(validation_data, sampler=validation_sampler, batch_size=batch_size)
 ```
 
- - Create an iterator of our data with torch **DataLoader**. This helps save on memory during training because, unlike a for loop, with **an iterator the entire dataset does not need to be loaded into memory**
+ - Create an iterator of our data with torch **DataLoader**. This helps save on memory during training because, unlike a for loop, with **an iterator the entire dataset does not need to be loaded into memory**.
 
 ---
 
+## Train Model
+
+
+Now that our input data is properly formatted, it's time to fine tune the BERT model.
+
+For this task, we first want to modify the pre-trained BERT model to give outputs for classification, and then we want to continue training the model on our dataset until that the entire model, end-to-end, is well-suited for our task. Thankfully, the huggingface pytorch implementation includes a set of interfaces designed for a variety of NLP tasks. Though these interfaces are all built on top of a trained BERT model, each has different top layers and output types designed to accomodate their specific NLP task.
+
+We'll load [BertForSequenceClassification](https://github.com/huggingface/pytorch-pretrained-BERT/blob/master/pytorch_pretrained_bert/modeling.py#L1129). This is the normal BERT model with an added single linear layer on top for classification that we will use as a sentence classifier. **As we feed input data, the entire pre-trained BERT model and the additional untrained classification layer is trained on our specific task.**
+
+### Structure of Fine-Tuning Model
+
+As we've showed beforehand, the first token of every sequence is the special classification token ([CLS]). Unlike the hidden state vector corresponding to a normal word token, the hidden state corresponding to this special token is designated by the authors of BERT **as an aggregate representation of the whole sentence used for classification tasks**. As such, when we feed in an input sentence to our model during training, the output is the length 768 hidden state vector **corresponding to this token**. The additional layer that we've added on top consists of untrained linear neurons of size [hidden_state, number_of_labels], so ==**[768,2]**,== meaning that the output of BERT plus our classification layer is a vector of two numbers representing the "score" for "grammatical/non-grammatical" that are then fed into cross-entropy loss.
+
+### The Fine-Tuning Process
+
+Because the pre-trained BERT layers already encode a lot of information about the language, training the classifier is relatively inexpensive. Rather than training every layer in a large model from scratch, it's as if we have already trained the bottom layers 95% of where they need to be, and only really need to train the top layer, with a bit of tweaking going on in the lower levels to accomodate our task.
+
+Sometimes practicioners will opt to **"freeze" certain layers when fine-tuning, or to apply different learning rates, apply diminishing learning rates, etc**. all in an effort to *preserve the good quality weights in the network and speed up training* (often considerably). In fact, recent research on BERT specifically has demonstrated that freezing the majority of the weights results in only minimal accuracy declines, but there are exceptions and broader rules of transfer learning that should also be considered. For example, *if your task and fine-tuning dataset is very different from the dataset used to train the transfer learning model, freezing the weights may not be a good idea.* 
+
+OK, let's load BERT! There are a few different pre-trained BERT models available. "bert-base-uncased" means the version that has only lowercase letters ("uncased") and is the smaller version of the two ("base" vs "large").
+
+```python
+# Load BertForSequenceClassification, the pretrained BERT model with a single linear classification layer on top.
+model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
+
+model.cuda()
+```
+
+Now that we have our model loaded we need to grab the training hyperparameters from within the stored model.
+
+For the purposes of fine-tuning, the authors recommend the following hyperparameter ranges:
+
+- Batch size: 16, 32
+- Learning rate (Adam): 5e-5, 3e-5, 2e-5
+- Number of epochs: 2, 3, 4
+
+```python
+param_optimizer = list(model.named_parameters())
+
+no_decay = ['bias', 'gamma', 'beta']
+
+optimizer_grouped_parameters = [
+
+{'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)],
+
+'weight_decay_rate': 0.01},
+
+{'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)],
+
+'weight_decay_rate': 0.0}
+
+]
+```
+![[Pasted image 20250413164736.png]]
+![[Pasted image 20250413172522.png]]
+
+- `model.named_parameters()` retrieves all the model parameters along with their names.
+    
+- `param_optimizer` is a list of `(name, parameter)` tuples.
+    
+- `no_decay` is a list of parameter name substrings that **should not** have weight decay applied (commonly `bias`, `gamma`, and `beta`).
+
+```python
+# This variable contains all of the hyperparemeter information our training loop needs
+
+optimizer = BertAdam(optimizer_grouped_parameters,
+
+lr=2e-5,
+
+warmup=.1)
+```
+
+Below is our training loop. There's a lot going on, but fundamentally for each pass in our loop we have a trianing phase and a validation phase. At each pass we need to:
+
+Training loop:
+
+- Tell the model to compute gradients by setting the model in train mode
+- Unpack our data inputs and labels
+- Load data onto the GPU for acceleration
+- Clear out the gradients calculated in the previous pass. **In pytorch the gradients accumulate by default (useful for things like RNNs)** unless you explicitly clear them out
+- Forward pass (feed input data through the network)
+- Backward pass (backpropagation)
+- Tell the network to update parameters with optimizer.step()
+- Track variables for monitoring progress
+
+Evalution loop:
+
+- Tell the model not to compute gradients by setting the model in evaluation mode
+- Unpack our data inputs and labels
+- Load data onto the GPU for acceleration
+- Forward pass (feed input data through the network)
+- Compute loss on our validation data and track variables for monitoring progress
+
+So please read carefully through the comments to get an understanding of what's happening. If you're unfamiliar with pytorch a quick look at some of their [beginner tutorials](https://www.google.com/url?q=https%3A%2F%2Fpytorch.org%2Ftutorials%2Fbeginner%2Fblitz%2Fcifar10_tutorial.html%23sphx-glr-beginner-blitz-cifar10-tutorial-py) will help show you that training loops really involve only a few simple steps; the rest is usually just decoration and logging.
+
+```python
+# Function to calculate the accuracy of our predictions vs labels
+def flat_accuracy(preds, labels):
+
+pred_flat = np.argmax(preds, axis=1).flatten()
+
+labels_flat = labels.flatten()
+
+return np.sum(pred_flat == labels_flat) / len(labels_flat)
+```
+
+```python
+# Store our loss and accuracy for plotting
+train_loss_set = []
+  
+# Number of training epochs (authors recommend between 2 and 4)
+epochs = 4
+
+# trange is a tqdm wrapper around the normal python range
+for _ in trange(epochs, desc="Epoch"):
+
+# Training
+# Set our model to training mode (as opposed to evaluation mode)
+
+model.train()
+
+# Tracking variables
+
+tr_loss = 0
+
+nb_tr_examples, nb_tr_steps = 0, 0
+
+# Train the data for one epoch
+
+for step, batch in enumerate(train_dataloader):
+
+# Add batch to GPU
+
+batch = tuple(t.to(device) for t in batch)
+
+# Unpack the inputs from our dataloader
+
+b_input_ids, b_input_mask, b_labels = batch
+
+# Clear out the gradients (by default they accumulate)
+
+optimizer.zero_grad()
+
+# Forward pass
+
+loss = model(b_input_ids, token_type_ids=None, attention_mask=b_input_mask, labels=b_labels)
+
+train_loss_set.append(loss.item())
+
+# Backward pass
+
+loss.backward()
+
+# Update parameters and take a step using the computed gradient
+
+optimizer.step()
+
+# Update tracking variables
+
+tr_loss += loss.item()
+
+nb_tr_examples += b_input_ids.size(0)
+
+nb_tr_steps += 1
+
+print("Train loss: {}".format(tr_loss/nb_tr_steps))
+
+# Validation
+
+# Put model in evaluation mode to evaluate loss on the validation set
+model.eval()
+# Tracking variables
+
+eval_loss, eval_accuracy = 0, 0
+
+nb_eval_steps, nb_eval_examples = 0, 0
+# Evaluate data for one epoch
+
+for batch in validation_dataloader:
+
+# Add batch to GPU
+
+batch = tuple(t.to(device) for t in batch)
+
+# Unpack the inputs from our dataloader
+
+b_input_ids, b_input_mask, b_labels = batch
+
+# Telling the model not to compute or store gradients, saving memory and speeding up validation
+
+with torch.no_grad():
+
+# Forward pass, calculate logit predictions
+
+logits = model(b_input_ids, token_type_ids=None, attention_mask=b_input_mask)
+
+# Move logits and labels to CPU
+
+logits = logits.detach().cpu().numpy()
+
+label_ids = b_labels.to('cpu').numpy()
+
+tmp_eval_accuracy = flat_accuracy(logits, label_ids)
+
+eval_accuracy += tmp_eval_accuracy
+
+nb_eval_steps += 1
+
+print("Validation Accuracy: {}".format(eval_accuracy/nb_eval_steps))
+```
+
+- ##### In train mode, model output is loss formula (to be backpropagated), but in eval mode model output is logis.
+
+## Training Evaluation
+
+Let's take a look at our training loss over all batches:
+```python
+plt.figure(figsize=(15,8))
+
+plt.title("Training loss")
+
+plt.xlabel("Batch")
+
+plt.ylabel("Loss")
+
+plt.plot(train_loss_set)
+
+plt.show()
+```
+
+## Predict and Evaluate on Holdout Set
+
+Now we'll load the holdout dataset and prepare inputs just as we did with the training set. Then we'll evaluate predictions using [Matthew's correlation coefficient](https://www.google.com/url?q=https%3A%2F%2Fscikit-learn.org%2Fstable%2Fmodules%2Fgenerated%2Fsklearn.metrics.matthews_corrcoef.html) because this is the metric used by the wider NLP community to evaluate performance on CoLA. With this metric, +1 is the best score, and -1 is the worst score. This way, we can see how well we perform against the state of the art models for this specific task.
+
+```python
+# Upload the test file from your local drive
+from google.colab import files
+uploaded = files.upload()
+```
+
+```python
+df = pd.read_csv("out_of_domain_dev.tsv", delimiter='\t', header=None, names=['sentence_source', 'label', 'label_notes', 'sentence'])
+
+# Create sentence and label lists
+sentences = df.sentence.values
+
+
+# We need to add special tokens at the beginning and end of each sentence for BERT to work properly
+sentences = ["[CLS] " + sentence + " [SEP]" for sentence in sentences]
+labels = df.label.values
+tokenized_texts = [tokenizer.tokenize(sent) for sent in sentences]
+MAX_LEN = 128
+
+
+# Use the BERT tokenizer to convert the tokens to their index numbers in the BERT vocabulary
+input_ids = [tokenizer.convert_tokens_to_ids(x) for x in tokenized_texts]
+
+# Pad our input tokens
+input_ids = pad_sequences(input_ids, maxlen=MAX_LEN, dtype="long", truncating="post", padding="post")
+
+# Create attention masks
+attention_masks = []
+
+  
+
+# Create a mask of 1s for each token followed by 0s for padding
+for seq in input_ids:
+seq_mask = [float(i>0) for i in seq]
+attention_masks.append(seq_mask)
+prediction_inputs = torch.tensor(input_ids)
+
+prediction_masks = torch.tensor(attention_masks)
+
+prediction_labels = torch.tensor(labels)
+
+batch_size = 32
+  
+
+prediction_data = TensorDataset(prediction_inputs, prediction_masks, prediction_labels)
+
+prediction_sampler = SequentialSampler(prediction_data)
+
+prediction_dataloader = DataLoader(prediction_data, sampler=prediction_sampler, batch_size=batch_size)
+```
+
+```python
+# Prediction on test set
+
+# Put model in evaluation mode
+model.eval()
+
+# Tracking variables
+predictions , true_labels = [], []
+
+
+# Predict
+for batch in prediction_dataloader:
+
+# Add batch to GPU
+batch = tuple(t.to(device) for t in batch)
+
+# Unpack the inputs from our dataloader
+b_input_ids, b_input_mask, b_labels = batch
+
+# Telling the model not to compute or store gradients, saving memory and speeding up prediction
+with torch.no_grad():
+
+# Forward pass, calculate logit predictions
+logits = model(b_input_ids, token_type_ids=None, attention_mask=b_input_mask)
+
+  
+
+# Move logits and labels to CPU
+logits = logits.detach().cpu().numpy()
+
+label_ids = b_labels.to('cpu').numpy()
+
+# Store predictions and true labels
+predictions.append(logits)
+
+true_labels.append(label_ids)
+```
+
+```python
+# Import and evaluate each test batch using Matthew's correlation coefficient
+from sklearn.metrics import matthews_corrcoef
+
+matthews_set = []
+
+for i in range(len(true_labels)):
+	matthews = matthews_corrcoef(true_labels[i],
+	        np.argmax(predictions[i], axis=1).flatten())
+	matthews_set.append(matthews)
+```
+
+![[Pasted image 20250413182252.png]]
+
+Write important tips on a piece of paper and add it here.
