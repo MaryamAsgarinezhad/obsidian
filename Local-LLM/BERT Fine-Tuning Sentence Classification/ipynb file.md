@@ -14,7 +14,6 @@ Then run the following cell to confirm that the GPU is detected.
 ```python
 import tensorflow as tf
 
-
 device_name = tf.test.gpu_device_name()
 
 if device_name != '/device:GPU:0':
@@ -557,4 +556,55 @@ for i in range(len(true_labels)):
 
 ![[Pasted image 20250413182252.png]]
 
-Write important tips on a piece of paper and add it here.
+---
+
+Both **LoRA** (Low-Rank Adaptation) and **quantization** are techniques used to make **large language models (LLMs)** more efficient, but they address **different problems** in the model lifecycle:
+
+### **LoRA (Low-Rank Adaptation)** – _Efficient fine-tuning_
+
+- **What it is**: A technique to fine-tune large models with fewer trainable parameters by inserting low-rank matrices into specific parts of the model (usually attention layers).
+    
+- **Goal**: Efficient **adaptation** of a pre-trained model to a new task/domain without updating the entire model.
+    
+- **How it works**:
+    
+    - Instead of updating the full weight matrix W, LoRA keeps W frozen and adds a trainable component:  
+        ![[Pasted image 20250414134333.png]]
+    - These A and B matrices (the "low-rank" part) are the only ones trained.
+        
+- **Advantages**:
+    
+    - Saves memory and compute during fine-tuning.
+        
+    - Easier to share adaptations (just the LoRA weights).
+        
+    - Works well with models like LLaMA, GPT, BERT, etc.
+
+### **Quantization** – _Efficient inference_
+
+- **What it is**: A method to reduce the **precision** of the model’s weights and activations (e.g., ==**from 32-bit floats to 8-bit integers**==).
+    
+- **Goal**: Reduce **memory usage** and **inference latency**.
+    
+- **Types**:
+    
+    - **Post-training quantization (PTQ)**: Quantize a pre-trained model without re-training. (You take a **fully trained model** and compress it **after** training — by converting its weights and/or activations to lower precision (e.g., from 32-bit floats to 8-bit integers))
+        
+    - **Quantization-aware training (QAT)**: Train the model with quantization in mind for better performance. While training, the model behaves _as if_ it’s already using quantized weights and activations. This way, it gets used to those constraints and performs better when actually quantized.
+        
+- **Common bitwidths**: FP16, INT8, even INT4 (as in QLoRA!).
+    
+- **Advantages**:
+    
+    - Smaller model size (can fit on lower-end GPUs or even CPUs).
+        
+    - Faster inference with little to moderate drop in accuracy (if done right).
+
+| Feature                | LoRA                               | Quantization                           |
+| ---------------------- | ---------------------------------- | -------------------------------------- |
+| Purpose                | Fine-tuning                        | Inference optimization                 |
+| When applied           | During or before fine-tuning       | After or during training               |
+| Affects model weights? | Adds small trainable layers        | Compresses existing weights            |
+| Training speed         | Faster than full fine-tuning       | Not directly relevant (inference-only) |
+| Inference speed        | Slightly slower (adds computation) | Much faster (less compute per op)      |
+| Model size             | Slight increase (due to adapters)  | Significant reduction                  |
