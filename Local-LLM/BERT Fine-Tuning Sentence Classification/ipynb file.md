@@ -1,3 +1,4 @@
+**How is fine tunning possible**? Deep networks learn features hierarchically, then lower layers could be used to extract simple features.
 
 The authors recommend only 2-4 epochs of training for fine-tuning BERT on a specific NLP task (compared to the hundreds of GPU hours needed to train the original BERT model or a LSTM from scratch!).
 
@@ -228,7 +229,7 @@ For this task, we first want to modify the pre-trained BERT model to give output
 
 We'll load [BertForSequenceClassification](https://github.com/huggingface/pytorch-pretrained-BERT/blob/master/pytorch_pretrained_bert/modeling.py#L1129). This is the normal BERT model with an added single linear layer on top for classification that we will use as a sentence classifier. **As we feed input data, the entire pre-trained BERT model and the additional untrained classification layer is trained on our specific task.**
 
-### Structure of Fine-Tuning Model
+### ==Structure of Fine-Tuning Model==
 
 As we've showed beforehand, the first token of every sequence is the special classification token ([CLS]). Unlike the hidden state vector corresponding to a normal word token, the hidden state corresponding to this special token is designated by the authors of BERT **as an aggregate representation of the whole sentence used for classification tasks**. As such, when we feed in an input sentence to our model during training, the output is the length 768 hidden state vector **corresponding to this token**. The additional layer that we've added on top consists of untrained linear neurons of size [hidden_state, number_of_labels], so ==**[768,2]**,== meaning that the output of BERT plus our classification layer is a vector of two numbers representing the "score" for "grammatical/non-grammatical" that are then fed into cross-entropy loss.
 
@@ -430,7 +431,7 @@ nb_eval_steps += 1
 print("Validation Accuracy: {}".format(eval_accuracy/nb_eval_steps))
 ```
 
-- ##### In train mode, model output is loss formula (to be backpropagated), but in eval mode model output is logis.
+- ##### In train mode, model output is loss formula (to be backpropagated), but in eval mode model output is logits.
 
 ## Training Evaluation
 

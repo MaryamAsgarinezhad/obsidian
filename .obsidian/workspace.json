@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Course and work notes/AI/Deep Learning/Python codes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Python codes"
+            }
+          },
+          {
+            "id": "c34364bdf4a85a96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
                 "mode": "source",
                 "source": false
@@ -170,6 +184,9 @@
   },
   "active": "489cc213f8c0d309",
   "lastOpenFiles": [
+    "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
+    "Course and work notes/AI/Deep Learning/Python codes.md",
+    "Course and work notes/AI/Deep Learning/ML libraries, Computational graph.md",
     "Local-LLM/Pasted image 20250414134333.png",
     "Pasted image 20250414134333.png",
     "Local-LLM/Pasted image 20250413182252.png",
@@ -179,7 +196,6 @@
     "Pasted image 20250413182252.png",
     "Pasted image 20250413172522.png",
     "Pasted image 20250413164736.png",
-    "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
     "LLM Interpretability with energy networks/SOInter.md",
     "PredictiveRollingBearing/RUL_Estimation/Notebook explanation.md",
     "Local-LLM/BERT Fine-Tuning Sentence Classification",
@@ -191,7 +207,6 @@
     "PredictiveRollingBearing/Codes/NN Classes.md",
     "PredictiveRollingBearing/Codes/Data preparation.md",
     "LLM Interpretability with energy networks/SPEN.md",
-    "LLM Interpretability with energy networks/Pasted image 20250410195620.png",
     "Course and work notes/MLOps/Ray.md",
     "Course and work notes/MLOps/Ray clusters.md",
     "Course and work notes/MLOps/Serving (llamacpp).md",
@@ -206,7 +221,6 @@
     "Interpretability/BERTopic.md",
     "Course and work notes/Trade/Cryptocurrency.md",
     "Course and work notes/DevOps/Bash Script.md",
-    "Course and work notes/DevOps/Cassandra Client.md",
-    "Course and work notes/DevOps/CI-CD Pipeline.md"
+    "Course and work notes/DevOps/Cassandra Client.md"
   ]
 }

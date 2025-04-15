@@ -104,3 +104,80 @@ with tf.Session() as sess:
 - **Broad Functionality**: Beyond basic tensor operations like addition, multiplication, and scaling, tensor libraries often include a wide range of mathematical functions, including linear algebra operations, statistical functions, and transformations. This makes them versatile tools for various scientific and engineering applications.
 
 ---
+
+The difference between **Torch** and **PyTorch** mainly comes down to **language, origin, and ecosystem**. Here's a quick breakdown:
+
+### Torch
+
+- **Language:** Based on **Lua**, a lightweight scripting language.
+    
+- **Developed by:** The **Facebook AI Research (FAIR)** lab originally supported it.
+    
+- **Released:** Early 2010s.
+    
+- **Usage:** Popular for deep learning research before 2016, especially among robotics and vision researchers.
+    
+- **Status:** Largely **deprecated** now in favor of PyTorch.
+    
+
+---
+
+### PyTorch
+
+- **Language:** Based on **Python** (hence the "Py").
+    
+- **Developed by:** Also by **Facebook AI Research (FAIR)**, released in **2016**.
+    
+- **Usage:** One of the most widely used deep learning frameworks today.
+    
+- **Features:**
+    
+    - Dynamic computation graph (eager execution, easy debugging).
+        
+    - Strong integration with Python tools (NumPy, SciPy, etc.).
+        
+    - Rich ecosystem: `torchvision`, `torchaudio`, `torchtext`, `torchserve`, etc.
+        
+    - Widely used in **academia**, **industry**, and even in **Hugging Face Transformers**.
+
+##### In Python, **`torch` ≠ Lua Torch** (not directly)
+
+When you use:
+`import torch`
+
+in a Python script, you're **not importing the old Lua-based Torch** — you're actually importing **PyTorch**, whose main module is named **`torch`** for historical reasons and consistency.
+
+---
+
+#### For a script written using pytorch ML:
+##### Pytorch:
+- Bert and other pretrained models' interfaces (Nor as simple as high level APIs, neither as complex as tensorflow)
+- Model tokenizers
+
+You're installing a PyTorch-based implementation of BERT.
+The implementation is provided by Hugging Face through their Transformers library.
+Under the hood, it uses PyTorch (torch module) for the model structure and computations.
+
+##### Tensorflow:
+- Detect device's GPU
+
+##### Torch:
+- Set GPU to torch
+
+##### Pandas:
+- We will use its dataframes to load and preprocess primary data
+
+##### Keras:
+- pad sentences
+
+##### sklearn:
+- train-test-split
+- Other functions
+
+##### tqdm:
+- epoch iteration wrapper
+
+##### Numpy:
+- Arithmetic calculations
+
+----

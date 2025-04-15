@@ -1,4 +1,42 @@
 
+#### Fine tunning BertForSequenceClassification code:
+
+#### Make input_ids (and labels)
+1. Load the dataset (sentences and labels) using Pandas dataframe
+2. Add CLS and SEP tokens between sentences 
+3. Use tokenizer.tokenize to add tokens between words
+4. Use tokenizer's token_to_input_ids to map words to their dictionary id
+5. Add padding to the input 
+
+#### Make the attention_mask
+
+### Train and validation (inputs, labels, mask)
+1. Input input_ids and labels to split function ---> train and validation ids and labels
+2. Input input_ids and attention_masks to split function ---> train and validation mask
+
+#### Convert everything to torch tensors
+
+#### Create DataLoader iterator (memory efficient batch iteration)
+1. wrap train and validation labels, ids and masks into a *TensorDataset*
+2. wrap the output into a random sampler
+3. wrap the above two along with batch size into a Dataloader
+
+#### Create Optimizer
+1. Could be Adam, SGD,...
+2. Takes batch size, lr, epochs, and weight_decay_rate=0 parameters
+
+#### Write an accuracy calculator function
+1. This is used in validation mode 
+
+#### Train and validate
+- for epochs 
+	- model.train
+	    - for batch -> load train batches to cpu and split into ids, labels and masks -> clear previous gradients (optimizer.zero_grad) -> model inference (gives loss formula for backpropagation) -> loss.backward -> optimizer.step (update model parameters)
+	- model.eval
+	     - do the same for validation data -> with torch.no_grad make an inference from the model to get logits (this does not compute or stores gradients at all) -> load logits into cpu -> compute accuracy for epoch plotting
+
+---
+
 - Load the dataset using pandas library.
 - By using pandas .describe() function, you can see statistics of each feature and measure if they are in the **same scale** or not, thus if you need normalization or not. Also look for **corelation matrix**.
   Or check if the dataset is **balanced** or not.
