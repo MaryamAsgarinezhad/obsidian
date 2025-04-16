@@ -13,12 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Course and work notes/AI/Deep Learning/Python codes.md",
+                "file": "Course and work notes/AI/Deep Learning/ML.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python codes"
+              "title": "ML"
+            }
+          },
+          {
+            "id": "d121370fe03cb645",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Course and work notes/AI/Deep Learning/Normalization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Normalization"
+            }
+          },
+          {
+            "id": "e42d84e767666b5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Course and work notes/AI/Deep Learning/Double Descent.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Double Descent"
             }
           },
           {
@@ -35,7 +63,8 @@
               "title": "ipynb file"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 272.5
   },
   "right": {
     "id": "36927e90eea73a37",
@@ -182,24 +211,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "489cc213f8c0d309",
+  "active": "d121370fe03cb645",
   "lastOpenFiles": [
-    "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
+    "Course and work notes/AI/Deep Learning/ML.md",
+    "Course and work notes/AI/Deep Learning/Double Descent.md",
+    "Course and work notes/Pasted image 20250416165531.png",
+    "Course and work notes/Pasted image 20250416165459.png",
+    "Course and work notes/Pasted image 20250416165446.png",
+    "Course and work notes/Pasted image 20250416161958.png",
+    "Course and work notes/Pasted image 20250416160511.png",
+    "Course and work notes/AI/Deep Learning/Normalization.md",
+    "Pasted image 20250416165531.png",
+    "Pasted image 20250416165459.png",
+    "Pasted image 20250416165446.png",
+    "Pasted image 20250416161958.png",
+    "Pasted image 20250416160511.png",
     "Course and work notes/AI/Deep Learning/Python codes.md",
+    "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
     "Course and work notes/AI/Deep Learning/ML libraries, Computational graph.md",
-    "Local-LLM/Pasted image 20250414134333.png",
-    "Pasted image 20250414134333.png",
-    "Local-LLM/Pasted image 20250413182252.png",
-    "Local-LLM/Pasted image 20250413172522.png",
-    "Local-LLM/Pasted image 20250413164736.png",
-    "Local-LLM/Pasted image 20250412155035.png",
-    "Pasted image 20250413182252.png",
-    "Pasted image 20250413172522.png",
-    "Pasted image 20250413164736.png",
     "LLM Interpretability with energy networks/SOInter.md",
     "PredictiveRollingBearing/RUL_Estimation/Notebook explanation.md",
     "Local-LLM/BERT Fine-Tuning Sentence Classification",
-    "Pasted image 20250412155035.png",
     "PredictiveRollingBearing/Codes/TrainDataset Class.md",
     "PredictiveRollingBearing/RUL_Estimation",
     "PredictiveRollingBearing/Codes/Resnet Class.md",
@@ -217,10 +249,6 @@
     "Local-LLM/Live voice-bot MVP/Realtime API with WebSockets.md",
     "Local-LLM/Live voice-bot MVP/Function call on realtime API (websocket).md",
     "Interpretability/TF-IDF.md",
-    "Interpretability/Energy function.md",
-    "Interpretability/BERTopic.md",
-    "Course and work notes/Trade/Cryptocurrency.md",
-    "Course and work notes/DevOps/Bash Script.md",
-    "Course and work notes/DevOps/Cassandra Client.md"
+    "Interpretability/Energy function.md"
   ]
 }
