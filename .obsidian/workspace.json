@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "489cc213f8c0d309",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Course and work notes/AI/Deep Learning/ML.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ML"
-            }
-          },
-          {
-            "id": "d121370fe03cb645",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Course and work notes/AI/Deep Learning/Normalization.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Normalization"
-            }
-          },
-          {
             "id": "e42d84e767666b5b",
             "type": "leaf",
             "state": {
@@ -48,23 +20,8 @@
               "icon": "lucide-file",
               "title": "Double Descent"
             }
-          },
-          {
-            "id": "c34364bdf4a85a96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ipynb file"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,23 +168,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d121370fe03cb645",
+  "active": "e42d84e767666b5b",
   "lastOpenFiles": [
+    "Course and work notes/Pasted image 20250416170621.png",
     "Course and work notes/AI/Deep Learning/ML.md",
     "Course and work notes/AI/Deep Learning/Double Descent.md",
+    "Pasted image 20250416170621.png",
+    "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
+    "Course and work notes/AI/Deep Learning/Normalization.md",
     "Course and work notes/Pasted image 20250416165531.png",
     "Course and work notes/Pasted image 20250416165459.png",
     "Course and work notes/Pasted image 20250416165446.png",
     "Course and work notes/Pasted image 20250416161958.png",
     "Course and work notes/Pasted image 20250416160511.png",
-    "Course and work notes/AI/Deep Learning/Normalization.md",
     "Pasted image 20250416165531.png",
     "Pasted image 20250416165459.png",
     "Pasted image 20250416165446.png",
     "Pasted image 20250416161958.png",
-    "Pasted image 20250416160511.png",
     "Course and work notes/AI/Deep Learning/Python codes.md",
-    "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
     "Course and work notes/AI/Deep Learning/ML libraries, Computational graph.md",
     "LLM Interpretability with energy networks/SOInter.md",
     "PredictiveRollingBearing/RUL_Estimation/Notebook explanation.md",
