@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Course and work notes/AI/Deep Learning/Double Descent.md",
+                "file": "Course and work notes/AI/LLM/Session5 - Prompting for zero-shot and few-shot learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Double Descent"
+              "title": "Session5 - Prompting for zero-shot and few-shot learning"
+            }
+          },
+          {
+            "id": "433a0839e241a49e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Course and work notes/AI/Deep Learning/ML.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ML"
             }
           }
         ]
@@ -170,21 +184,25 @@
   },
   "active": "e42d84e767666b5b",
   "lastOpenFiles": [
-    "Course and work notes/Pasted image 20250416170621.png",
     "Course and work notes/AI/Deep Learning/ML.md",
+    "Course and work notes/AI/LLM/Session5 - Prompting for zero-shot and few-shot learning.md",
+    "Pasted image 20250419195738.png",
+    "Pasted image 20250419195729.png",
+    "Pasted image 20250419195717.png",
+    "Pasted image 20250419195702.png",
+    "Pasted image 20250419195652.png",
+    "Pasted image 20250419195308.png",
+    "Pasted image 20250419195131.png",
+    "Pasted image 20250419195046.png",
+    "Pasted image 20250419184352.png",
+    "Course and work notes/AI/LLM/Session4 - Decoder-only transformer.md",
+    "Course and work notes/AI/LLM/Session3- Transformer encoder-decoder.md",
+    "Course and work notes/AI/LLM/Session2- Transformers (Encoder model).md",
+    "Course and work notes/AI/LLM/Session1.md",
+    "Pasted image 20250419174639.png",
     "Course and work notes/AI/Deep Learning/Double Descent.md",
-    "Pasted image 20250416170621.png",
     "Local-LLM/BERT Fine-Tuning Sentence Classification/ipynb file.md",
     "Course and work notes/AI/Deep Learning/Normalization.md",
-    "Course and work notes/Pasted image 20250416165531.png",
-    "Course and work notes/Pasted image 20250416165459.png",
-    "Course and work notes/Pasted image 20250416165446.png",
-    "Course and work notes/Pasted image 20250416161958.png",
-    "Course and work notes/Pasted image 20250416160511.png",
-    "Pasted image 20250416165531.png",
-    "Pasted image 20250416165459.png",
-    "Pasted image 20250416165446.png",
-    "Pasted image 20250416161958.png",
     "Course and work notes/AI/Deep Learning/Python codes.md",
     "Course and work notes/AI/Deep Learning/ML libraries, Computational graph.md",
     "LLM Interpretability with energy networks/SOInter.md",
@@ -202,11 +220,6 @@
     "Course and work notes/MLOps/Serving (llamacpp).md",
     "PredictiveRollingBear/Literature review/A new intelligent bearing fault diagnosis model based on triplet network and SVM.md",
     "PredictiveRollingBear/Literature review/Fault diagnosis method of rolling bearing based on SSA-VMD and RCMDE.md",
-    "Local-LLM/Live voice-bot MVP/OpenAI function calling (tools).md",
-    "Local-LLM/Live voice-bot MVP/Realtime API with WebRTC.md",
-    "Local-LLM/Live voice-bot MVP/Realtime API with WebSockets.md",
-    "Local-LLM/Live voice-bot MVP/Function call on realtime API (websocket).md",
-    "Interpretability/TF-IDF.md",
-    "Interpretability/Energy function.md"
+    "Local-LLM/Live voice-bot MVP/OpenAI function calling (tools).md"
   ]
 }

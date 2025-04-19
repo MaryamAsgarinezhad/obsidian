@@ -265,5 +265,8 @@ Cross-enthropy:
 MSE:
 - Mostly used for continuous output
 
+KL Divergence:
+- Mostly used for distributional loss (observed and inferred distributions)
+
 ---
 
